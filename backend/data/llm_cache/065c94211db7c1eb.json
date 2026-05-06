@@ -1,0 +1,83 @@
+{
+  "prompt_hash": "065c94211db7c1eb",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 40.0,
+        "reasoning": "Recent long flight and birth control pill use increase the risk of DVT and PE. Calf swelling, pain, redness, and warmth could indicate DVT, a common source of PE.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "calf swelling",
+          "calf pain",
+          "recent long flight",
+          "birth control pill use"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "Recent long travel and immobility, along with calf symptoms suggesting DVT, make PE a critical consideration.",
+        "initial_prior": "Based on the presence of risk factors and potential DVT symptoms"
+      },
+      {
+        "name": "Deep Vein Thrombosis",
+        "confidence": 30.0,
+        "reasoning": "Calf swelling, pain, redness, and warmth are classic signs of DVT. Recent long flight and birth control pill use further increase the risk.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "calf swelling",
+          "calf pain",
+          "calf redness",
+          "calf warmth"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The presence of calf symptoms without clear signs of PE or other conditions makes DVT a strong consideration.",
+        "initial_prior": "Based on the direct symptom match and risk factors"
+      },
+      {
+        "name": "Cellulitis",
+        "confidence": 20.0,
+        "reasoning": "Calf redness, warmth, and swelling could also indicate cellulitis, a common skin infection. However, the absence of fever and the presence of risk factors for DVT/PE make this less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "calf redness",
+          "calf warmth",
+          "calf swelling"
+        ],
+        "key_features_absent": [
+          "fever",
+          "clear signs of infection"
+        ],
+        "differentiating_factor": "The lack of fever and the presence of DVT/PE risk factors reduce the likelihood of cellulitis.",
+        "initial_prior": "Based on the symptom overlap but lower specificity for cellulitis"
+      },
+      {
+        "name": "Muscle Strain",
+        "confidence": 10.0,
+        "reasoning": "Calf pain and swelling could be due to a muscle strain, especially with recent activity or overuse. However, the combination of symptoms and risk factors for DVT/PE makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "calf pain",
+          "calf swelling"
+        ],
+        "key_features_absent": [
+          "recent strenuous activity",
+          "clear history of overuse"
+        ],
+        "differentiating_factor": "The presence of DVT/PE risk factors and the combination of calf symptoms reduce the likelihood of a simple muscle strain.",
+        "initial_prior": "Based on the lower specificity of symptoms for muscle strain"
+      }
+    ],
+    "reasoning_summary": "The patient's presentation with calf swelling, pain, redness, and warmth, combined with recent long flight and birth control pill use, suggests a high risk for DVT and PE. These conditions are considered due to their potential severity and the presence of specific risk factors. Cellulitis and muscle strain are also considered but are less likely due to the combination of symptoms and risk factors present.",
+    "dominant_system": "cardiovascular"
+  }
+}

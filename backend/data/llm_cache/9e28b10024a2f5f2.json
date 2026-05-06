@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "9e28b10024a2f5f2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 60.0,
+        "reasoning": "Severe crushing chest pain radiating to left arm and jaw, accompanied by sweating and nausea, are classic symptoms of MI. The patient's history of smoking and diabetes further increases the risk.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "crushing chest pain",
+          "radiation to left arm and jaw",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "recent exertion or stress onset"
+        ],
+        "differentiating_factor": "The presence of crushing chest pain and radiation to the left arm and jaw, along with diaphoresis, makes MI a highly likely diagnosis.",
+        "initial_prior": "High prevalence of MI in patients with chest pain and risk factors"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 20.0,
+        "reasoning": "While the patient does not exhibit the classic symptom of sudden onset dyspnea, the severe chest pain and presence of risk factors such as smoking and diabetes make PE a possible diagnosis. However, the absence of other key features like tachycardia and leg swelling reduces the likelihood.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe chest pain"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "tachycardia",
+          "leg swelling"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and other key features makes PE less likely than MI.",
+        "initial_prior": "Lower prevalence of PE compared to MI, but still a critical diagnosis to consider"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of chest pain and nausea could be consistent with GERD, but the presence of crushing chest pain and radiation to the left arm and jaw makes this diagnosis less likely. The absence of symptoms like burning sensation and relief with antacids further reduces the likelihood.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest pain",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of crushing chest pain and radiation to the left arm and jaw makes GERD a less likely diagnosis.",
+        "initial_prior": "Lower prevalence of GERD in patients with severe chest pain and radiation"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of chest pain and nausea could be consistent with CAP, but the absence of key features like pleuritic chest pain, productive cough, and fever makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "differentiating_factor": "The absence of key features like pleuritic chest pain and productive cough makes CAP a less likely diagnosis.",
+        "initial_prior": "Lower prevalence of CAP in patients with severe chest pain and radiation"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of chest pain could be consistent with hypertension, but the presence of severe crushing chest pain and radiation to the left arm and jaw makes this diagnosis less likely. The absence of key features like elevated BP readings and end-organ damage signs further reduces the likelihood.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "elevated BP readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The presence of severe crushing chest pain and radiation to the left arm and jaw makes hypertension a less likely diagnosis.",
+        "initial_prior": "Lower prevalence of hypertension in patients with severe chest pain and radiation"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea, are highly suggestive of Acute Myocardial Infarction. The presence of risk factors like smoking and diabetes further increases the likelihood of MI. Other diagnoses like Pulmonary Embolism, Gastroesophageal Reflux Disease, Community Acquired Pneumonia, and Hypertension are considered less likely due to the absence of key features or the presence of differentiating factors.",
+    "dominant_system": "cardiovascular"
+  }
+}

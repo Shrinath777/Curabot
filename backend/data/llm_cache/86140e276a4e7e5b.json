@@ -1,0 +1,92 @@
+{
+  "prompt_hash": "86140e276a4e7e5b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Meningitis",
+        "confidence": 40.0,
+        "reasoning": "The patient presents with headache and fever, which are key symptoms of meningitis. The presence of these symptoms, especially the combination of headache and fever, makes meningitis a strong consideration.",
+        "category": "must_not_miss",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "headache",
+          "fever"
+        ],
+        "key_features_absent": [
+          "stiff neck",
+          "photophobia"
+        ],
+        "differentiating_factor": "The combination of headache, fever, and potential for stiff neck or photophobia distinguishes meningitis from other diagnoses.",
+        "initial_prior": "Based on the presence of key symptoms and the potential severity of the condition"
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 25.0,
+        "reasoning": "Given the severity and potential for rapid progression, bacterial meningitis is considered due to the presence of headache and fever. It is a critical condition that must not be missed.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "headache",
+          "fever"
+        ],
+        "key_features_absent": [
+          "stiff neck",
+          "purpuric rash"
+        ],
+        "differentiating_factor": "The severity and potential for rapid deterioration, along with specific signs like a non-blanching rash, distinguish bacterial meningitis.",
+        "initial_prior": "Based on the critical nature of the condition and the presence of key symptoms"
+      },
+      {
+        "name": "Acute Pharyngitis",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of fever and body aches could also suggest a viral or bacterial pharyngitis, although the primary symptom of headache is less typical for this condition.",
+        "category": "common",
+        "severity_class": "mild",
+        "key_features_present": [
+          "fever",
+          "body aches"
+        ],
+        "key_features_absent": [
+          "sore throat"
+        ],
+        "differentiating_factor": "The absence of a sore throat and the presence of headache make pharyngitis less likely but still a consideration.",
+        "initial_prior": "Based on the prevalence of the condition and the partial match of symptoms"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 10.0,
+        "reasoning": "Although COVID-19 can present with a wide range of symptoms, the primary symptoms described do not strongly suggest COVID-19 without additional symptoms like cough or loss of taste/smell.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever"
+        ],
+        "key_features_absent": [
+          "cough",
+          "loss of taste/smell"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for COVID-19, such as a dry cough or loss of taste/smell, makes it less likely.",
+        "initial_prior": "Based on the partial match of symptoms and the current epidemiological context"
+      },
+      {
+        "name": "Tonsillitis",
+        "confidence": 10.0,
+        "reasoning": "Tonsillitis could be considered due to the presence of fever and body aches, but the primary symptom of headache and the absence of throat pain make it less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "fever",
+          "body aches"
+        ],
+        "key_features_absent": [
+          "sore throat"
+        ],
+        "differentiating_factor": "The lack of throat-specific symptoms makes tonsillitis a less likely diagnosis.",
+        "initial_prior": "Based on the partial match of symptoms and the prevalence of the condition"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most critical conditions first, such as meningitis and bacterial meningitis, due to the presence of headache and fever. Less severe but common conditions like acute pharyngitis and tonsillitis were also considered, although they are less likely given the symptom profile. COVID-19 was considered due to its potential severity and current epidemiological relevance, but it is less likely without more specific symptoms.",
+    "dominant_system": "neurological"
+  }
+}

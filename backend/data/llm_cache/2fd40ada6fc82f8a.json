@@ -1,0 +1,39 @@
+{
+  "prompt_hash": "2fd40ada6fc82f8a",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Allergic Rhinitis",
+        "raw_text": "I keep sneezing, my nose is runny and itchy, and my eyes are watery and itchy",
+        "severity": "unknown",
+        "duration": "seasonal (every spring)",
+        "character": "recurrent",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nasal Congestion",
+        "raw_text": "I feel congested",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Post-nasal Drip",
+        "raw_text": "post-nasal drip",
+        "body_system": "respiratory"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient experiences seasonal allergic rhinitis symptoms including sneezing, runny and itchy nose, watery and itchy eyes, congestion, and post-nasal drip, relieved by antihistamines"
+  }
+}

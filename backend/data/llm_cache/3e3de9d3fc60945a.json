@@ -1,0 +1,62 @@
+{
+  "prompt_hash": "3e3de9d3fc60945a",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Polydipsia",
+        "raw_text": "I've been very thirsty",
+        "severity": "unknown",
+        "duration": "weeks",
+        "character": "unknown",
+        "body_system": "endocrine"
+      },
+      {
+        "name": "Polyuria",
+        "raw_text": "urinating frequently",
+        "severity": "unknown",
+        "duration": "weeks",
+        "character": "unknown",
+        "body_system": "urinary"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Blurred Vision",
+        "raw_text": "my vision has become blurry",
+        "body_system": "nervous"
+      },
+      {
+        "name": "Impaired Wound Healing",
+        "raw_text": "Cuts on my feet take very long to heal",
+        "body_system": "integumentary"
+      },
+      {
+        "name": "Paresthesia",
+        "raw_text": "I feel tingling in my feet",
+        "body_system": "nervous"
+      },
+      {
+        "name": "Overweight",
+        "raw_text": "I'm overweight",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "tingling in feet",
+        "reason": "could be indicative of multiple conditions",
+        "clarification_needed": "Can you describe the nature of the tingling?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with polydipsia, polyuria, blurred vision, impaired wound healing, and paresthesia, with a family history of diabetes, suggesting potential diabetic symptoms."
+  }
+}

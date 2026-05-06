@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "8fad1f0731f23968",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Status epilepticus",
+        "confidence": 55.0,
+        "reasoning": "The patient's symptoms of sudden loss of consciousness, uncontrollable shaking, and confusion are highly suggestive of a seizure disorder, specifically status epilepticus. The presence of tongue injury also supports this diagnosis, as it is a common finding in patients who have had a seizure.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Uncontrollable Shaking",
+          "Confusion",
+          "Tongue Injury"
+        ],
+        "key_features_absent": [
+          "Prolonged or recurrent seizures"
+        ],
+        "differentiating_factor": "The combination of loss of consciousness, uncontrollable shaking, and confusion, along with the presence of tongue injury, makes status epilepticus a more likely diagnosis than other conditions.",
+        "initial_prior": "Based on the high specificity of the symptoms for seizure disorders"
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 20.0,
+        "reasoning": "Although the patient's symptoms do not perfectly match the classic triad of bacterial meningitis (headache, neck stiffness, and fever), the presence of confusion, altered mental status, and loss of consciousness could be indicative of meningitis. However, the absence of fever, headache, and neck stiffness makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Confusion",
+          "Loss of Consciousness"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Headache",
+          "Neck stiffness"
+        ],
+        "differentiating_factor": "The absence of typical meningitis symptoms, such as fever and headache, makes this diagnosis less likely than status epilepticus.",
+        "initial_prior": "Based on the severity of the symptoms and the possibility of meningitis, although the symptom match is not perfect"
+      },
+      {
+        "name": "Septicemia",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of confusion, altered mental status, and loss of consciousness could be indicative of septicemia, especially if there is an underlying infection. However, the absence of fever, hemodynamic instability, and other signs of sepsis makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Confusion",
+          "Loss of Consciousness"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Hemodynamic instability"
+        ],
+        "differentiating_factor": "The absence of typical sepsis symptoms, such as fever and hemodynamic instability, makes this diagnosis less likely than status epilepticus or bacterial meningitis.",
+        "initial_prior": "Based on the possibility of an underlying infection, although the symptom match is not strong"
+      },
+      {
+        "name": "Stroke (CVA)",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of sudden loss of consciousness and confusion could be indicative of a stroke. However, the absence of focal neurological deficits, such as weakness or speech difficulties, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Focal neurological deficits"
+        ],
+        "differentiating_factor": "The absence of typical stroke symptoms, such as focal neurological deficits, makes this diagnosis less likely than status epilepticus or bacterial meningitis.",
+        "initial_prior": "Based on the severity of the symptoms, although the symptom match is not strong"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of loss of consciousness, confusion, and drowsiness could be indicative of COVID-19, especially if there is a history of exposure or travel. However, the absence of respiratory symptoms, such as cough or shortness of breath, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Confusion",
+          "Loss of Consciousness"
+        ],
+        "key_features_absent": [
+          "Respiratory symptoms",
+          "Exposure history"
+        ],
+        "differentiating_factor": "The absence of typical COVID-19 symptoms, such as respiratory symptoms, makes this diagnosis less likely than status epilepticus or bacterial meningitis.",
+        "initial_prior": "Based on the possibility of COVID-19, although the symptom match is not strong"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of sudden loss of consciousness, uncontrollable shaking, and confusion are highly suggestive of a seizure disorder, specifically status epilepticus. Other diagnoses, such as bacterial meningitis, septicemia, stroke, and COVID-19, are considered less likely due to the absence of typical symptoms or the presence of differentiating factors.",
+    "dominant_system": "neurological"
+  }
+}

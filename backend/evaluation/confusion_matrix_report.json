@@ -1,0 +1,864 @@
+{
+  "generated": "2026-04-26T16:59:22.333594",
+  "total_cases": 65,
+  "top1_accuracy": 41.5,
+  "top3_accuracy": 58.5,
+  "top1_ci_95": [
+    30.4,
+    53.7
+  ],
+  "top3_ci_95": [
+    46.3,
+    69.6
+  ],
+  "confusion_pairs": [
+    {
+      "actual": "Gastroesophageal Reflux Disease",
+      "predicted": "Necrotizing Enterocolitis",
+      "case_id": "GT-002"
+    },
+    {
+      "actual": "Pulmonary Embolism",
+      "predicted": "Acute Myocardial Infarction",
+      "case_id": "GT-004"
+    },
+    {
+      "actual": "Pulmonary Embolism",
+      "predicted": "Myocardial Infarction",
+      "case_id": "EXT-004"
+    },
+    {
+      "actual": "Diabetic Ketoacidosis",
+      "predicted": "Acute Mesenteric Ischemia",
+      "case_id": "EXT-003"
+    },
+    {
+      "actual": "Acute Appendicitis",
+      "predicted": "Acute Mesenteric Ischemia",
+      "case_id": "GT-008"
+    },
+    {
+      "actual": "Asthma",
+      "predicted": "Chronic Obstructive Pulmonary Disease",
+      "case_id": "GT-009"
+    },
+    {
+      "actual": "Asthma",
+      "predicted": "Chronic Obstructive Pulmonary Disease",
+      "case_id": "GT-009"
+    },
+    {
+      "actual": "Hypertension",
+      "predicted": "Migraine",
+      "case_id": "GT-010"
+    },
+    {
+      "actual": "Typhoid Fever",
+      "predicted": "Acute Mesenteric Ischemia",
+      "case_id": "GT-012"
+    },
+    {
+      "actual": "Peptic Ulcer Disease",
+      "predicted": "Gallstones",
+      "case_id": "GT-014"
+    },
+    {
+      "actual": "Peptic Ulcer Disease",
+      "predicted": "Gastroesophageal Reflux",
+      "case_id": "EXT-012"
+    },
+    {
+      "actual": "Malaria",
+      "predicted": "Airway Obstruction",
+      "case_id": "GT-015"
+    },
+    {
+      "actual": "Malaria",
+      "predicted": "Severe Acute Respiratory Syndrome (SARS)",
+      "case_id": "EXT-007"
+    },
+    {
+      "actual": "Urinary Tract Infection",
+      "predicted": "Necrotizing Fasciitis",
+      "case_id": "EXT-014"
+    },
+    {
+      "actual": "Iron Deficiency Anemia",
+      "predicted": "Anemia",
+      "case_id": "GT-017"
+    },
+    {
+      "actual": "Cholera",
+      "predicted": "Acute Gastroenteritis",
+      "case_id": "GT-019"
+    },
+    {
+      "actual": "Cholera",
+      "predicted": "Viral Gastroenteritis",
+      "case_id": "EXT-015"
+    },
+    {
+      "actual": "Rheumatoid Arthritis",
+      "predicted": "Typhoid Fever",
+      "case_id": "GT-020"
+    },
+    {
+      "actual": "Acute Pancreatitis",
+      "predicted": "Peptic Ulcer Disease",
+      "case_id": "GT-021"
+    },
+    {
+      "actual": "Deep Vein Thrombosis",
+      "predicted": "Acute Myocardial Infarction",
+      "case_id": "GT-022"
+    },
+    {
+      "actual": "Meningitis",
+      "predicted": "Stroke (CVA)",
+      "case_id": "GT-023"
+    },
+    {
+      "actual": "Meningitis",
+      "predicted": "Dengue Fever",
+      "case_id": "EXT-005"
+    },
+    {
+      "actual": "Tuberculosis",
+      "predicted": "Severe Acute Respiratory Syndrome (SARS)",
+      "case_id": "GT-025"
+    },
+    {
+      "actual": "Celiac Disease",
+      "predicted": "Intestinal Obstruction",
+      "case_id": "GT-026"
+    },
+    {
+      "actual": "Atrial Fibrillation (AFib)",
+      "predicted": "Heart Failure",
+      "case_id": "GT-027"
+    },
+    {
+      "actual": "Stroke (CVA)",
+      "predicted": "Ischemic Stroke",
+      "case_id": "EXT-011"
+    },
+    {
+      "actual": "Anxiety Disorder",
+      "predicted": "Heart Failure",
+      "case_id": "GT-032"
+    },
+    {
+      "actual": "Liver Cirrhosis",
+      "predicted": "Hepatitis",
+      "case_id": "GT-033"
+    },
+    {
+      "actual": "COPD",
+      "predicted": "Chronic Obstructive Pulmonary Disease",
+      "case_id": "GT-035"
+    },
+    {
+      "actual": "Influenza",
+      "predicted": "COVID-19",
+      "case_id": "GT-036"
+    },
+    {
+      "actual": "Type 2 Diabetes Mellitus",
+      "predicted": "Adrenal Insufficiency",
+      "case_id": "GT-038"
+    },
+    {
+      "actual": "Sepsis",
+      "predicted": "Septicemia",
+      "case_id": "GT-040"
+    },
+    {
+      "actual": "Depression",
+      "predicted": "Fatal insomnia",
+      "case_id": "GT-041"
+    },
+    {
+      "actual": "Hepatitis B",
+      "predicted": "Gallstones",
+      "case_id": "GT-042"
+    },
+    {
+      "actual": "Osteoarthritis",
+      "predicted": "Tendinitis",
+      "case_id": "GT-043"
+    },
+    {
+      "actual": "Eczema",
+      "predicted": "Actinic Keratosis",
+      "case_id": "GT-044"
+    },
+    {
+      "actual": "Bell's Palsy",
+      "predicted": "Ischemic Stroke",
+      "case_id": "GT-047"
+    },
+    {
+      "actual": "Anaphylaxis",
+      "predicted": "Compartment Syndrome",
+      "case_id": "GT-048"
+    },
+    {
+      "actual": "Gastroenteritis",
+      "predicted": "Acute Mesenteric Ischemia",
+      "case_id": "GT-049"
+    },
+    {
+      "actual": "Appendicitis",
+      "predicted": "Acute Mesenteric Ischemia",
+      "case_id": "EXT-006"
+    }
+  ],
+  "per_disease_metrics": [
+    {
+      "disease": "Allergic Rhinitis",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Allergic Rhinitis"
+    },
+    {
+      "disease": "Chronic Kidney Disease",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Chronic Kidney Disease"
+    },
+    {
+      "disease": "Community Acquired Pneumonia",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Community Acquired Pneumonia"
+    },
+    {
+      "disease": "Epilepsy",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Epilepsy"
+    },
+    {
+      "disease": "Gout",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Gout"
+    },
+    {
+      "disease": "Hyperthyroidism",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Hyperthyroidism"
+    },
+    {
+      "disease": "Hypothyroidism",
+      "tp": 2,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Hypothyroidism"
+    },
+    {
+      "disease": "Iron Deficiency Anemia",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Anemia"
+    },
+    {
+      "disease": "Irritable Bowel Syndrome",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Irritable Bowel Syndrome"
+    },
+    {
+      "disease": "Kidney Stone",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Kidney Stone"
+    },
+    {
+      "disease": "Pneumothorax",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Pneumothorax"
+    },
+    {
+      "disease": "Systemic Lupus Erythematosus",
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "precision": 100.0,
+      "recall": 100.0,
+      "f1": 100.0,
+      "status": "CORRECT",
+      "actual_prediction": "Systemic Lupus Erythematosus"
+    },
+    {
+      "disease": "Dengue Fever",
+      "tp": 2,
+      "fp": 1,
+      "fn": 0,
+      "precision": 66.7,
+      "recall": 100.0,
+      "f1": 80.0,
+      "status": "CORRECT",
+      "actual_prediction": "Dengue Fever"
+    },
+    {
+      "disease": "COVID-19",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1": 66.7,
+      "status": "CORRECT",
+      "actual_prediction": "COVID-19"
+    },
+    {
+      "disease": "Diabetic Ketoacidosis",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "precision": 100.0,
+      "recall": 50.0,
+      "f1": 66.7,
+      "status": "CORRECT",
+      "actual_prediction": "Diabetic Ketoacidosis"
+    },
+    {
+      "disease": "Heart Failure",
+      "tp": 2,
+      "fp": 2,
+      "fn": 0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1": 66.7,
+      "status": "CORRECT",
+      "actual_prediction": "Heart Failure"
+    },
+    {
+      "disease": "Migraine",
+      "tp": 1,
+      "fp": 1,
+      "fn": 0,
+      "precision": 50.0,
+      "recall": 100.0,
+      "f1": 66.7,
+      "status": "CORRECT",
+      "actual_prediction": "Migraine"
+    },
+    {
+      "disease": "Urinary Tract Infection",
+      "tp": 1,
+      "fp": 0,
+      "fn": 1,
+      "precision": 100.0,
+      "recall": 50.0,
+      "f1": 66.7,
+      "status": "CORRECT",
+      "actual_prediction": "Urinary Tract Infection"
+    },
+    {
+      "disease": "Acute Myocardial Infarction",
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "precision": 40.0,
+      "recall": 100.0,
+      "f1": 57.1,
+      "status": "CORRECT",
+      "actual_prediction": "Acute Myocardial Infarction"
+    },
+    {
+      "disease": "COPD",
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "precision": 33.3,
+      "recall": 100.0,
+      "f1": 50.0,
+      "status": "CORRECT",
+      "actual_prediction": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "disease": "Gallstones",
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "precision": 33.3,
+      "recall": 100.0,
+      "f1": 50.0,
+      "status": "CORRECT",
+      "actual_prediction": "Gallstones"
+    },
+    {
+      "disease": "Stroke (CVA)",
+      "tp": 1,
+      "fp": 1,
+      "fn": 1,
+      "precision": 50.0,
+      "recall": 50.0,
+      "f1": 50.0,
+      "status": "CORRECT",
+      "actual_prediction": "Stroke (CVA)"
+    },
+    {
+      "disease": "Acute Appendicitis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Mesenteric Ischemia"
+    },
+    {
+      "disease": "Acute Pancreatitis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Peptic Ulcer Disease"
+    },
+    {
+      "disease": "Anaphylaxis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Compartment Syndrome"
+    },
+    {
+      "disease": "Anxiety Disorder",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Heart Failure"
+    },
+    {
+      "disease": "Appendicitis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Mesenteric Ischemia"
+    },
+    {
+      "disease": "Asthma",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Chronic Obstructive Pulmonary Disease"
+    },
+    {
+      "disease": "Atrial Fibrillation (AFib)",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Heart Failure"
+    },
+    {
+      "disease": "Bell's Palsy",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Ischemic Stroke"
+    },
+    {
+      "disease": "Celiac Disease",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Intestinal Obstruction"
+    },
+    {
+      "disease": "Cholera",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Gastroenteritis"
+    },
+    {
+      "disease": "Deep Vein Thrombosis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Myocardial Infarction"
+    },
+    {
+      "disease": "Depression",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Fatal insomnia"
+    },
+    {
+      "disease": "Eczema",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Actinic Keratosis"
+    },
+    {
+      "disease": "Gastroenteritis",
+      "tp": 0,
+      "fp": 2,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Mesenteric Ischemia"
+    },
+    {
+      "disease": "Gastroesophageal Reflux Disease",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Necrotizing Enterocolitis"
+    },
+    {
+      "disease": "Hepatitis B",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Gallstones"
+    },
+    {
+      "disease": "Hypertension",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Migraine"
+    },
+    {
+      "disease": "Influenza",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "COVID-19"
+    },
+    {
+      "disease": "Liver Cirrhosis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Hepatitis"
+    },
+    {
+      "disease": "Malaria",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Airway Obstruction"
+    },
+    {
+      "disease": "Meningitis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Stroke (CVA)"
+    },
+    {
+      "disease": "Osteoarthritis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Tendinitis"
+    },
+    {
+      "disease": "Peptic Ulcer Disease",
+      "tp": 0,
+      "fp": 1,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Gallstones"
+    },
+    {
+      "disease": "Pulmonary Embolism",
+      "tp": 0,
+      "fp": 0,
+      "fn": 2,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Myocardial Infarction"
+    },
+    {
+      "disease": "Rheumatoid Arthritis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Typhoid Fever"
+    },
+    {
+      "disease": "Sepsis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Septicemia"
+    },
+    {
+      "disease": "Tuberculosis",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Severe Acute Respiratory Syndrome (SARS)"
+    },
+    {
+      "disease": "Type 2 Diabetes Mellitus",
+      "tp": 0,
+      "fp": 0,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Adrenal Insufficiency"
+    },
+    {
+      "disease": "Typhoid Fever",
+      "tp": 0,
+      "fp": 1,
+      "fn": 1,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "status": "MISSED",
+      "actual_prediction": "Acute Mesenteric Ischemia"
+    }
+  ],
+  "system_accuracy": {
+    "benign": {
+      "total": 5,
+      "top1_accuracy": 40.0,
+      "top3_accuracy": 60.0,
+      "top1_ci": [
+        11.8,
+        76.9
+      ],
+      "top3_ci": [
+        23.1,
+        88.2
+      ]
+    },
+    "critical": {
+      "total": 17,
+      "top1_accuracy": 41.2,
+      "top3_accuracy": 58.8,
+      "top1_ci": [
+        21.6,
+        64.0
+      ],
+      "top3_ci": [
+        36.0,
+        78.4
+      ]
+    },
+    "moderate": {
+      "total": 23,
+      "top1_accuracy": 39.1,
+      "top3_accuracy": 60.9,
+      "top1_ci": [
+        22.2,
+        59.2
+      ],
+      "top3_ci": [
+        40.8,
+        77.8
+      ]
+    },
+    "serious": {
+      "total": 20,
+      "top1_accuracy": 45.0,
+      "top3_accuracy": 55.0,
+      "top1_ci": [
+        25.8,
+        65.8
+      ],
+      "top3_ci": [
+        34.2,
+        74.2
+      ]
+    }
+  },
+  "over_predicted": {
+    "Necrotizing Enterocolitis": 1,
+    "Acute Myocardial Infarction": 2,
+    "Myocardial Infarction": 1,
+    "Acute Mesenteric Ischemia": 5,
+    "Chronic Obstructive Pulmonary Disease": 3,
+    "Migraine": 1,
+    "Gallstones": 2,
+    "Gastroesophageal Reflux": 1,
+    "Airway Obstruction": 1,
+    "Severe Acute Respiratory Syndrome (SARS)": 2,
+    "Necrotizing Fasciitis": 1,
+    "Anemia": 1,
+    "Acute Gastroenteritis": 1,
+    "Viral Gastroenteritis": 1,
+    "Typhoid Fever": 1,
+    "Peptic Ulcer Disease": 1,
+    "Stroke (CVA)": 1,
+    "Dengue Fever": 1,
+    "Intestinal Obstruction": 1,
+    "Heart Failure": 2,
+    "Ischemic Stroke": 2,
+    "Hepatitis": 1,
+    "COVID-19": 1,
+    "Adrenal Insufficiency": 1,
+    "Septicemia": 1,
+    "Fatal insomnia": 1,
+    "Tendinitis": 1,
+    "Actinic Keratosis": 1,
+    "Compartment Syndrome": 1
+  }
+}

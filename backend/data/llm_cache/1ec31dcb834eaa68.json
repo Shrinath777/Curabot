@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "1ec31dcb834eaa68",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 60.0,
+        "reasoning": "Severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea, strongly suggests MI, especially with a history of smoking and diabetes.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "crushing chest pain",
+          "radiation to left arm and jaw",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "relief with antacids or position change"
+        ],
+        "differentiating_factor": "The presence of crushing chest pain, radiation to the left arm and jaw, and diaphoresis are highly specific for MI.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 20.0,
+        "reasoning": "While sudden onset dyspnea is a key feature of PE, the presence of severe crushing chest pain and radiation to the left arm and jaw makes MI more likely. However, the sudden onset and severity of symptoms warrant consideration of PE.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset",
+          "severe chest pain"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of dyspnea and pleuritic chest pain makes PE less likely than MI, but it remains a critical diagnosis to consider.",
+        "initial_prior": "Moderate prevalence and partial symptom match"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "The presence of chest pain could suggest GERD, but the description of severe crushing chest pain and radiation to the left arm and jaw, along with sweating and nausea, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The nature of the chest pain and associated symptoms does not align well with GERD.",
+        "initial_prior": "High prevalence but poor symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The absence of respiratory symptoms such as cough, fever, or abnormal lung sounds makes CAP less likely, despite the presence of chest pain.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "cough",
+          "fever",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The lack of respiratory symptoms and the presence of severe crushing chest pain radiating to the left arm and jaw make CAP an unlikely diagnosis.",
+        "initial_prior": "Moderate prevalence but poor symptom match"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "While hypertension can cause chest pain, the description provided does not align well with the typical presentation of hypertension-related chest pain, and the acute onset suggests a more immediate cause.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "headache",
+          "elevated BP readings"
+        ],
+        "differentiating_factor": "The acute onset and nature of the chest pain do not suggest hypertension as the primary cause.",
+        "initial_prior": "High prevalence but poor symptom match"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely cause of severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea. The presence of these symptoms, especially in a patient with a history of smoking and diabetes, strongly suggests Acute Myocardial Infarction as the primary diagnosis. However, due to the critical nature of the symptoms, Pulmonary Embolism was also considered. Other diagnoses such as GERD, CAP, and hypertension were deemed less likely due to the nature of the symptoms and the absence of key features specific to these conditions.",
+    "dominant_system": "cardiovascular"
+  }
+}

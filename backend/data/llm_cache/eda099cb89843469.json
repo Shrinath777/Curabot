@@ -1,0 +1,70 @@
+{
+  "prompt_hash": "eda099cb89843469",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "very high fever",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "high",
+        "body_system": "other"
+      },
+      {
+        "name": "Tachycardia",
+        "raw_text": "heart rate is over 120",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "rapid",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Hypotension",
+        "raw_text": "blood pressure is very low",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "low",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Chills",
+        "raw_text": "shaking chills",
+        "body_system": "other"
+      },
+      {
+        "name": "Confusion",
+        "raw_text": "feel confused and disoriented",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Cold and clammy skin",
+        "raw_text": "skin feels cold and clammy",
+        "body_system": "other"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "duration of symptoms",
+        "reason": "patient does not specify how long they have been experiencing symptoms",
+        "clarification_needed": "How long have you been experiencing these symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": "very low",
+      "heart_rate": "over 120",
+      "temperature": "very high",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "severe fever",
+      "very low blood pressure",
+      "heart rate over 120"
+    ],
+    "summary": "Patient presents with severe fever, tachycardia, hypotension, chills, confusion, and cold and clammy skin, requiring immediate medical attention."
+  }
+}

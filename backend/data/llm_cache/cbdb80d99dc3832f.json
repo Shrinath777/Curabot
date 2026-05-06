@@ -1,0 +1,52 @@
+{
+  "prompt_hash": "cbdb80d99dc3832f",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "high fever",
+        "severity": "severe",
+        "duration": "3 days",
+        "character": "unknown",
+        "body_system": "other"
+      },
+      {
+        "name": "Headache",
+        "raw_text": "severe pain behind my eyes",
+        "severity": "severe",
+        "duration": "3 days",
+        "character": "sharp",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Arthralgia",
+        "raw_text": "terrible bone and joint pain",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Rash",
+        "raw_text": "rash on my arms",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "living in a tropical area with lots of mosquitoes",
+        "reason": "unclear if this is related to symptoms or just background information",
+        "clarification_needed": "Are you experiencing any symptoms that you think might be related to mosquito bites?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "high",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe fever, headache, arthralgia, and rash, potentially related to a mosquito-borne illness."
+  }
+}

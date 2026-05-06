@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "07f1ccfed56dfa7e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "COVID-19",
+        "confidence": 40.0,
+        "reasoning": "The patient presents with sudden onset of severe fever, body aches, headache, and fatigue, which are consistent with COVID-19 symptoms. The presence of dry cough and sore throat further supports this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dry cough",
+          "fever",
+          "body aches",
+          "headache",
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell"
+        ],
+        "differentiating_factor": "The presence of dry cough and the absence of loss of taste/smell differentiate COVID-19 from other respiratory infections.",
+        "initial_prior": "Based on the current pandemic and the patient's symptoms"
+      },
+      {
+        "name": "Influenza",
+        "confidence": 30.0,
+        "reasoning": "The patient's symptoms, such as sudden onset of severe fever, body aches, headache, and fatigue, are also consistent with influenza. However, the absence of a productive cough and the presence of dry cough make COVID-19 a more likely diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "body aches",
+          "headache",
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "productive cough"
+        ],
+        "differentiating_factor": "The presence of dry cough and the absence of a productive cough differentiate influenza from other respiratory infections.",
+        "initial_prior": "Based on the time of year and the patient's symptoms"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms, such as fever, body aches, and dry cough, could be consistent with community-acquired pneumonia. However, the absence of pleuritic chest pain and the presence of severe fatigue make COVID-19 a more likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "dry cough"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The presence of pleuritic chest pain and the absence of severe fatigue differentiate community-acquired pneumonia from other respiratory infections.",
+        "initial_prior": "Based on the patient's symptoms and the presence of dry cough"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms, such as severe fever, body aches, and headache, could be consistent with dengue fever. However, the absence of retro-orbital pain and the presence of dry cough make COVID-19 a more likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "body aches",
+          "headache"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain"
+        ],
+        "differentiating_factor": "The presence of retro-orbital pain and the absence of dry cough differentiate dengue fever from other infections.",
+        "initial_prior": "Based on the patient's travel history and symptoms"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "Although the patient does not have any obvious risk factors for pulmonary embolism, such as recent surgery or immobility, it is still important to consider this diagnosis due to the severity of the symptoms. However, the absence of sudden onset dyspnea and pleuritic chest pain makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The presence of sudden onset dyspnea and pleuritic chest pain differentiate pulmonary embolism from other respiratory infections.",
+        "initial_prior": "Based on the severity of the symptoms and the need to rule out life-threatening conditions"
+      }
+    ],
+    "reasoning_summary": "The patient presents with symptoms consistent with a respiratory infection, and COVID-19 is the most likely diagnosis. However, it is also important to consider other diagnoses, such as influenza, community-acquired pneumonia, and dengue fever, due to the similarity of symptoms. Pulmonary embolism is also considered due to the severity of the symptoms, although it is less likely.",
+    "dominant_system": "respiratory"
+  }
+}

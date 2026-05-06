@@ -1,0 +1,50 @@
+{
+  "prompt_hash": "0cc787da0e6b7650",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Abdominal pain",
+        "raw_text": "pain around my belly button",
+        "severity": "moderate",
+        "duration": "since yesterday",
+        "character": "sharp and constant",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nausea",
+        "raw_text": "I feel nauseous",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Loss of appetite",
+        "raw_text": "have no appetite",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Low-grade fever",
+        "raw_text": "low-grade fever",
+        "body_system": "other"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "pain moved to lower right side",
+        "reason": "unclear if pain is radiating or has changed location",
+        "clarification_needed": "Can you describe how the pain moved from your belly button to your lower right side?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "low-grade",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with sharp, constant abdominal pain that started around the belly button and moved to the lower right side, accompanied by nausea, loss of appetite, and a low-grade fever."
+  }
+}

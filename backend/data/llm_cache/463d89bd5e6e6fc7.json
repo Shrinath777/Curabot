@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "463d89bd5e6e6fc7",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hypothyroidism",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with unintentional weight gain, fatigue, dry skin, hair thinning, constipation, and menstrual irregularity, all of which are common symptoms of hypothyroidism. The combination of these symptoms, particularly the presence of dry skin, hair thinning, and menstrual irregularity, makes hypothyroidism a strong candidate.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "unintentional weight gain",
+          "fatigue",
+          "dry skin",
+          "hair thinning",
+          "constipation",
+          "menstrual irregularity"
+        ],
+        "key_features_absent": [
+          "cold intolerance"
+        ],
+        "differentiating_factor": "The presence of multiple symptoms consistent with hypothyroidism, including dry skin, hair thinning, and menstrual irregularity, which are less common in other conditions.",
+        "initial_prior": "High prevalence of hypothyroidism in the general population and strong symptom match"
+      },
+      {
+        "name": "Polycystic Ovary Syndrome (PCOS)",
+        "confidence": 20.0,
+        "reasoning": "While PCOS can present with menstrual irregularity and weight gain, the presence of dry skin, hair thinning, and constipation is more suggestive of hypothyroidism. However, PCOS remains a possibility, particularly if the patient has other symptoms such as acne or hirsutism.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "menstrual irregularity",
+          "unintentional weight gain"
+        ],
+        "key_features_absent": [
+          "acne",
+          "hirsutism"
+        ],
+        "differentiating_factor": "The absence of other typical PCOS symptoms such as acne and hirsutism makes hypothyroidism a more likely diagnosis.",
+        "initial_prior": "Moderate prevalence of PCOS in women of reproductive age, but less strong symptom match"
+      },
+      {
+        "name": "Addison's Disease",
+        "confidence": 10.0,
+        "reasoning": "Addison's disease can present with fatigue, weight loss, and skin changes, but the presence of unintentional weight gain and menstrual irregularity makes it less likely. However, it remains a consideration due to the patient's fatigue and skin symptoms.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "weight loss",
+          "hypotension"
+        ],
+        "differentiating_factor": "The presence of unintentional weight gain and menstrual irregularity, which are not typical of Addison's disease.",
+        "initial_prior": "Low prevalence of Addison's disease, but potential for severe consequences if missed"
+      },
+      {
+        "name": "Cushing's Syndrome",
+        "confidence": 5.0,
+        "reasoning": "Cushing's syndrome can present with weight gain, fatigue, and menstrual irregularity, but the presence of dry skin, hair thinning, and constipation is more suggestive of hypothyroidism. The absence of other typical Cushing's symptoms such as buffalo hump, purple striae, and hypertension makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "unintentional weight gain"
+        ],
+        "key_features_absent": [
+          "buffalo hump",
+          "purple striae",
+          "hypertension"
+        ],
+        "differentiating_factor": "The absence of other typical Cushing's symptoms and the presence of symptoms more suggestive of hypothyroidism.",
+        "initial_prior": "Low prevalence of Cushing's syndrome, but potential for severe consequences if missed"
+      },
+      {
+        "name": "Pituitary Tumor",
+        "confidence": 5.0,
+        "reasoning": "A pituitary tumor can present with a variety of symptoms, including menstrual irregularity, fatigue, and weight changes. However, the presence of dry skin, hair thinning, and constipation is more suggestive of hypothyroidism. The absence of other typical symptoms such as headaches, visual changes, and galactorrhea makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "menstrual irregularity"
+        ],
+        "key_features_absent": [
+          "headaches",
+          "visual changes",
+          "galactorrhea"
+        ],
+        "differentiating_factor": "The absence of other typical symptoms of a pituitary tumor and the presence of symptoms more suggestive of hypothyroidism.",
+        "initial_prior": "Low prevalence of pituitary tumors, but potential for severe consequences if missed"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms are most consistent with hypothyroidism, but other endocrine disorders such as PCOS, Addison's disease, Cushing's syndrome, and pituitary tumor are considered due to the presence of overlapping symptoms. The differential diagnosis is broad due to the non-specific nature of the patient's symptoms, but hypothyroidism is the most likely diagnosis based on the combination of symptoms presented.",
+    "dominant_system": "endocrine"
+  }
+}

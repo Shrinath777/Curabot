@@ -1,0 +1,62 @@
+{
+  "prompt_hash": "a6aee55ad33c64d0",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Facial drooping",
+        "raw_text": "My face is drooping on one side",
+        "severity": "unknown",
+        "duration": "30 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Arm weakness",
+        "raw_text": "I can't raise my right arm",
+        "severity": "severe",
+        "duration": "30 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Slurred speech",
+        "raw_text": "My speech is slurred",
+        "severity": "unknown",
+        "duration": "30 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Hearing impairment",
+        "raw_text": "I can't understand what people are saying clearly",
+        "severity": "unknown",
+        "duration": "30 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Hypertension",
+        "raw_text": "I have high blood pressure",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": "high",
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "sudden facial drooping",
+      "sudden arm weakness",
+      "sudden slurred speech"
+    ],
+    "summary": "Patient presents with sudden onset of facial drooping, arm weakness, slurred speech, and hearing impairment, with a history of hypertension."
+  }
+}

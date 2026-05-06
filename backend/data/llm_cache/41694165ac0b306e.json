@@ -1,0 +1,92 @@
+{
+  "prompt_hash": "41694165ac0b306e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Influenza",
+        "confidence": 40.0,
+        "reasoning": "Sudden onset of severe fever, body aches, headache, and fatigue, along with dry cough and sore throat, are consistent with influenza. The presence of severe body aches and prostration, as well as the sudden onset, are key differentiating features.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "sudden onset of high fever",
+          "severe body aches",
+          "dry cough"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell"
+        ],
+        "differentiating_factor": "Seasonal pattern and workplace or household outbreak with similar symptoms",
+        "initial_prior": "High prevalence during flu season and symptom match"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 30.0,
+        "reasoning": "Dry cough, fever, and fatigue are consistent with COVID-19. However, the absence of loss of taste/smell and the presence of severe body aches make influenza a more likely diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dry cough",
+          "fever"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell"
+        ],
+        "differentiating_factor": "Loss of taste/smell and contact with confirmed case",
+        "initial_prior": "High prevalence and symptom match, but less likely due to absence of key features"
+      },
+      {
+        "name": "Common Cold",
+        "confidence": 15.0,
+        "reasoning": "Cough and sore throat are consistent with common cold, but the severity of symptoms and the presence of fever and body aches make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "cough",
+          "sore throat"
+        ],
+        "key_features_absent": [
+          "severe body aches"
+        ],
+        "differentiating_factor": "Milder symptoms and absence of fever",
+        "initial_prior": "High prevalence, but less likely due to severity of symptoms"
+      },
+      {
+        "name": "Pneumonia",
+        "confidence": 10.0,
+        "reasoning": "Cough and fever are consistent with pneumonia, but the absence of shortness of breath and the presence of severe body aches make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "cough",
+          "fever"
+        ],
+        "key_features_absent": [
+          "shortness of breath"
+        ],
+        "differentiating_factor": "Presence of shortness of breath and chest pain",
+        "initial_prior": "Moderate prevalence, but less likely due to absence of key features"
+      },
+      {
+        "name": "Malaria",
+        "confidence": 5.0,
+        "reasoning": "Fever and body aches are consistent with malaria, but the absence of cyclical fevers, travel to endemic area, and splenomegaly make this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "body aches"
+        ],
+        "key_features_absent": [
+          "cyclical fevers",
+          "travel to endemic area"
+        ],
+        "differentiating_factor": "Cyclical fevers and travel to endemic area",
+        "initial_prior": "Low prevalence and absence of key features"
+      }
+    ],
+    "reasoning_summary": "The patient presents with sudden onset of severe fever, body aches, headache, and fatigue, along with dry cough and sore throat. Influenza is the most likely diagnosis due to the presence of severe body aches and prostration, as well as the sudden onset. COVID-19 is also considered due to the presence of dry cough and fever, but the absence of loss of taste/smell makes it less likely. Common cold, pneumonia, and malaria are less likely due to the severity of symptoms and the absence of key features.",
+    "dominant_system": "respiratory"
+  }
+}

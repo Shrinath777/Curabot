@@ -1,0 +1,102 @@
+{
+  "prompt_hash": "33c8e84a126fc430",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Tuberculosis",
+        "confidence": 30.0,
+        "reasoning": "Patient presents with persistent cough, hemoptysis, night sweats, and weight loss, which are classic symptoms of pulmonary tuberculosis. The presence of hemoptysis and night sweats are particularly concerning for this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis",
+          "night sweats",
+          "weight loss"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough with colored sputum"
+        ],
+        "differentiating_factor": "The combination of hemoptysis, night sweats, and weight loss makes pulmonary tuberculosis a more likely diagnosis than other respiratory infections.",
+        "initial_prior": "Based on symptom match and prevalence of tuberculosis in crowded housing situations"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of persistent cough, night sweats, and low-grade fever could be consistent with community-acquired pneumonia. However, the absence of pleuritic chest pain and productive cough with colored sputum makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "night sweats",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough with colored sputum"
+        ],
+        "differentiating_factor": "The absence of pleuritic chest pain and productive cough with colored sputum makes community-acquired pneumonia a less likely diagnosis than pulmonary tuberculosis.",
+        "initial_prior": "Based on symptom match and prevalence of pneumonia in the community"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptom of hemoptysis could be consistent with pulmonary embolism. However, the absence of sudden onset dyspnea, pleuritic chest pain, and tachycardia makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hemoptysis"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain",
+          "tachycardia"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and pleuritic chest pain makes pulmonary embolism a less likely diagnosis than pulmonary tuberculosis or community-acquired pneumonia.",
+        "initial_prior": "Based on symptom match and severity of pulmonary embolism"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of persistent cough, night sweats, and low-grade fever could be consistent with COVID-19. However, the absence of loss of taste or smell, dry cough, and contact with a confirmed case makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "night sweats",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "loss of taste or smell",
+          "dry cough",
+          "contact with a confirmed case"
+        ],
+        "differentiating_factor": "The absence of loss of taste or smell and dry cough makes COVID-19 a less likely diagnosis than pulmonary tuberculosis or community-acquired pneumonia.",
+        "initial_prior": "Based on symptom match and prevalence of COVID-19 in the community"
+      },
+      {
+        "name": "Lung Cancer",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of persistent cough, hemoptysis, and weight loss could be consistent with lung cancer. However, the absence of other symptoms such as chest pain, dyspnea, and history of smoking makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis",
+          "weight loss"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "dyspnea",
+          "history of smoking"
+        ],
+        "differentiating_factor": "The absence of other symptoms such as chest pain and dyspnea makes lung cancer a less likely diagnosis than pulmonary tuberculosis or community-acquired pneumonia.",
+        "initial_prior": "Based on symptom match and prevalence of lung cancer"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of persistent cough, hemoptysis, night sweats, and weight loss suggest a respiratory infection or underlying condition. Pulmonary tuberculosis is the most likely diagnosis due to the combination of hemoptysis, night sweats, and weight loss. Community-acquired pneumonia and COVID-19 are also possible diagnoses, but less likely due to the absence of specific symptoms. Pulmonary embolism is a must-not-miss diagnosis due to the severity of the condition, but is less likely due to the absence of sudden onset dyspnea and pleuritic chest pain. Lung cancer is a less likely diagnosis due to the absence of other symptoms such as chest pain and dyspnea.",
+    "dominant_system": "respiratory"
+  }
+}

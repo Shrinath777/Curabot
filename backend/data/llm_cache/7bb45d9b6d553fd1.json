@@ -1,0 +1,38 @@
+{
+  "prompt_hash": "7bb45d9b6d553fd1",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Chest Pain",
+        "raw_text": "sudden sharp chest pain",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "sharp, sudden",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Shortness of Breath",
+        "raw_text": "shortness of breath",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "sudden sharp chest pain"
+    ],
+    "summary": "Patient reports sudden sharp chest pain and shortness of breath, indicating potential cardiovascular and respiratory issues."
+  }
+}

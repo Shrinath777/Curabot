@@ -1,0 +1,100 @@
+{
+  "prompt_hash": "ae559e93f97a4a34",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Diabetic Ketoacidosis",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with polydipsia, polyuria, ketoacidosis breath odor, confusion, tachypnea, abdominal pain, and nausea, which are all classic symptoms of diabetic ketoacidosis. The presence of fruity breath odor and confusion are particularly concerning for this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "polydipsia",
+          "polyuria",
+          "ketoacidosis breath odor",
+          "confusion",
+          "tachypnea"
+        ],
+        "key_features_absent": [
+          "recent infection or illness"
+        ],
+        "differentiating_factor": "The combination of polydipsia, polyuria, and ketoacidosis breath odor is highly suggestive of diabetic ketoacidosis, particularly in a patient with a history of diabetes.",
+        "initial_prior": "High prevalence of diabetes and symptom match"
+      },
+      {
+        "name": "Cholera",
+        "confidence": 20.0,
+        "reasoning": "While the patient's symptoms of polydipsia, polyuria, and abdominal pain could be suggestive of cholera, the absence of rice-water stool and massive volume watery diarrhea makes this diagnosis less likely. However, the severity of the symptoms and the potential for rapid dehydration warrant consideration of this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "polydipsia",
+          "polyuria",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "rice-water stool",
+          "massive volume watery diarrhea"
+        ],
+        "differentiating_factor": "The absence of characteristic cholera symptoms such as rice-water stool and massive volume watery diarrhea makes diabetic ketoacidosis a more likely diagnosis.",
+        "initial_prior": "Low prevalence and incomplete symptom match"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of abdominal pain and nausea could be suggestive of gastroesophageal reflux disease, but the presence of polydipsia, polyuria, and ketoacidosis breath odor makes this diagnosis less likely. Additionally, the severity of the symptoms and the presence of confusion and tachypnea are not typical of gastroesophageal reflux disease.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "abdominal pain",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms such as confusion and tachypnea makes gastroesophageal reflux disease an unlikely diagnosis.",
+        "initial_prior": "Low prevalence and incomplete symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of tachypnea and abdominal pain could be suggestive of community acquired pneumonia, but the absence of pleuritic chest pain, productive cough, and fever makes this diagnosis less likely. Additionally, the presence of polydipsia, polyuria, and ketoacidosis breath odor is not typical of community acquired pneumonia.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "tachypnea",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms such as confusion and the absence of respiratory symptoms such as pleuritic chest pain and productive cough make community acquired pneumonia an unlikely diagnosis.",
+        "initial_prior": "Low prevalence and incomplete symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of tachypnea and abdominal pain could be suggestive of pulmonary embolism, but the absence of sudden onset dyspnea, pleuritic chest pain, and leg swelling/pain makes this diagnosis less likely. Additionally, the presence of polydipsia, polyuria, and ketoacidosis breath odor is not typical of pulmonary embolism.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "tachypnea",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain",
+          "leg swelling/pain"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms such as confusion and the absence of respiratory symptoms such as sudden onset dyspnea and pleuritic chest pain make pulmonary embolism an unlikely diagnosis.",
+        "initial_prior": "Low prevalence and incomplete symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms are highly suggestive of diabetic ketoacidosis, particularly given the presence of polydipsia, polyuria, ketoacidosis breath odor, confusion, tachypnea, abdominal pain, and nausea. While other diagnoses such as cholera, gastroesophageal reflux disease, community acquired pneumonia, and pulmonary embolism are considered, they are less likely given the presence of characteristic symptoms of diabetic ketoacidosis and the absence of key features of these alternative diagnoses.",
+    "dominant_system": "endocrine"
+  }
+}

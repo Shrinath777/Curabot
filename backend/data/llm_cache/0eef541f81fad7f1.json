@@ -1,0 +1,99 @@
+{
+  "prompt_hash": "0eef541f81fad7f1",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 30.0,
+        "reasoning": "Sudden onset dyspnea and pleuritic chest pain are key differentiators, along with the presence of palpitations and shortness of breath. The patient's symptoms of chest tightness and excessive sweating also align with PE.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain",
+          "palpitations",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "Sudden onset of symptoms and the combination of dyspnea, chest pain, and palpitations make PE a critical consideration.",
+        "initial_prior": "Based on the presence of red flag symptoms and the severity of the presentation"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 25.0,
+        "reasoning": "Chest tightness and palpitations are concerning for MI, especially with the patient's report of feeling like they're going to die. However, the absence of crushing or squeezing chest pressure and radiation to the arm, jaw, or back reduces the confidence in this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest tightness",
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "crushing or squeezing chest pressure",
+          "radiation to arm, jaw, or back"
+        ],
+        "differentiating_factor": "The nature of the chest pain and the presence of diaphoresis would help differentiate MI from other diagnoses.",
+        "initial_prior": "Based on the presence of chest pain and palpitations, which are common symptoms of MI"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of anxiety, palpitations, and shortness of breath could be indicative of an anxiety disorder. The presence of excessive sweating also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "anxiety",
+          "palpitations",
+          "shortness of breath",
+          "excessive sweating"
+        ],
+        "key_features_absent": [
+          "panic attacks",
+          "avoidance behaviors"
+        ],
+        "differentiating_factor": "The presence of anxiety and the lack of red flag symptoms for critical conditions make anxiety disorder a plausible diagnosis.",
+        "initial_prior": "Based on the prevalence of anxiety disorders and the patient's reported symptoms"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "Shortness of breath and chest tightness could be indicative of pneumonia, especially if the patient has recently had an upper respiratory infection. However, the absence of fever, productive cough, and abnormal lung sounds reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "shortness of breath",
+          "chest tightness"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The presence of fever and productive cough would help differentiate pneumonia from other diagnoses.",
+        "initial_prior": "Based on the presence of respiratory symptoms, but reduced by the lack of specific pneumonia symptoms"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "Chest tightness could be indicative of GERD, especially if the patient experiences burning sensations or regurgitation. However, the absence of these symptoms and the presence of red flag symptoms for critical conditions reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest tightness"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "regurgitation"
+        ],
+        "differentiating_factor": "The nature of the chest pain and the presence of regurgitation would help differentiate GERD from other diagnoses.",
+        "initial_prior": "Based on the prevalence of GERD, but reduced by the lack of specific symptoms"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of sudden onset dyspnea, chest tightness, and palpitations, along with the presence of anxiety and excessive sweating, suggest a critical condition such as pulmonary embolism or acute myocardial infarction. However, the absence of specific symptoms for these conditions and the presence of anxiety symptoms also consider anxiety disorder as a possible diagnosis.",
+    "dominant_system": "cardiovascular"
+  }
+}

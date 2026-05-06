@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "c08842a570098231",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "COVID-19",
+        "confidence": 60.0,
+        "reasoning": "Highly specific symptoms of loss of taste and smell, dry cough, and fever, along with contact with a confirmed case, make COVID-19 a highly likely diagnosis. The presence of extreme fatigue and body aches also aligns with COVID-19 symptomatology.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of taste",
+          "Loss of smell",
+          "Dry cough",
+          "Fever",
+          "Extreme fatigue",
+          "Body aches"
+        ],
+        "key_features_absent": [
+          "Rapid progression of dyspnea"
+        ],
+        "differentiating_factor": "The combination of loss of taste and smell with dry cough and fever is highly specific for COVID-19, distinguishing it from other respiratory infections.",
+        "initial_prior": "Based on symptom match and recent contact with a COVID-19 positive individual"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 20.0,
+        "reasoning": "While the patient presents with a dry cough and fever, which could be indicative of pneumonia, the absence of pleuritic chest pain, productive cough, and abnormal lung sounds makes this diagnosis less likely. However, it remains a consideration due to the severity of the symptoms and the potential for pneumonia to present atypically.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Dry cough",
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Pleuritic chest pain",
+          "Productive cough",
+          "Abnormal lung sounds"
+        ],
+        "differentiating_factor": "The lack of pleuritic chest pain and productive cough, along with the presence of loss of taste and smell, makes COVID-19 a more likely diagnosis than pneumonia.",
+        "initial_prior": "Based on prevalence of respiratory infections and symptom overlap"
+      },
+      {
+        "name": "Influenza",
+        "confidence": 10.0,
+        "reasoning": "Although not explicitly listed in the disease knowledge base, influenza could be considered due to the presence of fever, dry cough, and body aches. However, the highly specific symptoms of loss of taste and smell point more strongly towards COVID-19. Influenza is thus considered less likely but remains on the differential due to the overlap in symptoms with COVID-19.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Dry cough",
+          "Body aches"
+        ],
+        "key_features_absent": [
+          "Loss of taste",
+          "Loss of smell"
+        ],
+        "differentiating_factor": "The absence of loss of taste and smell, which are highly specific for COVID-19, makes influenza a less likely diagnosis.",
+        "initial_prior": "Based on symptom overlap and seasonal prevalence"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Given the severity of the symptoms and the importance of not missing critical diagnoses, pulmonary embolism is considered despite the lack of specific symptoms such as sudden onset dyspnea or pleuritic chest pain. The presence of extreme fatigue could be a vague symptom that might align with pulmonary embolism, but the overall clinical picture is not strongly suggestive of this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Extreme fatigue"
+        ],
+        "key_features_absent": [
+          "Sudden onset dyspnea",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and pleuritic chest pain, along with the presence of highly specific COVID-19 symptoms, makes pulmonary embolism less likely.",
+        "initial_prior": "Based on the need to consider critical diagnoses and the presence of extreme fatigue"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 2.0,
+        "reasoning": "Although acute myocardial infarction is a critical diagnosis that must be considered, the patient's symptoms do not align well with this condition. The absence of chest pain, especially crushing or squeezing in nature, and the lack of other differentiating features such as diaphoresis or radiation to the arm, jaw, or back, make this diagnosis unlikely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "Crushing/squeezing chest pressure",
+          "Radiation to left arm, jaw, or back",
+          "Diaphoresis"
+        ],
+        "differentiating_factor": "The complete absence of cardiac-specific symptoms makes acute myocardial infarction an unlikely diagnosis.",
+        "initial_prior": "Based on the necessity to rule out critical cardiac conditions"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely cause of the patient's symptoms, with a strong emphasis on COVID-19 due to the highly specific symptoms of loss of taste and smell, along with recent contact with a confirmed case. Other respiratory infections and critical diagnoses were considered to ensure a broad differential, with confidence scores assigned based on symptom match, severity, and prevalence.",
+    "dominant_system": "respiratory"
+  }
+}

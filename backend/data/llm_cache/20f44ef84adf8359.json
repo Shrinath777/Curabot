@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "20f44ef84adf8359",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Gout",
+        "confidence": 60.0,
+        "reasoning": "Acute monoarthritis of the big toe, severe pain on pressure, and a history of similar attacks are classic symptoms of gout. Recent dietary changes, including increased consumption of red meat and beer, may have triggered this attack.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Acute monoarthritis of the big toe",
+          "Pain on pressure",
+          "History of similar attack"
+        ],
+        "key_features_absent": [
+          "Presence of tophi"
+        ],
+        "differentiating_factor": "The sudden onset of severe monoarthritis, particularly in the big toe, is highly suggestive of gout. The absence of systemic symptoms such as fever or rash helps to differentiate it from other conditions like septic arthritis or rheumatoid arthritis.",
+        "initial_prior": "Based on prevalence and symptom match, gout is a likely diagnosis given the patient's presentation."
+      },
+      {
+        "name": "Septic Arthritis",
+        "confidence": 20.0,
+        "reasoning": "While less likely than gout, septic arthritis is a critical diagnosis that must be considered, especially given the severity of the patient's symptoms. The presence of severe pain, swelling, and redness in the joint could indicate a bacterial infection.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Severe pain",
+          "Swelling",
+          "Redness"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Systemic symptoms"
+        ],
+        "differentiating_factor": "The absence of systemic symptoms such as fever and the lack of a clear source of infection make septic arthritis less likely but still a critical consideration due to its potential severity.",
+        "initial_prior": "Given the severity of the symptoms and the potential for a bacterial infection, septic arthritis is considered as a must-not-miss diagnosis."
+      },
+      {
+        "name": "Pseudogout",
+        "confidence": 10.0,
+        "reasoning": "Pseudogout, or calcium pyrophosphate deposition disease (CPPD), can cause acute monoarthritis similar to gout but is less common. The patient's symptoms could be consistent with pseudogout, especially if there are underlying joint conditions.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Acute monoarthritis"
+        ],
+        "key_features_absent": [
+          "Presence of chondrocalcinosis"
+        ],
+        "differentiating_factor": "The absence of specific diagnostic features such as chondrocalcinosis and the lower prevalence of pseudogout compared to gout make it a less likely diagnosis.",
+        "initial_prior": "Pseudogout is considered less likely due to its lower prevalence and the lack of specific diagnostic features in the patient's presentation."
+      },
+      {
+        "name": "Osteoarthritis",
+        "confidence": 5.0,
+        "reasoning": "Osteoarthritis could be a consideration for chronic joint pain but is less likely given the acute onset and severity of the patient's symptoms.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Joint pain"
+        ],
+        "key_features_absent": [
+          "Chronicity of symptoms"
+        ],
+        "differentiating_factor": "The acute onset and severity of the symptoms, along with the patient's history of similar attacks, differentiate this presentation from typical osteoarthritis.",
+        "initial_prior": "Osteoarthritis is considered less likely due to the acute nature of the symptoms and the presence of severe pain and swelling."
+      },
+      {
+        "name": "Rheumatoid Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Rheumatoid arthritis is a systemic disease that typically presents with polyarthritis (multiple joint involvement) and systemic symptoms such as fever and fatigue. The patient's presentation of acute monoarthritis without systemic symptoms makes rheumatoid arthritis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Joint pain"
+        ],
+        "key_features_absent": [
+          "Polyarthritis",
+          "Systemic symptoms"
+        ],
+        "differentiating_factor": "The absence of polyarthritis and systemic symptoms, along with the acute onset of severe monoarthritis, differentiates this presentation from rheumatoid arthritis.",
+        "initial_prior": "Rheumatoid arthritis is considered less likely due to the lack of polyarthritis and systemic symptoms in the patient's presentation."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by gout due to the classic presentation of acute monoarthritis of the big toe, severe pain on pressure, and a history of similar attacks. Septic arthritis is considered as a must-not-miss diagnosis due to its potential severity, despite being less likely. Pseudogout, osteoarthritis, and rheumatoid arthritis are less likely due to the specific characteristics of the patient's presentation.",
+    "dominant_system": "musculoskeletal"
+  }
+}

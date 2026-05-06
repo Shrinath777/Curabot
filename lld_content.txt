@@ -1,0 +1,169 @@
+CuraBot — Low-Level Design Document (Version 1)
+Project: CuraBot — Agentic AI Differential Diagnosis Tutor
+Version: 1.0
+Date: April 2026
+Disclaimer: FOR MEDICAL EDUCATION ONLY — Not for clinical use
+
+1. System Overview
+
+1.1 Problem Statement
+Medical students and early-career healthcare learners often lack access to structured tools that can help them practise clinical reasoning skills outside the classroom. Traditional medical education relies heavily on textbook cases and limited clinical rotations, which do not provide the kind of iterative, feedback-driven diagnostic thinking that real clinical practice demands. Furthermore, patients frequently struggle to understand their symptoms before consulting a doctor, which can lead to delayed care for serious conditions.
+CuraBot addresses this gap by providing an AI-powered conversational system that simulates the process of differential diagnosis. It takes a patient's symptom description in everyday language, analyses it through a structured multi-agent pipeline, and produces a ranked list of possible conditions — all while explaining its reasoning at every step. The system is designed strictly for medical education purposes and does not replace real clinical consultation.
+
+1.2 What the System Does
+CuraBot is an agentic AI chatbot that conducts a step-by-step diagnostic conversation with a user. When a user describes their symptoms, the system processes the message through a pipeline of six specialised AI agents. Each agent has a distinct role — from normalising raw symptom text into standardised medical concepts, to generating possible diagnoses, evaluating evidence, revising confidence scores, determining the best follow-up question, and finally checking for cognitive biases in the reasoning process.
+
+The system supports both new and returning patients. For returning patients, CuraBot retrieves their past diagnosis history, uploaded medical reports (PDFs), and known conditions from a cloud database (Supabase). It uses Retrieval-Augmented Generation (RAG) to search through previously uploaded lab reports and PDFs to find relevant findings that can inform the current diagnosis. The system also implements 10 clinical Standard Operating Procedures (SOPs) — such as triage classification, chest pain protocols, stroke detection, and medication safety checks — all implemented as pure Python rule-based logic without any extra LLM calls.
+
+At the end of a diagnostic conversation, CuraBot presents a final diagnosis with confidence scores, recommended specialist referrals, suggested lab tests, and downloadable diagnostic reports in both JSON and HTML format.
+
+1.3 Users and Use Cases
+Primary Users:
+•	Medical Students: Students who want to practise differential diagnosis by entering symptoms and observing how the AI reasons through possible conditions, evaluates evidence, and updates its hypotheses over multiple rounds of questioning.
+•	General Users (Patients): Individuals who want a preliminary understanding of what their symptoms might indicate before visiting a doctor. The system helps them understand the urgency of their condition and which specialist to consult.
+
+Key Use Cases:
+1	Symptom Analysis: User describes symptoms in plain language; the system identifies and normalises them into medical terms.
+2	Differential Diagnosis: System generates a ranked list of 3–5 possible conditions with confidence scores and reasoning.
+3	Multi-Turn Conversation: System asks targeted follow-up questions to gather more evidence and refine its diagnosis.
+4	Vital Signs Submission: User provides blood pressure, heart rate, temperature, etc., which the system evaluates.
+5	Medical Report Upload: User uploads PDF lab reports; system extracts text, indexes it for RAG, and uses findings in diagnosis.
+6	Returning Patient Context: System recognises returning users and factors in past diagnoses, recurring conditions, and severity trends.
+7	Emergency Triage: System detects red flags (e.g., stroke symptoms, crushing chest pain) and immediately escalates with emergency alerts.
+8	Diagnostic Report Download: After diagnosis conclusion, user can download a detailed report in JSON or printable HTML format.
+9	Bias Detection: System identifies cognitive biases like anchoring or premature closure in its own reasoning process.
+10	Profile Management: User can create a profile with medical history, conditions, medications, and allergies.
+
+2. Architecture Decomposition
+
+2.1 Component Overview
+CuraBot follows a standard three-tier architecture with an additional AI layer.
+The system consists of five major layers:
+1. Frontend — The user interface built with React and TypeScript.
+2. Backend — The API server and agent orchestration built with FastAPI.
+3. Database — Persistent storage using Supabase (cloud) or SQLite (local fallback).
+4. Vector Database — ChromaDB for storing and searching embeddings of disease data and patient medical records (used for RAG).
+5. LLM Layer — External large language models (Gemini, Groq, OpenRouter) used by agents for natural language understanding and generation.
+
+2.2 Frontend Layer
+The frontend is a single-page application built using React with TypeScript, bundled by Vite, and styled with Tailwind CSS. It communicates with the backend exclusively through REST API calls.
+The Chat Page is the core of the user experience. It renders the diagnostic conversation, displays real-time agent thoughts (what each agent is processing), shows hypothesis cards with confidence scores, presents evidence evaluation results, visualises the confidence trajectory over iterations, and provides options to submit vital signs and upload medical reports.
+State Management: The frontend uses Zustand (`useAuthStore`) for managing authentication state, user sessions, and tokens. API calls are made using standard `fetch` or `axios` to the backend running on `http://localhost:8000`.
+
+2.3 Backend Layer
+The backend is a FastAPI application written in Python, serving as both the API gateway and the orchestration engine for the multi-agent pipeline. It runs on `http://localhost:8000` using Uvicorn.
+The `/api/chat` endpoint is the most important. When it receives a message, it initialises or restores the session, fetches the user's context (profile, past diagnoses, medical reports), performs RAG search on uploaded PDFs, runs the 6-agent pipeline through the orchestrator, saves messages and diagnosis results, and returns a structured response to the frontend.
+
+2.4 Database Layer
+CuraBot uses Supabase (a PostgreSQL-based Backend-as-a-Service) for cloud storage and SQLite as a local fallback when Supabase is not configured.
+The Supabase Service class automatically detects whether Supabase credentials are configured. If they are, it uses the Supabase client library to interact with the cloud database. If not, it creates a local SQLite database file (`curabot_local.db`) with an identical schema and uses standard SQL queries. This dual-mode design ensures the system works in both connected and offline environments.
+For cloud deployments, physical PDF files are uploaded to a Supabase Storage bucket named `medical_reports`, and public URLs are stored in the database alongside the extracted text.
+
+2.5 Vector Database (ChromaDB)
+CuraBot uses ChromaDB as its vector database for storing and searching embeddings. ChromaDB is an open-source embedding database that runs locally and persists data to disk in the `chroma_db/` directory.
+Embedding Function: When a Gemini API key is available, ChromaDB uses `GoogleGenerativeAiEmbeddingFunction` to generate real semantic embeddings. If no API key is configured, a dummy embedding function (returning zero vectors) is used as a fallback.
+The `patient_records` collection is the most important for RAG. When a user uploads a PDF medical report, the system extracts the text, splits it into chunks of approximately 600 characters, and indexes each chunk into ChromaDB with metadata linking it to the user ID, report ID, and source filename. During diagnosis, the system queries this collection using the patient's symptom message to retrieve the most relevant lab findings and medical history.
+
+2.6 LLM Integration Layer
+The `LLMClient` class manages all interactions with large language models. It implements a multi-provider fallback chain to ensure the system remains functional even when one provider's rate limits are exhausted.
+Provider Priority Chain:
+1. Gemini (Primary) → gemini-2.0-flash
+2. Groq (Secondary) → llama-3.3-70b-versatile
+3. OpenRouter (Tertiary) → llama-3.3-70b-instruct:free / llama-3.2-3b-instruct:free / gemma-3-27b-it:free
+
+When the primary provider (Gemini) hits a rate limit or quota error, the client automatically marks it as exhausted and falls through to Groq. If Groq also fails, it tries each OpenRouter model in sequence. Exhausted models are automatically reset after a 90-second cooldown period.
+All LLM calls are serialised through a global async lock (`_api_lock`) with a 0.5-second pacing delay to avoid rate limit collisions. Responses are parsed as JSON when `expect_json=True`, with multiple fallback strategies for extracting JSON from markdown-wrapped or malformed responses. If all LLM providers fail, a local fallback response is returned that triggers rule-based processing in the agents.
+
+2.7 Component Interaction Flow
+The following describes the end-to-end flow when a user sends a message:
+1. POST /api/chat {message, user_id, session_id}
+2. Fetch user profile + past diagnoses + reports
+3. RAG search on patient_records (query = message)
+4. Return top 3 relevant PDF chunks
+5. Run pipeline(message + RAG context, session_state, user_context)
+6. Agent 1 → Normalizer prompt → Normalized symptoms JSON
+7. Run SOPs (Red Flags, Triage, Chest Pain, Stroke, Vitals, Labs)
+8. Agent 2 → Hypothesis Generator prompt → Ranked hypotheses JSON
+9. Agent 3 → Evidence Evaluator (rule-based fallback)
+10. Agent 4 → Hypothesis Reviser (Bayesian fallback)
+11. Agent 5 → Diagnostic Strategist prompt → Strategy decision JSON
+12. Agent 6 → Self-Critique (rule-based fallback)
+13. SOP-015 Confidence Calibration
+14. Save messages + diagnosis (if concluded)
+15. Return ChatResponse JSON
+
+The key insight is that not every agent makes an LLM call in every iteration. The orchestrator is optimised to use rule-based fallbacks for Agents 3 (Evidence Evaluator), 4 (Hypothesis Reviser), and 6 (Self-Critique) to save LLM API calls and reduce latency. Only Agents 1 (Symptom Normalizer), 2 (Hypothesis Generator), and 5 (Diagnostic Strategist) make actual LLM calls during a standard pipeline run.
+
+3. GenAI Capability Design
+
+3.1 How RAG Works in CuraBot
+Retrieval-Augmented Generation (RAG) in CuraBot is used to bring a patient's uploaded medical records (PDF lab reports, test results, etc.) directly into the diagnostic conversation. Instead of relying solely on what the patient types in chat, the system can automatically retrieve relevant clinical data from their uploaded documents and use it to inform the diagnosis.
+The RAG pipeline works in three stages:
+Stage 1 — Ingestion (at upload time):
+When a user uploads a PDF through the `/api/upload-record` endpoint, the system uses `pdfplumber` to extract readable text from every page of the PDF. The extracted text is then split into chunks of approximately 600 characters each. Each chunk is indexed into the `patient_records` collection in ChromaDB, along with metadata.
+Stage 2 — Retrieval (at query time):
+When a logged-in user sends a message through the chat endpoint, the backend queries ChromaDB's `patient_records` collection using the patient's message as the search query. The top 3 most relevant chunks are returned, ranked by cosine similarity.
+Stage 3 — Augmentation (during pipeline execution):
+The retrieved chunks are injected into the diagnostic pipeline in two ways. First, the chunks are formatted into a "UPLOADED MEDICAL REPORTS CONTEXT" block that is prepended to the patient's message. Second, the chunks are stored in the `user_context["extracted_medical_records"]` dictionary, which is passed to every agent in the pipeline.
+
+3.2 How Patient History and PDFs Are Used
+CuraBot distinguishes between new users and returning users and treats them differently throughout the pipeline.
+For New Users:
+The system casts a wide diagnostic net. It asks more detailed clarifying questions, does not assume any prior medical history, and proactively asks the user to upload medical records if they have any.
+For Returning Users:
+The system builds a comprehensive user context package by pulling data from the database. This context is passed to the pipeline and used by specific agents. The Patient History Analyzer uses the LLM to compare the current symptoms against past conditions and determine whether this is a recurrence.
+
+3.3 Prompt Engineering and Flow
+CuraBot uses structured prompt engineering to ensure consistent, parseable, and clinically-focused outputs from the LLM. Each agent has two types of prompts:
+1. System Prompt (Agent Identity):
+A static instruction block that defines the agent's role, clinical rules, SOPs it must follow, and behavioural constraints.
+2. Task Prompt (Dynamic Input):
+A template-based prompt that is filled in with the current diagnostic state — patient message, normalized symptoms, hypotheses, evidence, conversation history, user context, and iteration count.
+
+4. Agentic Design
+
+4.1 Agent Pipeline Overview
+CuraBot's diagnostic engine is built as a sequential multi-agent pipeline. Each agent receives the output of the previous agent, performs a specific analytical function, and passes its result forward. The pipeline runs once per user message and typically completes in 3–10 iterations of questioning before reaching a diagnosis.
+
+4.2 Agent 1 — Symptom Normalizer
+Purpose: Converts the patient's free-text message into standardised medical concepts that the rest of the pipeline can work with.
+Fallback Mechanism: If the LLM call fails, the agent falls back to a comprehensive keyword-matching system.
+
+4.3 Agent 2 — Hypothesis Generator
+Purpose: Generates a ranked list of 3–5 possible diagnoses (differential diagnosis) based on the normalised symptoms.
+Fallback Mechanism: If the LLM fails, the agent uses a sophisticated rule-based scoring system that calculates confidence from match ratio, discriminating symptom bonus, severity weights, prevalence weights, and differentiating feature bonus.
+
+4.4 Agent 3 — Evidence Evaluator
+Purpose: Maps every piece of available evidence (symptoms, vitals, medical history, RAG-retrieved lab values) to its supporting or contradicting relationship with each hypothesis.
+
+4.5 Agent 4 — Hypothesis Reviser
+Purpose: Updates the confidence scores of each hypothesis based on the evidence evaluation, using Bayesian-style likelihood ratio reasoning.
+
+4.6 Agent 5 — Diagnostic Strategist
+Purpose: Decides the best next action — either ask a follow-up question to gather more evidence, request vital signs, or conclude the diagnosis.
+
+4.7 Agent 6 — Self-Critique & Bias Check
+Purpose: Challenges the diagnostic reasoning by detecting cognitive biases, checking SOP compliance, and forcing consideration of alternative hypotheses.
+
+4.8 Supporting Module — Patient History Analyzer
+Purpose: Analyses a returning patient's past medical data to establish a clinical baseline before the 6-agent pipeline runs.
+
+4.9 Clinical SOPs (Standard Operating Procedures)
+CuraBot implements 10 clinical SOPs as pure Python rule-based logic. These SOPs run between Agent 1 (Symptom Normalizer) and Agent 2 (Hypothesis Generator), and again after Agent 5 (Diagnostic Strategist) for conclusion-phase checks. They add zero LLM latency because they are entirely rule-based.
+
+4.10 How the Agents Work Together
+The six agents form a collaborative diagnostic reasoning chain where each agent builds upon the work of the previous one.
+Step 1 — Understanding the Patient (Agent 1)
+Step 2 — Safety Checks (SOPs)
+Step 3 — Generating Possibilities (Agent 2)
+Step 4 — Weighing the Evidence (Agent 3)
+Step 5 — Updating Beliefs (Agent 4)
+Step 6 — Deciding the Next Move (Agent 5) and Quality Check (Agent 6)
+Step 7 — Building the Response
+
+4.11 Medical Evidence Citation Engine
+Purpose: Provides verifiable, traceable medical references for every diagnostic claim, giving users proof that the system's reasoning is grounded in real medical science.
+What It Does:
+The Medical Evidence Citation Engine (`agents/medical_citations.py`) is a pure-Python module that generates structured citation packages for every concluded diagnosis. It maps each disease in the 275-entry knowledge base to ICD-10-CM codes, Clinical authority references, and PubMed verification links.
+
+End of LLD Version 1

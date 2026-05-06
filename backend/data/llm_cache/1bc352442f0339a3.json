@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "1bc352442f0339a3",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Migraine",
+        "confidence": 60.0,
+        "reasoning": "The patient's symptoms of unilateral throbbing headache, photophobia, phonophobia, nausea, and visual disturbances (zigzag lines) are classic differentiating features of migraine. The absence of fever, rash, or neck stiffness makes other conditions like meningitis less likely.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "unilateral throbbing headache",
+          "photophobia",
+          "phonophobia",
+          "nausea",
+          "visual disturbances"
+        ],
+        "key_features_absent": [
+          "fever",
+          "rash",
+          "neck stiffness"
+        ],
+        "differentiating_factor": "The presence of an aura (visual disturbances) and the specific characteristics of the headache (unilateral, throbbing) differentiate migraine from other headache disorders.",
+        "initial_prior": "Based on the high prevalence of migraine and the strong match between the patient's symptoms and migraine's differentiating features."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not exhibit all the classic signs of bacterial meningitis (such as fever, neck stiffness, and rash), the presence of photophobia and severe headache warrants consideration of this critical condition. The absence of these key features, however, makes it less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "photophobia",
+          "severe headache"
+        ],
+        "key_features_absent": [
+          "fever",
+          "neck stiffness",
+          "rash"
+        ],
+        "differentiating_factor": "The presence of fever, rash, and neck stiffness would significantly increase the likelihood of bacterial meningitis. The current absence of these features, combined with the patient's symptoms more closely aligning with migraine, makes meningitis less likely but still a consideration due to its critical nature.",
+        "initial_prior": "Based on the need to consider critical conditions, especially when symptoms like photophobia and severe headache are present, even if other key features are absent."
+      },
+      {
+        "name": "Idiopathic Intracranial Hypertension",
+        "confidence": 10.0,
+        "reasoning": "This condition can present with headache and visual disturbances, but the headache is typically mild to moderate and accompanied by specific visual symptoms not fully described by the patient. The presence of nausea and photophobia could be seen in this condition but is more suggestive of migraine.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "headache",
+          "visual disturbances"
+        ],
+        "key_features_absent": [
+          "specific visual symptoms like papilledema",
+          "obesity"
+        ],
+        "differentiating_factor": "The severity and characteristics of the headache, along with the presence of nausea and the specific nature of the visual disturbances, make migraine a more likely diagnosis. However, idiopathic intracranial hypertension remains a consideration due to some overlapping symptoms.",
+        "initial_prior": "Based on the moderate prevalence and the partial match between the patient's symptoms and the condition's differentiating features."
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 5.0,
+        "reasoning": "Similar to bacterial meningitis, the patient lacks the classic triad of fever, headache, and stiff neck, making this diagnosis less likely. The presence of photophobia could suggest meningitis, but the overall symptom profile is more consistent with migraine.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "photophobia"
+        ],
+        "key_features_absent": [
+          "fever",
+          "neck stiffness"
+        ],
+        "differentiating_factor": "The absence of key features like fever and neck stiffness, combined with the patient's symptoms aligning more closely with migraine, makes meningitis a less likely diagnosis.",
+        "initial_prior": "Based on the need to consider conditions that could present with similar symptoms, despite the low likelihood due to absent key features."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "While hypertension can cause headaches, they are typically occipital and morning-related, not unilateral and throbbing as described by the patient. The absence of other signs of end-organ damage or elevated blood pressure readings makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [],
+        "key_features_absent": [
+          "elevated blood pressure readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The characteristics of the headache and the lack of other signs of hypertension make this a less likely diagnosis compared to migraine.",
+        "initial_prior": "Based on the low likelihood due to the mismatch between the patient's symptoms and the typical presentation of hypertension."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely cause of the patient's recurring headaches with associated symptoms. Migraine is the most likely diagnosis due to the strong match between the patient's symptoms and migraine's differentiating features. Bacterial meningitis is considered due to its critical nature, despite the patient not exhibiting all classic signs. Other conditions like idiopathic intracranial hypertension, meningitis, and hypertension are less likely due to the absence of key features or a less strong match between the patient's symptoms and the conditions' differentiating features.",
+    "dominant_system": "neurological"
+  }
+}

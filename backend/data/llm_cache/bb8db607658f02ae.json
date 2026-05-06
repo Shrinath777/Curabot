@@ -1,0 +1,77 @@
+{
+  "prompt_hash": "bb8db607658f02ae",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "COVID-19",
+        "confidence": 60.0,
+        "reasoning": "Highly specific symptoms of loss of taste and smell, dry cough, fever, and contact with a confirmed case make COVID-19 a strong candidate. The presence of extreme fatigue and body aches also aligns with COVID-19 symptoms.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of taste",
+          "Loss of smell",
+          "Dry cough",
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Rapid progression of dyspnea"
+        ],
+        "differentiating_factor": "Loss of taste and smell are highly specific for COVID-19, distinguishing it from other respiratory infections.",
+        "initial_prior": "Based on high prevalence of COVID-19 and specific symptom matches"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 25.0,
+        "reasoning": "While the patient presents with a dry cough and fever, which could suggest pneumonia, the absence of pleuritic chest pain, productive cough, and abnormal lung sounds makes this diagnosis less likely. However, it remains a consideration due to the severity of the symptoms and the potential for pneumonia to present atypically.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Dry cough"
+        ],
+        "key_features_absent": [
+          "Pleuritic chest pain",
+          "Productive cough"
+        ],
+        "differentiating_factor": "The absence of pleuritic chest pain and productive cough distinguishes this from a more typical pneumonia presentation.",
+        "initial_prior": "Based on moderate prevalence and partial symptom match"
+      },
+      {
+        "name": "Influenza",
+        "confidence": 10.0,
+        "reasoning": "Influenza could be considered due to the presence of fever, dry cough, and body aches. However, the loss of taste and smell, which are highly specific for COVID-19, makes influenza a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fever",
+          "Dry cough",
+          "Body aches"
+        ],
+        "key_features_absent": [
+          "Loss of taste",
+          "Loss of smell"
+        ],
+        "differentiating_factor": "The absence of loss of taste and smell, which are more characteristic of COVID-19, makes influenza less likely.",
+        "initial_prior": "Based on low to moderate prevalence and partial symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "Although there are no clear indicators of pulmonary embolism such as sudden onset dyspnea or pleuritic chest pain, it is included as a must-not-miss diagnosis due to its critical severity. The patient's symptoms do not strongly suggest PE, but it cannot be entirely ruled out without further evaluation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "Sudden onset dyspnea",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of key symptoms for PE, but its inclusion due to the necessity of considering critical conditions.",
+        "initial_prior": "Based on low prevalence but high severity"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by COVID-19 due to highly specific symptoms and contact with a confirmed case. Community Acquired Pneumonia and Influenza are considered due to overlapping symptoms, but are less likely. Pulmonary Embolism is included as a must-not-miss diagnosis despite low likelihood due to its critical severity.",
+    "dominant_system": "respiratory"
+  }
+}

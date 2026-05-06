@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "ad84b7bb7813773b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Nephrolithiasis (Kidney Stones)",
+        "confidence": 40.0,
+        "reasoning": "Severe flank pain radiating to the groin, hematuria, and nausea are classic symptoms of kidney stones. The pain's severity and radiation pattern are highly suggestive of this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "flank pain",
+          "hematuria",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "fever",
+          "urinary tract infection symptoms"
+        ],
+        "differentiating_factor": "The specific radiation of pain to the groin and the presence of hematuria differentiate this from other abdominal pain causes.",
+        "initial_prior": "Based on symptom match and prevalence of kidney stones in the population."
+      },
+      {
+        "name": "Pyelonephritis (Kidney Infection)",
+        "confidence": 30.0,
+        "reasoning": "While the primary symptoms could suggest pyelonephritis, the absence of fever and more typical urinary tract infection symptoms (like dysuria) makes it less likely than nephrolithiasis. However, the presence of flank pain and hematuria still warrants consideration.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "flank pain",
+          "hematuria"
+        ],
+        "key_features_absent": [
+          "fever",
+          "dysuria"
+        ],
+        "differentiating_factor": "The lack of systemic symptoms like fever and the presence of severe pain suggest kidney stones more than an infection.",
+        "initial_prior": "Considered due to the possibility of infection, but less likely given the symptom profile."
+      },
+      {
+        "name": "Appendicitis",
+        "confidence": 15.0,
+        "reasoning": "Although appendicitis typically presents with abdominal pain, nausea, and sometimes vomiting, the pain usually starts around the navel and then moves to the lower right abdomen. The patient's flank pain radiating to the groin is less typical for appendicitis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "nausea"
+        ],
+        "key_features_absent": [
+          "abdominal tenderness",
+          "rebound tenderness"
+        ],
+        "differentiating_factor": "The location and radiation of pain, along with the absence of classic appendicitis symptoms, make this diagnosis less likely.",
+        "initial_prior": "Considered due to abdominal pain and nausea, but the specific pain pattern and lack of typical appendicitis symptoms reduce its likelihood."
+      },
+      {
+        "name": "Sepsis (due to a urinary tract infection)",
+        "confidence": 10.0,
+        "reasoning": "Given the presence of hematuria and flank pain, there's a possibility of a severe urinary tract infection leading to sepsis, especially if the patient is immunocompromised or has other risk factors. However, the absence of fever and more systemic symptoms makes this less likely at the moment.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hematuria"
+        ],
+        "key_features_absent": [
+          "fever",
+          "hypotension",
+          "altered mental status"
+        ],
+        "differentiating_factor": "The critical nature of sepsis necessitates its consideration, despite lower likelihood, due to the potential for rapid deterioration.",
+        "initial_prior": "Included as a must-not-miss diagnosis due to its critical severity and potential for rapid progression."
+      },
+      {
+        "name": "Other abdominal pathologies (e.g., diverticulitis, ovarian torsion)",
+        "confidence": 5.0,
+        "reasoning": "Other abdominal conditions could present with similar symptoms but are less likely given the specific pattern of flank pain and hematuria. These would be considered if initial diagnoses are ruled out or if additional symptoms suggestive of these conditions are identified.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "specific symptoms for each condition"
+        ],
+        "differentiating_factor": "The broad category of other abdominal pathologies is considered to ensure a wide differential, but the specific symptoms presented make these less likely.",
+        "initial_prior": "Low probability due to the non-specific nature of the symptoms for these conditions."
+      }
+    ],
+    "reasoning_summary": "The patient's severe flank pain radiating to the groin, along with hematuria and nausea, suggests a genitourinary issue, with kidney stones being the most likely diagnosis. Pyelonephritis and other conditions are considered but are less likely based on the symptom profile. Sepsis is included as a must-not-miss diagnosis due to its critical nature.",
+    "dominant_system": "genitourinary"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "prompt_hash": "2cdddbb533265351",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Appendicitis",
+        "confidence": 40.0,
+        "reasoning": "The patient presents with sharp, constant abdominal pain that started around the belly button and moved to the lower right side, accompanied by nausea, loss of appetite, and a low-grade fever. These symptoms align with the classic presentation of acute appendicitis, particularly the migration of pain from the periumbilical area to the right lower quadrant.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "periumbilical pain migrating to right lower quadrant",
+          "low-grade fever",
+          "anorexia"
+        ],
+        "key_features_absent": [
+          "rebound tenderness",
+          "guarding in RLQ"
+        ],
+        "differentiating_factor": "The migration of pain from the periumbilical area to the right lower quadrant is a hallmark of acute appendicitis, distinguishing it from other causes of abdominal pain.",
+        "initial_prior": "Based on the prevalence of acute appendicitis and the specific symptom match, including the migration of pain and the presence of nausea and loss of appetite."
+      },
+      {
+        "name": "Acute Gastroenteritis",
+        "confidence": 30.0,
+        "reasoning": "While the primary symptoms could suggest gastroenteritis, the absence of watery diarrhea and the presence of sharp, constant abdominal pain make this diagnosis less likely. However, the nausea, loss of appetite, and low-grade fever are consistent with gastroenteritis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "nausea",
+          "loss of appetite",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "watery diarrhea"
+        ],
+        "differentiating_factor": "The absence of watery diarrhea and the presence of sharp, constant abdominal pain differentiate this case from typical gastroenteritis.",
+        "initial_prior": "Based on the prevalence of gastroenteritis and the partial symptom match."
+      },
+      {
+        "name": "Acute Pancreatitis",
+        "confidence": 20.0,
+        "reasoning": "The patient's abdominal pain and nausea could be consistent with acute pancreatitis, but the pain's description as sharp and constant, starting around the belly button and moving to the lower right side, is not typical for pancreatitis. The absence of severe epigastric pain radiating to the back and the lack of mention of heavy alcohol use or gallstones as triggers also make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal pain",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "severe epigastric pain radiating to the back",
+          "history of heavy alcohol use or gallstones"
+        ],
+        "differentiating_factor": "The atypical pain description and the absence of specific risk factors for pancreatitis make this diagnosis less likely.",
+        "initial_prior": "Based on the partial symptom match but considering the atypical presentation for pancreatitis."
+      },
+      {
+        "name": "Gastrointestinal Perforation",
+        "confidence": 10.0,
+        "reasoning": "This is a critical condition that must be considered due to the severity of the symptoms. However, the absence of severe abdominal tenderness and guarding, and the lack of a clear history that would suggest a perforation (such as a history of peptic ulcer disease), make this diagnosis less likely at this point.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe abdominal pain"
+        ],
+        "key_features_absent": [
+          "severe abdominal tenderness",
+          "guarding"
+        ],
+        "differentiating_factor": "The severity of the condition and the potential for rapid deterioration necessitate its inclusion in the differential, despite the lower likelihood based on the information provided.",
+        "initial_prior": "Based on the need to consider critical conditions, despite the lower likelihood based on the symptom presentation."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by acute appendicitis due to the classic migration of pain and associated symptoms. Acute gastroenteritis and acute pancreatitis are considered but are less likely due to atypical presentations. Gastrointestinal perforation is included due to its critical nature, despite being less likely based on the provided symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

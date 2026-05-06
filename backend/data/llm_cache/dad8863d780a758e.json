@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "dad8863d780a758e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Typhoid Fever",
+        "confidence": 40.0,
+        "reasoning": "The patient's symptoms of gradually increasing fever, abdominal pain, constipation, and coated tongue are consistent with typhoid fever, especially the step-ladder fever pattern and relative bradycardia despite fever, which are key differentiators.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "gradually increasing fever",
+          "abdominal pain",
+          "constipation",
+          "coated tongue"
+        ],
+        "key_features_absent": [
+          "rose spots on abdomen",
+          "relative bradycardia"
+        ],
+        "differentiating_factor": "The presence of a coated tongue and constipation, which are less common in other gastrointestinal infections, makes typhoid fever a strong consideration.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of typhoid fever in areas with poor sanitation"
+      },
+      {
+        "name": "Malaria",
+        "confidence": 25.0,
+        "reasoning": "The patient's fever and abdominal pain could be consistent with malaria, especially if the patient has recently traveled to a malaria-endemic area. However, the absence of cyclical high fevers with rigors and splenomegaly makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "cyclical high fevers with rigors",
+          "splenomegaly"
+        ],
+        "differentiating_factor": "The presence of cyclical high fevers with rigors would strengthen the diagnosis of malaria, but their absence makes typhoid fever a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of malaria in endemic areas"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 20.0,
+        "reasoning": "The patient's fever and abdominal pain could be consistent with dengue fever, but the absence of retro-orbital pain, severe bone/joint pain, and petechial rash makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain",
+          "petechial rash"
+        ],
+        "differentiating_factor": "The presence of retro-orbital pain and severe bone/joint pain would strengthen the diagnosis of dengue fever, but their absence makes typhoid fever a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of dengue fever in endemic areas"
+      },
+      {
+        "name": "Cholera",
+        "confidence": 10.0,
+        "reasoning": "The patient's abdominal pain and fever could be consistent with cholera, but the absence of rice-water stool and massive volume watery diarrhea makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "abdominal pain",
+          "fever"
+        ],
+        "key_features_absent": [
+          "rice-water stool",
+          "massive volume watery diarrhea"
+        ],
+        "differentiating_factor": "The presence of rice-water stool and massive volume watery diarrhea would strengthen the diagnosis of cholera, but their absence makes typhoid fever a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of cholera in areas with poor sanitation"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "The patient's abdominal pain could be consistent with gastroesophageal reflux disease, but the presence of fever and coated tongue makes it less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of burning sensation and relief with antacids would strengthen the diagnosis of gastroesophageal reflux disease, but their absence makes typhoid fever a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of gastroesophageal reflux disease"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of gradually increasing fever, abdominal pain, constipation, and coated tongue are consistent with typhoid fever, making it the most likely diagnosis. Malaria and dengue fever are also considered due to the patient's fever and abdominal pain, but the absence of key features makes them less likely. Cholera and gastroesophageal reflux disease are considered but are less likely due to the absence of key features.",
+    "dominant_system": "gastrointestinal"
+  }
+}

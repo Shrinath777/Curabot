@@ -1,0 +1,63 @@
+{
+  "prompt_hash": "e18cf39703be44cf",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Palpitations",
+        "raw_text": "my heart races",
+        "severity": "severe",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Dyspnea",
+        "raw_text": "I feel short of breath",
+        "severity": "severe",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Chest Tightness",
+        "raw_text": "my chest feels tight",
+        "severity": "severe",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Diaphoresis",
+        "raw_text": "I start sweating",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Anxiety",
+        "raw_text": "I worry constantly about everything",
+        "body_system": "neurological"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "I feel like I'm going to die",
+        "reason": "The phrase is dramatic and may indicate severe anxiety or fear but lacks specificity about the physical symptoms",
+        "clarification_needed": "Can you describe what you mean by 'I feel like I'm going to die'?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "I feel like I'm going to die"
+    ],
+    "summary": "Patient experiences sudden episodes of palpitations, dyspnea, chest tightness, and diaphoresis lasting 15 minutes, accompanied by constant anxiety"
+  }
+}

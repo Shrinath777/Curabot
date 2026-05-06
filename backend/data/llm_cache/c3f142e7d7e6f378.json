@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "c3f142e7d7e6f378",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Cholera",
+        "confidence": 60.0,
+        "reasoning": "The patient presents with massive watery diarrhea that looks like rice water, which is pathognomonic for cholera. The rapid onset of severe dehydration and the absence of fever also support this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "rice-water stool appearance",
+          "massive volume watery diarrhea"
+        ],
+        "key_features_absent": [
+          "fever"
+        ],
+        "differentiating_factor": "The presence of rice-water stool and the massive volume of diarrhea differentiate cholera from other gastrointestinal infections.",
+        "initial_prior": "Based on the specific symptom match and the patient's exposure to potentially contaminated water."
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 20.0,
+        "reasoning": "While the patient does not exhibit the classic retro-orbital pain or severe bone/joint pain of dengue fever, the presence of severe diarrhea and vomiting could be indicative of a systemic infection like dengue. However, the absence of specific dengue symptoms and the lack of a clear exposure history make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe diarrhea",
+          "vomiting"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain"
+        ],
+        "differentiating_factor": "The absence of specific dengue symptoms and the presence of massive watery diarrhea make cholera a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and potential exposure to mosquito-borne illnesses."
+      },
+      {
+        "name": "Typhoid Fever",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms could be consistent with typhoid fever, particularly the severe diarrhea and vomiting. However, the absence of a step-ladder fever pattern, relative bradycardia, and rose spots on the abdomen make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe diarrhea",
+          "vomiting"
+        ],
+        "key_features_absent": [
+          "step-ladder fever pattern",
+          "relative bradycardia",
+          "rose spots on abdomen"
+        ],
+        "differentiating_factor": "The absence of specific typhoid symptoms and the presence of massive watery diarrhea make cholera a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms and potential exposure to contaminated food or water."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "While the patient exhibits gastrointestinal symptoms, the presence of severe diarrhea and vomiting is not typical of gastroesophageal reflux disease. The absence of burning sensation, sour/bitter taste, and relief with antacids also make this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "gastrointestinal symptoms"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "sour/bitter taste",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of severe diarrhea and vomiting, rather than typical GERD symptoms, makes this diagnosis unlikely.",
+        "initial_prior": "Based on the patient's symptoms, but low likelihood due to the absence of specific GERD symptoms."
+      },
+      {
+        "name": "Malaria",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms could be consistent with malaria, particularly the severe diarrhea and vomiting. However, the absence of cyclical high fevers, travel to or residence in a malaria-endemic area, and splenomegaly on examination make this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe diarrhea",
+          "vomiting"
+        ],
+        "key_features_absent": [
+          "cyclical high fevers",
+          "travel to malaria-endemic area",
+          "spleenomegaly"
+        ],
+        "differentiating_factor": "The absence of specific malaria symptoms and the presence of massive watery diarrhea make cholera a more likely diagnosis.",
+        "initial_prior": "Based on the patient's symptoms, but low likelihood due to the absence of specific malaria symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms, particularly the massive watery diarrhea and vomiting, suggest a critical gastrointestinal infection. Cholera is the most likely diagnosis due to the presence of pathognomonic symptoms and the patient's potential exposure to contaminated water. Other diagnoses, such as dengue fever, typhoid fever, and malaria, are considered less likely due to the absence of specific symptoms and exposure histories.",
+    "dominant_system": "gastrointestinal"
+  }
+}

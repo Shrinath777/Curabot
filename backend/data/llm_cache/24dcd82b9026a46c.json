@@ -1,0 +1,80 @@
+{
+  "prompt_hash": "24dcd82b9026a46c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Sepsis",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with fever, tachycardia, and hypotension, which are key differentiating features of sepsis. The presence of severe fever, tachycardia, and hypotension, along with secondary symptoms like chills and confusion, strongly supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Tachycardia",
+          "Hypotension",
+          "Chills",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Identifiable source of infection"
+        ],
+        "differentiating_factor": "The combination of fever, tachycardia, and hypotension is highly suggestive of sepsis, especially in the absence of other clear causes for these symptoms.",
+        "initial_prior": "Based on the presence of key sepsis symptoms and the severity of the presentation"
+      },
+      {
+        "name": "Septicemia",
+        "confidence": 30.0,
+        "reasoning": "The patient's symptoms, including fever with hemodynamic instability (low BP, high HR), altered mental status, and cold and clammy skin, are consistent with septicemia. However, the absence of a clear identifiable source of infection makes sepsis a more likely diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Hypotension",
+          "Tachycardia",
+          "Altered mental status"
+        ],
+        "key_features_absent": [
+          "Identifiable source of infection"
+        ],
+        "differentiating_factor": "Septicemia typically requires an identifiable source of infection, which is not clearly present in this case.",
+        "initial_prior": "Based on the similarity in symptoms to sepsis but requiring an identifiable infection source"
+      },
+      {
+        "name": "Critical Septic Shock",
+        "confidence": 20.0,
+        "reasoning": "The patient's severe presentation, including fever, hypotension, and signs of organ dysfunction (altered mental status), could indicate critical septic shock. However, the absence of explicit mention of organ dysfunction makes this less likely than sepsis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Fever",
+          "Hypotension",
+          "Altered mental status"
+        ],
+        "key_features_absent": [
+          "Explicit organ dysfunction"
+        ],
+        "differentiating_factor": "Critical septic shock is distinguished by the presence of organ dysfunction, which, while suggested, is not explicitly stated.",
+        "initial_prior": "Based on the severity of symptoms and potential for organ dysfunction"
+      },
+      {
+        "name": "Severe Sepsis",
+        "confidence": 10.0,
+        "reasoning": "While the patient's symptoms could align with severe sepsis, the diagnosis of sepsis or septicemia seems more fitting given the information provided. Severe sepsis is considered due to the critical nature of the symptoms but is less likely than sepsis or septicemia due to the overlap in symptoms and the specific differentiating features present.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Fever",
+          "Tachycardia"
+        ],
+        "key_features_absent": [
+          "Organ dysfunction or failure explicitly stated"
+        ],
+        "differentiating_factor": "The presence of organ dysfunction or failure is key for severe sepsis, which, while possible, is not as clearly indicated as in sepsis or septicemia.",
+        "initial_prior": "Based on the critical nature of symptoms but less specific than sepsis or septicemia"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely causes of the patient's severe symptoms, including fever, tachycardia, hypotension, and altered mental status. Sepsis and septicemia are the top considerations due to the strong match with their differentiating features. Critical septic shock and severe sepsis are also considered due to the severity and potential for organ dysfunction but are less likely due to specific factors.",
+    "dominant_system": "cardiovascular"
+  }
+}

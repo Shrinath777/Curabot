@@ -1,0 +1,98 @@
+{
+  "prompt_hash": "88af2f7833f6579a",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hyperthyroidism",
+        "confidence": 40.0,
+        "reasoning": "Unintentional weight loss, palpitations, tremors, anxiety, and exophthalmos are classic symptoms of hyperthyroidism. The presence of these symptoms, especially weight loss despite increased appetite and palpitations at rest, strongly suggests hyperthyroidism.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "unintentional weight loss",
+          "palpitations",
+          "tremors",
+          "anxiety",
+          "exophthalmos"
+        ],
+        "key_features_absent": [
+          "thyroid storm symptoms"
+        ],
+        "differentiating_factor": "The combination of weight loss, palpitations, and exophthalmos is more specific to hyperthyroidism than other conditions.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Atrial Fibrillation",
+        "confidence": 25.0,
+        "reasoning": "Palpitations, especially with a description of a racing heart at rest, could indicate atrial fibrillation. However, the absence of specific mentions of irregularly irregular pulse or heart fluttering sensation reduces the confidence in this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "irregularly irregular pulse",
+          "heart fluttering sensation"
+        ],
+        "differentiating_factor": "Atrial fibrillation is distinguished by its irregularly irregular pulse, which is not explicitly mentioned in the patient's symptoms.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 20.0,
+        "reasoning": "Anxiety, palpitations, and tremors can be symptoms of an anxiety disorder. However, the presence of unintentional weight loss and exophthalmos, which are not typical of anxiety disorders, reduces the confidence in this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "anxiety",
+          "palpitations",
+          "tremors"
+        ],
+        "key_features_absent": [
+          "episodes of intense fear",
+          "normal cardiac workup"
+        ],
+        "differentiating_factor": "The presence of weight loss and exophthalmos suggests a more systemic condition than anxiety disorder.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Pheochromocytoma",
+        "confidence": 10.0,
+        "reasoning": "This is a critical-severity disease that could explain some of the symptoms like palpitations, tremors, and sweating. However, it is less common and typically presents with more pronounced hypertension and episodic symptoms, which are not clearly described in the patient's presentation.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "palpitations",
+          "tremors",
+          "sweating"
+        ],
+        "key_features_absent": [
+          "hypertension",
+          "episodic symptoms"
+        ],
+        "differentiating_factor": "Pheochromocytoma is a rare condition with specific episodic symptoms and significant hypertension, which are not clearly present in this case.",
+        "initial_prior": "Based on symptom match and low prevalence"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 5.0,
+        "reasoning": "Although palpitations and sweating could be symptoms of MI, the absence of chest pain, especially crushing or squeezing chest pressure, makes this diagnosis less likely. The patient's symptoms do not strongly suggest MI.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "palpitations",
+          "sweating"
+        ],
+        "key_features_absent": [
+          "crushing chest pain",
+          "radiation to arm or jaw"
+        ],
+        "differentiating_factor": "The lack of typical chest pain and the presence of other systemic symptoms reduce the likelihood of MI.",
+        "initial_prior": "Considered due to potential critical severity but low likelihood based on symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's symptoms of unintentional weight loss, palpitations, tremors, anxiety, and exophthalmos. Hyperthyroidism is the most likely diagnosis due to the combination of these symptoms. Atrial fibrillation and anxiety disorder are also considered but with lower confidence due to the absence of specific diagnostic features. Pheochromocytoma and acute myocardial infarction are less likely due to the rarity of the former and the lack of typical symptoms for the latter.",
+    "dominant_system": "endocrine"
+  }
+}

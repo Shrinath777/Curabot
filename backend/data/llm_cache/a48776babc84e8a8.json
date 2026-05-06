@@ -1,0 +1,69 @@
+{
+  "prompt_hash": "a48776babc84e8a8",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "calf swelling",
+        "raw_text": "My left calf is swollen",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "none",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "calf pain",
+        "raw_text": "It hurts when I walk or flex my foot upward",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "sharp/dull (implied by 'hurts')",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "calf redness",
+        "raw_text": "red",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "none",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "calf warmth",
+        "raw_text": "warm to the touch",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "none",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "recent long flight",
+        "raw_text": "I was on a 12-hour flight last week",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "birth control pill use",
+        "raw_text": "I'm taking birth control pills",
+        "body_system": "endocrine"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "calf pain description",
+        "reason": "lack of detail on pain characteristics",
+        "clarification_needed": "Can you describe the pain in your calf in more detail?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with left calf swelling, redness, warmth, and pain, potentially related to recent long flight and birth control pill use."
+  }
+}

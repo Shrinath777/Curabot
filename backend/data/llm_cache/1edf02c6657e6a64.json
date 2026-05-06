@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "1edf02c6657e6a64",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Stroke",
+        "confidence": 60.0,
+        "reasoning": "The patient's sudden onset of arm weakness, speech difficulty, and facial drooping are classic symptoms of a stroke. The sudden onset and combination of these symptoms make stroke a highly likely diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "arm_weakness",
+          "speech_difficulty",
+          "facial_drooping",
+          "sudden_onset"
+        ],
+        "key_features_absent": [
+          "chest_pain",
+          "dyspnea"
+        ],
+        "differentiating_factor": "The sudden onset and combination of neurological symptoms differentiate stroke from other diagnoses.",
+        "initial_prior": "High prevalence and specific symptom match"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not exhibit typical chest pain symptoms, the sudden onset and severity of the condition warrant consideration of a critical cardiac condition like myocardial infarction. However, the absence of chest pain and the presence of neurological symptoms make this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden_onset"
+        ],
+        "key_features_absent": [
+          "chest_pain",
+          "radiation to arm or jaw"
+        ],
+        "differentiating_factor": "The absence of chest pain and the presence of neurological symptoms differentiate myocardial infarction from stroke.",
+        "initial_prior": "High severity and potential for sudden onset"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 10.0,
+        "reasoning": "The sudden onset of symptoms could potentially be related to a pulmonary embolism, especially if the patient had recent surgery, immobility, or long travel. However, the absence of dyspnea, chest pain, and other respiratory symptoms makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden_onset"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "chest_pain",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of respiratory symptoms and the presence of neurological symptoms differentiate pulmonary embolism from stroke.",
+        "initial_prior": "Low prevalence and non-specific symptom match"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms do not directly suggest hypertension, but it is a common condition that can contribute to stroke risk. However, the sudden onset and severity of the symptoms make hypertension a less likely primary diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [],
+        "key_features_absent": [
+          "elevated BP readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The absence of typical hypertension symptoms and the presence of acute neurological symptoms differentiate hypertension from stroke.",
+        "initial_prior": "High prevalence but non-specific symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms do not suggest pneumonia, but it is a common condition that can present with non-specific symptoms. However, the absence of respiratory symptoms and the presence of neurological symptoms make pneumonia a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "differentiating_factor": "The absence of respiratory symptoms and the presence of neurological symptoms differentiate pneumonia from stroke.",
+        "initial_prior": "Low prevalence and non-specific symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's sudden onset of arm weakness, speech difficulty, and facial drooping suggests a critical neurological condition, with stroke being the most likely diagnosis. Other critical conditions like myocardial infarction and pulmonary embolism are considered but are less likely due to the absence of typical symptoms.",
+    "dominant_system": "neurological"
+  }
+}

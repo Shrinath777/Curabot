@@ -1,0 +1,78 @@
+{
+  "prompt_hash": "4c9a527e235c714f",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Migraine",
+        "confidence": 40.0,
+        "reasoning": "Severe headache, photophobia, and nausea are classic symptoms of migraine. The patient's symptoms align with the differentiating features of migraine, such as photophobia and nausea.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "severe headache",
+          "photophobia",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "aura before onset",
+          "unilateral throbbing headache"
+        ],
+        "differentiating_factor": "The presence of photophobia and nausea, which are more specific to migraine than other conditions.",
+        "initial_prior": "Based on prevalence and symptom match, migraine is a common condition that matches the patient's symptoms."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 30.0,
+        "reasoning": "Severe headache and photophobia are also symptoms of bacterial meningitis. Although the patient does not exhibit all the classic triad symptoms (headache, neck stiffness, and fever), the severity of the headache and the presence of photophobia warrant consideration of this critical condition.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe headache",
+          "photophobia"
+        ],
+        "key_features_absent": [
+          "fever",
+          "neck stiffness",
+          "purpuric/petechial rash"
+        ],
+        "differentiating_factor": "The severity of the headache and the potential for rapid progression to a life-threatening condition make bacterial meningitis a must-not-miss diagnosis.",
+        "initial_prior": "The presence of severe headache and photophobia, although not all classic symptoms are present, necessitates consideration of bacterial meningitis due to its critical severity."
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 20.0,
+        "reasoning": "Meningitis is another condition that could present with severe headache and photophobia. However, the absence of fever and neck stiffness makes this diagnosis less likely than bacterial meningitis or migraine.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "severe headache",
+          "photophobia"
+        ],
+        "key_features_absent": [
+          "fever",
+          "neck stiffness"
+        ],
+        "differentiating_factor": "The absence of fever and neck stiffness, which are key features of meningitis, makes this diagnosis less likely.",
+        "initial_prior": "Based on the symptom match, meningitis is considered but is less likely due to the absence of key features."
+      },
+      {
+        "name": "Idiopathic Intracranial Hypertension",
+        "confidence": 10.0,
+        "reasoning": "This condition can cause headache and visual symptoms. However, the headache is typically mild to moderate and accompanied by specific visual symptoms, which are not mentioned in the patient's symptoms.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "headache"
+        ],
+        "key_features_absent": [
+          "specific visual symptoms"
+        ],
+        "differentiating_factor": "The severity of the headache and the absence of specific visual symptoms make this diagnosis less likely.",
+        "initial_prior": "Based on the symptom match, idiopathic intracranial hypertension is considered but is less likely due to the severity of the headache and the absence of specific visual symptoms."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's severe headache, photophobia, and nausea. Migraine is the most likely diagnosis due to the classic symptom triad. However, bacterial meningitis is also considered due to its critical severity and the potential for severe consequences if missed. Meningitis and idiopathic intracranial hypertension are less likely due to the absence of key features.",
+    "dominant_system": "neurological"
+  }
+}

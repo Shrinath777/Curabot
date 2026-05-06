@@ -1,0 +1,65 @@
+{
+  "prompt_hash": "10c400c63838b1e2",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Pain in big toe joint",
+        "raw_text": "My big toe joint became... painful overnight",
+        "severity": "severe",
+        "duration": "overnight",
+        "character": "sudden",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Redness of big toe joint",
+        "raw_text": "My big toe joint became extremely red",
+        "severity": "severe",
+        "duration": "overnight",
+        "character": "sudden",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Swelling of big toe joint",
+        "raw_text": "My big toe joint became... swollen",
+        "severity": "severe",
+        "duration": "overnight",
+        "character": "sudden",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Diet high in red meat",
+        "raw_text": "I've been eating a lot of red meat",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Alcohol consumption",
+        "raw_text": "drinking beer",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "History of similar attack",
+        "raw_text": "I had a similar attack 6 months ago",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "similar attack",
+        "reason": "Lack of details about the previous attack",
+        "clarification_needed": "Can you describe what happened during the previous attack?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with sudden onset of severe pain, redness, and swelling in the big toe joint, possibly related to gout given dietary factors and history of similar attack."
+  }
+}

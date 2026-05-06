@@ -1,0 +1,56 @@
+{
+  "prompt_hash": "0ed221a82d5c9f6c",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Wheezing",
+        "raw_text": "recurring episodes of wheezing",
+        "severity": "unknown",
+        "duration": "recurring episodes",
+        "character": "episodic",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Difficulty breathing",
+        "raw_text": "difficulty breathing",
+        "severity": "unknown",
+        "duration": "especially at night and early morning",
+        "character": "worsened by cold air and exercise",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Dry cough",
+        "raw_text": "persistent dry cough",
+        "severity": "unknown",
+        "duration": "persistent",
+        "character": "dry",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Family history of asthma",
+        "raw_text": "My mother has asthma too",
+        "body_system": "respiratory"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "Cold air and exercise make it worse",
+        "reason": "Lack of specificity on how much worse",
+        "clarification_needed": "Can you describe how cold air and exercise affect your symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient reports recurring wheezing, difficulty breathing, and dry cough, worsened by cold air and exercise, with a family history of asthma."
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "prompt_hash": "116abfe396ce2da2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 60.0,
+        "reasoning": "Severe headache, neck stiffness, fever, photophobia, and confusion are all present, matching the classic triad and differentiating features of bacterial meningitis. The presence of a purplish rash that doesn't fade with pressure is highly specific for this condition.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe headache",
+          "neck stiffness",
+          "fever",
+          "photophobia",
+          "confusion",
+          "purplish rash"
+        ],
+        "key_features_absent": [
+          "Kernig and Brudzinski signs positive",
+          "heart rate >100"
+        ],
+        "differentiating_factor": "The combination of severe headache, fever, and a non-blanching rash is highly suggestive of bacterial meningitis, distinguishing it from other forms of meningitis and viral infections.",
+        "initial_prior": "High due to the presence of red flag symptoms and specific differentiating features"
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 25.0,
+        "reasoning": "While the symptoms of headache, neck stiffness, and fever are present, the absence of specific differentiating features such as Kernig and Brudzinski signs and the presence of a rash that could be consistent with bacterial meningitis make this diagnosis less likely. However, it remains a consideration due to the overlap in symptoms.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "headache",
+          "neck stiffness",
+          "fever"
+        ],
+        "key_features_absent": [
+          "Kernig and Brudzinski signs positive",
+          "purpuric rash"
+        ],
+        "differentiating_factor": "The lack of specific signs and the presence of a rash suggest that if this is meningitis, it might not be bacterial, but the symptoms are not specific enough to rule out viral meningitis entirely.",
+        "initial_prior": "Moderate due to the presence of common symptoms but lack of specific differentiating features"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 10.0,
+        "reasoning": "The presence of fever and a rash could suggest dengue fever, but the absence of specific differentiating features such as retro-orbital pain, severe bone/joint pain, and thrombocytopenia makes this diagnosis less likely. The rash described does not perfectly match the petechial rash typically seen in dengue.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "rash"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain",
+          "thrombocytopenia"
+        ],
+        "differentiating_factor": "The lack of specific symptoms and the presence of a severe headache and neck stiffness not typically associated with dengue fever make this diagnosis less likely.",
+        "initial_prior": "Low due to the lack of specific differentiating features and the presence of symptoms more suggestive of other conditions"
+      },
+      {
+        "name": "Migraine",
+        "confidence": 5.0,
+        "reasoning": "While photophobia and severe headache are present, the absence of unilateral throbbing headache, aura, and the presence of fever and a rash make migraine a less likely diagnosis. The severity and combination of symptoms suggest a more serious condition.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "photophobia",
+          "severe headache"
+        ],
+        "key_features_absent": [
+          "unilateral throbbing headache",
+          "aura"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms such as fever and a rash, not typical of migraine, and the lack of migraine-specific features make this diagnosis unlikely.",
+        "initial_prior": "Low due to the presence of symptoms not typical of migraine and the lack of specific migraine features"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by bacterial meningitis due to the presence of severe headache, neck stiffness, fever, photophobia, confusion, and a purplish rash that doesn't fade with pressure, which are highly suggestive of this critical condition. Other forms of meningitis and less likely conditions such as dengue fever and migraine are considered but with lower confidence due to the lack of specific differentiating features or the presence of symptoms not typical of these conditions.",
+    "dominant_system": "neurological"
+  }
+}

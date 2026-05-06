@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "11f0fd02e843654b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Celiac Disease",
+        "confidence": 35.0,
+        "reasoning": "Chronic diarrhea, worsening after eating certain foods (e.g., bread and pasta), and low iron levels are consistent with celiac disease, an autoimmune disorder causing small intestine damage and malabsorption.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chronic diarrhea",
+          "worsening after eating certain foods",
+          "low iron levels"
+        ],
+        "key_features_absent": [
+          "weight loss is present but not as significant as in other malabsorptive disorders"
+        ],
+        "differentiating_factor": "The presence of an itchy blistering rash, potentially dermatitis herpetiformis, a skin manifestation of celiac disease, differentiates it from other gastrointestinal disorders.",
+        "initial_prior": "Based on the prevalence of celiac disease in the population and the specific symptom match, including the reaction to gluten-containing foods."
+      },
+      {
+        "name": "Inflammatory Bowel Disease (IBD)",
+        "confidence": 28.0,
+        "reasoning": "Chronic diarrhea, weight loss, and fatigue could be indicative of IBD, which includes conditions like Crohn's disease and ulcerative colitis. The itchy blistering rash could be a manifestation of an extraintestinal symptom of IBD.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "chronic diarrhea",
+          "weight loss",
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "blood in stool, which is a common feature in IBD"
+        ],
+        "differentiating_factor": "The absence of blood in stool and the presence of an itchy blistering rash make IBD less likely than celiac disease but still a consideration due to the chronic nature of the symptoms.",
+        "initial_prior": "Based on the prevalence of IBD and the match with chronic gastrointestinal symptoms, though the rash is less typical."
+      },
+      {
+        "name": "Food Allergy or Intolerance",
+        "confidence": 20.0,
+        "reasoning": "The worsening of symptoms after eating certain foods suggests a possible food allergy or intolerance. However, the chronic nature of the diarrhea and the presence of an itchy blistering rash suggest this might be part of a broader condition rather than a standalone diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "worsening after eating certain foods"
+        ],
+        "key_features_absent": [
+          "clear allergic reaction symptoms like anaphylaxis or clear intolerance symptoms like bloating and gas without other systemic symptoms"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms like weight loss and fatigue, and the itchy blistering rash, suggests that while food allergy or intolerance might be a component, it's unlikely to be the sole diagnosis.",
+        "initial_prior": "Based on the prevalence of food allergies and intolerances, but lowered due to the complexity of the patient's presentation."
+      },
+      {
+        "name": "Dermatitis Herpetiformis",
+        "confidence": 12.0,
+        "reasoning": "The itchy blistering rash is highly suggestive of dermatitis herpetiformis, a skin condition closely associated with celiac disease. However, considering it as a standalone diagnosis without addressing the gastrointestinal symptoms would be incomplete.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "itchy blistering rash"
+        ],
+        "key_features_absent": [
+          "clear gastrointestinal symptoms that would link it to celiac disease"
+        ],
+        "differentiating_factor": "The rash is a key feature, but the diagnosis is closely tied to celiac disease, making it less likely to be considered in isolation without the gastrointestinal component.",
+        "initial_prior": "Based on the specificity of the rash for dermatitis herpetiformis, but lowered because it's often considered in the context of celiac disease."
+      },
+      {
+        "name": "Cholera",
+        "confidence": 5.0,
+        "reasoning": "While chronic diarrhea could suggest a severe gastrointestinal infection, the absence of 'rice-water stool' and the lack of a clear exposure history make cholera less likely. The presence of an itchy blistering rash and other systemic symptoms also does not align well with cholera.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chronic diarrhea"
+        ],
+        "key_features_absent": [
+          "rice-water stool",
+          "exposure history to cholera-endemic area"
+        ],
+        "differentiating_factor": "The critical severity of cholera necessitates its consideration, even with low probability, due to the potential for severe dehydration and the importance of prompt treatment.",
+        "initial_prior": "Low due to the lack of specific symptoms and exposure history, but included due to its critical severity and the need to rule out dangerous conditions."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on gastrointestinal disorders due to the patient's primary symptoms of chronic diarrhea and worsening after eating certain foods. The presence of an itchy blistering rash, potentially indicative of dermatitis herpetiformis, strongly suggests celiac disease as a primary consideration. Inflammatory bowel disease and food allergy or intolerance are also considered due to the chronic nature of the symptoms and potential for malabsorption. Cholera, though unlikely, is included as a must-not-miss diagnosis due to its critical severity.",
+    "dominant_system": "gastrointestinal"
+  }
+}

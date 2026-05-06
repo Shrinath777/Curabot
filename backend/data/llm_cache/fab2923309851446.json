@@ -1,0 +1,98 @@
+{
+  "prompt_hash": "fab2923309851446",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Peptic Ulcer Disease",
+        "confidence": 35.0,
+        "reasoning": "Epigastric burning pain, history of NSAID use, and periodicity of symptoms are consistent with peptic ulcer disease. The presence of bloating and nausea also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Epigastric pain",
+          "Bloating",
+          "Nausea"
+        ],
+        "key_features_absent": [
+          "Melena",
+          "Severe abdominal tenderness"
+        ],
+        "differentiating_factor": "History of NSAID use and periodicity of symptoms differentiate this from other gastrointestinal disorders.",
+        "initial_prior": "Based on prevalence and symptom match, peptic ulcer disease is a likely diagnosis."
+      },
+      {
+        "name": "Gallstones",
+        "confidence": 25.0,
+        "reasoning": "Episodic epigastric pain and bloating are consistent with gallstones. The presence of back pain could be related to gallstone disease, although the location of pain is not typical.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Epigastric pain",
+          "Bloating",
+          "Back pain"
+        ],
+        "key_features_absent": [
+          "Right upper quadrant pain",
+          "Murphy's sign"
+        ],
+        "differentiating_factor": "The absence of right upper quadrant pain and Murphy's sign makes gallstones less likely than peptic ulcer disease.",
+        "initial_prior": "Based on prevalence and symptom match, gallstones are a possible diagnosis."
+      },
+      {
+        "name": "Acute Pancreatitis",
+        "confidence": 20.0,
+        "reasoning": "Severe epigastric pain radiating to the back is a key feature of acute pancreatitis. Although the patient's pain is not described as severe, the presence of nausea and bloating supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Epigastric pain",
+          "Nausea",
+          "Bloating"
+        ],
+        "key_features_absent": [
+          "Severe abdominal tenderness",
+          "Radiation of pain to the back"
+        ],
+        "differentiating_factor": "The absence of severe abdominal tenderness and radiation of pain to the back makes acute pancreatitis less likely than peptic ulcer disease.",
+        "initial_prior": "Based on the presence of epigastric pain and nausea, acute pancreatitis is a must-not-miss diagnosis."
+      },
+      {
+        "name": "Indigestion",
+        "confidence": 10.0,
+        "reasoning": "Dull ache in the upper abdomen is consistent with indigestion. However, the presence of bloating and nausea makes this diagnosis less likely than peptic ulcer disease or gallstones.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Epigastric pain",
+          "Bloating"
+        ],
+        "key_features_absent": [
+          "Severe abdominal tenderness",
+          "Nausea"
+        ],
+        "differentiating_factor": "The presence of nausea and bloating makes indigestion less likely than other diagnoses.",
+        "initial_prior": "Based on prevalence and symptom match, indigestion is a less likely diagnosis."
+      },
+      {
+        "name": "Gastrointestinal Motility Disorder",
+        "confidence": 10.0,
+        "reasoning": "Persistent symptoms not relieved by bowel movements are consistent with gastrointestinal motility disorder. However, the presence of epigastric pain and bloating makes this diagnosis less likely than peptic ulcer disease or gallstones.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Bloating",
+          "Nausea"
+        ],
+        "key_features_absent": [
+          "Severe abdominal tenderness",
+          "Epigastric pain"
+        ],
+        "differentiating_factor": "The presence of epigastric pain and bloating makes gastrointestinal motility disorder less likely than other diagnoses.",
+        "initial_prior": "Based on prevalence and symptom match, gastrointestinal motility disorder is a less likely diagnosis."
+      }
+    ],
+    "reasoning_summary": "The patient presents with episodic epigastric pain, bloating, and nausea, which are consistent with peptic ulcer disease, gallstones, and acute pancreatitis. The absence of severe abdominal tenderness and radiation of pain to the back makes acute pancreatitis less likely. Indigestion and gastrointestinal motility disorder are less likely diagnoses due to the presence of nausea and bloating.",
+    "dominant_system": "gastrointestinal"
+  }
+}

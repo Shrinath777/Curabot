@@ -1,0 +1,100 @@
+{
+  "prompt_hash": "00c42e2c16e081f6",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Gout",
+        "confidence": 60.0,
+        "reasoning": "Sudden onset of severe pain, redness, and swelling in the big toe joint, along with a history of similar attack and dietary factors (high red meat consumption) that increase uric acid levels, strongly suggest gout.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Pain in big toe joint",
+          "Redness of big toe joint",
+          "Swelling of big toe joint",
+          "Diet high in red meat",
+          "History of similar attack"
+        ],
+        "key_features_absent": [
+          "Kidney stones",
+          "Uric acid level"
+        ],
+        "differentiating_factor": "The combination of sudden onset, specific location (big toe), and dietary factors points towards gout rather than other causes of joint pain.",
+        "initial_prior": "Based on symptom match and prevalence of gout in the population, especially considering dietary factors and history of similar attack."
+      },
+      {
+        "name": "Septic Arthritis",
+        "confidence": 20.0,
+        "reasoning": "The acute onset of severe pain, redness, and swelling in a single joint could also suggest septic arthritis, a serious condition requiring prompt treatment. However, the absence of systemic symptoms like fever and the specific mention of a history of similar attack (potentially gout) lowers the confidence in this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Pain in big toe joint",
+          "Redness of big toe joint",
+          "Swelling of big toe joint"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Systemic symptoms"
+        ],
+        "differentiating_factor": "The presence of fever and systemic symptoms would strengthen the case for septic arthritis, but their absence and the specific context provided lean more towards gout.",
+        "initial_prior": "Given the severity and potential for rapid progression, septic arthritis is considered despite lower confidence, as it is a 'must-not-miss' diagnosis."
+      },
+      {
+        "name": "Pseudogout (Calcium Pyrophosphate Deposition Disease)",
+        "confidence": 10.0,
+        "reasoning": "Pseudogout can present similarly to gout, with sudden onset of joint pain and swelling, but it is less common and typically affects larger joints like the knee. The big toe involvement and specific dietary factors make gout more likely, but pseudogout remains a consideration.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Pain in big toe joint",
+          "Redness of big toe joint",
+          "Swelling of big toe joint"
+        ],
+        "key_features_absent": [
+          "Chondrocalcinosis on radiographs"
+        ],
+        "differentiating_factor": "The specific involvement of the big toe and dietary factors lean more towards gout, but pseudogout is considered due to the possibility of similar presentations.",
+        "initial_prior": "Lower confidence due to less common involvement of the big toe in pseudogout and the stronger evidence pointing towards gout."
+      },
+      {
+        "name": "Osteoarthritis",
+        "confidence": 5.0,
+        "reasoning": "While osteoarthritis can cause joint pain and swelling, its onset is typically more gradual, and it does not usually present with the acute, severe symptoms described. However, it is a common condition and thus remains in the differential, albeit with low confidence.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Pain in big toe joint"
+        ],
+        "key_features_absent": [
+          "Gradual onset",
+          "Morning stiffness"
+        ],
+        "differentiating_factor": "The sudden onset and severity of symptoms make osteoarthritis less likely, but its commonality keeps it in consideration.",
+        "initial_prior": "Low confidence due to the acute nature of the presentation, which is not typical for osteoarthritis."
+      },
+      {
+        "name": "Rheumatoid Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Rheumatoid arthritis can cause joint pain, swelling, and redness, but it typically involves multiple joints simultaneously and has a more gradual onset. The specific involvement of the big toe and the sudden onset make this diagnosis less likely, but it is considered due to its potential for severe joint involvement.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Pain in big toe joint",
+          "Redness of big toe joint",
+          "Swelling of big toe joint"
+        ],
+        "key_features_absent": [
+          "Multiple joint involvement",
+          "Morning stiffness",
+          "Systemic symptoms"
+        ],
+        "differentiating_factor": "The acute onset and single joint involvement are atypical for rheumatoid arthritis, making gout a more likely diagnosis.",
+        "initial_prior": "Low confidence due to the atypical presentation for rheumatoid arthritis."
+      }
+    ],
+    "reasoning_summary": "The patient's presentation of sudden onset severe pain, redness, and swelling in the big toe joint, combined with a history of similar attack and dietary factors increasing uric acid levels, strongly suggests gout as the most likely diagnosis. However, other conditions like septic arthritis, pseudogout, osteoarthritis, and rheumatoid arthritis are considered due to their potential to cause similar symptoms, albeit with lower confidence.",
+    "dominant_system": "musculoskeletal"
+  }
+}

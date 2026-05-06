@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "8582759359e01189",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Asthma",
+        "confidence": 60.0,
+        "reasoning": "Recurring wheezing, difficulty breathing, and dry cough, worsened by cold air and exercise, with a family history of asthma, strongly suggest asthma. The episodic nature of symptoms and specific triggers also align with asthma.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "recurring wheezing",
+          "difficulty breathing",
+          "dry cough",
+          "family history of asthma"
+        ],
+        "key_features_absent": [
+          "allergic rhinitis symptoms"
+        ],
+        "differentiating_factor": "The presence of a family history of asthma and specific triggers like cold air and exercise differentiate asthma from other respiratory conditions.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Chronic Obstructive Pulmonary Disease (COPD)",
+        "confidence": 20.0,
+        "reasoning": "While the patient's symptoms could suggest COPD, the absence of smoking history and the episodic nature of symptoms make COPD less likely. However, COPD remains a consideration due to the presence of respiratory symptoms like wheezing and difficulty breathing.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "wheezing",
+          "difficulty breathing"
+        ],
+        "key_features_absent": [
+          "smoking history",
+          "chronic productive cough"
+        ],
+        "differentiating_factor": "The absence of a smoking history and the episodic nature of symptoms differentiate COPD from asthma.",
+        "initial_prior": "Based on symptom match and prevalence, but lowered due to lack of smoking history"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Although the patient presents with respiratory symptoms, the sudden onset of dyspnea, a key feature of pulmonary embolism, is not clearly described. However, due to the critical nature of pulmonary embolism, it is included as a must-not-miss diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "difficulty breathing"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The presence of sudden onset dyspnea and pleuritic chest pain would strengthen the diagnosis of pulmonary embolism.",
+        "initial_prior": "Based on the critical nature of the disease and the need to consider it despite low probability"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 6.0,
+        "reasoning": "The patient's symptoms of dry cough and difficulty breathing could suggest COVID-19, especially given the current pandemic. However, the absence of fever, loss of taste/smell, and contact with a confirmed case makes COVID-19 less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dry cough",
+          "difficulty breathing"
+        ],
+        "key_features_absent": [
+          "fever",
+          "loss of taste/smell",
+          "contact with confirmed case"
+        ],
+        "differentiating_factor": "The presence of fever, loss of taste/smell, and contact with a confirmed case would strengthen the diagnosis of COVID-19.",
+        "initial_prior": "Based on symptom match and prevalence, but lowered due to lack of specific COVID-19 features"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 6.0,
+        "reasoning": "The patient's symptoms of difficulty breathing and dry cough could suggest community-acquired pneumonia. However, the absence of fever, productive cough, and abnormal lung sounds makes pneumonia less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "difficulty breathing",
+          "dry cough"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The presence of fever, productive cough, and abnormal lung sounds would strengthen the diagnosis of pneumonia.",
+        "initial_prior": "Based on symptom match and prevalence, but lowered due to lack of specific pneumonia features"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's respiratory symptoms, family history of asthma, and the absence of specific features for other diseases. Asthma is the most likely diagnosis due to the episodic nature of symptoms, specific triggers, and family history. However, other respiratory conditions like COPD, pulmonary embolism, COVID-19, and community-acquired pneumonia are also considered due to the presence of respiratory symptoms.",
+    "dominant_system": "respiratory"
+  }
+}

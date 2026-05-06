@@ -1,0 +1,61 @@
+{
+  "prompt_hash": "867c0978303c6d6e",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Dyspnea",
+        "raw_text": "I suddenly became very short of breath",
+        "severity": "severe",
+        "duration": "2 hours",
+        "character": "sudden",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Chest Pain",
+        "raw_text": "I have sharp chest pain",
+        "severity": "moderate",
+        "duration": "2 hours",
+        "character": "sharp",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Tachycardia",
+        "raw_text": "My heart is racing",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Recent Surgery",
+        "raw_text": "I had knee surgery last week",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Bedrest",
+        "raw_text": "have been on bedrest",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "sharp chest pain that gets worse when I take a deep breath",
+        "reason": "could be indicative of multiple conditions",
+        "clarification_needed": "Can you describe the exact location and radiation of the chest pain?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": "racing",
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "short of breath",
+      "sharp chest pain",
+      "heart is racing"
+    ],
+    "summary": "Patient presents with sudden onset dyspnea, sharp chest pain, and tachycardia, two hours after recent knee surgery and bedrest."
+  }
+}

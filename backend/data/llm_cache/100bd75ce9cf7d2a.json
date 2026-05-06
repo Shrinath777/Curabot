@@ -1,0 +1,51 @@
+{
+  "prompt_hash": "100bd75ce9cf7d2a",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Dyspnea",
+        "raw_text": "I suddenly became very short of breath",
+        "severity": "severe",
+        "duration": "2 hours",
+        "character": "sudden",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Chest Pain",
+        "raw_text": "I have sharp chest pain",
+        "severity": "moderate",
+        "duration": "2 hours",
+        "character": "sharp",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Tachycardia",
+        "raw_text": "My heart is racing",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "sharp chest pain that gets worse when I take a deep breath",
+        "reason": "could indicate multiple possible causes",
+        "clarification_needed": "Can you describe the exact location and radiation of the chest pain?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": "racing",
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "sudden shortness of breath",
+      "sharp chest pain"
+    ],
+    "summary": "Patient presents with sudden onset dyspnea and sharp chest pain, possibly related to recent knee surgery and bedrest, indicating potential cardiovascular or respiratory complications."
+  }
+}

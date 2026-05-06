@@ -1,0 +1,99 @@
+{
+  "prompt_hash": "86f14ad46560898a",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Appendicitis",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with sharp, constant abdominal pain that started around the belly button and moved to the lower right side, accompanied by nausea, loss of appetite, and a low-grade fever. These symptoms are classic for appendicitis, especially the migration of pain to the lower right quadrant.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal pain",
+          "nausea",
+          "loss of appetite",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "rebound tenderness",
+          "guarding"
+        ],
+        "differentiating_factor": "The migration of pain from the periumbilical area to the lower right quadrant is highly suggestive of appendicitis.",
+        "initial_prior": "Based on the prevalence of appendicitis in patients presenting with abdominal pain and the specific symptom match."
+      },
+      {
+        "name": "Gastroenteritis",
+        "confidence": 30.0,
+        "reasoning": "Gastroenteritis could explain the abdominal pain, nausea, loss of appetite, and low-grade fever. However, the sharp, constant nature of the pain and its migration to the lower right side are less typical for gastroenteritis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "abdominal pain",
+          "nausea",
+          "loss of appetite",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "diarrhea",
+          "vomiting"
+        ],
+        "differentiating_factor": "The absence of prominent diarrhea or vomiting and the specific characteristics of the abdominal pain make gastroenteritis less likely than appendicitis but still a consideration.",
+        "initial_prior": "Based on the prevalence of gastroenteritis and the partial symptom match."
+      },
+      {
+        "name": "Diverticulitis",
+        "confidence": 15.0,
+        "reasoning": "Diverticulitis could be considered due to the abdominal pain and low-grade fever. However, it typically presents with left lower quadrant pain, and the patient's pain started around the belly button and moved to the lower right side, making diverticulitis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal pain",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "left lower quadrant pain",
+          "changes in bowel habits"
+        ],
+        "differentiating_factor": "The location and migration pattern of the pain, as well as the absence of typical diverticulitis symptoms like changes in bowel habits, make diverticulitis a less likely diagnosis.",
+        "initial_prior": "Based on the lower prevalence of diverticulitis in this age group and the less typical symptom presentation."
+      },
+      {
+        "name": "Intestinal Obstruction",
+        "confidence": 10.0,
+        "reasoning": "Intestinal obstruction could explain the abdominal pain and nausea. However, it typically presents with more pronounced vomiting, abdominal distension, and absolute constipation, which are not mentioned in the patient's symptoms.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal pain",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "vomiting",
+          "abdominal distension",
+          "constipation"
+        ],
+        "differentiating_factor": "The absence of key symptoms like significant vomiting and abdominal distension makes intestinal obstruction less likely.",
+        "initial_prior": "Based on the lower prevalence of intestinal obstruction and the lack of specific symptoms."
+      },
+      {
+        "name": "Mesenteric Lymphadenitis",
+        "confidence": 5.0,
+        "reasoning": "Mesenteric lymphadenitis could be a consideration due to the abdominal pain and low-grade fever. However, it is less common and typically presents in younger patients, making it a less likely diagnosis in this case.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "abdominal pain",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "recent viral infection"
+        ],
+        "differentiating_factor": "The patient's age and the lack of recent viral infection history make mesenteric lymphadenitis a less likely diagnosis.",
+        "initial_prior": "Based on the lower prevalence of mesenteric lymphadenitis and the less typical age presentation."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by appendicitis due to the classic presentation of migrating abdominal pain to the lower right quadrant, accompanied by nausea, loss of appetite, and a low-grade fever. Gastroenteritis and other conditions are considered but are less likely based on the specific characteristics of the symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "prompt_hash": "4eb0b4ca0107b608",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "throbbing headache on one side of my head",
+        "severity": "unknown",
+        "duration": "started this morning, recurring about twice a month",
+        "character": "throbbing",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nausea",
+        "raw_text": "I feel nauseous",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Photophobia",
+        "raw_text": "Light makes it worse",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Phonophobia",
+        "raw_text": "sound makes it worse",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Visual disturbances",
+        "raw_text": "I saw zigzag lines before the headache started",
+        "body_system": "neurological"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "severity of headache",
+        "reason": "patient does not explicitly state the severity",
+        "clarification_needed": "Can you describe the severity of your headache?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Recurring throbbing headaches with associated nausea, photophobia, phonophobia, and visual disturbances."
+  }
+}

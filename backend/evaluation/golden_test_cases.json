@@ -1,0 +1,252 @@
+[
+  {
+    "id": "GT-001", "ground_truth": "Acute Myocardial Infarction", "severity": "critical", "system": "cardiovascular", "difficulty": "easy",
+    "patient_message": "I have severe crushing chest pain that started suddenly an hour ago. It radiates to my left arm and jaw. I'm sweating profusely and feel nauseous. I'm 58 years old, I smoke, and I have diabetes.",
+    "expected_top3": ["Acute Myocardial Infarction", "Pulmonary Embolism", "Aortic Stenosis"]
+  },
+  {
+    "id": "GT-002", "ground_truth": "Gastroesophageal Reflux Disease", "severity": "benign", "system": "gastrointestinal", "difficulty": "easy",
+    "patient_message": "I have a burning sensation in my chest that gets worse after eating spicy food and when I lie down at night. I get a sour taste in my mouth. Antacids help relieve it.",
+    "expected_top3": ["Gastroesophageal Reflux Disease", "Peptic Ulcer Disease", "Esophagitis"]
+  },
+  {
+    "id": "GT-003", "ground_truth": "Community Acquired Pneumonia", "severity": "serious", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "I've had a bad cough for 5 days producing thick green sputum. My fever is 103°F with chills. I have sharp chest pain when I breathe deeply. I had a cold last week.",
+    "expected_top3": ["Community Acquired Pneumonia", "Acute Bronchitis", "COVID-19"]
+  },
+  {
+    "id": "GT-004", "ground_truth": "Pulmonary Embolism", "severity": "critical", "system": "respiratory", "difficulty": "intermediate",
+    "patient_message": "I suddenly became very short of breath about 2 hours ago. I have sharp chest pain that gets worse when I take a deep breath. My heart is racing. I had knee surgery last week and have been on bedrest.",
+    "expected_top3": ["Pulmonary Embolism", "Community Acquired Pneumonia", "Acute Myocardial Infarction"]
+  },
+  {
+    "id": "GT-005", "ground_truth": "Dengue Fever", "severity": "serious", "system": "infectious", "difficulty": "easy",
+    "patient_message": "I have high fever for 3 days with severe pain behind my eyes and terrible bone and joint pain. I noticed a rash on my arms. I live in a tropical area and there are lots of mosquitoes around.",
+    "expected_top3": ["Dengue Fever", "Malaria", "Typhoid Fever"]
+  },
+  {
+    "id": "GT-006", "ground_truth": "Diabetic Ketoacidosis", "severity": "critical", "system": "metabolic/endocrine", "difficulty": "intermediate",
+    "patient_message": "I'm a Type 1 diabetic and I missed my insulin for 2 days. I'm extremely thirsty, urinating constantly, and my breath smells fruity. I feel confused and I'm breathing faster than normal. I also have abdominal pain and nausea.",
+    "expected_top3": ["Diabetic Ketoacidosis", "Hyperglycemia", "Diabetic Coma"]
+  },
+  {
+    "id": "GT-007", "ground_truth": "Migraine", "severity": "moderate", "system": "neurological", "difficulty": "easy",
+    "patient_message": "I have a throbbing headache on one side of my head that started this morning. Light and sound make it worse. I feel nauseous and I saw zigzag lines before the headache started. I get these headaches about twice a month.",
+    "expected_top3": ["Migraine", "Tension Headache", "Cluster Headache"]
+  },
+  {
+    "id": "GT-008", "ground_truth": "Acute Appendicitis", "severity": "serious", "system": "gastrointestinal", "difficulty": "easy",
+    "patient_message": "I started having pain around my belly button yesterday and now it has moved to my lower right side. The pain is sharp and constant. I feel nauseous and have no appetite. I also have a low-grade fever.",
+    "expected_top3": ["Appendicitis", "Gastroenteritis", "Ovarian Cyst"]
+  },
+  {
+    "id": "GT-009", "ground_truth": "Asthma", "severity": "moderate", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "I have recurring episodes of wheezing and difficulty breathing, especially at night and early morning. Cold air and exercise make it worse. I also have a persistent dry cough. My mother has asthma too.",
+    "expected_top3": ["Asthma", "COPD", "Allergic Bronchitis"]
+  },
+  {
+    "id": "GT-010", "ground_truth": "Hypertension", "severity": "moderate", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "I've been having frequent headaches in the morning, especially at the back of my head. I sometimes feel dizzy and my vision gets blurry. My father had high blood pressure. I eat a lot of salty food and don't exercise much.",
+    "expected_top3": ["Hypertension", "Tension Headache", "Migraine"]
+  },
+  {
+    "id": "GT-011", "ground_truth": "COVID-19", "severity": "serious", "system": "respiratory/infectious", "difficulty": "easy",
+    "patient_message": "I have a dry cough, fever, and extreme fatigue for 4 days. I've completely lost my sense of taste and smell. I was in contact with someone who tested positive last week. I also have body aches.",
+    "expected_top3": ["COVID-19", "Influenza", "Community Acquired Pneumonia"]
+  },
+  {
+    "id": "GT-012", "ground_truth": "Typhoid Fever", "severity": "serious", "system": "infectious", "difficulty": "intermediate",
+    "patient_message": "My fever has been gradually increasing every day for the past week. I have abdominal pain near my navel and constipation. I traveled to a rural area with poor sanitation recently. My tongue looks coated.",
+    "expected_top3": ["Typhoid Fever", "Malaria", "Dengue Fever"]
+  },
+  {
+    "id": "GT-013", "ground_truth": "Heart Failure", "severity": "critical", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "I get very short of breath when I climb stairs or even walk short distances. I wake up at night gasping for air. My ankles and feet are swollen. I need to prop up on 3 pillows to sleep. I had a heart attack 2 years ago.",
+    "expected_top3": ["Heart Failure", "COPD", "Pulmonary Embolism"]
+  },
+  {
+    "id": "GT-014", "ground_truth": "Peptic Ulcer Disease", "severity": "moderate", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "I have a gnawing burning pain in my upper abdomen that comes and goes. It's worse when my stomach is empty and gets better after eating. I've been taking NSAIDs regularly for back pain. Sometimes I feel bloated and nauseous.",
+    "expected_top3": ["Peptic Ulcer Disease", "Gastritis", "Gastroesophageal Reflux Disease"]
+  },
+  {
+    "id": "GT-015", "ground_truth": "Malaria", "severity": "serious", "system": "infectious", "difficulty": "easy",
+    "patient_message": "I have episodes of high fever that come in cycles — first I get severe chills, then the fever spikes, then I sweat profusely. This happens every 2 days. I recently traveled to a rural tropical area and was bitten by mosquitoes at night.",
+    "expected_top3": ["Malaria", "Dengue Fever", "Typhoid Fever"]
+  },
+  {
+    "id": "GT-016", "ground_truth": "Urinary Tract Infection", "severity": "moderate", "system": "genitourinary", "difficulty": "easy",
+    "patient_message": "I have a burning sensation when I urinate and I feel like I need to go to the bathroom very frequently but only pass small amounts. My lower abdomen hurts and my urine looks cloudy and smells bad.",
+    "expected_top3": ["Urinary Tract Infection", "Cystitis", "Kidney Stones"]
+  },
+  {
+    "id": "GT-017", "ground_truth": "Iron Deficiency Anemia", "severity": "moderate", "system": "hematological", "difficulty": "intermediate",
+    "patient_message": "I've been feeling extremely tired and weak for weeks. I look pale and get short of breath with minimal activity. My nails have become brittle and spoon-shaped. I have heavy menstrual periods. I sometimes crave ice.",
+    "expected_top3": ["Iron Deficiency Anemia", "Vitamin B12 Deficiency", "Hypothyroidism"]
+  },
+  {
+    "id": "GT-018", "ground_truth": "Hypothyroidism", "severity": "moderate", "system": "endocrine", "difficulty": "intermediate",
+    "patient_message": "I've gained weight despite not eating more. I feel cold all the time, my skin is dry, and my hair is thinning. I'm constantly fatigued and feel sluggish. I'm also constipated. My menstrual periods have become irregular.",
+    "expected_top3": ["Hypothyroidism", "Depression", "Iron Deficiency Anemia"]
+  },
+  {
+    "id": "GT-019", "ground_truth": "Cholera", "severity": "critical", "system": "gastrointestinal/infectious", "difficulty": "easy",
+    "patient_message": "I have massive watery diarrhea that looks like rice water, occurring more than 15 times today. I'm vomiting and extremely thirsty. I feel very weak with muscle cramps in my legs. I drank water from an unknown source in a flood-affected area.",
+    "expected_top3": ["Cholera", "Gastroenteritis", "Food Poisoning"]
+  },
+  {
+    "id": "GT-020", "ground_truth": "Rheumatoid Arthritis", "severity": "moderate", "system": "musculoskeletal", "difficulty": "intermediate",
+    "patient_message": "Both my hands are stiff and swollen, especially in the morning for over an hour. The small joints of my fingers and wrists hurt symmetrically on both sides. I also feel tired and have low-grade fever. This has been going on for weeks.",
+    "expected_top3": ["Rheumatoid Arthritis", "Osteoarthritis", "Lupus"]
+  },
+  {
+    "id": "GT-021", "ground_truth": "Acute Pancreatitis", "severity": "serious", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "I have severe pain in my upper abdomen that goes straight through to my back. The pain got worse after I ate and I can't stop vomiting. I drink alcohol heavily. Leaning forward slightly seems to help the pain a little.",
+    "expected_top3": ["Acute Pancreatitis", "Peptic Ulcer Disease", "Cholecystitis"]
+  },
+  {
+    "id": "GT-022", "ground_truth": "Deep Vein Thrombosis", "severity": "serious", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "My left calf is swollen, red, and warm to the touch. It hurts when I walk or flex my foot upward. I was on a 12-hour flight last week and I'm taking birth control pills.",
+    "expected_top3": ["Deep Vein Thrombosis", "Cellulitis", "Muscle Strain"]
+  },
+  {
+    "id": "GT-023", "ground_truth": "Meningitis", "severity": "critical", "system": "neurological", "difficulty": "easy",
+    "patient_message": "I have a severe headache with a very stiff neck. I can't bend my chin to my chest. I have high fever, sensitivity to light, and a purplish rash that doesn't fade when I press on it. I feel confused.",
+    "expected_top3": ["Meningitis", "Encephalitis", "Subarachnoid Hemorrhage"]
+  },
+  {
+    "id": "GT-024", "ground_truth": "Kidney Stone", "severity": "moderate", "system": "renal", "difficulty": "easy",
+    "patient_message": "I have excruciating pain in my right flank that comes in waves and radiates to my groin. I feel nauseous and noticed blood in my urine. I can't sit still because of the pain. I don't drink enough water.",
+    "expected_top3": ["Kidney Stones", "Urinary Tract Infection", "Appendicitis"]
+  },
+  {
+    "id": "GT-025", "ground_truth": "Tuberculosis", "severity": "serious", "system": "respiratory", "difficulty": "intermediate",
+    "patient_message": "I've had a persistent cough for over 3 weeks that sometimes has blood in the sputum. I have night sweats, low-grade fever in the evening, and I've lost weight without trying. I live in a crowded housing situation.",
+    "expected_top3": ["Tuberculosis", "Lung Cancer", "Community Acquired Pneumonia"]
+  },
+  {
+    "id": "GT-026", "ground_truth": "Celiac Disease", "severity": "moderate", "system": "gastrointestinal", "difficulty": "advanced",
+    "patient_message": "I have chronic diarrhea and bloating that seems to get worse after eating bread and pasta. I've lost weight and feel tired. I also have an itchy blistering rash on my elbows and knees. My iron levels were low on recent blood tests.",
+    "expected_top3": ["Celiac Disease", "Irritable Bowel Syndrome", "Inflammatory Bowel Disease"]
+  },
+  {
+    "id": "GT-027", "ground_truth": "Atrial Fibrillation (AFib)", "severity": "serious", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "My heart feels like it's fluttering and beating irregularly. I feel lightheaded and short of breath. I'm 72 years old and have high blood pressure. Sometimes my pulse feels completely irregular when I check it.",
+    "expected_top3": ["Atrial Fibrillation", "Heart Failure", "Anxiety Disorder"]
+  },
+  {
+    "id": "GT-028", "ground_truth": "Gallstones", "severity": "moderate", "system": "gastrointestinal", "difficulty": "easy",
+    "patient_message": "I get severe pain in my upper right abdomen after eating fatty meals. The pain comes and goes and sometimes radiates to my right shoulder. I feel nauseous and have been bloated. I'm 40 years old and overweight.",
+    "expected_top3": ["Gallstones", "Cholecystitis", "Peptic Ulcer Disease"]
+  },
+  {
+    "id": "GT-029", "ground_truth": "Hyperthyroidism", "severity": "moderate", "system": "endocrine", "difficulty": "intermediate",
+    "patient_message": "I've lost weight despite eating more than usual. My heart races even when I'm resting, my hands are trembling, and I feel anxious all the time. I'm always hot and sweating. My eyes seem to be bulging more than before.",
+    "expected_top3": ["Hyperthyroidism", "Anxiety Disorder", "Pheochromocytoma"]
+  },
+  {
+    "id": "GT-030", "ground_truth": "Stroke (CVA)", "severity": "critical", "system": "neurological", "difficulty": "easy",
+    "patient_message": "My face is drooping on one side and I can't raise my right arm. My speech is slurred and I can't understand what people are saying clearly. This all started suddenly about 30 minutes ago. I have high blood pressure.",
+    "expected_top3": ["Stroke (CVA)", "Transient Ischemic Attack", "Bell's Palsy"]
+  },
+  {
+    "id": "GT-031", "ground_truth": "Epilepsy", "severity": "serious", "system": "neurological", "difficulty": "intermediate",
+    "patient_message": "I had a sudden episode where I lost consciousness and my body was shaking uncontrollably for about 2 minutes. Afterward I was confused and drowsy. I bit my tongue during the episode. This has happened 3 times in the past year.",
+    "expected_top3": ["Epilepsy", "Syncope", "Hypoglycemia"]
+  },
+  {
+    "id": "GT-032", "ground_truth": "Anxiety Disorder", "severity": "moderate", "system": "psychiatric", "difficulty": "intermediate",
+    "patient_message": "I have episodes where my heart races, I feel short of breath, my chest feels tight, and I start sweating. I feel like I'm going to die. These attacks come on suddenly and last about 15 minutes. I worry constantly about everything.",
+    "expected_top3": ["Anxiety Disorder", "Panic Disorder", "Hyperthyroidism"]
+  },
+  {
+    "id": "GT-033", "ground_truth": "Liver Cirrhosis", "severity": "serious", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "My abdomen has been swelling over the past few months and my skin and eyes have turned yellow. I feel very tired. I have been a heavy drinker for 20 years. I also notice that I bruise very easily and my legs are swollen.",
+    "expected_top3": ["Cirrhosis", "Hepatitis", "Liver Cancer"]
+  },
+  {
+    "id": "GT-034", "ground_truth": "Gout", "severity": "moderate", "system": "musculoskeletal", "difficulty": "easy",
+    "patient_message": "My big toe joint became extremely red, swollen, and painful overnight. I can't even put a bedsheet on it without pain. I've been eating a lot of red meat and drinking beer. I had a similar attack 6 months ago.",
+    "expected_top3": ["Gout", "Septic Arthritis", "Rheumatoid Arthritis"]
+  },
+  {
+    "id": "GT-035", "ground_truth": "COPD", "severity": "serious", "system": "respiratory", "difficulty": "intermediate",
+    "patient_message": "I have chronic shortness of breath that has gradually gotten worse over years. I cough up mucus every morning. I smoked a pack a day for 30 years. I get wheezy and can barely walk to my mailbox now without stopping.",
+    "expected_top3": ["COPD", "Asthma", "Heart Failure"]
+  },
+  {
+    "id": "GT-036", "ground_truth": "Influenza", "severity": "moderate", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "I suddenly developed high fever, severe body aches, headache, and extreme fatigue yesterday. I have a dry cough and sore throat. Several people at my office are also sick with similar symptoms. It's flu season.",
+    "expected_top3": ["Influenza", "COVID-19", "Common Cold"]
+  },
+  {
+    "id": "GT-037", "ground_truth": "Pneumothorax", "severity": "critical", "system": "respiratory", "difficulty": "intermediate",
+    "patient_message": "I suddenly felt a sharp pain on the right side of my chest and became very short of breath. I'm tall and thin and was just sitting at my desk when it happened. The pain gets worse when I try to take a deep breath.",
+    "expected_top3": ["Pneumothorax", "Pulmonary Embolism", "Pleurisy"]
+  },
+  {
+    "id": "GT-038", "ground_truth": "Type 2 Diabetes Mellitus", "severity": "moderate", "system": "endocrine", "difficulty": "intermediate",
+    "patient_message": "I've been very thirsty and urinating frequently for weeks. I'm overweight and my vision has become blurry. Cuts on my feet take very long to heal. My father and mother both have diabetes. I feel tingling in my feet.",
+    "expected_top3": ["Type 2 Diabetes", "Diabetic Ketoacidosis", "Urinary Tract Infection"]
+  },
+  {
+    "id": "GT-039", "ground_truth": "Allergic Rhinitis", "severity": "benign", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "I keep sneezing, my nose is runny and itchy, and my eyes are watery and itchy. This happens every spring when the pollen count is high. I also feel congested and have post-nasal drip. Antihistamines help.",
+    "expected_top3": ["Allergic Rhinitis", "Common Cold", "Sinusitis"]
+  },
+  {
+    "id": "GT-040", "ground_truth": "Sepsis", "severity": "critical", "system": "infectious", "difficulty": "intermediate",
+    "patient_message": "I have very high fever with shaking chills. My heart rate is over 120 and I feel confused and disoriented. My blood pressure is very low. I had a urinary catheter placed last week. My skin feels cold and clammy.",
+    "expected_top3": ["Sepsis", "Meningitis", "Pneumonia"]
+  },
+  {
+    "id": "GT-041", "ground_truth": "Depression", "severity": "moderate", "system": "psychiatric", "difficulty": "intermediate",
+    "patient_message": "I've been feeling extremely sad and hopeless for the past 3 months. I've lost interest in activities I used to enjoy. I sleep all day or can't sleep at all. I've lost my appetite and have trouble concentrating. I feel worthless.",
+    "expected_top3": ["Depression", "Hypothyroidism", "Anxiety Disorder"]
+  },
+  {
+    "id": "GT-042", "ground_truth": "Hepatitis B", "severity": "serious", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "My skin and eyes have turned yellow. I feel very tired and nauseous with no appetite. My urine is dark and my stools are pale. I have pain in my upper right abdomen. I recently had an unprotected sexual contact.",
+    "expected_top3": ["Hepatitis B", "Hepatitis A", "Cirrhosis"]
+  },
+  {
+    "id": "GT-043", "ground_truth": "Osteoarthritis", "severity": "moderate", "system": "musculoskeletal", "difficulty": "easy",
+    "patient_message": "Both my knees hurt and feel stiff, especially after sitting for a long time. The pain gets worse with activity and better with rest. I can hear a crunching sound when I bend them. I'm 65 years old and overweight.",
+    "expected_top3": ["Osteoarthritis", "Rheumatoid Arthritis", "Meniscal Tear"]
+  },
+  {
+    "id": "GT-044", "ground_truth": "Eczema", "severity": "benign", "system": "dermatological", "difficulty": "easy",
+    "patient_message": "I have itchy red patches of dry skin on the insides of my elbows and behind my knees. The skin sometimes cracks and weeps. It gets worse in winter and when I'm stressed. I've had this since childhood and I also have asthma.",
+    "expected_top3": ["Eczema", "Psoriasis", "Contact Dermatitis"]
+  },
+  {
+    "id": "GT-045", "ground_truth": "Chronic Kidney Disease", "severity": "serious", "system": "renal", "difficulty": "advanced",
+    "patient_message": "I'm feeling very tired with swelling in my legs and face. I urinate less than usual and the urine looks foamy. I have high blood pressure and diabetes for 10 years. I've lost my appetite and have a metallic taste in my mouth.",
+    "expected_top3": ["Chronic Kidney Disease", "Heart Failure", "Nephrotic Syndrome"]
+  },
+  {
+    "id": "GT-046", "ground_truth": "Irritable Bowel Syndrome", "severity": "benign", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "I have recurring abdominal pain and bloating that gets better after I have a bowel movement. I alternate between diarrhea and constipation. Stress makes it much worse. I've had blood tests and they're all normal.",
+    "expected_top3": ["Irritable Bowel Syndrome", "Celiac Disease", "Inflammatory Bowel Disease"]
+  },
+  {
+    "id": "GT-047", "ground_truth": "Bell's Palsy", "severity": "moderate", "system": "neurological", "difficulty": "intermediate",
+    "patient_message": "I woke up this morning and one side of my face is completely drooping. I can't close my right eye or smile on that side. I can't taste food properly. My ear was hurting yesterday. I have no arm or leg weakness.",
+    "expected_top3": ["Bell's Palsy", "Stroke (CVA)", "Facial Nerve Tumor"]
+  },
+  {
+    "id": "GT-048", "ground_truth": "Anaphylaxis", "severity": "critical", "system": "immunological", "difficulty": "easy",
+    "patient_message": "I just ate peanuts and my throat is swelling shut. I have hives all over my body, I'm wheezing badly, and I feel dizzy. My lips and tongue are tingling. I'm known to be allergic to peanuts. This is getting worse fast.",
+    "expected_top3": ["Anaphylaxis", "Angioedema", "Asthma"]
+  },
+  {
+    "id": "GT-049", "ground_truth": "Gastroenteritis", "severity": "benign", "system": "gastrointestinal", "difficulty": "easy",
+    "patient_message": "I've been vomiting and having watery diarrhea since last night. My stomach is cramping and I feel weak. Several family members who ate the same food at a restaurant yesterday are also sick. I have a mild fever.",
+    "expected_top3": ["Gastroenteritis", "Food Poisoning", "Cholera"]
+  },
+  {
+    "id": "GT-050", "ground_truth": "Systemic Lupus Erythematosus", "severity": "serious", "system": "autoimmune", "difficulty": "advanced",
+    "patient_message": "I have joint pain in multiple joints, extreme fatigue, and a butterfly-shaped rash across my cheeks and nose. My fingers turn white and blue in the cold. I'm a 28-year-old woman. I've also had mouth sores and sensitivity to sunlight.",
+    "expected_top3": ["Lupus", "Rheumatoid Arthritis", "Dermatomyositis"]
+  }
+]

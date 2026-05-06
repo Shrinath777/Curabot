@@ -1,0 +1,99 @@
+{
+  "prompt_hash": "a4d7d74f26115588",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Sepsis",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with severe fever, tachycardia, hypotension, and confusion, suggesting a potential severe infection or sepsis. The presence of multiple organ systems involved (fever, cardiovascular, and neurological) supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Fever",
+          "Tachycardia",
+          "Hypotension",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Specific infection source"
+        ],
+        "differentiating_factor": "The combination of fever, tachycardia, and hypotension, along with confusion, points towards a severe systemic infection.",
+        "initial_prior": "High, given the severity of symptoms and potential for organ failure"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of fever, chills, and tachycardia could be indicative of pneumonia, especially if there's an underlying respiratory infection. However, the absence of cough and pleuritic chest pain makes this less likely than sepsis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Chills",
+          "Tachycardia"
+        ],
+        "key_features_absent": [
+          "Pleuritic chest pain",
+          "Productive cough"
+        ],
+        "differentiating_factor": "The lack of respiratory-specific symptoms (like cough or pleuritic pain) makes pneumonia less likely than sepsis but still a consideration.",
+        "initial_prior": "Moderate, considering the symptoms could fit but are not fully specific for pneumonia"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 15.0,
+        "reasoning": "While the patient has tachycardia and could have hypotension, the absence of sudden onset dyspnea and pleuritic chest pain makes PE less likely. However, given the critical nature of PE, it cannot be entirely ruled out without further investigation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Tachycardia",
+          "Hypotension"
+        ],
+        "key_features_absent": [
+          "Sudden onset dyspnea",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of key symptoms for PE (like sudden dyspnea) but the presence of tachycardia and hypotension necessitates consideration due to its critical nature.",
+        "initial_prior": "Low to moderate, given the lack of specific symptoms for PE"
+      },
+      {
+        "name": "Typhoid Fever",
+        "confidence": 10.0,
+        "reasoning": "The patient's fever and confusion could align with typhoid fever, especially if there's a step-ladder fever pattern. However, the absence of specific symptoms like relative bradycardia, rose spots, or a coated tongue makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Step-ladder fever pattern",
+          "Relative bradycardia",
+          "Rose spots"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for typhoid fever and the presence of more severe systemic symptoms points away from this diagnosis.",
+        "initial_prior": "Low, considering the symptoms are not highly specific for typhoid"
+      },
+      {
+        "name": "Malaria",
+        "confidence": 10.0,
+        "reasoning": "The cyclical nature of fever and chills could suggest malaria, but the absence of specific symptoms like cyclical high fevers with rigors, splenomegaly, or travel to endemic areas makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Chills"
+        ],
+        "key_features_absent": [
+          "Cyclical fever pattern",
+          "Travel to endemic area",
+          "Splenomegaly"
+        ],
+        "differentiating_factor": "The lack of specific symptoms and travel history makes malaria a less likely consideration.",
+        "initial_prior": "Low, given the non-specific symptoms and lack of endemic area exposure"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's severe symptoms, including fever, tachycardia, hypotension, and confusion, pointing towards a critical condition like sepsis. Community-acquired pneumonia and pulmonary embolism are considered due to their potential severity and the presence of some matching symptoms. Typhoid fever and malaria are less likely due to the absence of specific diagnostic symptoms.",
+    "dominant_system": "other"
+  }
+}

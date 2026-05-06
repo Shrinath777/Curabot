@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "f7fd0009069c24b0",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 60.0,
+        "reasoning": "Severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea, are classic symptoms of MI. The patient's risk factors (smoking, diabetes) and the sudden onset of symptoms further support this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "crushing chest pain",
+          "radiation to left arm and jaw",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "recent exertion or stress onset"
+        ],
+        "differentiating_factor": "The combination of crushing chest pain, radiation to the left arm and jaw, and diaphoresis is highly specific for MI.",
+        "initial_prior": "High prevalence of MI in the population and strong symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 20.0,
+        "reasoning": "While the patient's symptoms could be consistent with PE (sudden onset, chest pain), the absence of dyspnea and the presence of radiating pain to the left arm and jaw make MI a more likely diagnosis. However, PE remains a critical diagnosis that cannot be missed.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset",
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "The absence of dyspnea and the presence of radiating pain to the left arm and jaw make MI more likely, but PE's critical severity warrants consideration.",
+        "initial_prior": "Lower prevalence of PE compared to MI, but still a critical diagnosis"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms are not typical for GERD, as the chest pain is described as crushing rather than burning, and there is no mention of worsening symptoms after meals or lying down. However, GERD is a common condition and should be considered in the differential diagnosis.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "worsening after meals or lying down"
+        ],
+        "differentiating_factor": "The nature of the chest pain (crushing rather than burning) and the absence of typical GERD triggers make this diagnosis less likely.",
+        "initial_prior": "High prevalence of GERD in the population, but poor symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms do not strongly suggest CAP, as there is no mention of productive cough, fever, or abnormal lung sounds. However, CAP is a serious condition that should be considered in the differential diagnosis, especially given the patient's age and potential for underlying conditions.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "productive cough",
+          "fever",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of typical CAP symptoms and the presence of more specific symptoms for MI make CAP a less likely diagnosis.",
+        "initial_prior": "Moderate prevalence of CAP, but poor symptom match"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms do not directly suggest hypertension, as the chest pain is not described as secondary to cardiac strain, and there is no mention of elevated blood pressure readings. However, hypertension is a common condition that can contribute to the development of more serious diseases, such as MI.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The absence of typical hypertension symptoms and the presence of more specific symptoms for MI make hypertension a less likely primary diagnosis.",
+        "initial_prior": "High prevalence of hypertension, but poor symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea, strongly suggests Acute Myocardial Infarction (MI) as the primary diagnosis. Pulmonary Embolism (PE) is also considered due to its critical severity, despite a lower likelihood based on the symptoms presented. Gastroesophageal Reflux Disease (GERD), Community Acquired Pneumonia (CAP), and Hypertension are included in the differential diagnosis due to their prevalence and potential relevance, but are assigned lower confidence scores based on the symptom match and clinical reasoning.",
+    "dominant_system": "cardiovascular"
+  }
+}

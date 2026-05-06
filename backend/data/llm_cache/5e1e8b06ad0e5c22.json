@@ -1,0 +1,88 @@
+{
+  "prompt_hash": "5e1e8b06ad0e5c22",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Kidney Stone",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with severe right flank pain radiating to groin, hematuria, and nausea, which are classic symptoms of kidney stones. The pain's description as 'coming in waves' and radiating to the groin, along with the presence of hematuria, strongly supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Acute severe colicky flank pain radiating to groin",
+          "Hematuria"
+        ],
+        "key_features_absent": [
+          "History of dehydration or calcium-rich diet"
+        ],
+        "differentiating_factor": "The specific nature of the pain (colicky, radiating to groin) and the presence of hematuria differentiate this from other abdominal or flank pain causes.",
+        "initial_prior": "Based on the high prevalence of kidney stones and the strong match between the patient's symptoms and the disease's differentiating features."
+      },
+      {
+        "name": "Urinary Tract Infection",
+        "confidence": 20.0,
+        "reasoning": "While the patient's symptoms could partially align with a urinary tract infection (UTI), such as hematuria and flank pain, the absence of typical UTI symptoms like dysuria and the presence of severe, colicky pain suggest a kidney stone is more likely. However, UTI cannot be ruled out without further testing.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Hematuria"
+        ],
+        "key_features_absent": [
+          "Burning pain during urination",
+          "Increased urinary frequency"
+        ],
+        "differentiating_factor": "The severity and nature of the pain, along with the absence of typical UTI symptoms, make kidney stone a more likely diagnosis.",
+        "initial_prior": "Based on the prevalence of UTIs, but reduced confidence due to the atypical presentation for this condition."
+      },
+      {
+        "name": "Acute Gastroenteritis",
+        "confidence": 10.0,
+        "reasoning": "The patient's nausea could suggest gastroenteritis, but the primary symptoms of severe flank pain and hematuria do not align well with this diagnosis. Gastroenteritis typically presents with diarrhea, which is not mentioned.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Nausea"
+        ],
+        "key_features_absent": [
+          "Watery diarrhea",
+          "Bloody diarrhea"
+        ],
+        "differentiating_factor": "The absence of gastrointestinal symptoms like diarrhea makes this diagnosis less likely.",
+        "initial_prior": "Based on the low specificity of nausea for gastroenteritis and the lack of other supporting symptoms."
+      },
+      {
+        "name": "Primary Hyperoxaluria",
+        "confidence": 5.0,
+        "reasoning": "This is a rare condition that could potentially cause kidney stones, but the information provided does not specifically suggest this diagnosis over a more common kidney stone cause. The presence of hematuria and flank pain could be consistent with kidney stones caused by primary hyperoxaluria, but this would be an uncommon diagnosis without further supporting evidence.",
+        "category": "less_likely",
+        "severity_class": "rare",
+        "key_features_present": [
+          "Hematuria"
+        ],
+        "key_features_absent": [
+          "Recurrent kidney stones and nephrocalcinosis"
+        ],
+        "differentiating_factor": "The rarity of this condition and the lack of specific differentiating features in the patient's presentation make it less likely.",
+        "initial_prior": "Based on the low prevalence of this condition and the lack of specific symptoms pointing towards it."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 5.0,
+        "reasoning": "Although this is a critical condition, the patient's symptoms do not align with bacterial meningitis, which typically presents with severe headache, fever, and neck stiffness. The presence of flank pain and hematuria suggests a genitourinary issue rather than a neurological one.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "Severe headache",
+          "Neck stiffness",
+          "Fever"
+        ],
+        "differentiating_factor": "The complete lack of neurological symptoms makes this diagnosis unlikely.",
+        "initial_prior": "Included due to its critical nature, but low confidence due to the lack of matching symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's presentation with severe flank pain, hematuria, and nausea suggests a kidney stone as the most likely diagnosis. Other considerations include urinary tract infection and less likely conditions such as acute gastroenteritis and primary hyperoxaluria. Bacterial meningitis is considered due to its critical nature but is deemed unlikely due to the lack of neurological symptoms.",
+    "dominant_system": "genitourinary"
+  }
+}

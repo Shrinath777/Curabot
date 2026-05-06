@@ -1,0 +1,77 @@
+[
+  {
+    "id": "EXT-001", "source": "USMLE Step 2 CK", "ground_truth": "Acute Myocardial Infarction", "severity": "critical", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "A 65-year-old man with a history of hypertension and hyperlipidemia presents with substernal pressure that began 45 minutes ago while climbing stairs. He describes it as an elephant sitting on his chest. He is diaphoretic and his left arm feels numb. He takes atorvastatin and lisinopril.",
+    "expected_top3": ["Acute Myocardial Infarction", "Aortic Dissection", "Pulmonary Embolism"]
+  },
+  {
+    "id": "EXT-002", "source": "USMLE Step 2 CK", "ground_truth": "Community Acquired Pneumonia", "severity": "serious", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "A 70-year-old woman presents with 3 days of productive cough with rusty sputum, fever of 38.9C, and right-sided pleuritic chest pain. She has decreased breath sounds and dullness to percussion at the right base. She lives in a nursing home.",
+    "expected_top3": ["Community Acquired Pneumonia", "Tuberculosis", "Lung Cancer"]
+  },
+  {
+    "id": "EXT-003", "source": "Harrison's Principles", "ground_truth": "Diabetic Ketoacidosis", "severity": "critical", "system": "metabolic/endocrine", "difficulty": "intermediate",
+    "patient_message": "A 22-year-old woman with Type 1 diabetes presents with nausea, vomiting, and diffuse abdominal pain for 12 hours. She ran out of insulin 3 days ago. On exam she has Kussmaul respirations, dry mucous membranes, and her breath has a fruity odor. She appears lethargic.",
+    "expected_top3": ["Diabetic Ketoacidosis", "Acute Pancreatitis", "Gastroenteritis"]
+  },
+  {
+    "id": "EXT-004", "source": "Oxford Handbook of Clinical Medicine", "ground_truth": "Pulmonary Embolism", "severity": "critical", "system": "respiratory", "difficulty": "intermediate",
+    "patient_message": "A 35-year-old woman on oral contraceptive pills presents with acute onset dyspnea and right-sided pleuritic chest pain. She returned from a 14-hour international flight 2 days ago. Her heart rate is 110 bpm and oxygen saturation is 92%. Her right calf is tender and swollen.",
+    "expected_top3": ["Pulmonary Embolism", "Deep Vein Thrombosis", "Pneumonia"]
+  },
+  {
+    "id": "EXT-005", "source": "Robbins Pathology", "ground_truth": "Meningitis", "severity": "critical", "system": "neurological", "difficulty": "easy",
+    "patient_message": "A 19-year-old college student presents with severe headache, high fever, and neck stiffness that developed over 6 hours. He has photophobia and a petechial rash on his trunk and extremities. His roommate was recently diagnosed with meningococcal infection. Kernig sign is positive.",
+    "expected_top3": ["Meningitis", "Encephalitis", "Subarachnoid Hemorrhage"]
+  },
+  {
+    "id": "EXT-006", "source": "Clinical Vignette", "ground_truth": "Appendicitis", "severity": "serious", "system": "gastrointestinal", "difficulty": "easy",
+    "patient_message": "A 16-year-old boy presents with periumbilical pain that has migrated to the right lower quadrant over 12 hours. He has had one episode of vomiting, low-grade fever of 38.1C, and loss of appetite. Pain worsens with movement and coughing. He has rebound tenderness at McBurney's point.",
+    "expected_top3": ["Appendicitis", "Mesenteric Lymphadenitis", "Gastroenteritis"]
+  },
+  {
+    "id": "EXT-007", "source": "WHO Clinical Guidelines", "ground_truth": "Malaria", "severity": "serious", "system": "infectious", "difficulty": "intermediate",
+    "patient_message": "A 30-year-old man returned from sub-Saharan Africa 10 days ago. He has cyclical high fevers occurring every 48 hours with rigors, profuse sweating, headache, and myalgia. He did not take malaria prophylaxis during travel. His spleen is palpable on examination.",
+    "expected_top3": ["Malaria", "Dengue Fever", "Typhoid Fever"]
+  },
+  {
+    "id": "EXT-008", "source": "Davidson's Medicine", "ground_truth": "Heart Failure", "severity": "critical", "system": "cardiovascular", "difficulty": "intermediate",
+    "patient_message": "A 68-year-old man with a history of two previous myocardial infarctions presents with progressive exertional dyspnea over 3 months. He now gets breathless walking to the bathroom. He sleeps propped up on 4 pillows and wakes at night gasping. His ankles are swollen bilaterally. He has bilateral basal crackles on auscultation.",
+    "expected_top3": ["Heart Failure", "COPD", "Pulmonary Fibrosis"]
+  },
+  {
+    "id": "EXT-009", "source": "Kaplan USMLE", "ground_truth": "Hypothyroidism", "severity": "moderate", "system": "endocrine", "difficulty": "intermediate",
+    "patient_message": "A 45-year-old woman presents with fatigue, weight gain of 10 kg over 6 months despite no dietary changes, constipation, and cold intolerance. Her skin is dry and her reflexes show delayed relaxation. Her face appears puffy and her voice is hoarse. She has a family history of autoimmune disease.",
+    "expected_top3": ["Hypothyroidism", "Depression", "Anemia"]
+  },
+  {
+    "id": "EXT-010", "source": "Clinical Vignette", "ground_truth": "Asthma", "severity": "moderate", "system": "respiratory", "difficulty": "easy",
+    "patient_message": "A 12-year-old boy presents with recurrent episodes of wheezing, chest tightness, and cough that worsen at night and with exercise. Symptoms are triggered by cold air and dust. His mother has a history of asthma and he has eczema. Spirometry shows reversible airflow obstruction after bronchodilator.",
+    "expected_top3": ["Asthma", "Allergic Bronchitis", "COPD"]
+  },
+  {
+    "id": "EXT-011", "source": "AMBOSS", "ground_truth": "Stroke (CVA)", "severity": "critical", "system": "neurological", "difficulty": "easy",
+    "patient_message": "A 72-year-old man with atrial fibrillation and hypertension suddenly developed right-sided weakness and inability to speak. His wife noticed his face is drooping on the right side. Symptoms started 90 minutes ago. He is on warfarin but has been non-compliant.",
+    "expected_top3": ["Stroke (CVA)", "Transient Ischemic Attack", "Bell's Palsy"]
+  },
+  {
+    "id": "EXT-012", "source": "First Aid USMLE", "ground_truth": "Peptic Ulcer Disease", "severity": "moderate", "system": "gastrointestinal", "difficulty": "intermediate",
+    "patient_message": "A 50-year-old man presents with recurrent epigastric pain that is burning in character. The pain occurs 2-3 hours after meals and at night, and improves with eating. He has been taking ibuprofen daily for chronic back pain for 2 years. He also reports occasional dark stools.",
+    "expected_top3": ["Peptic Ulcer Disease", "Gastritis", "GERD"]
+  },
+  {
+    "id": "EXT-013", "source": "Nelson's Pediatrics", "ground_truth": "Dengue Fever", "severity": "serious", "system": "infectious", "difficulty": "easy",
+    "patient_message": "A 25-year-old woman living in Southeast Asia presents with sudden onset high fever for 4 days, severe retro-orbital pain, myalgia, and arthralgia so severe she describes it as bone-breaking pain. She has a maculopapular rash on her trunk and her platelet count is 85,000. There is an ongoing dengue outbreak in her area.",
+    "expected_top3": ["Dengue Fever", "Chikungunya", "Malaria"]
+  },
+  {
+    "id": "EXT-014", "source": "Clinical Vignette", "ground_truth": "Urinary Tract Infection", "severity": "moderate", "system": "genitourinary", "difficulty": "easy",
+    "patient_message": "A 28-year-old sexually active woman presents with 2 days of dysuria, urinary frequency and urgency, and suprapubic discomfort. She has no fever or flank pain. Her urine appears cloudy and dipstick shows positive nitrites and leukocyte esterase. She had a similar episode 6 months ago.",
+    "expected_top3": ["Urinary Tract Infection", "Vaginitis", "Kidney Stone"]
+  },
+  {
+    "id": "EXT-015", "source": "Schwartz's Surgery", "ground_truth": "Cholera", "severity": "critical", "system": "gastrointestinal/infectious", "difficulty": "easy",
+    "patient_message": "A 40-year-old man in a flood-affected area presents with sudden onset profuse watery diarrhea described as rice-water stools, occurring more than 20 times in 12 hours. He is severely dehydrated with sunken eyes, dry mouth, and poor skin turgor. He has painful leg cramps and is lethargic. Multiple people in his village have similar symptoms.",
+    "expected_top3": ["Cholera", "Gastroenteritis", "Dysentery"]
+  }
+]

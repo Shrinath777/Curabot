@@ -1,0 +1,47 @@
+{
+  "prompt_hash": "2f59a1bf8ee54ddf",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Chest Pain",
+        "raw_text": "severe crushing chest pain",
+        "severity": "severe",
+        "duration": "1 hour",
+        "character": "crushing, sudden",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Radiating Pain",
+        "raw_text": "radiates to my left arm and jaw",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Sweating",
+        "raw_text": "sweating profusely",
+        "body_system": "other"
+      },
+      {
+        "name": "Nausea",
+        "raw_text": "feel nauseous",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "crushing chest pain",
+      "sudden onset"
+    ],
+    "summary": "58-year-old patient with severe crushing chest pain radiating to left arm and jaw, accompanied by sweating and nausea, with a history of smoking and diabetes."
+  }
+}

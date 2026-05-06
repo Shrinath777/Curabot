@@ -1,0 +1,62 @@
+{
+  "prompt_hash": "59519fe0b50c5489",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Palpitations",
+        "raw_text": "my heart races",
+        "severity": "unknown",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Shortness of breath",
+        "raw_text": "I feel short of breath",
+        "severity": "unknown",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Chest tightness",
+        "raw_text": "my chest feels tight",
+        "severity": "unknown",
+        "duration": "15 minutes",
+        "character": "sudden",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Excessive sweating",
+        "raw_text": "I start sweating",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Anxiety",
+        "raw_text": "I worry constantly about everything",
+        "body_system": "neurological"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "I feel like I'm going to die",
+        "reason": "The phrase is subjective and dramatic, requiring clarification on what the patient means by 'going to die'",
+        "clarification_needed": "Can you describe what you mean by feeling like you're going to die during these episodes?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "I feel like I'm going to die"
+    ],
+    "summary": "Patient experiences sudden episodes of palpitations, shortness of breath, and chest tightness, lasting 15 minutes, with associated anxiety and excessive sweating."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "prompt_hash": "99256533e27d84b4",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Polydipsia",
+        "raw_text": "I'm extremely thirsty",
+        "severity": "severe",
+        "duration": "2 days",
+        "character": "extreme",
+        "body_system": "endocrine"
+      },
+      {
+        "name": "Polyuria",
+        "raw_text": "urinating constantly",
+        "severity": "severe",
+        "duration": "2 days",
+        "character": "constant",
+        "body_system": "urinary"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Ketoacidosis breath odor",
+        "raw_text": "my breath smells fruity",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Confusion",
+        "raw_text": "I feel confused",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Tachypnea",
+        "raw_text": "I'm breathing faster than normal",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Abdominal pain",
+        "raw_text": "abdominal pain",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Nausea",
+        "raw_text": "nausea",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "confusion",
+        "reason": "could be due to various factors",
+        "clarification_needed": "Can you describe what you mean by feeling confused?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": "faster than normal",
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "extreme thirst",
+      "constant urination",
+      "fruity breath odor",
+      "confusion"
+    ],
+    "summary": "Type 1 diabetic patient with symptoms suggestive of diabetic ketoacidosis, including polydipsia, polyuria, fruity breath odor, confusion, tachypnea, abdominal pain, and nausea."
+  }
+}

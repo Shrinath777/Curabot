@@ -1,0 +1,68 @@
+{
+  "prompt_hash": "8cb7234cf262fb33",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Jaundice",
+        "raw_text": "My skin and eyes have turned yellow",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "yellow discoloration",
+        "body_system": "hepatobiliary"
+      },
+      {
+        "name": "Abdominal pain",
+        "raw_text": "pain in my upper right abdomen",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "pain",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fatigue",
+        "raw_text": "I feel very tired",
+        "body_system": "general"
+      },
+      {
+        "name": "Nausea",
+        "raw_text": "I feel... nauseous",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Anorexia",
+        "raw_text": "no appetite",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Dark urine",
+        "raw_text": "My urine is dark",
+        "body_system": "renal"
+      },
+      {
+        "name": "Pale stools",
+        "raw_text": "my stools are pale",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "unprotected sexual contact",
+        "reason": "unclear relevance to current symptoms",
+        "clarification_needed": "Is the patient concerned about a sexually transmitted infection?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with jaundice, abdominal pain, fatigue, nausea, and changes in urine and stool color, possibly indicating a hepatobiliary or gastrointestinal issue."
+  }
+}

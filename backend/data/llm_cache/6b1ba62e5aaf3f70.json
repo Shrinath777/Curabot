@@ -1,0 +1,77 @@
+{
+  "prompt_hash": "6b1ba62e5aaf3f70",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 40.0,
+        "reasoning": "Sudden onset dyspnea and pleuritic chest pain are key differentiators for PE. The patient's symptoms of sudden chest pain and shortness of breath, exacerbated by deep breathing, align with PE's differentiating features.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "Sudden onset of symptoms and pleuritic nature of chest pain",
+        "initial_prior": "Based on the presence of red flag symptoms like sudden chest pain and shortness of breath"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 30.0,
+        "reasoning": "While the patient's chest pain is sharp and not crushing, which is less typical for MI, the presence of severe chest pain and shortness of breath still warrants consideration of MI, especially given the critical severity and potential for myocardial infarction to present atypically.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe chest pain",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The character of chest pain and absence of typical MI features like radiation or diaphoresis",
+        "initial_prior": "Based on the prevalence of MI and the presence of chest pain and shortness of breath"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of pleuritic chest pain and shortness of breath could be consistent with pneumonia, especially if there was a recent upper respiratory infection. However, the absence of fever, cough, or abnormal lung sounds makes this less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "pleuritic chest pain"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The presence of pleuritic chest pain and potential for recent upper respiratory infection",
+        "initial_prior": "Based on the prevalence of pneumonia and the match with pleuritic chest pain"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "Although the patient's chest pain is sharp and not burning, which is less typical for GERD, the possibility of GERD cannot be entirely ruled out, especially if the pain is exacerbated by lying down or bending over, which is not clearly stated. However, the severity of symptoms and the presence of shortness of breath make this a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The character of chest pain and the absence of typical GERD features",
+        "initial_prior": "Based on the prevalence of GERD but lower likelihood given the severity and nature of symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying critical and serious conditions that could explain the patient's sudden onset of severe chest pain and shortness of breath. Pulmonary Embolism and Acute Myocardial Infarction are prioritized due to their critical severity and the presence of red flag symptoms. Community Acquired Pneumonia is considered due to the match with pleuritic chest pain, and Gastroesophageal Reflux Disease is included as a less likely but possible cause of chest pain.",
+    "dominant_system": "cardiovascular"
+  }
+}

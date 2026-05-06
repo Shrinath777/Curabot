@@ -1,0 +1,157 @@
+[
+  {
+    "id": "C001",
+    "name": "Classic Myocardial Infarction",
+    "description": "Typical presentation of heart attack",
+    "ground_truth": "Acute Myocardial Infarction",
+    "difficulty": "intermediate",
+    "tags": ["cardiac", "acute", "chest pain"],
+    "stages": [
+      {
+        "stage": 1,
+        "input": "I have chest pain and shortness of breath",
+        "expected_findings": ["chest_pain", "dyspnea"],
+        "expected_top3": ["Acute Myocardial Infarction", "Pulmonary Embolism", "GERD"],
+        "expected_confidence_range": [0.1, 0.3]
+      },
+      {
+        "stage": 2,
+        "input": "The chest pain is crushing and radiates to my left arm. I'm also sweating",
+        "expected_findings": ["chest_pain_crushing", "diaphoresis", "radiation_left_arm"],
+        "expected_top3": ["Acute Myocardial Infarction", "Aortic Stenosis", "Pulmonary Embolism"],
+        "expected_confidence_range": [0.4, 0.6]
+      },
+      {
+        "stage": 3,
+        "input": "I have risk factors: smoking and family history of heart disease",
+        "expected_findings": ["smoking", "family_history_cad"],
+        "expected_top3": ["Acute Myocardial Infarction", "Aortic Stenosis", "GERD"],
+        "expected_confidence_range": [0.7, 0.9]
+      }
+    ]
+  },
+  {
+    "id": "C002",
+    "name": "Atypical Pneumonia",
+    "description": "Pneumonia with atypical presentation",
+    "ground_truth": "Community Acquired Pneumonia",
+    "difficulty": "intermediate",
+    "tags": ["respiratory", "infectious", "cough"],
+    "stages": [
+      {
+        "stage": 1,
+        "input": "I have cough and fever",
+        "expected_findings": ["cough", "fever"],
+        "expected_top3": ["Community Acquired Pneumonia", "COVID-19", "Influenza"],
+        "expected_confidence_range": [0.1, 0.3]
+      },
+      {
+        "stage": 2,
+        "input": "The cough is productive with green sputum. Fever is 102°F",
+        "expected_findings": ["productive_cough", "high_fever"],
+        "expected_top3": ["Community Acquired Pneumonia", "Bronchitis", "COVID-19"],
+        "expected_confidence_range": [0.4, 0.6]
+      },
+      {
+        "stage": 3,
+        "input": "I have COPD and chest x-ray showed infiltrate",
+        "expected_findings": ["copd", "infiltrate_on_imaging"],
+        "expected_top3": ["Community Acquired Pneumonia", "COPD Exacerbation", "Bronchitis"],
+        "expected_confidence_range": [0.7, 0.9]
+      }
+    ]
+  },
+  {
+    "id": "C003",
+    "name": "Pulmonary Embolism Mimic",
+    "description": "PE with atypical symptoms",
+    "ground_truth": "Pulmonary Embolism",
+    "difficulty": "advanced",
+    "tags": ["respiratory", "vascular", "acute"],
+    "stages": [
+      {
+        "stage": 1,
+        "input": "Sudden shortness of breath and chest pain",
+        "expected_findings": ["sudden_dyspnea", "chest_pain"],
+        "expected_top3": ["Pulmonary Embolism", "Acute Myocardial Infarction", "Pneumonia"],
+        "expected_confidence_range": [0.1, 0.3]
+      },
+      {
+        "stage": 2,
+        "input": "The pain is sharp and worse when I breathe deeply",
+        "expected_findings": ["pleuritic_chest_pain"],
+        "expected_top3": ["Pulmonary Embolism", "Pneumonia", "Pericarditis"],
+        "expected_confidence_range": [0.3, 0.5]
+      },
+      {
+        "stage": 3,
+        "input": "I just had knee surgery and have been immobile",
+        "expected_findings": ["recent_surgery", "immobility"],
+        "expected_top3": ["Pulmonary Embolism", "DVT", "Post-op Complications"],
+        "expected_confidence_range": [0.6, 0.8]
+      }
+    ]
+  },
+  {
+    "id": "C004",
+    "name": "GERD vs Cardiac",
+    "description": "Differentiating GERD from cardiac chest pain",
+    "ground_truth": "Gastroesophageal Reflux Disease",
+    "difficulty": "intermediate",
+    "tags": ["gi", "chest pain", "chronic"],
+    "stages": [
+      {
+        "stage": 1,
+        "input": "I have chest pain after eating",
+        "expected_findings": ["postprandial_chest_pain"],
+        "expected_top3": ["GERD", "Acute Myocardial Infarction", "Esophageal Spasm"],
+        "expected_confidence_range": [0.1, 0.3]
+      },
+      {
+        "stage": 2,
+        "input": "The pain is burning and I have acid reflux",
+        "expected_findings": ["burning_chest_pain", "acid_reflux"],
+        "expected_top3": ["GERD", "Esophagitis", "Peptic Ulcer"],
+        "expected_confidence_range": [0.5, 0.7]
+      },
+      {
+        "stage": 3,
+        "input": "Antacids help relieve the symptoms",
+        "expected_findings": ["relief_with_antacids"],
+        "expected_top3": ["GERD", "Gastritis", "Esophagitis"],
+        "expected_confidence_range": [0.8, 0.95]
+      }
+    ]
+  },
+  {
+    "id": "C005",
+    "name": "Aortic Stenosis Decompensation",
+    "description": "Progressive aortic stenosis",
+    "ground_truth": "Aortic Stenosis",
+    "difficulty": "advanced",
+    "tags": ["cardiac", "valvular", "chronic"],
+    "stages": [
+      {
+        "stage": 1,
+        "input": "I get tired easily and sometimes feel dizzy",
+        "expected_findings": ["fatigue", "dizziness"],
+        "expected_top3": ["Aortic Stenosis", "Anemia", "Heart Failure"],
+        "expected_confidence_range": [0.1, 0.3]
+      },
+      {
+        "stage": 2,
+        "input": "I have chest pain when I exercise and nearly fainted once",
+        "expected_findings": ["exertional_chest_pain", "near_syncope"],
+        "expected_top3": ["Aortic Stenosis", "CAD", "Hypertrophic Cardiomyopathy"],
+        "expected_confidence_range": [0.4, 0.6]
+      },
+      {
+        "stage": 3,
+        "input": "Doctor heard a heart murmur at my last checkup",
+        "expected_findings": ["heart_murmur"],
+        "expected_top3": ["Aortic Stenosis", "Mitral Regurgitation", "VSD"],
+        "expected_confidence_range": [0.7, 0.9]
+      }
+    ]
+  }
+]

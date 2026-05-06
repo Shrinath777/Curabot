@@ -1,0 +1,49 @@
+{
+  "prompt_hash": "0749e44c176846aa",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "frequent headaches in the morning, especially at the back of my head",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "frequent, in the morning",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Dizziness",
+        "raw_text": "I sometimes feel dizzy",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Blurred Vision",
+        "raw_text": "my vision gets blurry",
+        "body_system": "neurological"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "high blood pressure",
+        "reason": "mentioned as family history, not clear if patient has it",
+        "clarification_needed": "Does the patient have high blood pressure?"
+      },
+      {
+        "signal": "salty food and lack of exercise",
+        "reason": "lifestyle factors, unclear how they relate to symptoms",
+        "clarification_needed": "How do you think your diet and exercise habits are related to your symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient reports frequent morning headaches, dizziness, and blurred vision, with potential lifestyle and family history factors."
+  }
+}

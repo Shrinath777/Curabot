@@ -1,0 +1,49 @@
+{
+  "prompt_hash": "cac496b5118211cf",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Hemoptysis",
+        "raw_text": "persistent cough for over 3 weeks that sometimes has blood in the sputum",
+        "severity": "moderate",
+        "duration": "over 3 weeks",
+        "character": "persistent with occasional hemoptysis",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Night sweats",
+        "raw_text": "night sweats",
+        "body_system": "other"
+      },
+      {
+        "name": "Low-grade fever",
+        "raw_text": "low-grade fever in the evening",
+        "body_system": "other"
+      },
+      {
+        "name": "Weight loss",
+        "raw_text": "lost weight without trying",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "crowded housing situation",
+        "reason": "unclear relevance to symptoms",
+        "clarification_needed": "Is the crowded housing situation related to your symptoms or recent travel history?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "low-grade fever",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with persistent cough with hemoptysis, night sweats, low-grade fever, and unintentional weight loss, suggesting possible respiratory infection or other underlying condition."
+  }
+}

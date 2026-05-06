@@ -1,0 +1,65 @@
+{
+  "prompt_hash": "fadaeff6f10f7e84",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Dry cough",
+        "raw_text": "dry cough",
+        "severity": "unknown",
+        "duration": "4 days",
+        "character": "dry",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Fever",
+        "raw_text": "fever",
+        "severity": "unknown",
+        "duration": "4 days",
+        "character": "unknown",
+        "body_system": "other"
+      },
+      {
+        "name": "Extreme fatigue",
+        "raw_text": "extreme fatigue",
+        "severity": "severe",
+        "duration": "4 days",
+        "character": "unknown",
+        "body_system": "other"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Loss of taste",
+        "raw_text": "lost my sense of taste",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Loss of smell",
+        "raw_text": "lost my sense of smell",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Body aches",
+        "raw_text": "body aches",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "extreme fatigue",
+        "reason": "lack of specific details on what 'extreme' means to the patient",
+        "clarification_needed": "Can you describe what you mean by 'extreme fatigue'?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with dry cough, fever, extreme fatigue, loss of taste and smell, and body aches for 4 days, following contact with a COVID-19 positive individual."
+  }
+}

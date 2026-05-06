@@ -1,0 +1,67 @@
+{
+  "prompt_hash": "eb84186c30b71143",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "severe headache",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Neck Stiffness",
+        "raw_text": "very stiff neck",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "high fever",
+        "body_system": "other"
+      },
+      {
+        "name": "Photophobia",
+        "raw_text": "sensitivity to light",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Rash",
+        "raw_text": "purplish rash that doesn't fade when I press on it",
+        "body_system": "other"
+      },
+      {
+        "name": "Confusion",
+        "raw_text": "I feel confused",
+        "body_system": "neurological"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "can't bend my chin to my chest",
+        "reason": "lack of clarity on whether this is due to pain or stiffness",
+        "clarification_needed": "Is the inability to bend your chin to your chest due to pain or stiffness?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "high",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "severe headache",
+      "high fever",
+      "purplish rash"
+    ],
+    "summary": "Patient presents with severe headache, neck stiffness, fever, photophobia, rash, and confusion, suggesting a potential neurological or infectious condition."
+  }
+}

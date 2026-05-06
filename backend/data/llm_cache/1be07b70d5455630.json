@@ -1,0 +1,51 @@
+{
+  "prompt_hash": "1be07b70d5455630",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Chest Pain",
+        "raw_text": "sharp pain on the right side of my chest",
+        "severity": "severe",
+        "duration": "sudden onset, unknown duration",
+        "character": "sharp",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Shortness of Breath",
+        "raw_text": "became very short of breath",
+        "severity": "severe",
+        "duration": "sudden onset, unknown duration",
+        "character": "sudden",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Pain Exacerbation with Deep Breathing",
+        "raw_text": "The pain gets worse when I try to take a deep breath",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "patient's height and weight",
+        "reason": "unclear relevance to symptoms",
+        "clarification_needed": "Are you experiencing any other symptoms related to your height or weight?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "sudden chest pain",
+      "shortness of breath"
+    ],
+    "summary": "Patient presents with sudden onset of severe sharp chest pain and shortness of breath, exacerbated by deep breathing."
+  }
+}

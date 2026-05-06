@@ -1,0 +1,52 @@
+{
+  "prompt_hash": "47e60f0230092d9a",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Palpitations",
+        "raw_text": "My heart feels like it's fluttering and beating irregularly",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "irregular, fluttering",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Dyspnea",
+        "raw_text": "I feel short of breath",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Lightheadedness",
+        "raw_text": "I feel lightheaded",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Hypertension",
+        "raw_text": "I have high blood pressure",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "Sometimes my pulse feels completely irregular",
+        "reason": "Lack of specificity regarding the frequency and duration of irregular pulse",
+        "clarification_needed": "How often do you experience an irregular pulse, and for how long does it last?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": "high",
+      "heart_rate": "irregular",
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "72-year-old patient with palpitations, dyspnea, lightheadedness, and a history of hypertension, presenting with symptoms suggestive of cardiovascular and respiratory system involvement."
+  }
+}

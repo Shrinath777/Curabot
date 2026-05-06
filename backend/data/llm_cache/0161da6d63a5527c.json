@@ -1,0 +1,92 @@
+{
+  "prompt_hash": "0161da6d63a5527c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Type 2 Diabetes Mellitus",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with polydipsia, polyuria, blurred vision, delayed wound healing, and paresthesia, which are classic symptoms of diabetes. The gradual onset over weeks and the presence of peripheral neuropathy (tingling feet) further support this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "polydipsia",
+          "polyuria",
+          "blurred vision",
+          "delayed wound healing",
+          "paresthesia"
+        ],
+        "key_features_absent": [
+          "diabetic foot ulcer with infection"
+        ],
+        "differentiating_factor": "Gradual onset and presence of peripheral neuropathy differentiate it from other diagnoses like DKA.",
+        "initial_prior": "Based on prevalence and symptom match, with consideration of the patient's potential metabolic syndrome given the mention of being overweight."
+      },
+      {
+        "name": "Diabetic Ketoacidosis",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not exhibit the typical acute onset of DKA, the presence of polyuria and polydipsia, along with blurred vision and paresthesia, could suggest a diabetic emergency. However, the lack of reported fruity breath, Kussmaul breathing, or abdominal pain makes DKA less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "polyuria",
+          "polydipsia"
+        ],
+        "key_features_absent": [
+          "fruity breath",
+          "Kussmaul breathing",
+          "abdominal pain"
+        ],
+        "differentiating_factor": "The absence of acute onset symptoms and specific signs like fruity breath or Kussmaul breathing differentiates it from Type 2 Diabetes Mellitus.",
+        "initial_prior": "Considered due to the critical nature of the condition and the presence of some overlapping symptoms."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Given the absence of sudden onset dyspnea, pleuritic chest pain, or other specific symptoms like hemoptysis, PE is less likely. However, it remains a consideration due to its critical nature and the potential for atypical presentations.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The lack of respiratory symptoms and the absence of risk factors like recent surgery or immobility make PE less likely.",
+        "initial_prior": "Included due to its critical severity, despite low likelihood based on presented symptoms."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 6.0,
+        "reasoning": "The presence of blurred vision and paresthesia could theoretically suggest neurological involvement, but the absence of severe headache, neck stiffness, fever, or other specific signs of meningitis makes this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "blurred vision"
+        ],
+        "key_features_absent": [
+          "severe headache",
+          "neck stiffness",
+          "fever"
+        ],
+        "differentiating_factor": "The lack of typical meningitis symptoms and the presence of a more coherent symptom picture pointing towards diabetes make meningitis less likely.",
+        "initial_prior": "Considered for its critical nature, but deemed less likely due to the lack of specific symptoms."
+      },
+      {
+        "name": "Atrial Fibrillation",
+        "confidence": 6.0,
+        "reasoning": "There are no direct symptoms provided that would suggest atrial fibrillation, such as irregularly irregular pulse, palpitations, or heart racing. Thus, it is considered less likely but remains on the differential due to its potential seriousness.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "irregularly irregular pulse",
+          "palpitations"
+        ],
+        "differentiating_factor": "The absence of cardiac symptoms and the presence of a clear metabolic/endocrine symptom picture makes AF less likely.",
+        "initial_prior": "Included for completeness, given the broad differential approach, but assigned a lower confidence due to lack of supporting symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms strongly suggest a diagnosis of Type 2 Diabetes Mellitus, with Diabetic Ketoacidosis being a less likely but critical alternative that must be considered. Other serious and critical conditions like Pulmonary Embolism, Bacterial Meningitis, and Atrial Fibrillation are less likely based on the symptom profile but are included in the differential diagnosis due to their potential severity.",
+    "dominant_system": "endocrine"
+  }
+}

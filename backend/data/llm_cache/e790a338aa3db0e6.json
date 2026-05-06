@@ -1,0 +1,62 @@
+{
+  "prompt_hash": "e790a338aa3db0e6",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Diarrhea",
+        "raw_text": "chronic diarrhea",
+        "severity": "moderate",
+        "duration": "chronic",
+        "character": "worsening after eating certain foods",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Itchy blistering rash",
+        "raw_text": "itchy blistering rash on my elbows and knees",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "itchy and blistering",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Bloating",
+        "raw_text": "bloating",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Weight loss",
+        "raw_text": "I've lost weight",
+        "body_system": "other"
+      },
+      {
+        "name": "Fatigue",
+        "raw_text": "feel tired",
+        "body_system": "other"
+      },
+      {
+        "name": "Low iron levels",
+        "raw_text": "My iron levels were low on recent blood tests",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "worsening after eating bread and pasta",
+        "reason": "unclear if this is an allergic reaction or intolerance",
+        "clarification_needed": "Can you describe what happens immediately after consuming these foods?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with chronic diarrhea, bloating, weight loss, fatigue, and an itchy blistering rash, with recent low iron levels, suggesting potential gastrointestinal and nutritional issues."
+  }
+}

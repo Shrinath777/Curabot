@@ -1,0 +1,98 @@
+{
+  "prompt_hash": "80ba50855a0b0586",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Cholecystitis",
+        "confidence": 40.0,
+        "reasoning": "Severe upper right abdominal pain radiating to the right shoulder, accompanied by nausea and bloating, is highly suggestive of cholecystitis, especially given the potential trigger of fatty meals.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe upper right abdominal pain",
+          "radiating pain to right shoulder",
+          "nausea",
+          "bloating"
+        ],
+        "key_features_absent": [
+          "fever",
+          "jaundice"
+        ],
+        "differentiating_factor": "The presence of radiating pain to the right shoulder and the potential trigger of fatty meals helps differentiate cholecystitis from other causes of abdominal pain.",
+        "initial_prior": "Based on the prevalence of gallbladder disease and the specific symptom match."
+      },
+      {
+        "name": "Peptic Ulcer Disease",
+        "confidence": 30.0,
+        "reasoning": "The symptoms of severe upper right abdominal pain, nausea, and bloating could also be consistent with peptic ulcer disease, although the radiating pain to the right shoulder is less typical.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe upper right abdominal pain",
+          "nausea",
+          "bloating"
+        ],
+        "key_features_absent": [
+          "melena",
+          "hematemesis"
+        ],
+        "differentiating_factor": "The absence of melena or hematemesis and the presence of radiating pain to the right shoulder make cholecystitis a more likely diagnosis, but peptic ulcer disease remains a consideration.",
+        "initial_prior": "Based on the prevalence of peptic ulcer disease and the partial symptom match."
+      },
+      {
+        "name": "Hepatitis",
+        "confidence": 15.0,
+        "reasoning": "While less likely, hepatitis could present with upper right abdominal pain, nausea, and bloating, especially if the liver is involved.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "upper right abdominal pain",
+          "nausea",
+          "bloating"
+        ],
+        "key_features_absent": [
+          "jaundice",
+          "dark urine"
+        ],
+        "differentiating_factor": "The absence of jaundice and dark urine makes hepatitis less likely, but it remains a consideration given the broad differential for abdominal pain.",
+        "initial_prior": "Based on the lower prevalence of hepatitis and the partial symptom match."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 10.0,
+        "reasoning": "Although the primary symptoms do not strongly suggest pulmonary embolism, it is a critical diagnosis that must be considered, especially given the severity of the presentation and the potential for atypical symptoms.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe pain"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "tachycardia",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of typical symptoms such as dyspnea, tachycardia, and pleuritic chest pain makes pulmonary embolism less likely, but its critical nature necessitates consideration.",
+        "initial_prior": "Based on the need to consider critical diagnoses, even with a low symptom match."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "While GERD can cause abdominal pain and nausea, the severe upper right abdominal pain and radiating pain to the right shoulder are not typical for GERD, making it a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "nausea"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "regurgitation"
+        ],
+        "differentiating_factor": "The absence of burning sensation and regurgitation, along with the atypical pain pattern, makes GERD less likely.",
+        "initial_prior": "Based on the lower prevalence of GERD as a cause of severe abdominal pain and the partial symptom match."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's severe upper right abdominal pain, radiating pain to the right shoulder, nausea, and bloating, along with the potential trigger of fatty meals. Cholecystitis is the leading diagnosis due to the specific symptom match and the prevalence of gallbladder disease. Peptic ulcer disease and hepatitis are also considered due to their potential to cause similar symptoms, although they are less likely. Pulmonary embolism is included as a must-not-miss diagnosis despite its low symptom match due to its critical nature. GERD is the least likely due to the atypical pain pattern and absence of typical GERD symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

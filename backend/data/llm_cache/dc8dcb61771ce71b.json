@@ -1,0 +1,88 @@
+{
+  "prompt_hash": "dc8dcb61771ce71b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Epilepsy",
+        "confidence": 40.0,
+        "reasoning": "The patient's symptoms of sudden loss of consciousness, uncontrollable shaking, confusion, and drowsiness, along with the presence of a tongue injury, are highly suggestive of a seizure disorder such as epilepsy.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of consciousness",
+          "Uncontrollable shaking",
+          "Tongue injury"
+        ],
+        "key_features_absent": [
+          "Aura or warning signs before the episode"
+        ],
+        "differentiating_factor": "The combination of loss of consciousness, uncontrollable shaking, and tongue injury points more towards a seizure disorder than other conditions.",
+        "initial_prior": "Based on the specific symptom match and the severity of the symptoms presented"
+      },
+      {
+        "name": "Syncope",
+        "confidence": 30.0,
+        "reasoning": "The sudden loss of consciousness could also be indicative of syncope, especially if it was precipitated by a specific event or condition. However, the presence of uncontrollable shaking and tongue injury makes epilepsy a more likely diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Loss of consciousness"
+        ],
+        "key_features_absent": [
+          "Prolonged standing, dehydration, or other precipitating factors"
+        ],
+        "differentiating_factor": "The absence of clear precipitating factors for syncope and the presence of additional neurological symptoms steer the diagnosis more towards epilepsy.",
+        "initial_prior": "Based on the prevalence of syncope and the possibility of it being a cause of loss of consciousness"
+      },
+      {
+        "name": "Hypoglycemia",
+        "confidence": 15.0,
+        "reasoning": "Hypoglycemia can cause confusion, drowsiness, and even loss of consciousness. However, the presence of uncontrollable shaking and tongue injury, more typical of seizure activity, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Confusion",
+          "Drowsiness"
+        ],
+        "key_features_absent": [
+          "Known diabetes, recent medication changes, or skipped meals"
+        ],
+        "differentiating_factor": "The specific combination of symptoms, especially the uncontrollable shaking and tongue injury, makes hypoglycemia a less likely diagnosis compared to epilepsy.",
+        "initial_prior": "Based on the possibility of hypoglycemia causing altered mental status and the presence of some matching symptoms"
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 10.0,
+        "reasoning": "While meningitis can cause severe neurological symptoms, the sudden loss of consciousness, uncontrollable shaking, and the specific combination of symptoms presented make it a less likely diagnosis compared to epilepsy or syncope.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Fever, headache, stiff neck"
+        ],
+        "differentiating_factor": "The absence of key features like fever, headache, and stiff neck, which are typical of meningitis, makes this diagnosis less likely.",
+        "initial_prior": "Based on the severity and potential for neurological symptoms, but lower likelihood due to symptom mismatch"
+      },
+      {
+        "name": "Stroke",
+        "confidence": 5.0,
+        "reasoning": "A stroke could cause sudden loss of consciousness and neurological deficits. However, the presence of uncontrollable shaking and the specific pattern of symptoms suggest a seizure disorder rather than a stroke.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Loss of consciousness"
+        ],
+        "key_features_absent": [
+          "Focal neurological deficits, facial drooping, arm weakness"
+        ],
+        "differentiating_factor": "The lack of clear focal neurological deficits and the presence of symptoms more suggestive of seizure activity make stroke a less likely diagnosis.",
+        "initial_prior": "Based on the possibility of stroke causing sudden neurological symptoms, but lower likelihood due to symptom pattern"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely cause of the patient's sudden loss of consciousness, uncontrollable shaking, and other neurological symptoms. Epilepsy emerged as the most likely diagnosis due to the specific combination and severity of symptoms presented. Other conditions like syncope, hypoglycemia, meningitis, and stroke were considered but found less likely based on the symptom pattern and clinical reasoning.",
+    "dominant_system": "neurological"
+  }
+}

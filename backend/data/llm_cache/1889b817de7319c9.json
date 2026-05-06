@@ -1,0 +1,92 @@
+{
+  "prompt_hash": "1889b817de7319c9",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Epilepsy",
+        "confidence": 40.0,
+        "reasoning": "Loss of consciousness and uncontrollable shaking are classic symptoms of a seizure, suggesting epilepsy as a primary consideration. The presence of tongue injury, which can occur during a seizure, further supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Uncontrollable Shaking",
+          "Tongue Injury"
+        ],
+        "key_features_absent": [
+          "Aura or warning signs before the seizure"
+        ],
+        "differentiating_factor": "The combination of loss of consciousness, uncontrollable shaking, and tongue injury during the episode is highly suggestive of a seizure disorder like epilepsy.",
+        "initial_prior": "Based on the specific symptom match and the severity of the symptoms presented"
+      },
+      {
+        "name": "Syncope",
+        "confidence": 30.0,
+        "reasoning": "Although syncope (fainting) can cause loss of consciousness, the presence of uncontrollable shaking and tongue injury during the episode makes it less likely than epilepsy. However, it remains a consideration due to the sudden loss of consciousness.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Loss of Consciousness"
+        ],
+        "key_features_absent": [
+          "Prolonged shaking or seizure activity"
+        ],
+        "differentiating_factor": "The absence of prolonged shaking or seizure activity and the presence of a clear precipitating factor (if identified) could differentiate syncope from epilepsy.",
+        "initial_prior": "Based on the prevalence of syncope and the possibility of a precipitating factor for the loss of consciousness"
+      },
+      {
+        "name": "Hypoglycemia",
+        "confidence": 15.0,
+        "reasoning": "Hypoglycemia can cause confusion, drowsiness, and even loss of consciousness. However, the presence of uncontrollable shaking and tongue injury during the episode is less typical for hypoglycemia, making it a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Confusion",
+          "Drowsiness"
+        ],
+        "key_features_absent": [
+          "Low blood glucose measurement"
+        ],
+        "differentiating_factor": "The presence of low blood glucose levels would strongly support hypoglycemia, differentiating it from other diagnoses.",
+        "initial_prior": "Based on the possibility of hypoglycemia causing altered mental status and the need for glucose level assessment"
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 10.0,
+        "reasoning": "Meningitis can cause severe headache, fever, and confusion. While it's a dangerous condition, the specific symptoms of loss of consciousness, uncontrollable shaking, and tongue injury during the episode are not as typical for meningitis, making it a less likely consideration without additional symptoms like severe headache or fever.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Severe headache",
+          "Fever",
+          "Stiff neck"
+        ],
+        "differentiating_factor": "The presence of severe headache, fever, and stiff neck would significantly increase the likelihood of meningitis.",
+        "initial_prior": "Based on the severity of meningitis and the need to consider it in cases of severe neurological symptoms"
+      },
+      {
+        "name": "Encephalitis",
+        "confidence": 5.0,
+        "reasoning": "Encephalitis is an inflammation of the brain and can cause a variety of symptoms including confusion, altered mental status, and sometimes seizures. However, the specific pattern of symptoms presented, including the sudden loss of consciousness and uncontrollable shaking, is less typical for encephalitis without additional symptoms like fever or severe headache.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Confusion",
+          "Drowsiness"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Severe headache"
+        ],
+        "differentiating_factor": "The presence of fever, severe headache, and altered mental status without a clear seizure pattern would make encephalitis a more likely consideration.",
+        "initial_prior": "Based on the severity of encephalitis and the need for a broad differential in severe neurological cases"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely causes of the patient's sudden loss of consciousness, uncontrollable shaking, and associated symptoms. Epilepsy emerged as the top consideration due to the classic symptoms of a seizure. Other diagnoses like syncope, hypoglycemia, meningitis, and encephalitis were considered based on the severity of the symptoms and the need to rule out dangerous conditions.",
+    "dominant_system": "neurological"
+  }
+}

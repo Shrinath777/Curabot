@@ -1,0 +1,45 @@
+{
+  "prompt_hash": "c50ed6672427fcc0",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "severe headache",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "high fever",
+        "body_system": "other"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "high fever",
+        "reason": "no specific temperature given",
+        "clarification_needed": "What is your current temperature?"
+      },
+      {
+        "signal": "severe headache",
+        "reason": "no description of character or duration",
+        "clarification_needed": "Can you describe the headache and how long you've had it?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "high",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient reports severe headache and high fever, requiring further clarification on symptom details."
+  }
+}

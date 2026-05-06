@@ -1,0 +1,2645 @@
+{
+  "report_generated": "2026-05-01T12:18:29.159197",
+  "framework_version": "1.0",
+  "metrics": {
+    "total_cases": 50,
+    "top1_accuracy": 76.0,
+    "top3_accuracy": 84.0,
+    "top5_accuracy": 86.0,
+    "top1_correct": 38,
+    "top3_correct": 42,
+    "top5_correct": 43,
+    "avg_confidence_when_correct": 50.5,
+    "avg_confidence_when_wrong": 36.1,
+    "avg_time_per_case_seconds": 16.04,
+    "by_severity": {
+      "critical": {
+        "total_cases": 10,
+        "top1_accuracy": 50.0,
+        "top3_accuracy": 60.0
+      },
+      "benign": {
+        "total_cases": 5,
+        "top1_accuracy": 100.0,
+        "top3_accuracy": 100.0
+      },
+      "serious": {
+        "total_cases": 16,
+        "top1_accuracy": 87.5,
+        "top3_accuracy": 87.5
+      },
+      "moderate": {
+        "total_cases": 19,
+        "top1_accuracy": 73.7,
+        "top3_accuracy": 89.5
+      }
+    },
+    "by_difficulty": {
+      "easy": {
+        "total_cases": 22,
+        "top1_accuracy": 90.9,
+        "top3_accuracy": 95.5
+      },
+      "intermediate": {
+        "total_cases": 25,
+        "top1_accuracy": 60.0,
+        "top3_accuracy": 72.0
+      },
+      "advanced": {
+        "total_cases": 3,
+        "top1_accuracy": 100.0,
+        "top3_accuracy": 100.0
+      }
+    },
+    "failed_top1": [
+      {
+        "case_id": "GT-004",
+        "ground_truth": "Pulmonary Embolism",
+        "predicted": "Stable Angina",
+        "confidence": 25.3,
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-006",
+        "ground_truth": "Diabetic Ketoacidosis",
+        "predicted": "Status epilepticus",
+        "confidence": 47.6,
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-012",
+        "ground_truth": "Typhoid Fever",
+        "predicted": "Necrotizing Enterocolitis",
+        "confidence": 23.5,
+        "severity": "serious"
+      },
+      {
+        "case_id": "GT-013",
+        "ground_truth": "Heart Failure",
+        "predicted": "Myocardial Infarction",
+        "confidence": 25.0,
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-014",
+        "ground_truth": "Peptic Ulcer Disease",
+        "predicted": "Acute Pancreatitis",
+        "confidence": 37.6,
+        "severity": "moderate"
+      },
+      {
+        "case_id": "GT-020",
+        "ground_truth": "Rheumatoid Arthritis",
+        "predicted": "Myocardial Infarction",
+        "confidence": 33.9,
+        "severity": "moderate"
+      },
+      {
+        "case_id": "GT-030",
+        "ground_truth": "Stroke (CVA)",
+        "predicted": "Acute Ischemic Stroke",
+        "confidence": 67.3,
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-031",
+        "ground_truth": "Epilepsy",
+        "predicted": "Status epilepticus",
+        "confidence": 56.1,
+        "severity": "serious"
+      },
+      {
+        "case_id": "GT-036",
+        "ground_truth": "Influenza",
+        "predicted": "COVID-19",
+        "confidence": 33.4,
+        "severity": "moderate"
+      },
+      {
+        "case_id": "GT-037",
+        "ground_truth": "Pneumothorax",
+        "predicted": "Myocardial Infarction",
+        "confidence": 31.1,
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-041",
+        "ground_truth": "Depression",
+        "predicted": "Migraine",
+        "confidence": 27.3,
+        "severity": "moderate"
+      },
+      {
+        "case_id": "GT-047",
+        "ground_truth": "Bell's Palsy",
+        "predicted": "Vitamin Deficiency Anemia",
+        "confidence": 25.3,
+        "severity": "moderate"
+      }
+    ],
+    "failed_top3": [
+      {
+        "case_id": "GT-004",
+        "ground_truth": "Pulmonary Embolism",
+        "predicted_top3": [
+          "Stable Angina",
+          "Cardiac Arrest",
+          "Unstable Angina"
+        ],
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-006",
+        "ground_truth": "Diabetic Ketoacidosis",
+        "predicted_top3": [
+          "Status epilepticus",
+          "Hypertension",
+          "Pulmonary Hamartoma"
+        ],
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-012",
+        "ground_truth": "Typhoid Fever",
+        "predicted_top3": [
+          "Necrotizing Enterocolitis",
+          "Acute Mesenteric Ischemia",
+          "Acute Appendicitis"
+        ],
+        "severity": "serious"
+      },
+      {
+        "case_id": "GT-013",
+        "ground_truth": "Heart Failure",
+        "predicted_top3": [
+          "Myocardial Infarction",
+          "Cardiac Arrest",
+          "Acute Bronchitis"
+        ],
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-030",
+        "ground_truth": "Stroke (CVA)",
+        "predicted_top3": [
+          "Acute Ischemic Stroke",
+          "Hypertensive Encephalopathy",
+          "Brain Tumor"
+        ],
+        "severity": "critical"
+      },
+      {
+        "case_id": "GT-031",
+        "ground_truth": "Epilepsy",
+        "predicted_top3": [
+          "Status epilepticus",
+          "Septicemia",
+          "Stroke (CVA)"
+        ],
+        "severity": "serious"
+      },
+      {
+        "case_id": "GT-041",
+        "ground_truth": "Depression",
+        "predicted_top3": [
+          "Migraine",
+          "Tension-type Headache",
+          "Tension Headache"
+        ],
+        "severity": "moderate"
+      },
+      {
+        "case_id": "GT-047",
+        "ground_truth": "Bell's Palsy",
+        "predicted_top3": [
+          "Vitamin Deficiency Anemia",
+          "Iron Deficiency Anemia",
+          "Relapsing Polychondritis"
+        ],
+        "severity": "moderate"
+      }
+    ]
+  },
+  "individual_results": [
+    {
+      "case_id": "GT-001",
+      "ground_truth": "Acute Myocardial Infarction",
+      "severity": "critical",
+      "system": "cardiovascular",
+      "difficulty": "easy",
+      "predicted_top1": "Acute Myocardial Infarction",
+      "predicted_top3": [
+        "Acute Myocardial Infarction",
+        "Panic Attack",
+        "Pheochromocytoma"
+      ],
+      "predicted_top5": [
+        "Acute Myocardial Infarction",
+        "Panic Attack",
+        "Pheochromocytoma",
+        "Anxiety Attack",
+        "Diabetic Ketoacidosis"
+      ],
+      "top1_confidence": 61.5,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 8,
+      "elapsed_seconds": 16.75,
+      "all_hypotheses": [
+        {
+          "name": "Acute Myocardial Infarction",
+          "confidence": 61.5
+        },
+        {
+          "name": "Panic Attack",
+          "confidence": 19.6
+        },
+        {
+          "name": "Pheochromocytoma",
+          "confidence": 8.1
+        },
+        {
+          "name": "Anxiety Attack",
+          "confidence": 7.1
+        },
+        {
+          "name": "Diabetic Ketoacidosis",
+          "confidence": 3.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-002",
+      "ground_truth": "Gastroesophageal Reflux Disease",
+      "severity": "benign",
+      "system": "gastrointestinal",
+      "difficulty": "easy",
+      "predicted_top1": "Gastroesophageal Reflux Disease",
+      "predicted_top3": [
+        "Gastroesophageal Reflux Disease",
+        "Acute Myocardial Infarction",
+        "Pneumothorax"
+      ],
+      "predicted_top5": [
+        "Gastroesophageal Reflux Disease",
+        "Acute Myocardial Infarction",
+        "Pneumothorax",
+        "Aortic Dissection",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 74.1,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 2,
+      "evidence_items": 11,
+      "elapsed_seconds": 8.3,
+      "all_hypotheses": [
+        {
+          "name": "Gastroesophageal Reflux Disease",
+          "confidence": 74.1
+        },
+        {
+          "name": "Acute Myocardial Infarction",
+          "confidence": 9.1
+        },
+        {
+          "name": "Pneumothorax",
+          "confidence": 8.0
+        },
+        {
+          "name": "Aortic Dissection",
+          "confidence": 8.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 0.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-003",
+      "ground_truth": "Community Acquired Pneumonia",
+      "severity": "serious",
+      "system": "respiratory",
+      "difficulty": "easy",
+      "predicted_top1": "Community Acquired Pneumonia",
+      "predicted_top3": [
+        "Community Acquired Pneumonia",
+        "Influenza",
+        "Pneumonia"
+      ],
+      "predicted_top5": [
+        "Community Acquired Pneumonia",
+        "Influenza",
+        "Pneumonia",
+        "Airway Obstruction",
+        "Costochondritis"
+      ],
+      "top1_confidence": 41.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 7,
+      "elapsed_seconds": 5.65,
+      "all_hypotheses": [
+        {
+          "name": "Community Acquired Pneumonia",
+          "confidence": 41.6
+        },
+        {
+          "name": "Influenza",
+          "confidence": 30.6
+        },
+        {
+          "name": "Pneumonia",
+          "confidence": 11.9
+        },
+        {
+          "name": "Airway Obstruction",
+          "confidence": 8.5
+        },
+        {
+          "name": "Costochondritis",
+          "confidence": 7.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-004",
+      "ground_truth": "Pulmonary Embolism",
+      "severity": "critical",
+      "system": "respiratory",
+      "difficulty": "intermediate",
+      "predicted_top1": "Stable Angina",
+      "predicted_top3": [
+        "Stable Angina",
+        "Cardiac Arrest",
+        "Unstable Angina"
+      ],
+      "predicted_top5": [
+        "Stable Angina",
+        "Cardiac Arrest",
+        "Unstable Angina",
+        "Supraventricular Tachycardia",
+        "Marfan Syndrome"
+      ],
+      "top1_confidence": 25.3,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 3,
+      "evidence_items": 4,
+      "elapsed_seconds": 23.86,
+      "all_hypotheses": [
+        {
+          "name": "Stable Angina",
+          "confidence": 25.3
+        },
+        {
+          "name": "Cardiac Arrest",
+          "confidence": 24.4
+        },
+        {
+          "name": "Unstable Angina",
+          "confidence": 22.6
+        },
+        {
+          "name": "Supraventricular Tachycardia",
+          "confidence": 14.3
+        },
+        {
+          "name": "Marfan Syndrome",
+          "confidence": 13.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-005",
+      "ground_truth": "Dengue Fever",
+      "severity": "serious",
+      "system": "infectious",
+      "difficulty": "easy",
+      "predicted_top1": "Dengue Fever",
+      "predicted_top3": [
+        "Dengue Fever",
+        "Bacterial Meningitis",
+        "Necrotizing Fasciitis"
+      ],
+      "predicted_top5": [
+        "Dengue Fever",
+        "Bacterial Meningitis",
+        "Necrotizing Fasciitis",
+        "Cellulitis",
+        "Typhoid Fever"
+      ],
+      "top1_confidence": 48.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 8,
+      "elapsed_seconds": 19.45,
+      "all_hypotheses": [
+        {
+          "name": "Dengue Fever",
+          "confidence": 48.9
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 16.6
+        },
+        {
+          "name": "Necrotizing Fasciitis",
+          "confidence": 15.3
+        },
+        {
+          "name": "Cellulitis",
+          "confidence": 9.6
+        },
+        {
+          "name": "Typhoid Fever",
+          "confidence": 9.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-006",
+      "ground_truth": "Diabetic Ketoacidosis",
+      "severity": "critical",
+      "system": "metabolic/endocrine",
+      "difficulty": "intermediate",
+      "predicted_top1": "Status epilepticus",
+      "predicted_top3": [
+        "Status epilepticus",
+        "Hypertension",
+        "Pulmonary Hamartoma"
+      ],
+      "predicted_top5": [
+        "Status epilepticus",
+        "Hypertension",
+        "Pulmonary Hamartoma",
+        "Acute Bronchitis",
+        "Diabetic Ketoacidosis"
+      ],
+      "top1_confidence": 47.6,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 10,
+      "elapsed_seconds": 9.75,
+      "all_hypotheses": [
+        {
+          "name": "Status epilepticus",
+          "confidence": 47.6
+        },
+        {
+          "name": "Hypertension",
+          "confidence": 16.1
+        },
+        {
+          "name": "Pulmonary Hamartoma",
+          "confidence": 13.1
+        },
+        {
+          "name": "Acute Bronchitis",
+          "confidence": 12.5
+        },
+        {
+          "name": "Diabetic Ketoacidosis",
+          "confidence": 10.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-007",
+      "ground_truth": "Migraine",
+      "severity": "moderate",
+      "system": "neurological",
+      "difficulty": "easy",
+      "predicted_top1": "Migraine",
+      "predicted_top3": [
+        "Migraine",
+        "Idiopathic Intracranial Hypertension",
+        "Bacterial Meningitis"
+      ],
+      "predicted_top5": [
+        "Migraine",
+        "Idiopathic Intracranial Hypertension",
+        "Bacterial Meningitis",
+        "Meningitis",
+        "Hypertension"
+      ],
+      "top1_confidence": 59.2,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 7,
+      "elapsed_seconds": 24.89,
+      "all_hypotheses": [
+        {
+          "name": "Migraine",
+          "confidence": 59.2
+        },
+        {
+          "name": "Idiopathic Intracranial Hypertension",
+          "confidence": 14.3
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 14.0
+        },
+        {
+          "name": "Meningitis",
+          "confidence": 7.1
+        },
+        {
+          "name": "Hypertension",
+          "confidence": 5.5
+        }
+      ]
+    },
+    {
+      "case_id": "GT-008",
+      "ground_truth": "Acute Appendicitis",
+      "severity": "serious",
+      "system": "gastrointestinal",
+      "difficulty": "easy",
+      "predicted_top1": "Acute Appendicitis",
+      "predicted_top3": [
+        "Acute Appendicitis",
+        "Acute Pancreatitis",
+        "Acute Gastroenteritis"
+      ],
+      "predicted_top5": [
+        "Acute Appendicitis",
+        "Acute Pancreatitis",
+        "Acute Gastroenteritis",
+        "Gastrointestinal Perforation"
+      ],
+      "top1_confidence": 41.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 10.64,
+      "all_hypotheses": [
+        {
+          "name": "Acute Appendicitis",
+          "confidence": 41.6
+        },
+        {
+          "name": "Acute Pancreatitis",
+          "confidence": 27.2
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 22.7
+        },
+        {
+          "name": "Gastrointestinal Perforation",
+          "confidence": 8.5
+        }
+      ]
+    },
+    {
+      "case_id": "GT-009",
+      "ground_truth": "Asthma",
+      "severity": "moderate",
+      "system": "respiratory",
+      "difficulty": "easy",
+      "predicted_top1": "Asthma",
+      "predicted_top3": [
+        "Asthma",
+        "Airway Obstruction",
+        "Chronic Obstructive Pulmonary Disease"
+      ],
+      "predicted_top5": [
+        "Asthma",
+        "Airway Obstruction",
+        "Chronic Obstructive Pulmonary Disease",
+        "Chronic Bronchitis"
+      ],
+      "top1_confidence": 53.7,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 5.18,
+      "all_hypotheses": [
+        {
+          "name": "Asthma",
+          "confidence": 53.7
+        },
+        {
+          "name": "Airway Obstruction",
+          "confidence": 21.7
+        },
+        {
+          "name": "Chronic Obstructive Pulmonary Disease",
+          "confidence": 14.7
+        },
+        {
+          "name": "Chronic Bronchitis",
+          "confidence": 9.9
+        }
+      ]
+    },
+    {
+      "case_id": "GT-010",
+      "ground_truth": "Hypertension",
+      "severity": "moderate",
+      "system": "cardiovascular",
+      "difficulty": "intermediate",
+      "predicted_top1": "Hypertension",
+      "predicted_top3": [
+        "Hypertension",
+        "Migraine",
+        "Tension-type Headache"
+      ],
+      "predicted_top5": [
+        "Hypertension",
+        "Migraine",
+        "Tension-type Headache",
+        "Stroke (CVA)",
+        "Bacterial Meningitis"
+      ],
+      "top1_confidence": 35.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 3,
+      "evidence_items": 3,
+      "elapsed_seconds": 6.69,
+      "all_hypotheses": [
+        {
+          "name": "Hypertension",
+          "confidence": 35.6
+        },
+        {
+          "name": "Migraine",
+          "confidence": 27.8
+        },
+        {
+          "name": "Tension-type Headache",
+          "confidence": 18.5
+        },
+        {
+          "name": "Stroke (CVA)",
+          "confidence": 9.6
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 8.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-011",
+      "ground_truth": "COVID-19",
+      "severity": "serious",
+      "system": "respiratory/infectious",
+      "difficulty": "easy",
+      "predicted_top1": "COVID-19",
+      "predicted_top3": [
+        "COVID-19",
+        "Toxic Epidermal Necrolysis",
+        "Necrotizing Fasciitis"
+      ],
+      "predicted_top5": [
+        "COVID-19",
+        "Toxic Epidermal Necrolysis",
+        "Necrotizing Fasciitis",
+        "Cellulitis",
+        "Erysipelas"
+      ],
+      "top1_confidence": 41.3,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 7,
+      "elapsed_seconds": 22.71,
+      "all_hypotheses": [
+        {
+          "name": "COVID-19",
+          "confidence": 41.3
+        },
+        {
+          "name": "Toxic Epidermal Necrolysis",
+          "confidence": 18.1
+        },
+        {
+          "name": "Necrotizing Fasciitis",
+          "confidence": 18.1
+        },
+        {
+          "name": "Cellulitis",
+          "confidence": 11.3
+        },
+        {
+          "name": "Erysipelas",
+          "confidence": 11.3
+        }
+      ]
+    },
+    {
+      "case_id": "GT-012",
+      "ground_truth": "Typhoid Fever",
+      "severity": "serious",
+      "system": "infectious",
+      "difficulty": "intermediate",
+      "predicted_top1": "Necrotizing Enterocolitis",
+      "predicted_top3": [
+        "Necrotizing Enterocolitis",
+        "Acute Mesenteric Ischemia",
+        "Acute Appendicitis"
+      ],
+      "predicted_top5": [
+        "Necrotizing Enterocolitis",
+        "Acute Mesenteric Ischemia",
+        "Acute Appendicitis",
+        "Intestinal Obstruction",
+        "Gallstones"
+      ],
+      "top1_confidence": 23.5,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 4,
+      "evidence_items": 5,
+      "elapsed_seconds": 10.09,
+      "all_hypotheses": [
+        {
+          "name": "Necrotizing Enterocolitis",
+          "confidence": 23.5
+        },
+        {
+          "name": "Acute Mesenteric Ischemia",
+          "confidence": 23.5
+        },
+        {
+          "name": "Acute Appendicitis",
+          "confidence": 21.4
+        },
+        {
+          "name": "Intestinal Obstruction",
+          "confidence": 17.6
+        },
+        {
+          "name": "Gallstones",
+          "confidence": 14.1
+        }
+      ]
+    },
+    {
+      "case_id": "GT-013",
+      "ground_truth": "Heart Failure",
+      "severity": "critical",
+      "system": "cardiovascular",
+      "difficulty": "intermediate",
+      "predicted_top1": "Myocardial Infarction",
+      "predicted_top3": [
+        "Myocardial Infarction",
+        "Cardiac Arrest",
+        "Acute Bronchitis"
+      ],
+      "predicted_top5": [
+        "Myocardial Infarction",
+        "Cardiac Arrest",
+        "Acute Bronchitis",
+        "Pulmonary Hamartoma",
+        "Pleural Plaque"
+      ],
+      "top1_confidence": 25.0,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 10.09,
+      "all_hypotheses": [
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 25.0
+        },
+        {
+          "name": "Cardiac Arrest",
+          "confidence": 25.0
+        },
+        {
+          "name": "Acute Bronchitis",
+          "confidence": 17.5
+        },
+        {
+          "name": "Pulmonary Hamartoma",
+          "confidence": 17.2
+        },
+        {
+          "name": "Pleural Plaque",
+          "confidence": 15.3
+        }
+      ]
+    },
+    {
+      "case_id": "GT-014",
+      "ground_truth": "Peptic Ulcer Disease",
+      "severity": "moderate",
+      "system": "gastrointestinal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Acute Pancreatitis",
+      "predicted_top3": [
+        "Acute Pancreatitis",
+        "Peptic Ulcer Disease",
+        "Gallstones"
+      ],
+      "predicted_top5": [
+        "Acute Pancreatitis",
+        "Peptic Ulcer Disease",
+        "Gallstones",
+        "Gastrointestinal Motility Disorder",
+        "Indigestion"
+      ],
+      "top1_confidence": 37.6,
+      "top1_match": false,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 25.08,
+      "all_hypotheses": [
+        {
+          "name": "Acute Pancreatitis",
+          "confidence": 37.6
+        },
+        {
+          "name": "Peptic Ulcer Disease",
+          "confidence": 31.2
+        },
+        {
+          "name": "Gallstones",
+          "confidence": 18.1
+        },
+        {
+          "name": "Gastrointestinal Motility Disorder",
+          "confidence": 7.1
+        },
+        {
+          "name": "Indigestion",
+          "confidence": 6.1
+        }
+      ]
+    },
+    {
+      "case_id": "GT-015",
+      "ground_truth": "Malaria",
+      "severity": "serious",
+      "system": "infectious",
+      "difficulty": "easy",
+      "predicted_top1": "Malaria",
+      "predicted_top3": [
+        "Malaria",
+        "Influenza",
+        "Severe Acute Respiratory Syndrome (SARS)"
+      ],
+      "predicted_top5": [
+        "Malaria",
+        "Influenza",
+        "Severe Acute Respiratory Syndrome (SARS)",
+        "Acute Gastroenteritis",
+        "Anxiety Attack"
+      ],
+      "top1_confidence": 61.4,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 5,
+      "elapsed_seconds": 10.19,
+      "all_hypotheses": [
+        {
+          "name": "Malaria",
+          "confidence": 61.4
+        },
+        {
+          "name": "Influenza",
+          "confidence": 22.3
+        },
+        {
+          "name": "Severe Acute Respiratory Syndrome (SARS)",
+          "confidence": 8.0
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 5.0
+        },
+        {
+          "name": "Anxiety Attack",
+          "confidence": 3.3
+        }
+      ]
+    },
+    {
+      "case_id": "GT-016",
+      "ground_truth": "Urinary Tract Infection",
+      "severity": "moderate",
+      "system": "genitourinary",
+      "difficulty": "easy",
+      "predicted_top1": "Urinary Tract Infection",
+      "predicted_top3": [
+        "Urinary Tract Infection",
+        "Pyelonephritis",
+        "Kidney Stone"
+      ],
+      "predicted_top5": [
+        "Urinary Tract Infection",
+        "Pyelonephritis",
+        "Kidney Stone",
+        "Mild Cystitis",
+        "Septicemia"
+      ],
+      "top1_confidence": 65.5,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 7,
+      "elapsed_seconds": 6.31,
+      "all_hypotheses": [
+        {
+          "name": "Urinary Tract Infection",
+          "confidence": 65.5
+        },
+        {
+          "name": "Pyelonephritis",
+          "confidence": 14.9
+        },
+        {
+          "name": "Kidney Stone",
+          "confidence": 8.1
+        },
+        {
+          "name": "Mild Cystitis",
+          "confidence": 6.4
+        },
+        {
+          "name": "Septicemia",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-017",
+      "ground_truth": "Iron Deficiency Anemia",
+      "severity": "moderate",
+      "system": "hematological",
+      "difficulty": "intermediate",
+      "predicted_top1": "Anemia",
+      "predicted_top3": [
+        "Anemia",
+        "Hypothyroidism",
+        "Myocardial Infarction"
+      ],
+      "predicted_top5": [
+        "Anemia",
+        "Hypothyroidism",
+        "Myocardial Infarction",
+        "Adrenal Insufficiency",
+        "Community Acquired Pneumonia"
+      ],
+      "top1_confidence": 58.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 8,
+      "elapsed_seconds": 6.73,
+      "all_hypotheses": [
+        {
+          "name": "Anemia",
+          "confidence": 58.9
+        },
+        {
+          "name": "Hypothyroidism",
+          "confidence": 20.0
+        },
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 8.0
+        },
+        {
+          "name": "Adrenal Insufficiency",
+          "confidence": 8.0
+        },
+        {
+          "name": "Community Acquired Pneumonia",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-018",
+      "ground_truth": "Hypothyroidism",
+      "severity": "moderate",
+      "system": "endocrine",
+      "difficulty": "intermediate",
+      "predicted_top1": "Hypothyroidism",
+      "predicted_top3": [
+        "Hypothyroidism",
+        "Myocardial Infarction",
+        "Hemifacial spasm"
+      ],
+      "predicted_top5": [
+        "Hypothyroidism",
+        "Myocardial Infarction",
+        "Hemifacial spasm",
+        "Stable Angina",
+        "Pityriasis Versicolor"
+      ],
+      "top1_confidence": 43.3,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 8,
+      "elapsed_seconds": 23.73,
+      "all_hypotheses": [
+        {
+          "name": "Hypothyroidism",
+          "confidence": 43.3
+        },
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 24.2
+        },
+        {
+          "name": "Hemifacial spasm",
+          "confidence": 12.1
+        },
+        {
+          "name": "Stable Angina",
+          "confidence": 10.3
+        },
+        {
+          "name": "Pityriasis Versicolor",
+          "confidence": 10.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-019",
+      "ground_truth": "Cholera",
+      "severity": "critical",
+      "system": "gastrointestinal/infectious",
+      "difficulty": "easy",
+      "predicted_top1": "Cholera",
+      "predicted_top3": [
+        "Cholera",
+        "Necrotizing Enterocolitis",
+        "Acute Mesenteric Ischemia"
+      ],
+      "predicted_top5": [
+        "Cholera",
+        "Necrotizing Enterocolitis",
+        "Acute Mesenteric Ischemia",
+        "Viral Gastroenteritis",
+        "Acute Gastroenteritis"
+      ],
+      "top1_confidence": 24.3,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 6,
+      "elapsed_seconds": 10.21,
+      "all_hypotheses": [
+        {
+          "name": "Cholera",
+          "confidence": 24.3
+        },
+        {
+          "name": "Necrotizing Enterocolitis",
+          "confidence": 19.1
+        },
+        {
+          "name": "Acute Mesenteric Ischemia",
+          "confidence": 19.1
+        },
+        {
+          "name": "Viral Gastroenteritis",
+          "confidence": 18.9
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 18.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-020",
+      "ground_truth": "Rheumatoid Arthritis",
+      "severity": "moderate",
+      "system": "musculoskeletal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Myocardial Infarction",
+      "predicted_top3": [
+        "Myocardial Infarction",
+        "Rheumatoid Arthritis",
+        "Osteoarthritis"
+      ],
+      "predicted_top5": [
+        "Myocardial Infarction",
+        "Rheumatoid Arthritis",
+        "Osteoarthritis",
+        "Stable Angina",
+        "Muscle Twitch"
+      ],
+      "top1_confidence": 33.9,
+      "top1_match": false,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 10.18,
+      "all_hypotheses": [
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 33.9
+        },
+        {
+          "name": "Rheumatoid Arthritis",
+          "confidence": 28.4
+        },
+        {
+          "name": "Osteoarthritis",
+          "confidence": 18.2
+        },
+        {
+          "name": "Stable Angina",
+          "confidence": 10.2
+        },
+        {
+          "name": "Muscle Twitch",
+          "confidence": 9.2
+        }
+      ]
+    },
+    {
+      "case_id": "GT-021",
+      "ground_truth": "Acute Pancreatitis",
+      "severity": "serious",
+      "system": "gastrointestinal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Acute Pancreatitis",
+      "predicted_top3": [
+        "Acute Pancreatitis",
+        "Acute Gastroenteritis",
+        "Acute Appendicitis"
+      ],
+      "predicted_top5": [
+        "Acute Pancreatitis",
+        "Acute Gastroenteritis",
+        "Acute Appendicitis",
+        "Ruptured Ectopic Pregnancy",
+        "Dengue Fever"
+      ],
+      "top1_confidence": 56.5,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 3,
+      "evidence_items": 3,
+      "elapsed_seconds": 23.82,
+      "all_hypotheses": [
+        {
+          "name": "Acute Pancreatitis",
+          "confidence": 56.5
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 19.2
+        },
+        {
+          "name": "Acute Appendicitis",
+          "confidence": 11.3
+        },
+        {
+          "name": "Ruptured Ectopic Pregnancy",
+          "confidence": 8.0
+        },
+        {
+          "name": "Dengue Fever",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-022",
+      "ground_truth": "Deep Vein Thrombosis",
+      "severity": "serious",
+      "system": "cardiovascular",
+      "difficulty": "intermediate",
+      "predicted_top1": "Deep Vein Thrombosis",
+      "predicted_top3": [
+        "Deep Vein Thrombosis",
+        "Stress Fracture",
+        "Mild Sprain"
+      ],
+      "predicted_top5": [
+        "Deep Vein Thrombosis",
+        "Stress Fracture",
+        "Mild Sprain",
+        "Pulmonary Embolism",
+        "Tendinitis"
+      ],
+      "top1_confidence": 51.7,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 11.1,
+      "all_hypotheses": [
+        {
+          "name": "Deep Vein Thrombosis",
+          "confidence": 51.7
+        },
+        {
+          "name": "Stress Fracture",
+          "confidence": 20.5
+        },
+        {
+          "name": "Mild Sprain",
+          "confidence": 13.5
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 8.0
+        },
+        {
+          "name": "Tendinitis",
+          "confidence": 6.2
+        }
+      ]
+    },
+    {
+      "case_id": "GT-023",
+      "ground_truth": "Meningitis",
+      "severity": "critical",
+      "system": "neurological",
+      "difficulty": "easy",
+      "predicted_top1": "Bacterial Meningitis",
+      "predicted_top3": [
+        "Bacterial Meningitis",
+        "Meningitis",
+        "Dengue Fever"
+      ],
+      "predicted_top5": [
+        "Bacterial Meningitis",
+        "Meningitis",
+        "Dengue Fever",
+        "Migraine"
+      ],
+      "top1_confidence": 41.2,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 5.63,
+      "all_hypotheses": [
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 41.2
+        },
+        {
+          "name": "Meningitis",
+          "confidence": 40.2
+        },
+        {
+          "name": "Dengue Fever",
+          "confidence": 12.1
+        },
+        {
+          "name": "Migraine",
+          "confidence": 6.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-024",
+      "ground_truth": "Kidney Stone",
+      "severity": "moderate",
+      "system": "renal",
+      "difficulty": "easy",
+      "predicted_top1": "Kidney Stone",
+      "predicted_top3": [
+        "Kidney Stone",
+        "Urinary Tract Infection",
+        "Bacterial Meningitis"
+      ],
+      "predicted_top5": [
+        "Kidney Stone",
+        "Urinary Tract Infection",
+        "Bacterial Meningitis",
+        "Acute Gastroenteritis",
+        "Primary Hyperoxaluria"
+      ],
+      "top1_confidence": 63.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 5,
+      "elapsed_seconds": 6.64,
+      "all_hypotheses": [
+        {
+          "name": "Kidney Stone",
+          "confidence": 63.6
+        },
+        {
+          "name": "Urinary Tract Infection",
+          "confidence": 17.4
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 8.0
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 7.5
+        },
+        {
+          "name": "Primary Hyperoxaluria",
+          "confidence": 3.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-025",
+      "ground_truth": "Tuberculosis",
+      "severity": "serious",
+      "system": "respiratory",
+      "difficulty": "intermediate",
+      "predicted_top1": "Tuberculosis",
+      "predicted_top3": [
+        "Tuberculosis",
+        "Lung Cancer",
+        "Goodpasture's Syndrome"
+      ],
+      "predicted_top5": [
+        "Tuberculosis",
+        "Lung Cancer",
+        "Goodpasture's Syndrome",
+        "Airway Obstruction",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 54.8,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 11,
+      "elapsed_seconds": 6.66,
+      "all_hypotheses": [
+        {
+          "name": "Tuberculosis",
+          "confidence": 54.8
+        },
+        {
+          "name": "Lung Cancer",
+          "confidence": 29.8
+        },
+        {
+          "name": "Goodpasture's Syndrome",
+          "confidence": 8.0
+        },
+        {
+          "name": "Airway Obstruction",
+          "confidence": 8.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": -0.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-026",
+      "ground_truth": "Celiac Disease",
+      "severity": "moderate",
+      "system": "gastrointestinal",
+      "difficulty": "advanced",
+      "predicted_top1": "Celiac Disease",
+      "predicted_top3": [
+        "Celiac Disease",
+        "Irritable Bowel Syndrome",
+        "Adrenal Insufficiency"
+      ],
+      "predicted_top5": [
+        "Celiac Disease",
+        "Irritable Bowel Syndrome",
+        "Adrenal Insufficiency",
+        "Rheumatic Fever"
+      ],
+      "top1_confidence": 60.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 6.27,
+      "all_hypotheses": [
+        {
+          "name": "Celiac Disease",
+          "confidence": 60.6
+        },
+        {
+          "name": "Irritable Bowel Syndrome",
+          "confidence": 22.8
+        },
+        {
+          "name": "Adrenal Insufficiency",
+          "confidence": 11.8
+        },
+        {
+          "name": "Rheumatic Fever",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-027",
+      "ground_truth": "Atrial Fibrillation (AFib)",
+      "severity": "serious",
+      "system": "cardiovascular",
+      "difficulty": "intermediate",
+      "predicted_top1": "Atrial Fibrillation",
+      "predicted_top3": [
+        "Atrial Fibrillation",
+        "Myocardial Infarction",
+        "Cardiac Arrest"
+      ],
+      "predicted_top5": [
+        "Atrial Fibrillation",
+        "Myocardial Infarction",
+        "Cardiac Arrest",
+        "Supraventricular Tachycardia",
+        "Unstable Angina"
+      ],
+      "top1_confidence": 25.1,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 6,
+      "elapsed_seconds": 22.04,
+      "all_hypotheses": [
+        {
+          "name": "Atrial Fibrillation",
+          "confidence": 25.1
+        },
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 20.1
+        },
+        {
+          "name": "Cardiac Arrest",
+          "confidence": 20.1
+        },
+        {
+          "name": "Supraventricular Tachycardia",
+          "confidence": 18.6
+        },
+        {
+          "name": "Unstable Angina",
+          "confidence": 16.1
+        }
+      ]
+    },
+    {
+      "case_id": "GT-028",
+      "ground_truth": "Gallstones",
+      "severity": "moderate",
+      "system": "gastrointestinal",
+      "difficulty": "easy",
+      "predicted_top1": "Gallstones",
+      "predicted_top3": [
+        "Gallstones",
+        "Peptic Ulcer Disease",
+        "Gastrointestinal Perforation"
+      ],
+      "predicted_top5": [
+        "Gallstones",
+        "Peptic Ulcer Disease",
+        "Gastrointestinal Perforation",
+        "Diverticulitis",
+        "Esophageal Spasm"
+      ],
+      "top1_confidence": 28.1,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 10.42,
+      "all_hypotheses": [
+        {
+          "name": "Gallstones",
+          "confidence": 28.1
+        },
+        {
+          "name": "Peptic Ulcer Disease",
+          "confidence": 22.6
+        },
+        {
+          "name": "Gastrointestinal Perforation",
+          "confidence": 18.2
+        },
+        {
+          "name": "Diverticulitis",
+          "confidence": 17.5
+        },
+        {
+          "name": "Esophageal Spasm",
+          "confidence": 13.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-029",
+      "ground_truth": "Hyperthyroidism",
+      "severity": "moderate",
+      "system": "endocrine",
+      "difficulty": "intermediate",
+      "predicted_top1": "Hyperthyroidism",
+      "predicted_top3": [
+        "Hyperthyroidism",
+        "Anxiety Disorder",
+        "Atrial Fibrillation"
+      ],
+      "predicted_top5": [
+        "Hyperthyroidism",
+        "Anxiety Disorder",
+        "Atrial Fibrillation",
+        "Acute Myocardial Infarction",
+        "Pheochromocytoma"
+      ],
+      "top1_confidence": 41.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 23.15,
+      "all_hypotheses": [
+        {
+          "name": "Hyperthyroidism",
+          "confidence": 41.9
+        },
+        {
+          "name": "Anxiety Disorder",
+          "confidence": 23.9
+        },
+        {
+          "name": "Atrial Fibrillation",
+          "confidence": 18.1
+        },
+        {
+          "name": "Acute Myocardial Infarction",
+          "confidence": 8.0
+        },
+        {
+          "name": "Pheochromocytoma",
+          "confidence": 8.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-030",
+      "ground_truth": "Stroke (CVA)",
+      "severity": "critical",
+      "system": "neurological",
+      "difficulty": "easy",
+      "predicted_top1": "Acute Ischemic Stroke",
+      "predicted_top3": [
+        "Acute Ischemic Stroke",
+        "Hypertensive Encephalopathy",
+        "Brain Tumor"
+      ],
+      "predicted_top5": [
+        "Acute Ischemic Stroke",
+        "Hypertensive Encephalopathy",
+        "Brain Tumor",
+        "Bacterial Meningitis",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 67.3,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 5,
+      "evidence_items": 12,
+      "elapsed_seconds": 10.89,
+      "all_hypotheses": [
+        {
+          "name": "Acute Ischemic Stroke",
+          "confidence": 67.3
+        },
+        {
+          "name": "Hypertensive Encephalopathy",
+          "confidence": 11.2
+        },
+        {
+          "name": "Brain Tumor",
+          "confidence": 11.2
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 9.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 1.3
+        }
+      ]
+    },
+    {
+      "case_id": "GT-031",
+      "ground_truth": "Epilepsy",
+      "severity": "serious",
+      "system": "neurological",
+      "difficulty": "intermediate",
+      "predicted_top1": "Status epilepticus",
+      "predicted_top3": [
+        "Status epilepticus",
+        "Septicemia",
+        "Stroke (CVA)"
+      ],
+      "predicted_top5": [
+        "Status epilepticus",
+        "Septicemia",
+        "Stroke (CVA)",
+        "Bacterial Meningitis",
+        "COVID-19"
+      ],
+      "top1_confidence": 56.1,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 5,
+      "evidence_items": 10,
+      "elapsed_seconds": 6.08,
+      "all_hypotheses": [
+        {
+          "name": "Status epilepticus",
+          "confidence": 56.1
+        },
+        {
+          "name": "Septicemia",
+          "confidence": 21.9
+        },
+        {
+          "name": "Stroke (CVA)",
+          "confidence": 9.0
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 7.0
+        },
+        {
+          "name": "COVID-19",
+          "confidence": 6.2
+        }
+      ]
+    },
+    {
+      "case_id": "GT-032",
+      "ground_truth": "Anxiety Disorder",
+      "severity": "moderate",
+      "system": "psychiatric",
+      "difficulty": "intermediate",
+      "predicted_top1": "Anxiety Disorder",
+      "predicted_top3": [
+        "Anxiety Disorder",
+        "Acute Myocardial Infarction",
+        "Atrial Fibrillation"
+      ],
+      "predicted_top5": [
+        "Anxiety Disorder",
+        "Acute Myocardial Infarction",
+        "Atrial Fibrillation",
+        "Aortic Dissection",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 50.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 11,
+      "elapsed_seconds": 6.39,
+      "all_hypotheses": [
+        {
+          "name": "Anxiety Disorder",
+          "confidence": 50.6
+        },
+        {
+          "name": "Acute Myocardial Infarction",
+          "confidence": 18.8
+        },
+        {
+          "name": "Atrial Fibrillation",
+          "confidence": 18.0
+        },
+        {
+          "name": "Aortic Dissection",
+          "confidence": 8.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 4.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-033",
+      "ground_truth": "Liver Cirrhosis",
+      "severity": "serious",
+      "system": "gastrointestinal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Liver Cirrhosis",
+      "predicted_top3": [
+        "Liver Cirrhosis",
+        "Hepatitis B",
+        "Hepatocellular Carcinoma"
+      ],
+      "predicted_top5": [
+        "Liver Cirrhosis",
+        "Hepatitis B",
+        "Hepatocellular Carcinoma",
+        "Acute Myeloid Leukemia",
+        "Sickle Cell Disease"
+      ],
+      "top1_confidence": 44.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 5,
+      "elapsed_seconds": 6.23,
+      "all_hypotheses": [
+        {
+          "name": "Liver Cirrhosis",
+          "confidence": 44.9
+        },
+        {
+          "name": "Hepatitis B",
+          "confidence": 36.3
+        },
+        {
+          "name": "Hepatocellular Carcinoma",
+          "confidence": 8.6
+        },
+        {
+          "name": "Acute Myeloid Leukemia",
+          "confidence": 6.8
+        },
+        {
+          "name": "Sickle Cell Disease",
+          "confidence": 3.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-034",
+      "ground_truth": "Gout",
+      "severity": "moderate",
+      "system": "musculoskeletal",
+      "difficulty": "easy",
+      "predicted_top1": "Gout",
+      "predicted_top3": [
+        "Gout",
+        "Septic Arthritis",
+        "Pseudogout"
+      ],
+      "predicted_top5": [
+        "Gout",
+        "Septic Arthritis",
+        "Pseudogout",
+        "Osteoarthritis",
+        "Rheumatoid Arthritis"
+      ],
+      "top1_confidence": 60.0,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 6.52,
+      "all_hypotheses": [
+        {
+          "name": "Gout",
+          "confidence": 60.0
+        },
+        {
+          "name": "Septic Arthritis",
+          "confidence": 20.0
+        },
+        {
+          "name": "Pseudogout",
+          "confidence": 10.0
+        },
+        {
+          "name": "Osteoarthritis",
+          "confidence": 5.0
+        },
+        {
+          "name": "Rheumatoid Arthritis",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-035",
+      "ground_truth": "COPD",
+      "severity": "serious",
+      "system": "respiratory",
+      "difficulty": "intermediate",
+      "predicted_top1": "Chronic Obstructive Pulmonary Disease",
+      "predicted_top3": [
+        "Chronic Obstructive Pulmonary Disease",
+        "Chronic Bronchitis",
+        "Acute Bronchitis"
+      ],
+      "predicted_top5": [
+        "Chronic Obstructive Pulmonary Disease",
+        "Chronic Bronchitis",
+        "Acute Bronchitis",
+        "Wegener's Granulomatosis",
+        "Cardiac Arrest due to Pulmonary Embolism"
+      ],
+      "top1_confidence": 30.0,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 6,
+      "elapsed_seconds": 33.71,
+      "all_hypotheses": [
+        {
+          "name": "Chronic Obstructive Pulmonary Disease",
+          "confidence": 30.0
+        },
+        {
+          "name": "Chronic Bronchitis",
+          "confidence": 22.1
+        },
+        {
+          "name": "Acute Bronchitis",
+          "confidence": 18.6
+        },
+        {
+          "name": "Wegener's Granulomatosis",
+          "confidence": 14.6
+        },
+        {
+          "name": "Cardiac Arrest due to Pulmonary Embolism",
+          "confidence": 14.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-036",
+      "ground_truth": "Influenza",
+      "severity": "moderate",
+      "system": "respiratory",
+      "difficulty": "easy",
+      "predicted_top1": "COVID-19",
+      "predicted_top3": [
+        "COVID-19",
+        "Influenza",
+        "Common Cold"
+      ],
+      "predicted_top5": [
+        "COVID-19",
+        "Influenza",
+        "Common Cold",
+        "Pneumonia",
+        "Malaria"
+      ],
+      "top1_confidence": 33.4,
+      "top1_match": false,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 23.23,
+      "all_hypotheses": [
+        {
+          "name": "COVID-19",
+          "confidence": 33.4
+        },
+        {
+          "name": "Influenza",
+          "confidence": 32.4
+        },
+        {
+          "name": "Common Cold",
+          "confidence": 18.7
+        },
+        {
+          "name": "Pneumonia",
+          "confidence": 10.7
+        },
+        {
+          "name": "Malaria",
+          "confidence": 5.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-037",
+      "ground_truth": "Pneumothorax",
+      "severity": "critical",
+      "system": "respiratory",
+      "difficulty": "intermediate",
+      "predicted_top1": "Myocardial Infarction",
+      "predicted_top3": [
+        "Myocardial Infarction",
+        "Anxiety Disorder",
+        "Pneumothorax"
+      ],
+      "predicted_top5": [
+        "Myocardial Infarction",
+        "Anxiety Disorder",
+        "Pneumothorax",
+        "Pulmonary Embolism",
+        "Muscle Twitch"
+      ],
+      "top1_confidence": 31.1,
+      "top1_match": false,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 3,
+      "evidence_items": 12,
+      "elapsed_seconds": 12.64,
+      "all_hypotheses": [
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 31.1
+        },
+        {
+          "name": "Anxiety Disorder",
+          "confidence": 24.7
+        },
+        {
+          "name": "Pneumothorax",
+          "confidence": 23.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 12.1
+        },
+        {
+          "name": "Muscle Twitch",
+          "confidence": 9.1
+        }
+      ]
+    },
+    {
+      "case_id": "GT-038",
+      "ground_truth": "Type 2 Diabetes Mellitus",
+      "severity": "moderate",
+      "system": "endocrine",
+      "difficulty": "intermediate",
+      "predicted_top1": "Type 2 Diabetes Mellitus",
+      "predicted_top3": [
+        "Type 2 Diabetes Mellitus",
+        "Bacterial Meningitis",
+        "Diabetic Ketoacidosis"
+      ],
+      "predicted_top5": [
+        "Type 2 Diabetes Mellitus",
+        "Bacterial Meningitis",
+        "Diabetic Ketoacidosis",
+        "Atrial Fibrillation",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 80.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 5,
+      "evidence_items": 15,
+      "elapsed_seconds": 6.65,
+      "all_hypotheses": [
+        {
+          "name": "Type 2 Diabetes Mellitus",
+          "confidence": 80.6
+        },
+        {
+          "name": "Bacterial Meningitis",
+          "confidence": 8.0
+        },
+        {
+          "name": "Diabetic Ketoacidosis",
+          "confidence": 5.6
+        },
+        {
+          "name": "Atrial Fibrillation",
+          "confidence": 5.3
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 0.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-039",
+      "ground_truth": "Allergic Rhinitis",
+      "severity": "benign",
+      "system": "respiratory",
+      "difficulty": "easy",
+      "predicted_top1": "Allergic Rhinitis",
+      "predicted_top3": [
+        "Allergic Rhinitis",
+        "Viral Upper Respiratory Infection",
+        "Sinusitis"
+      ],
+      "predicted_top5": [
+        "Allergic Rhinitis",
+        "Viral Upper Respiratory Infection",
+        "Sinusitis",
+        "Pulmonary Embolism"
+      ],
+      "top1_confidence": 66.6,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 3,
+      "evidence_items": 3,
+      "elapsed_seconds": 10.62,
+      "all_hypotheses": [
+        {
+          "name": "Allergic Rhinitis",
+          "confidence": 66.6
+        },
+        {
+          "name": "Viral Upper Respiratory Infection",
+          "confidence": 16.9
+        },
+        {
+          "name": "Sinusitis",
+          "confidence": 8.4
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 8.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-040",
+      "ground_truth": "Sepsis",
+      "severity": "critical",
+      "system": "infectious",
+      "difficulty": "intermediate",
+      "predicted_top1": "Sepsis",
+      "predicted_top3": [
+        "Sepsis",
+        "Septicemia",
+        "Critical Septic Shock"
+      ],
+      "predicted_top5": [
+        "Sepsis",
+        "Septicemia",
+        "Critical Septic Shock",
+        "Severe Sepsis"
+      ],
+      "top1_confidence": 38.2,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 6,
+      "evidence_items": 7,
+      "elapsed_seconds": 10.91,
+      "all_hypotheses": [
+        {
+          "name": "Sepsis",
+          "confidence": 38.2
+        },
+        {
+          "name": "Septicemia",
+          "confidence": 38.2
+        },
+        {
+          "name": "Critical Septic Shock",
+          "confidence": 15.7
+        },
+        {
+          "name": "Severe Sepsis",
+          "confidence": 8.0
+        }
+      ]
+    },
+    {
+      "case_id": "GT-041",
+      "ground_truth": "Depression",
+      "severity": "moderate",
+      "system": "psychiatric",
+      "difficulty": "intermediate",
+      "predicted_top1": "Migraine",
+      "predicted_top3": [
+        "Migraine",
+        "Tension-type Headache",
+        "Tension Headache"
+      ],
+      "predicted_top5": [
+        "Migraine",
+        "Tension-type Headache",
+        "Tension Headache",
+        "Ischemic Stroke",
+        "Stroke (CVA)"
+      ],
+      "top1_confidence": 27.3,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 6,
+      "evidence_items": 9,
+      "elapsed_seconds": 28.51,
+      "all_hypotheses": [
+        {
+          "name": "Migraine",
+          "confidence": 27.3
+        },
+        {
+          "name": "Tension-type Headache",
+          "confidence": 24.4
+        },
+        {
+          "name": "Tension Headache",
+          "confidence": 20.5
+        },
+        {
+          "name": "Ischemic Stroke",
+          "confidence": 20.0
+        },
+        {
+          "name": "Stroke (CVA)",
+          "confidence": 7.8
+        }
+      ]
+    },
+    {
+      "case_id": "GT-042",
+      "ground_truth": "Hepatitis B",
+      "severity": "serious",
+      "system": "gastrointestinal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Hepatitis B",
+      "predicted_top3": [
+        "Hepatitis B",
+        "Hepatitis",
+        "Acute Appendicitis"
+      ],
+      "predicted_top5": [
+        "Hepatitis B",
+        "Hepatitis",
+        "Acute Appendicitis",
+        "Acute Pancreatitis",
+        "Diverticulitis"
+      ],
+      "top1_confidence": 45.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 7,
+      "elapsed_seconds": 31.16,
+      "all_hypotheses": [
+        {
+          "name": "Hepatitis B",
+          "confidence": 45.9
+        },
+        {
+          "name": "Hepatitis",
+          "confidence": 22.2
+        },
+        {
+          "name": "Acute Appendicitis",
+          "confidence": 15.2
+        },
+        {
+          "name": "Acute Pancreatitis",
+          "confidence": 10.1
+        },
+        {
+          "name": "Diverticulitis",
+          "confidence": 6.5
+        }
+      ]
+    },
+    {
+      "case_id": "GT-043",
+      "ground_truth": "Osteoarthritis",
+      "severity": "moderate",
+      "system": "musculoskeletal",
+      "difficulty": "easy",
+      "predicted_top1": "Osteoarthritis",
+      "predicted_top3": [
+        "Osteoarthritis",
+        "Tendinitis",
+        "Achilles Tendinopathy"
+      ],
+      "predicted_top5": [
+        "Osteoarthritis",
+        "Tendinitis",
+        "Achilles Tendinopathy",
+        "Rib Fracture",
+        "Carpal Tunnel Syndrome"
+      ],
+      "top1_confidence": 62.1,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 4,
+      "evidence_items": 4,
+      "elapsed_seconds": 23.52,
+      "all_hypotheses": [
+        {
+          "name": "Osteoarthritis",
+          "confidence": 62.1
+        },
+        {
+          "name": "Tendinitis",
+          "confidence": 16.4
+        },
+        {
+          "name": "Achilles Tendinopathy",
+          "confidence": 8.4
+        },
+        {
+          "name": "Rib Fracture",
+          "confidence": 6.6
+        },
+        {
+          "name": "Carpal Tunnel Syndrome",
+          "confidence": 6.4
+        }
+      ]
+    },
+    {
+      "case_id": "GT-044",
+      "ground_truth": "Eczema",
+      "severity": "benign",
+      "system": "dermatological",
+      "difficulty": "easy",
+      "predicted_top1": "Eczema",
+      "predicted_top3": [
+        "Eczema",
+        "Mild Allergic Reaction",
+        "Seborrheic Dermatitis"
+      ],
+      "predicted_top5": [
+        "Eczema",
+        "Mild Allergic Reaction",
+        "Seborrheic Dermatitis",
+        "Tinea Versicolor",
+        "Contact Dermatitis"
+      ],
+      "top1_confidence": 68.0,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 8,
+      "evidence_items": 8,
+      "elapsed_seconds": 21.44,
+      "all_hypotheses": [
+        {
+          "name": "Eczema",
+          "confidence": 68.0
+        },
+        {
+          "name": "Mild Allergic Reaction",
+          "confidence": 8.2
+        },
+        {
+          "name": "Seborrheic Dermatitis",
+          "confidence": 8.2
+        },
+        {
+          "name": "Tinea Versicolor",
+          "confidence": 7.9
+        },
+        {
+          "name": "Contact Dermatitis",
+          "confidence": 7.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-045",
+      "ground_truth": "Chronic Kidney Disease",
+      "severity": "serious",
+      "system": "renal",
+      "difficulty": "advanced",
+      "predicted_top1": "Chronic Kidney Disease",
+      "predicted_top3": [
+        "Chronic Kidney Disease",
+        "Myocardial Infarction",
+        "Tuberculosis"
+      ],
+      "predicted_top5": [
+        "Chronic Kidney Disease",
+        "Myocardial Infarction",
+        "Tuberculosis",
+        "Heart Failure",
+        "Stable Angina"
+      ],
+      "top1_confidence": 29.0,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 8,
+      "evidence_items": 8,
+      "elapsed_seconds": 20.65,
+      "all_hypotheses": [
+        {
+          "name": "Chronic Kidney Disease",
+          "confidence": 29.0
+        },
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 27.3
+        },
+        {
+          "name": "Tuberculosis",
+          "confidence": 17.1
+        },
+        {
+          "name": "Heart Failure",
+          "confidence": 17.1
+        },
+        {
+          "name": "Stable Angina",
+          "confidence": 9.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-046",
+      "ground_truth": "Irritable Bowel Syndrome",
+      "severity": "benign",
+      "system": "gastrointestinal",
+      "difficulty": "intermediate",
+      "predicted_top1": "Irritable Bowel Syndrome",
+      "predicted_top3": [
+        "Irritable Bowel Syndrome",
+        "Acute Gastroenteritis",
+        "Acute Pancreatitis"
+      ],
+      "predicted_top5": [
+        "Irritable Bowel Syndrome",
+        "Acute Gastroenteritis",
+        "Acute Pancreatitis",
+        "Gastrointestinal Motility Disorder",
+        "Gastroesophageal Reflux Disease (GERD)"
+      ],
+      "top1_confidence": 36.1,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 9,
+      "evidence_items": 9,
+      "elapsed_seconds": 49.09,
+      "all_hypotheses": [
+        {
+          "name": "Irritable Bowel Syndrome",
+          "confidence": 36.1
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 21.7
+        },
+        {
+          "name": "Acute Pancreatitis",
+          "confidence": 17.5
+        },
+        {
+          "name": "Gastrointestinal Motility Disorder",
+          "confidence": 13.9
+        },
+        {
+          "name": "Gastroesophageal Reflux Disease (GERD)",
+          "confidence": 10.7
+        }
+      ]
+    },
+    {
+      "case_id": "GT-047",
+      "ground_truth": "Bell's Palsy",
+      "severity": "moderate",
+      "system": "neurological",
+      "difficulty": "intermediate",
+      "predicted_top1": "Vitamin Deficiency Anemia",
+      "predicted_top3": [
+        "Vitamin Deficiency Anemia",
+        "Iron Deficiency Anemia",
+        "Relapsing Polychondritis"
+      ],
+      "predicted_top5": [
+        "Vitamin Deficiency Anemia",
+        "Iron Deficiency Anemia",
+        "Relapsing Polychondritis",
+        "Peritonsillar Abscess",
+        "Ear Fullness"
+      ],
+      "top1_confidence": 25.3,
+      "top1_match": false,
+      "top3_match": false,
+      "top5_match": false,
+      "symptoms_extracted": 6,
+      "evidence_items": 6,
+      "elapsed_seconds": 20.25,
+      "all_hypotheses": [
+        {
+          "name": "Vitamin Deficiency Anemia",
+          "confidence": 25.3
+        },
+        {
+          "name": "Iron Deficiency Anemia",
+          "confidence": 24.7
+        },
+        {
+          "name": "Relapsing Polychondritis",
+          "confidence": 17.6
+        },
+        {
+          "name": "Peritonsillar Abscess",
+          "confidence": 16.9
+        },
+        {
+          "name": "Ear Fullness",
+          "confidence": 15.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-048",
+      "ground_truth": "Anaphylaxis",
+      "severity": "critical",
+      "system": "immunological",
+      "difficulty": "easy",
+      "predicted_top1": "Anaphylaxis",
+      "predicted_top3": [
+        "Anaphylaxis",
+        "Pulmonary Embolism",
+        "Acute Bronchitis"
+      ],
+      "predicted_top5": [
+        "Anaphylaxis",
+        "Pulmonary Embolism",
+        "Acute Bronchitis",
+        "Pulmonary Hamartoma",
+        "Pleural Plaque"
+      ],
+      "top1_confidence": 83.0,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 15,
+      "evidence_items": 17,
+      "elapsed_seconds": 19.54,
+      "all_hypotheses": [
+        {
+          "name": "Anaphylaxis",
+          "confidence": 83.0
+        },
+        {
+          "name": "Pulmonary Embolism",
+          "confidence": 8.0
+        },
+        {
+          "name": "Acute Bronchitis",
+          "confidence": 3.2
+        },
+        {
+          "name": "Pulmonary Hamartoma",
+          "confidence": 3.1
+        },
+        {
+          "name": "Pleural Plaque",
+          "confidence": 2.6
+        }
+      ]
+    },
+    {
+      "case_id": "GT-049",
+      "ground_truth": "Gastroenteritis",
+      "severity": "benign",
+      "system": "gastrointestinal",
+      "difficulty": "easy",
+      "predicted_top1": "Gastroenteritis",
+      "predicted_top3": [
+        "Gastroenteritis",
+        "Viral Gastroenteritis",
+        "Acute Gastroenteritis"
+      ],
+      "predicted_top5": [
+        "Gastroenteritis",
+        "Viral Gastroenteritis",
+        "Acute Gastroenteritis",
+        "Cholera",
+        "Intestinal Obstruction"
+      ],
+      "top1_confidence": 46.7,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 9,
+      "evidence_items": 9,
+      "elapsed_seconds": 51.3,
+      "all_hypotheses": [
+        {
+          "name": "Gastroenteritis",
+          "confidence": 46.7
+        },
+        {
+          "name": "Viral Gastroenteritis",
+          "confidence": 21.1
+        },
+        {
+          "name": "Acute Gastroenteritis",
+          "confidence": 12.7
+        },
+        {
+          "name": "Cholera",
+          "confidence": 11.7
+        },
+        {
+          "name": "Intestinal Obstruction",
+          "confidence": 7.8
+        }
+      ]
+    },
+    {
+      "case_id": "GT-050",
+      "ground_truth": "Systemic Lupus Erythematosus",
+      "severity": "serious",
+      "system": "autoimmune",
+      "difficulty": "advanced",
+      "predicted_top1": "Systemic Lupus Erythematosus",
+      "predicted_top3": [
+        "Systemic Lupus Erythematosus",
+        "Myocardial Infarction",
+        "Hemifacial spasm"
+      ],
+      "predicted_top5": [
+        "Systemic Lupus Erythematosus",
+        "Myocardial Infarction",
+        "Hemifacial spasm",
+        "Stable Angina",
+        "Unstable Angina"
+      ],
+      "top1_confidence": 42.9,
+      "top1_match": true,
+      "top3_match": true,
+      "top5_match": true,
+      "symptoms_extracted": 7,
+      "evidence_items": 8,
+      "elapsed_seconds": 20.39,
+      "all_hypotheses": [
+        {
+          "name": "Systemic Lupus Erythematosus",
+          "confidence": 42.9
+        },
+        {
+          "name": "Myocardial Infarction",
+          "confidence": 24.3
+        },
+        {
+          "name": "Hemifacial spasm",
+          "confidence": 12.2
+        },
+        {
+          "name": "Stable Angina",
+          "confidence": 11.2
+        },
+        {
+          "name": "Unstable Angina",
+          "confidence": 9.4
+        }
+      ]
+    }
+  ]
+}

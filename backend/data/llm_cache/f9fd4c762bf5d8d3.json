@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "f9fd4c762bf5d8d3",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Celiac Disease",
+        "confidence": 40.0,
+        "reasoning": "Chronic diarrhea, bloating, and worsening symptoms after eating certain foods (e.g., bread and pasta) are classic symptoms of celiac disease. The presence of itchy blistering rash, which could be dermatitis herpetiformis, further supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Chronic Diarrhea",
+          "Bloating",
+          "Itchy Blistering Rash"
+        ],
+        "key_features_absent": [
+          "Weight loss is present but not as significant as expected in some cases of celiac disease"
+        ],
+        "differentiating_factor": "The specific worsening of symptoms after consuming gluten-containing foods and the presence of a rash are key differentiators.",
+        "initial_prior": "Based on the prevalence of celiac disease and the strong symptom match"
+      },
+      {
+        "name": "Inflammatory Bowel Disease (IBD)",
+        "confidence": 30.0,
+        "reasoning": "The chronic nature of the diarrhea, along with weight loss and fatigue, could suggest IBD, such as Crohn's disease or ulcerative colitis. However, the itchy blistering rash is less commonly associated with IBD.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Chronic Diarrhea",
+          "Weight Loss",
+          "Fatigue"
+        ],
+        "key_features_absent": [
+          "Blood in stool, which is a common feature of IBD"
+        ],
+        "differentiating_factor": "The absence of blood in stool and the presence of a rash make IBD less likely than celiac disease but still a consideration.",
+        "initial_prior": "Based on the prevalence of IBD and the partial symptom match"
+      },
+      {
+        "name": "Irritable Bowel Syndrome (IBS)",
+        "confidence": 15.0,
+        "reasoning": "While IBS could explain the chronic diarrhea and bloating, the presence of weight loss, fatigue, and an itchy blistering rash are not typical for IBS, making it a less likely diagnosis.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Chronic Diarrhea",
+          "Bloating"
+        ],
+        "key_features_absent": [
+          "The absence of abdominal pain, which is a hallmark of IBS"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms like weight loss and fatigue, along with a rash, differentiates this case from typical IBS.",
+        "initial_prior": "Based on the high prevalence of IBS but a weaker symptom match"
+      },
+      {
+        "name": "Dermatitis Herpetiformis",
+        "confidence": 10.0,
+        "reasoning": "The itchy blistering rash could be dermatitis herpetiformis, which is closely associated with celiac disease. However, considering it as a separate diagnosis without addressing the gastrointestinal symptoms would be incomplete.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Itchy Blistering Rash"
+        ],
+        "key_features_absent": [
+          "Gastrointestinal symptoms, which are typically present in celiac disease"
+        ],
+        "differentiating_factor": "The rash is a key feature, but the diagnosis of dermatitis herpetiformis is usually considered in the context of celiac disease.",
+        "initial_prior": "Based on the specific symptom of the rash but considering it's often part of celiac disease"
+      },
+      {
+        "name": "Giardiasis",
+        "confidence": 5.0,
+        "reasoning": "Giardiasis could cause chronic diarrhea and weight loss. However, the itchy blistering rash and the specific worsening of symptoms after eating certain foods are not typical for giardiasis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Chronic Diarrhea",
+          "Weight Loss"
+        ],
+        "key_features_absent": [
+          "The absence of a clear exposure history to contaminated water or travel, which is common in giardiasis"
+        ],
+        "differentiating_factor": "The presence of a rash and the specific food triggers are not characteristic of giardiasis.",
+        "initial_prior": "Based on the possibility of giardiasis but a weaker symptom match and less common presentation"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on gastrointestinal diseases that could explain the chronic diarrhea, bloating, and systemic symptoms like weight loss and fatigue. The presence of an itchy blistering rash suggested dermatitis herpetiformis, closely associated with celiac disease, making it a top consideration. Other diagnoses like IBD, IBS, and giardiasis were considered based on symptom overlap but were deemed less likely due to specific differentiating factors.",
+    "dominant_system": "gastrointestinal"
+  }
+}

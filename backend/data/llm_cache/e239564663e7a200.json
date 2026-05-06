@@ -1,0 +1,79 @@
+{
+  "prompt_hash": "e239564663e7a200",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Allergic Rhinitis",
+        "confidence": 70.0,
+        "reasoning": "The patient's symptoms of sneezing, runny and itchy nose, watery and itchy eyes, congestion, and post-nasal drip are classic for allergic rhinitis, especially given the seasonal pattern and relief with antihistamines.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "sneezing",
+          "runny and itchy nose",
+          "watery and itchy eyes",
+          "congestion",
+          "post-nasal drip"
+        ],
+        "key_features_absent": [
+          "fever",
+          "fatigue"
+        ],
+        "differentiating_factor": "Seasonal pattern and symptom relief with antihistamines differentiate this from other respiratory conditions.",
+        "initial_prior": "High prevalence of allergic rhinitis and strong symptom match."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 15.0,
+        "reasoning": "Although the primary symptoms do not strongly suggest GERD, some patients with GERD can present with respiratory symptoms like cough or wheezing due to acid reflux. However, the lack of typical GERD symptoms like heartburn or regurgitation makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "congestion"
+        ],
+        "key_features_absent": [
+          "heartburn",
+          "regurgitation"
+        ],
+        "differentiating_factor": "Absence of typical GERD symptoms and presence of allergic rhinitis symptoms make GERD less likely.",
+        "initial_prior": "Lower prevalence and weaker symptom match compared to allergic rhinitis."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms could be confused with those of pneumonia, especially if the post-nasal drip leads to a cough. However, the lack of fever, productive cough, or pleuritic chest pain makes pneumonia less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "congestion",
+          "post-nasal drip"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "Absence of key pneumonia symptoms and the presence of allergic rhinitis symptoms make pneumonia less likely.",
+        "initial_prior": "Lower prevalence and weaker symptom match compared to allergic rhinitis."
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 5.0,
+        "reasoning": "Although COVID-19 can present with a variety of symptoms, the patient's symptoms are more typical of allergic rhinitis. The lack of fever, loss of taste or smell, or contact with a confirmed case makes COVID-19 less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": null,
+        "key_features_absent": [
+          "fever",
+          "loss of taste or smell",
+          "contact with confirmed case"
+        ],
+        "differentiating_factor": "Typical allergic rhinitis symptoms and lack of COVID-19 specific symptoms make COVID-19 less likely.",
+        "initial_prior": "Lower prevalence and weaker symptom match compared to allergic rhinitis."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms strongly suggest allergic rhinitis due to the seasonal pattern, specific symptoms, and relief with antihistamines. Other conditions like GERD, pneumonia, and COVID-19 are considered but are less likely due to the lack of specific symptoms for these conditions.",
+    "dominant_system": "respiratory"
+  }
+}

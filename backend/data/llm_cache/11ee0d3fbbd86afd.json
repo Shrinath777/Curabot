@@ -1,0 +1,58 @@
+{
+  "prompt_hash": "11ee0d3fbbd86afd",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Loss of Consciousness",
+        "raw_text": "I had a sudden episode where I lost consciousness",
+        "severity": "severe",
+        "duration": "about 2 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Uncontrollable Shaking",
+        "raw_text": "my body was shaking uncontrollably",
+        "severity": "severe",
+        "duration": "about 2 minutes",
+        "character": "uncontrollable",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Confusion",
+        "raw_text": "I was confused",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Drowsiness",
+        "raw_text": "I was drowsy",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Tongue Injury",
+        "raw_text": "I bit my tongue during the episode",
+        "body_system": "oral"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "episode",
+        "reason": "Lack of clear definition of what the episode entails beyond loss of consciousness and shaking",
+        "clarification_needed": "Can you describe what happens before, during, and after these episodes?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient experiences recurrent episodes of sudden loss of consciousness with uncontrollable shaking, confusion, and drowsiness, suggesting a potential neurological condition."
+  }
+}

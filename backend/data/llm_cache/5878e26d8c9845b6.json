@@ -1,0 +1,39 @@
+{
+  "prompt_hash": "5878e26d8c9845b6",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "persistent headache",
+        "severity": "unknown",
+        "duration": "3 days",
+        "character": "persistent",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "fever",
+        "body_system": "other"
+      },
+      {
+        "name": "Body Aches",
+        "raw_text": "body aches",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with a 3-day history of persistent headache, fever, and body aches."
+  }
+}

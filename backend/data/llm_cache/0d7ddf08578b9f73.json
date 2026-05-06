@@ -1,0 +1,60 @@
+{
+  "prompt_hash": "0d7ddf08578b9f73",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Vomiting",
+        "raw_text": "vomiting",
+        "severity": "unknown",
+        "duration": "since last night",
+        "character": "unknown",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Diarrhea",
+        "raw_text": "watery diarrhea",
+        "severity": "unknown",
+        "duration": "since last night",
+        "character": "watery",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Abdominal Cramping",
+        "raw_text": "stomach is cramping",
+        "severity": "unknown",
+        "duration": "since last night (implied)",
+        "character": "cramping",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Weakness",
+        "raw_text": "feel weak",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Fever",
+        "raw_text": "mild fever",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "since last night",
+        "reason": "time frame is not precise",
+        "clarification_needed": "Can you specify the exact time when symptoms started?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "mild fever",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with gastrointestinal symptoms including vomiting, watery diarrhea, and abdominal cramping, along with weakness and a mild fever, following a potential foodborne illness."
+  }
+}

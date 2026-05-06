@@ -1,0 +1,87 @@
+{
+  "prompt_hash": "2b26a9ffa033790f",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 60.0,
+        "reasoning": "The patient's symptoms of a moderate burning sensation in the chest, worsened by spicy food and lying down, with associated sour taste, are classic for GERD. The relief with antacids further supports this diagnosis.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "burning sensation",
+          "sour taste",
+          "worsens after meals and lying down",
+          "relieved by antacids"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The absence of radiation to the arm or jaw and the presence of sour taste differentiate GERD from myocardial infarction.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 20.0,
+        "reasoning": "Although the patient's symptoms do not perfectly align with MI (e.g., no radiation to arm or jaw, no diaphoresis), it is a critical condition that must be considered due to the presentation of chest discomfort. The differentiating features of MI, such as crushing chest pressure and radiation to the arm, are not present, but it cannot be entirely ruled out without further evaluation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest discomfort"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "diaphoresis",
+          "crushing chest pressure"
+        ],
+        "differentiating_factor": "The nature of the chest discomfort (burning vs. crushing) and the absence of radiation to the arm or jaw differentiate this from a typical MI presentation.",
+        "initial_prior": "Low probability due to atypical symptoms but considered due to potential severity"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 10.0,
+        "reasoning": "The patient does not exhibit the sudden onset dyspnea or pleuritic chest pain characteristic of PE. However, given the critical nature of this condition, it is included in the differential diagnosis with a lower confidence score due to the lack of specific symptoms.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and pleuritic chest pain makes PE less likely.",
+        "initial_prior": "Low probability due to lack of specific symptoms"
+      },
+      {
+        "name": "Pneumothorax",
+        "confidence": 5.0,
+        "reasoning": "The patient does not exhibit the sudden sharp unilateral chest pain or decreased breath sounds on one side typical of pneumothorax. This condition is included due to its critical nature but is considered less likely due to the lack of specific symptoms.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden sharp unilateral chest pain",
+          "decreased breath sounds on one side"
+        ],
+        "differentiating_factor": "The absence of sudden sharp unilateral chest pain and decreased breath sounds on one side makes pneumothorax less likely.",
+        "initial_prior": "Low probability due to lack of specific symptoms"
+      },
+      {
+        "name": "Aortic Dissection",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms do not align with the tearing/ripping chest pain radiating to the back characteristic of aortic dissection. This condition is included in the differential due to its critical nature but is considered less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "tearing/ripping chest pain radiating to back"
+        ],
+        "differentiating_factor": "The absence of tearing/ripping chest pain radiating to the back makes aortic dissection less likely.",
+        "initial_prior": "Low probability due to lack of specific symptoms"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of a burning sensation in the chest, worsened by spicy food and lying down, with associated sour taste, are most consistent with GERD. However, due to the critical nature of conditions like MI, PE, pneumothorax, and aortic dissection, they are included in the differential diagnosis with lower confidence scores.",
+    "dominant_system": "gastrointestinal"
+  }
+}

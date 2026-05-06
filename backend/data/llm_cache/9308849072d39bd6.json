@@ -1,0 +1,57 @@
+{
+  "prompt_hash": "9308849072d39bd6",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Cough",
+        "raw_text": "bad cough",
+        "severity": "severe",
+        "duration": "5 days",
+        "character": "productive",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Chest Pain",
+        "raw_text": "sharp chest pain",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "sharp",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "fever is 103\u00b0F",
+        "body_system": "other"
+      },
+      {
+        "name": "Chills",
+        "raw_text": "chills",
+        "body_system": "other"
+      },
+      {
+        "name": "Cold",
+        "raw_text": "had a cold last week",
+        "body_system": "respiratory"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "bad cough",
+        "reason": "no clear description of cough severity or character beyond 'bad'",
+        "clarification_needed": "Can you describe your cough in more detail?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": 103,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe cough, sharp chest pain, fever, and recent history of cold, suggesting a possible respiratory infection."
+  }
+}

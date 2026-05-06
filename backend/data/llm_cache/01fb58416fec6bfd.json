@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "01fb58416fec6bfd",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 45.0,
+        "reasoning": "Patient presents with severe cough, sharp chest pain, fever, and recent history of cold, which are consistent with Community Acquired Pneumonia. The presence of pleuritic chest pain and productive cough with colored sputum are key differentiating features.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "key_features_absent": [
+          "abnormal lung sounds",
+          "crackles"
+        ],
+        "differentiating_factor": "The presence of pleuritic chest pain and productive cough with colored sputum differentiate Community Acquired Pneumonia from other respiratory infections.",
+        "initial_prior": "Based on prevalence and symptom match, Community Acquired Pneumonia is a likely diagnosis."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 25.0,
+        "reasoning": "The patient's sharp chest pain and recent history of cold could be indicative of Pulmonary Embolism. However, the absence of sudden onset dyspnea and tachycardia makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "tachycardia"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and tachycardia makes Pulmonary Embolism less likely than Community Acquired Pneumonia.",
+        "initial_prior": "Based on prevalence and symptom match, Pulmonary Embolism is a possible diagnosis, but less likely than Community Acquired Pneumonia."
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 15.0,
+        "reasoning": "The patient's sharp chest pain could be indicative of Acute Myocardial Infarction. However, the absence of crushing or squeezing chest pressure, radiation to left arm or jaw, and diaphoresis makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "crushing or squeezing chest pressure",
+          "radiation to left arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The absence of typical symptoms of Acute Myocardial Infarction makes this diagnosis less likely than Community Acquired Pneumonia or Pulmonary Embolism.",
+        "initial_prior": "Based on prevalence and symptom match, Acute Myocardial Infarction is a possible diagnosis, but less likely than Community Acquired Pneumonia or Pulmonary Embolism."
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of cough, fever, and recent history of cold could be indicative of COVID-19. However, the absence of loss of taste or smell, dry cough, and contact with a confirmed case makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "cough",
+          "fever"
+        ],
+        "key_features_absent": [
+          "loss of taste or smell",
+          "dry cough",
+          "contact with confirmed case"
+        ],
+        "differentiating_factor": "The absence of specific symptoms of COVID-19 makes this diagnosis less likely than Community Acquired Pneumonia or Pulmonary Embolism.",
+        "initial_prior": "Based on prevalence and symptom match, COVID-19 is a possible diagnosis, but less likely than Community Acquired Pneumonia or Pulmonary Embolism."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "The patient's sharp chest pain could be indicative of Gastroesophageal Reflux Disease. However, the absence of burning sensation, worsening of symptoms after meals or lying down, and relief with antacids makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "worsening of symptoms after meals or lying down",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The absence of typical symptoms of Gastroesophageal Reflux Disease makes this diagnosis less likely than Community Acquired Pneumonia or Pulmonary Embolism.",
+        "initial_prior": "Based on prevalence and symptom match, Gastroesophageal Reflux Disease is a possible diagnosis, but less likely than Community Acquired Pneumonia or Pulmonary Embolism."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of severe cough, sharp chest pain, fever, and recent history of cold suggest a respiratory infection. Community Acquired Pneumonia is the most likely diagnosis based on the presence of pleuritic chest pain and productive cough with colored sputum. Pulmonary Embolism and Acute Myocardial Infarction are also considered due to the presence of sharp chest pain, but are less likely due to the absence of typical symptoms. COVID-19 and Gastroesophageal Reflux Disease are less likely due to the absence of specific symptoms.",
+    "dominant_system": "respiratory"
+  }
+}

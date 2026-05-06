@@ -1,0 +1,81 @@
+{
+  "prompt_hash": "f6ee1902d0426857",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Celiac Disease",
+        "confidence": 60.0,
+        "reasoning": "Chronic diarrhea, bloating, itchy blistering rash on elbows and knees, weight loss, and low iron levels are all consistent with celiac disease. The patient's symptoms worsening after eating bread and pasta also support this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Chronic diarrhea",
+          "Bloating",
+          "Itchy blistering rash",
+          "Weight loss",
+          "Low iron levels"
+        ],
+        "key_features_absent": [
+          "Abdominal pain relieved by defecation"
+        ],
+        "differentiating_factor": "Dermatitis herpetiformis and improvement of symptoms on gluten-free diet distinguish celiac disease from other gastrointestinal disorders.",
+        "initial_prior": "High prevalence of celiac disease in patients with chronic diarrhea and malabsorption symptoms."
+      },
+      {
+        "name": "Irritable Bowel Syndrome",
+        "confidence": 25.0,
+        "reasoning": "While the patient's symptoms of chronic diarrhea, bloating, and abdominal discomfort could be consistent with IBS, the presence of weight loss, low iron levels, and itchy blistering rash make celiac disease a more likely diagnosis. IBS is still considered due to the chronic nature of the symptoms and the potential for overlap with celiac disease.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Chronic diarrhea",
+          "Bloating"
+        ],
+        "key_features_absent": [
+          "Abdominal pain relieved by defecation",
+          "Alternating constipation and diarrhea pattern"
+        ],
+        "differentiating_factor": "Absence of alarm features such as weight loss, blood in stool, and anemia, which are more characteristic of celiac disease or other inflammatory bowel diseases.",
+        "initial_prior": "High prevalence of IBS in the general population, but lower likelihood given the patient's specific symptoms."
+      },
+      {
+        "name": "Adrenal Insufficiency",
+        "confidence": 10.0,
+        "reasoning": "Although adrenal insufficiency is a critical-severity disease, the patient's symptoms do not strongly suggest this diagnosis. However, it is still considered due to the potential for non-specific symptoms such as weight loss and fatigue. The absence of more specific symptoms like hypotension, hyponatremia, or hyperkalemia makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Weight loss",
+          "Fatigue"
+        ],
+        "key_features_absent": [
+          "Hypotension",
+          "Hyponatremia",
+          "Hyperkalemia"
+        ],
+        "differentiating_factor": "Specific laboratory tests such as cortisol and aldosterone levels would be necessary to confirm adrenal insufficiency.",
+        "initial_prior": "Low prevalence of adrenal insufficiency in the general population, but considered due to the potential for critical severity."
+      },
+      {
+        "name": "Rheumatic Fever",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of itchy blistering rash and joint pain could be consistent with rheumatic fever, but the absence of more specific symptoms like migratory joint pain, carditis, or erythema marginatum makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Itchy blistering rash"
+        ],
+        "key_features_absent": [
+          "Migratory joint pain",
+          "Carditis",
+          "Erythema marginatum"
+        ],
+        "differentiating_factor": "Recent history of sore throat or streptococcal infection would increase the likelihood of rheumatic fever.",
+        "initial_prior": "Low prevalence of rheumatic fever in the general population, and the patient's symptoms do not strongly suggest this diagnosis."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of chronic diarrhea, bloating, itchy blistering rash, weight loss, and low iron levels are most consistent with celiac disease. IBS is still considered due to the chronic nature of the symptoms, but adrenal insufficiency and rheumatic fever are less likely due to the absence of more specific symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

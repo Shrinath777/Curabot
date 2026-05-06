@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "a3a2ffa27dc74d46",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 40.0,
+        "reasoning": "SUDDEN onset dyspnea and sharp chest pain are key differentiators for PE, especially with marfanoid habitus which can increase the risk of PE. The presence of sudden onset and dyspnea are highly specific for PE.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "dyspnea",
+          "sudden_onset",
+          "chest_pain",
+          "marfanoid_habitus"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "The sudden onset of dyspnea and the presence of marfanoid habitus make PE a more likely diagnosis compared to other conditions.",
+        "initial_prior": "Based on the presence of sudden onset dyspnea and chest pain, which are highly specific for PE."
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 30.0,
+        "reasoning": "Chest pain is a primary symptom of MI, but the sharp character of the pain and the presence of dyspnea and marfanoid habitus make it less typical for MI. However, the risk of MI cannot be ignored, especially with the presence of chest pain.",
+        "category": "common",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest_pain"
+        ],
+        "key_features_absent": [
+          "radiation to left arm, jaw, or back",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The sharp character of the chest pain and the presence of dyspnea and marfanoid habitus make MI less likely compared to PE.",
+        "initial_prior": "Based on the presence of chest pain, which is a primary symptom of MI."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "The presence of dyspnea and chest pain could be indicative of pneumonia, but the absence of productive cough, fever, and abnormal lung sounds make it less likely. The marfanoid habitus is not typically associated with pneumonia.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dyspnea",
+          "chest_pain"
+        ],
+        "key_features_absent": [
+          "productive cough",
+          "fever",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of productive cough, fever, and abnormal lung sounds make pneumonia less likely compared to PE and MI.",
+        "initial_prior": "Based on the presence of dyspnea and chest pain, which can be symptoms of pneumonia."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "The presence of chest pain could be indicative of GERD, but the sharp character of the pain and the presence of dyspnea and marfanoid habitus make it less typical for GERD. The absence of burning sensation and relief with antacids also make GERD less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest_pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The sharp character of the chest pain and the presence of dyspnea and marfanoid habitus make GERD less likely compared to other conditions.",
+        "initial_prior": "Based on the presence of chest pain, which can be a symptom of GERD."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The presence of chest pain could be indicative of hypertension, but the absence of headache, vision changes, and elevated BP readings make it less likely. The marfanoid habitus is not typically associated with hypertension.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest_pain"
+        ],
+        "key_features_absent": [
+          "headache",
+          "vision changes",
+          "elevated BP readings"
+        ],
+        "differentiating_factor": "The absence of headache, vision changes, and elevated BP readings make hypertension less likely compared to other conditions.",
+        "initial_prior": "Based on the presence of chest pain, which can be a symptom of hypertension."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is based on the presence of sudden onset dyspnea, sharp chest pain, and marfanoid habitus. PE is the most likely diagnosis due to the sudden onset of dyspnea and the presence of marfanoid habitus. MI is also considered due to the presence of chest pain, but the sharp character of the pain and the presence of dyspnea and marfanoid habitus make it less typical for MI.",
+    "dominant_system": "respiratory"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "54a548a168cf741c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Migraine",
+        "confidence": 30.0,
+        "reasoning": "The patient reports frequent morning headaches with dizziness and blurred vision, which aligns with migraine symptoms, particularly the presence of visual disturbances (blurred vision) and the characteristic of headaches being worse in the morning.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Headache",
+          "Dizziness",
+          "Blurred Vision"
+        ],
+        "key_features_absent": [
+          "Aura before onset",
+          "Nausea/vomiting with headache"
+        ],
+        "differentiating_factor": "The presence of blurred vision and the specific characteristic of morning headaches help differentiate this from other headache disorders like tension-type headaches.",
+        "initial_prior": "Based on the prevalence of migraines and the match with the patient's symptoms, including the specific timing and characteristics of the headaches."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 25.0,
+        "reasoning": "The patient's family history of high blood pressure and the description of headaches, particularly the mention of morning headaches located at the back of the head, are consistent with hypertension. However, the absence of explicit elevated blood pressure readings and end-organ damage signs makes this less certain.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Headache",
+          "Family history of high blood pressure"
+        ],
+        "key_features_absent": [
+          "Elevated BP readings on measurement",
+          "End-organ damage signs"
+        ],
+        "differentiating_factor": "The specific location and timing of the headaches (morning, at the back of the head) are more suggestive of hypertension than other causes.",
+        "initial_prior": "Given the patient's family history and the nature of the headaches, hypertension is a plausible diagnosis, though direct evidence of elevated blood pressure is needed for confirmation."
+      },
+      {
+        "name": "Tension-type Headache",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of headache, dizziness, and blurred vision could also be consistent with tension-type headaches, especially given the absence of red flags like sudden severe headache or thunderclap headache. However, the specific characteristics of the headaches (morning, located at the back of the head) are less typical for tension-type headaches.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Headache",
+          "Dizziness"
+        ],
+        "key_features_absent": [
+          "Sudden severe 'thunderclap' headache",
+          "Mild nausea"
+        ],
+        "differentiating_factor": "The lack of sudden onset and the specific characteristics of the headaches make tension-type headache less likely than migraine but still a consideration.",
+        "initial_prior": "Tension-type headaches are common, but the specific details of the patient's headaches and associated symptoms make other diagnoses more likely."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 10.0,
+        "reasoning": "Although the patient presents with headache, dizziness, and blurred vision, which could be indicative of a severe neurological condition, the absence of critical red flags such as fever, neck stiffness, and a non-blanching rash makes bacterial meningitis less likely. However, given its critical severity, it cannot be entirely ruled out without further investigation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Headache"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Neck stiffness",
+          "Non-blanching rash"
+        ],
+        "differentiating_factor": "The severity and potential for rapid deterioration make bacterial meningitis a must-not-miss diagnosis, despite its lower likelihood based on the provided symptoms.",
+        "initial_prior": "The critical nature of bacterial meningitis necessitates its consideration, even with a lower probability based on the symptoms described."
+      },
+      {
+        "name": "Stroke (CVA)",
+        "confidence": 15.0,
+        "reasoning": "The symptoms of dizziness and blurred vision could suggest a stroke, particularly if these symptoms are of sudden onset. However, the absence of clear focal neurological deficits, sudden onset of weakness, or speech difficulty makes this diagnosis less certain. The presence of headache is not typical for stroke but can occur.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Dizziness",
+          "Blurred Vision"
+        ],
+        "key_features_absent": [
+          "Sudden weakness",
+          "Speech difficulty",
+          "Focal neurological deficits"
+        ],
+        "differentiating_factor": "The combination of dizziness and blurred vision, while not classic for stroke, necessitates consideration of this diagnosis due to its critical severity and the potential for sudden onset of symptoms.",
+        "initial_prior": "Given the potential for stroke to present with varied symptoms, including those that are less typical, it remains a consideration, especially given its critical nature."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's symptoms of frequent morning headaches, dizziness, and blurred vision, weighing the likelihood of various conditions based on symptom match, severity, and prevalence. Migraine and hypertension are considered more likely due to the specific characteristics of the headaches and the patient's family history of high blood pressure. Tension-type headache is also a possibility but less likely due to the specific details of the headaches. Bacterial meningitis and stroke are included due to their critical severity, despite lower likelihood based on the symptoms provided.",
+    "dominant_system": "neurological"
+  }
+}

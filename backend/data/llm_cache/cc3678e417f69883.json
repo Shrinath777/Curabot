@@ -1,0 +1,59 @@
+{
+  "prompt_hash": "cc3678e417f69883",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Depression",
+        "raw_text": "feeling extremely sad and hopeless",
+        "severity": "severe",
+        "duration": "3 months",
+        "character": "persistent",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Anhedonia",
+        "raw_text": "lost interest in activities I used to enjoy",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Sleep Disturbance",
+        "raw_text": "sleep all day or can't sleep at all",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Loss of Appetite",
+        "raw_text": "lost my appetite",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Concentration Difficulty",
+        "raw_text": "trouble concentrating",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Feelings of Worthlessness",
+        "raw_text": "feel worthless",
+        "body_system": "neurological"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "sleep all day or can't sleep at all",
+        "reason": "unclear if patient experiences insomnia or hypersomnia",
+        "clarification_needed": "Can you describe your typical sleep pattern?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe depressive symptoms, including anhedonia, sleep disturbance, loss of appetite, concentration difficulty, and feelings of worthlessness, lasting 3 months."
+  }
+}

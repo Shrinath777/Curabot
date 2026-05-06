@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "13479d1b53260f92",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Stroke",
+        "confidence": 60.0,
+        "reasoning": "Sudden onset of facial drooping, arm weakness, and slurred speech are classic symptoms of a stroke. The presence of hypertension, a known risk factor, further supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden facial drooping",
+          "sudden arm weakness",
+          "sudden slurred speech"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "dyspnea"
+        ],
+        "differentiating_factor": "The sudden onset of neurological symptoms without any chest pain or dyspnea makes stroke a more likely diagnosis than cardiac causes.",
+        "initial_prior": "Based on the high prevalence of stroke and the specific symptom match"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not exhibit typical chest pain, the presence of hypertension and sudden onset of symptoms warrants consideration of a cardiac cause. However, the absence of chest pain and the specific neurological symptoms make this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hypertension"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "radiation to arm or jaw"
+        ],
+        "differentiating_factor": "The absence of chest pain and the presence of neurological symptoms differentiate this from a typical MI presentation.",
+        "initial_prior": "Based on the prevalence of MI and the presence of hypertension"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 10.0,
+        "reasoning": "The sudden onset of symptoms could suggest a pulmonary embolism, but the absence of dyspnea, chest pain, or other typical symptoms makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of respiratory symptoms and the presence of neurological symptoms make PE less likely.",
+        "initial_prior": "Based on the lower prevalence of PE and the absence of typical symptoms"
+      },
+      {
+        "name": "Hypertensive Encephalopathy",
+        "confidence": 5.0,
+        "reasoning": "The presence of hypertension and neurological symptoms could suggest hypertensive encephalopathy, but the sudden onset and specific symptoms are more suggestive of a stroke.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "hypertension"
+        ],
+        "key_features_absent": [
+          "headache",
+          "vision changes"
+        ],
+        "differentiating_factor": "The sudden onset and specific neurological symptoms make stroke a more likely diagnosis.",
+        "initial_prior": "Based on the lower prevalence of hypertensive encephalopathy"
+      },
+      {
+        "name": "Bell's Palsy",
+        "confidence": 5.0,
+        "reasoning": "The sudden onset of facial drooping could suggest Bell's palsy, but the presence of arm weakness and slurred speech make a more comprehensive neurological condition like stroke more likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "sudden facial drooping"
+        ],
+        "key_features_absent": [
+          "arm weakness",
+          "slurred speech"
+        ],
+        "differentiating_factor": "The presence of additional neurological symptoms makes Bell's palsy less likely.",
+        "initial_prior": "Based on the lower prevalence of Bell's palsy"
+      }
+    ],
+    "reasoning_summary": "The patient's sudden onset of neurological symptoms, including facial drooping, arm weakness, and slurred speech, suggests a critical condition like stroke. The presence of hypertension supports this diagnosis. Although cardiac causes like MI and PE are considered, the absence of typical symptoms makes them less likely. Other diagnoses like hypertensive encephalopathy and Bell's palsy are also considered but are less likely due to the specific symptom presentation.",
+    "dominant_system": "neurological"
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "e147eb4462dad1ee",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Liver Cirrhosis",
+        "confidence": 40.0,
+        "reasoning": "Jaundice, abdominal swelling, and easy bruising are classic symptoms of liver cirrhosis. The patient's history of heavy drinking for 20 years also increases the risk of liver disease.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "jaundice",
+          "abdominal swelling",
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "hematemesis",
+          "hepatic encephalopathy"
+        ],
+        "differentiating_factor": "The combination of jaundice, abdominal swelling, and easy bruising, along with a history of heavy drinking, makes liver cirrhosis a strong consideration.",
+        "initial_prior": "Based on symptom match and risk factors"
+      },
+      {
+        "name": "Hepatocellular Carcinoma",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of jaundice, abdominal swelling, and weight loss (implied by fatigue) could be indicative of hepatocellular carcinoma, especially given the history of heavy drinking.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "jaundice",
+          "abdominal swelling"
+        ],
+        "key_features_absent": [
+          "weight loss",
+          "alpha-fetoprotein elevation"
+        ],
+        "differentiating_factor": "The presence of jaundice and abdominal swelling, along with a history of heavy drinking, makes hepatocellular carcinoma a possible diagnosis, although less likely than liver cirrhosis.",
+        "initial_prior": "Based on symptom match and risk factors"
+      },
+      {
+        "name": "Portal Hypertension",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of abdominal swelling and easy bruising could be indicative of portal hypertension, which can be caused by liver cirrhosis or other liver diseases.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal swelling",
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "hematemesis",
+          "splenomegaly"
+        ],
+        "differentiating_factor": "The presence of abdominal swelling and easy bruising, along with a history of heavy drinking, makes portal hypertension a possible diagnosis.",
+        "initial_prior": "Based on symptom match and risk factors"
+      },
+      {
+        "name": "Budd-Chiari Syndrome",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of abdominal swelling and jaundice could be indicative of Budd-Chiari syndrome, although this is a less common diagnosis.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "abdominal swelling",
+          "jaundice"
+        ],
+        "key_features_absent": [
+          "ascites",
+          "hepatic vein thrombosis"
+        ],
+        "differentiating_factor": "The presence of abdominal swelling and jaundice, along with a history of heavy drinking, makes Budd-Chiari syndrome a possible diagnosis, although less likely than other options.",
+        "initial_prior": "Based on symptom match and risk factors"
+      },
+      {
+        "name": "Hemochromatosis",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of jaundice and easy bruising could be indicative of hemochromatosis, although this is a less common diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "jaundice",
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "skin pigmentation",
+          "arthralgias"
+        ],
+        "differentiating_factor": "The presence of jaundice and easy bruising, along with a history of heavy drinking, makes hemochromatosis a possible diagnosis, although less likely than other options.",
+        "initial_prior": "Based on symptom match and risk factors"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of jaundice, abdominal swelling, and easy bruising, along with a history of heavy drinking, suggest a liver disease such as liver cirrhosis or hepatocellular carcinoma. Portal hypertension and Budd-Chiari syndrome are also possible diagnoses, although less likely. Hemochromatosis is a less likely diagnosis, but should still be considered.",
+    "dominant_system": "hepatic"
+  }
+}

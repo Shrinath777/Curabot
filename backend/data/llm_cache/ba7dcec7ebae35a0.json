@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "ba7dcec7ebae35a0",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Tuberculosis",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with chronic cough, night sweats, weight loss, and hemoptysis, which are key differentiating features of tuberculosis. The presence of these symptoms, especially the combination of night sweats and weight loss, strongly suggests tuberculosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Chronic cough >2 weeks",
+          "Night sweats and weight loss",
+          "Hemoptysis"
+        ],
+        "key_features_absent": [
+          "Contact history with TB patient"
+        ],
+        "differentiating_factor": "The combination of chronic cough, night sweats, and weight loss is more typical of tuberculosis than other diseases on the list.",
+        "initial_prior": "Based on prevalence and symptom match, tuberculosis is a likely diagnosis."
+      },
+      {
+        "name": "Lung Cancer",
+        "confidence": 30.0,
+        "reasoning": "The patient's persistent cough and hemoptysis could be indicative of lung cancer. Although the symptoms are not as specific as those for tuberculosis, the presence of hemoptysis, in particular, warrants consideration of lung cancer.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis"
+        ],
+        "key_features_absent": [
+          "shoulder pain (pancoast tumor)"
+        ],
+        "differentiating_factor": "Lung cancer is distinguished from tuberculosis by the absence of night sweats and weight loss in the early stages, although these can occur in advanced disease.",
+        "initial_prior": "Lung cancer is less likely than tuberculosis based on the symptom profile but remains a consideration due to the presence of hemoptysis."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 15.0,
+        "reasoning": "Although the patient does not exhibit the sudden onset dyspnea typical of pulmonary embolism, the presence of hemoptysis and the potential for underlying conditions that could increase the risk of PE (e.g., recent surgery, immobility) mean it cannot be entirely ruled out without further investigation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hemoptysis"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "Pulmonary embolism is distinguished by its acute onset and specific risk factors, which are not prominently featured in the patient's presentation.",
+        "initial_prior": "Given the critical nature of pulmonary embolism, it is included as a must-not-miss diagnosis, despite the lower likelihood based on the symptom profile."
+      },
+      {
+        "name": "Goodpasture's Syndrome",
+        "confidence": 10.0,
+        "reasoning": "This rare autoimmune disease could potentially explain the hemoptysis, but the lack of reported renal involvement (e.g., hematuria) and the presence of systemic symptoms like night sweats and weight loss make it less likely than tuberculosis or lung cancer.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hemoptysis"
+        ],
+        "key_features_absent": [
+          "renal involvement"
+        ],
+        "differentiating_factor": "Goodpasture's Syndrome is characterized by both respiratory and renal manifestations, which are not fully represented in the patient's symptoms.",
+        "initial_prior": "The rarity of Goodpasture's Syndrome and the incomplete match with the patient's symptoms result in a lower initial confidence."
+      },
+      {
+        "name": "Airway Obstruction",
+        "confidence": 5.0,
+        "reasoning": "While airway obstruction could cause cough and difficulty breathing, the specific symptoms of hemoptysis, night sweats, and weight loss are not typical of this condition, making it less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "cough"
+        ],
+        "key_features_absent": [
+          "difficulty breathing",
+          "wheezing"
+        ],
+        "differentiating_factor": "Airway obstruction is characterized by difficulty breathing and wheezing, which are not prominent in the patient's presentation.",
+        "initial_prior": "The lack of specific symptoms for airway obstruction results in a lower confidence score."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by tuberculosis due to the combination of chronic cough, night sweats, weight loss, and hemoptysis. Lung cancer is also considered due to the presence of hemoptysis. Pulmonary embolism is included as a must-not-miss diagnosis despite its lower likelihood. Goodpasture's Syndrome and airway obstruction are less likely due to the incomplete match with the patient's symptoms.",
+    "dominant_system": "respiratory"
+  }
+}

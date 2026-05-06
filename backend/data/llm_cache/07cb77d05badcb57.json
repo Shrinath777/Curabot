@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "07cb77d05badcb57",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hypertension",
+        "confidence": 40.0,
+        "reasoning": "The patient's symptoms of frequent morning headaches, dizziness, and blurred vision could be indicative of hypertension, especially given the mention of potential high blood pressure in the family history. The headache's characteristics, such as being frequent and in the morning, align with hypertension's differentiating features.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "morning headaches",
+          "dizziness",
+          "blurred vision"
+        ],
+        "key_features_absent": [
+          "elevated BP readings on measurement"
+        ],
+        "differentiating_factor": "The specific characteristics of the headache and the presence of dizziness and blurred vision, which can be associated with hypertension, differentiate it from other diagnoses.",
+        "initial_prior": "Based on the prevalence of hypertension and the symptom match, including the potential for end-organ damage"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Although the patient does not exhibit the classic sudden onset dyspnea, the presence of dizziness could be a vague indicator of a pulmonary issue. However, without more specific symptoms like pleuritic chest pain or recent surgery/immobility, this remains a less likely but critical diagnosis to consider due to its severity.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "dizziness"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of key features like sudden dyspnea and pleuritic chest pain makes this less likely, but its critical nature necessitates consideration.",
+        "initial_prior": "Low probability due to lack of specific symptoms but considered due to severity and the need to rule out critical conditions"
+      },
+      {
+        "name": "Migraine",
+        "confidence": 30.0,
+        "reasoning": "The patient's symptoms of frequent morning headaches, dizziness, and blurred vision could also suggest migraines, especially if the headaches are severe and accompanied by visual disturbances. However, migraines typically have more specific features like aura or severe, unilateral pain, which are not mentioned.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "frequent headaches",
+          "blurred vision"
+        ],
+        "key_features_absent": [
+          "aura",
+          "severe, unilateral pain"
+        ],
+        "differentiating_factor": "The lack of specific migraine features like aura or unilateral pain, and the presence of dizziness, makes this less specific than hypertension but still a plausible diagnosis.",
+        "initial_prior": "Based on the prevalence of migraines and the symptom match, though less specific than hypertension"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 12.0,
+        "reasoning": "The symptoms of headache, dizziness, and blurred vision could be part of a broader systemic illness like Dengue Fever, especially if the patient has recently traveled to endemic areas. However, the absence of specific symptoms like retro-orbital pain, severe bone/joint pain, or a biphasic fever pattern makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "headache"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain",
+          "biphasic fever pattern"
+        ],
+        "differentiating_factor": "The absence of specific Dengue Fever symptoms and the lack of travel history provided makes this a less likely diagnosis.",
+        "initial_prior": "Low probability due to lack of specific symptoms and unclear travel history"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "Although GERD can cause non-specific symptoms, the patient's primary complaints do not directly align with GERD's differentiating features like burning sensation or regurgitation. Thus, it remains a less likely diagnosis in this context.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [],
+        "key_features_absent": [
+          "burning sensation",
+          "regurgitation"
+        ],
+        "differentiating_factor": "The absence of GERD-specific symptoms makes this a less likely diagnosis compared to others with more symptom overlap.",
+        "initial_prior": "Low probability due to lack of specific GERD symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered a range of conditions from critical to benign, focusing on the patient's primary symptoms of morning headaches, dizziness, and blurred vision. Hypertension emerged as a leading consideration due to symptom overlap and potential family history, while critical conditions like Pulmonary Embolism were also considered due to their severity, despite lower likelihood.",
+    "dominant_system": "neurological"
+  }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CuraBot Corrected Flowcharts</title>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; padding: 40px; background-color: #f4f7f6; }
+        .chart-container { background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); margin-bottom: 50px; }
+        h1 { color: #2c3e50; text-align: center; margin-bottom: 40px; }
+        h2 { color: #34495e; border-bottom: 2px solid #ecf0f1; padding-bottom: 10px; }
+        .description { color: #7f8c8d; margin-bottom: 20px; line-height: 1.6; }
+    </style>
+</head>
+<body>
+
+    <h1>CuraBot - Corrected LLD Flowcharts</h1>
+
+    <div class="chart-container">
+        <h2>Flowchart 1: Clinical SOP Orchestration Workflow (Phased Approach)</h2>
+        <p class="description">This flow correctly groups all 15 SOPs into their logical execution phases as implemented in the codebase.</p>
+        <div class="mermaid">
+graph TD
+    classDef phase fill:#f9f9fa,stroke:#333,stroke-width:2px,color:#333;
+    classDef sop fill:#e1f5fe,stroke:#0288d1,stroke-width:1px,color:#000;
+    classDef alert fill:#ffebee,stroke:#d32f2f,stroke-width:1px,color:#000;
+    classDef success fill:#e8f5e9,stroke:#388e3c,stroke-width:1px,color:#000;
+
+    subgraph P1[Phase 1: Emergency Triage & Red Flags]
+        A1[User Input: Symptoms] --> S1[SOP-001, 002, 003, 004 <br/> Core Triage & FAST]:::sop
+        S1 --> S6[SOP-006, 007 <br/> Infection & Sepsis]:::sop
+        S6 --> S10[SOP-010 <br/> Red Flag Scanner]:::sop
+    end
+
+    S10 --> ER{Emergency Detected?}
+    ER -- Yes --> H[Immediate Hospital Referral <br/> Bypass Agents]:::alert
+    
+    ER -- No --> P2
+    
+    subgraph P2[Phase 2: Data Integration]
+        D1[SOP-005: Vital Signs]:::sop --> D2[SOP-008: Lab Values RAG]:::sop
+        D2 --> D3[SOP-013: Demographic Adjust]:::sop
+    end
+
+    P2 --> P3
+    
+    subgraph P3[Phase 3: Medical Safety]
+        M1[SOP-009: Medication Safety]:::sop --> M2[SOP-014: Pregnancy Safety]:::sop
+    end
+    
+    P3 --> P4
+    
+    subgraph P4[Phase 4: Conclusion & Routing]
+        C1{SOP-012: Confidence Calibration <br/> Gate: >75%?}
+        C1 -- Not Ready --> Loop[Ask Next Clarifying Question]
+        C1 -- Ready --> C2[SOP-011: Specialist Routing]:::sop
+        C2 --> C3[SOP-015: Follow-Up Timeline]:::sop
+        C3 --> Final[Final Educational Conclusion]:::success
+    end
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <h2>Flowchart 2: The 12-Step Agent Pipeline</h2>
+        <p class="description">This aligns the 6 LLM Agents and 15 Rule-Based SOPs into the exact sequence they execute in <code>orchestrator.py</code>.</p>
+        <div class="mermaid">
+graph TD
+    classDef user fill:#e3f2fd,stroke:#1565c0,stroke-width:2px;
+    classDef agent fill:#fff3e0,stroke:#ef6c00,stroke-width:2px;
+    classDef sop fill:#e8f5e9,stroke:#2e7d32,stroke-width:2px;
+    classDef logic fill:#f3e5f5,stroke:#7b1fa2,stroke-width:2px;
+    
+    1[1. User enters symptoms]:::user --> 2
+    2[2. Retrieve Patient History <br> <i>RAG Context + SOP-008 Labs</i>]:::sop --> 3
+    3[3. Symptom Normalization <br> <i>Agent 1</i>]:::agent --> 4
+    4[4. Emergency Triage Block <br> <i>SOP-001 to 007, 010</i>]:::sop --> 5
+    5[5. Generate Hypotheses <br> <i>Agent 2</i>]:::agent --> 6
+    6[6. Evaluate Evidence <br> <i>Agent 3</i>]:::agent --> 7
+    7[7. Update Confidence <br> <i>Agent 4</i>]:::agent --> 8
+    
+    subgraph Parallel[8. Strategy & Governance]
+        8A[8A. Strategy Agent <br> <i>Agent 5</i>]:::agent
+        8B[8B. Self-Critique Agent <br> <i>Agent 6</i>]:::agent
+    end
+    
+    7 --> 8A
+    7 --> 8B
+    
+    8A --> 9
+    8B --> 9
+    
+    9[9. Medical Safety Check <br> <i>SOP-009 & SOP-014</i>]:::sop --> 10
+    
+    10{10. SOP-012: Confidence Calibration <br> Ready to Conclude?}:::logic
+    
+    10 -- No: Gather Evidence --> 11A[Ask Next Clarifying Question]:::agent
+    11A --> 12A[Deliver Question to User]:::user
+    
+    10 -- Yes: Conclude --> 11B[11. Routing & Follow-up <br> <i>SOP-011 & SOP-015</i>]:::sop
+    11B --> 12B[12. Final Educational Diagnosis]:::user
+        </div>
+    </div>
+
+</body>
+</html>

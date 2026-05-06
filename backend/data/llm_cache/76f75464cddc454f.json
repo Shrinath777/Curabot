@@ -1,0 +1,45 @@
+{
+  "prompt_hash": "76f75464cddc454f",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Abdominal pain",
+        "raw_text": "severe pain in my upper abdomen",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "sharp, radiating to back",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nausea and vomiting",
+        "raw_text": "can't stop vomiting",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Alcohol use",
+        "raw_text": "drink alcohol heavily",
+        "body_system": "other"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "relation between alcohol use and symptoms",
+        "reason": "unclear if alcohol use is contributing to or exacerbating symptoms",
+        "clarification_needed": "Does the patient think alcohol use is related to their current symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe upper abdominal pain radiating to the back, worsened by eating, accompanied by vomiting, and a history of heavy alcohol use."
+  }
+}

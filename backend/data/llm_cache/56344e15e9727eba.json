@@ -1,0 +1,68 @@
+{
+  "prompt_hash": "56344e15e9727eba",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Fatigue",
+        "raw_text": "extremely tired and weak",
+        "severity": "severe",
+        "duration": "weeks",
+        "character": "unknown",
+        "body_system": "other"
+      },
+      {
+        "name": "Shortness of breath",
+        "raw_text": "get short of breath with minimal activity",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "exertional",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Pallor",
+        "raw_text": "look pale",
+        "body_system": "other"
+      },
+      {
+        "name": "Brittle nails",
+        "raw_text": "nails have become brittle",
+        "body_system": "other"
+      },
+      {
+        "name": "Spoon-shaped nails",
+        "raw_text": "nails have become spoon-shaped",
+        "body_system": "other"
+      },
+      {
+        "name": "Menorrhagia",
+        "raw_text": "heavy menstrual periods",
+        "body_system": "reproductive"
+      },
+      {
+        "name": "Pica",
+        "raw_text": "crave ice",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "weak",
+        "reason": "could refer to muscle weakness or overall feeling of weakness",
+        "clarification_needed": "Can you describe what you mean by feeling weak?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe fatigue, shortness of breath, and multiple secondary symptoms suggestive of anemia, including pallor, brittle and spoon-shaped nails, menorrhagia, and pica."
+  }
+}

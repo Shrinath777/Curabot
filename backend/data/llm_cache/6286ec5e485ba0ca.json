@@ -1,0 +1,102 @@
+{
+  "prompt_hash": "6286ec5e485ba0ca",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hypothyroidism",
+        "confidence": 40.0,
+        "reasoning": "Unintentional weight gain, fatigue, dry skin, hair thinning, constipation, and menstrual irregularity are all consistent with hypothyroidism. The presence of multiple endocrine and metabolic symptoms suggests a systemic disorder.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "unintentional weight gain",
+          "fatigue",
+          "dry skin",
+          "hair thinning",
+          "constipation",
+          "menstrual irregularity"
+        ],
+        "key_features_absent": [
+          "cold intolerance"
+        ],
+        "differentiating_factor": "The combination of weight gain, fatigue, and multiple secondary symptoms is more suggestive of hypothyroidism than other endocrine disorders.",
+        "initial_prior": "Based on symptom match and prevalence of hypothyroidism in the general population"
+      },
+      {
+        "name": "Polycystic Ovary Syndrome (PCOS)",
+        "confidence": 30.0,
+        "reasoning": "Menstrual irregularity, unintentional weight gain, and fatigue are consistent with PCOS. However, the absence of other key features like hirsutism and acne reduces the confidence in this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "menstrual irregularity",
+          "unintentional weight gain",
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "hirsutism",
+          "acne"
+        ],
+        "differentiating_factor": "The presence of menstrual irregularity and weight gain is more suggestive of PCOS than other disorders, but the absence of other key features reduces confidence.",
+        "initial_prior": "Based on symptom match and prevalence of PCOS in women of reproductive age"
+      },
+      {
+        "name": "Addison's Disease",
+        "confidence": 15.0,
+        "reasoning": "Fatigue, weight gain, and hypothermia sensation are consistent with Addison's disease. However, the absence of other key features like skin hyperpigmentation and hypotension reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fatigue",
+          "weight gain",
+          "hypothermia sensation"
+        ],
+        "key_features_absent": [
+          "skin hyperpigmentation",
+          "hypotension"
+        ],
+        "differentiating_factor": "The presence of fatigue and weight gain is suggestive of Addison's disease, but the absence of other key features reduces confidence.",
+        "initial_prior": "Based on symptom match and low prevalence of Addison's disease"
+      },
+      {
+        "name": "Cushing's Syndrome",
+        "confidence": 10.0,
+        "reasoning": "Unintentional weight gain, fatigue, and menstrual irregularity are consistent with Cushing's syndrome. However, the absence of other key features like buffalo hump and purple striae reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "unintentional weight gain",
+          "fatigue",
+          "menstrual irregularity"
+        ],
+        "key_features_absent": [
+          "buffalo hump",
+          "purple striae"
+        ],
+        "differentiating_factor": "The presence of weight gain and fatigue is suggestive of Cushing's syndrome, but the absence of other key features reduces confidence.",
+        "initial_prior": "Based on symptom match and low prevalence of Cushing's syndrome"
+      },
+      {
+        "name": "Pituitary Tumor",
+        "confidence": 5.0,
+        "reasoning": "Headaches, fatigue, and menstrual irregularity can be associated with pituitary tumors. However, the absence of other key features like visual field defects and galactorrhea reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fatigue",
+          "menstrual irregularity"
+        ],
+        "key_features_absent": [
+          "headaches",
+          "visual field defects",
+          "galactorrhea"
+        ],
+        "differentiating_factor": "The presence of fatigue and menstrual irregularity is suggestive of a pituitary tumor, but the absence of other key features reduces confidence.",
+        "initial_prior": "Based on symptom match and low prevalence of pituitary tumors"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms suggest an endocrine or metabolic disorder. Hypothyroidism is the most likely diagnosis due to the combination of weight gain, fatigue, and multiple secondary symptoms. Other diagnoses like PCOS, Addison's disease, Cushing's syndrome, and pituitary tumor are less likely due to the absence of key features.",
+    "dominant_system": "endocrine"
+  }
+}

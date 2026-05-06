@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "57d47fbb57625d42",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "COVID-19",
+        "confidence": 60.0,
+        "reasoning": "Highly specific symptom matches including loss of taste and smell, dry cough, and contact with a confirmed case. The combination of these symptoms, especially the loss of taste and smell, makes COVID-19 a highly likely diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of taste",
+          "Loss of smell",
+          "Dry cough",
+          "Contact with confirmed case"
+        ],
+        "key_features_absent": [
+          "Rapid progression of dyspnea"
+        ],
+        "differentiating_factor": "The presence of loss of taste and smell, which are highly specific for COVID-19, differentiates it from other respiratory infections.",
+        "initial_prior": "Based on symptom match and recent contact with a COVID-19 positive individual"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 20.0,
+        "reasoning": "Symptoms of dry cough and fever could be indicative of pneumonia, although the absence of productive cough and pleuritic chest pain makes it less likely than COVID-19. Recent upper respiratory infection symptoms could also suggest pneumonia.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Dry cough",
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Productive cough",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of productive cough and the presence of loss of taste and smell point more towards COVID-19, but pneumonia remains a consideration due to overlapping symptoms.",
+        "initial_prior": "Based on prevalence of respiratory infections and symptom overlap"
+      },
+      {
+        "name": "Influenza",
+        "confidence": 10.0,
+        "reasoning": "Although not explicitly listed in the disease knowledge base, influenza could be considered due to symptoms of fever, dry cough, and extreme fatigue. However, the specific combination of loss of taste and smell, along with contact with a COVID-19 positive individual, makes influenza less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fever",
+          "Dry cough",
+          "Extreme fatigue"
+        ],
+        "key_features_absent": [
+          "Loss of taste",
+          "Loss of smell"
+        ],
+        "differentiating_factor": "The presence of loss of taste and smell, highly specific for COVID-19, and the context of recent contact with a COVID-19 case, makes influenza a less likely diagnosis.",
+        "initial_prior": "Based on symptom overlap but lower specificity for influenza"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Given the acute onset of symptoms and the severity of the presentation, a critical condition like pulmonary embolism must be considered, even though the primary symptoms do not directly suggest it. The absence of sudden onset dyspnea and pleuritic chest pain makes it less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Extreme fatigue"
+        ],
+        "key_features_absent": [
+          "Sudden onset dyspnea",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for pulmonary embolism, such as sudden dyspnea or pleuritic chest pain, but its critical nature necessitates its inclusion in the differential.",
+        "initial_prior": "Based on the necessity to consider critical conditions"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 2.0,
+        "reasoning": "Although dengue fever can present with fever and body aches, the specific combination of symptoms, particularly the loss of taste and smell, and the context provided, makes dengue fever a less likely diagnosis. The absence of retro-orbital pain and petechial rash further decreases its likelihood.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever",
+          "Body aches"
+        ],
+        "key_features_absent": [
+          "Retro-orbital pain",
+          "Petechial rash"
+        ],
+        "differentiating_factor": "The presence of loss of taste and smell and the specific context points away from dengue fever towards COVID-19.",
+        "initial_prior": "Based on symptom overlap but low specificity for dengue fever"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by COVID-19 due to highly specific symptom matches including loss of taste and smell, dry cough, and recent contact with a confirmed case. Community Acquired Pneumonia and less likely diagnoses such as influenza and dengue fever are considered due to overlapping symptoms but are less likely based on the specific combination of symptoms and context provided.",
+    "dominant_system": "respiratory"
+  }
+}

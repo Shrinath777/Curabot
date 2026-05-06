@@ -1,0 +1,57 @@
+{
+  "prompt_hash": "122bd380e4d2965e",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Flank pain",
+        "raw_text": "excruciating pain in my right flank",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "comes in waves, radiates to groin",
+        "body_system": "urinary"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nausea",
+        "raw_text": "I feel nauseous",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Hematuria",
+        "raw_text": "noticed blood in my urine",
+        "body_system": "urinary"
+      },
+      {
+        "name": "Restlessness",
+        "raw_text": "can't sit still because of the pain",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Dehydration",
+        "raw_text": "I don't drink enough water",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "can't sit still because of the pain",
+        "reason": "could imply restlessness or severe pain",
+        "clarification_needed": "Is the inability to sit still due to pain or another reason?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "excruciating pain",
+      "blood in urine"
+    ],
+    "summary": "Patient presents with severe flank pain radiating to the groin, nausea, hematuria, and possible dehydration, indicating a potential urological emergency"
+  }
+}

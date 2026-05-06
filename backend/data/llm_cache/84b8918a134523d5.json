@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "84b8918a134523d5",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Deep Vein Thrombosis",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with unilateral calf swelling, redness, warmth, and pain, which are classic signs of DVT. Recent long flight and birth control pill use are also risk factors for DVT.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "calf swelling",
+          "calf pain",
+          "calf redness",
+          "calf warmth",
+          "recent long flight",
+          "birth control pill use"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "Unilateral leg swelling and recent travel history distinguish DVT from other diagnoses.",
+        "initial_prior": "Based on symptom match and risk factors"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Although the patient does not exhibit typical symptoms of PE such as sudden onset dyspnea or pleuritic chest pain, it is still a critical diagnosis that must be considered due to the patient's recent long flight and birth control pill use.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "recent long flight",
+          "birth control pill use"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "Sudden onset dyspnea and pleuritic chest pain would strengthen this diagnosis.",
+        "initial_prior": "Based on risk factors and severity"
+      },
+      {
+        "name": "Stress Fracture",
+        "confidence": 15.0,
+        "reasoning": "Patient presents with calf pain and swelling, which could be consistent with a stress fracture. However, the presence of redness and warmth makes DVT a more likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "calf pain",
+          "calf swelling"
+        ],
+        "key_features_absent": [
+          "recent intense physical activity"
+        ],
+        "differentiating_factor": "Lack of recent intense physical activity and presence of redness and warmth make this diagnosis less likely.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Mild Sprain",
+        "confidence": 10.0,
+        "reasoning": "Patient presents with calf pain and swelling, which could be consistent with a mild sprain. However, the presence of redness and warmth makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "mild",
+        "key_features_present": [
+          "calf pain",
+          "calf swelling"
+        ],
+        "key_features_absent": [
+          "recent trauma or injury"
+        ],
+        "differentiating_factor": "Lack of recent trauma or injury and presence of redness and warmth make this diagnosis less likely.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Tendinitis",
+        "confidence": 7.0,
+        "reasoning": "Patient presents with calf pain, which could be consistent with tendinitis. However, the presence of swelling, redness, and warmth makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "mild",
+        "key_features_present": [
+          "calf pain"
+        ],
+        "key_features_absent": [
+          "recent intense physical activity"
+        ],
+        "differentiating_factor": "Lack of recent intense physical activity and presence of swelling, redness, and warmth make this diagnosis less likely.",
+        "initial_prior": "Based on symptom match and prevalence"
+      }
+    ],
+    "reasoning_summary": "The patient's presentation of unilateral calf swelling, redness, warmth, and pain, combined with recent long flight and birth control pill use, makes Deep Vein Thrombosis the most likely diagnosis. Pulmonary Embolism is also considered due to the patient's risk factors, despite the lack of typical symptoms.",
+    "dominant_system": "cardiovascular"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "prompt_hash": "222f546e4c07d4df",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Weight Loss",
+        "raw_text": "I've lost weight despite eating more than usual",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "despite increased appetite",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Palpitations",
+        "raw_text": "my heart races even when I'm resting",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "racing heart at rest",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Tremors",
+        "raw_text": "my hands are trembling",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Anxiety",
+        "raw_text": "I feel anxious all the time",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Hyperhidrosis",
+        "raw_text": "I'm always hot and sweating",
+        "body_system": "other"
+      },
+      {
+        "name": "Exophthalmos",
+        "raw_text": "my eyes seem to be bulging more than before",
+        "body_system": "other"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "always hot and sweating",
+        "reason": "could be related to anxiety or an underlying condition",
+        "clarification_needed": "Is the sweating primarily at night or during the day?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": "increased at rest",
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient reports unexplained weight loss, palpitations, tremors, anxiety, and exophthalmos, suggesting potential hyperthyroidism or other endocrine disorders."
+  }
+}

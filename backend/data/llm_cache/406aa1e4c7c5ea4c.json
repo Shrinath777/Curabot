@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "406aa1e4c7c5ea4c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 60.0,
+        "reasoning": "The patient's severe crushing chest pain radiating to the left arm and jaw, accompanied by sweating and nausea, closely matches the differentiating features of Acute Myocardial Infarction. The patient's history of smoking and diabetes further increases the risk.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "crushing chest pain",
+          "radiation to left arm",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "electrocardiogram results"
+        ],
+        "differentiating_factor": "The combination of severe crushing chest pain, radiation to the left arm, and diaphoresis is highly specific for Acute Myocardial Infarction, especially in the context of the patient's risk factors.",
+        "initial_prior": "High prevalence of cardiovascular disease in the population and strong symptom match"
+      },
+      {
+        "name": "Panic Attack",
+        "confidence": 15.0,
+        "reasoning": "While the patient's symptoms could be attributed to a panic attack, the severity and nature of the chest pain, along with the presence of sweating and nausea, make this diagnosis less likely. However, it cannot be ruled out without further evaluation.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sweating",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "fear or anxiety symptoms"
+        ],
+        "differentiating_factor": "The absence of fear or anxiety symptoms and the presence of severe crushing chest pain make Panic Attack a less likely diagnosis.",
+        "initial_prior": "Lower prevalence and less specific symptom match"
+      },
+      {
+        "name": "Diabetic Ketoacidosis",
+        "confidence": 10.0,
+        "reasoning": "Given the patient's history of diabetes, Diabetic Ketoacidosis is a consideration. However, the primary symptoms do not closely match those of DKA, such as fruity breath or Kussmaul breathing, making this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "nausea"
+        ],
+        "key_features_absent": [
+          "fruity breath",
+          "Kussmaul breathing"
+        ],
+        "differentiating_factor": "The absence of specific symptoms like fruity breath or Kussmaul breathing reduces the likelihood of Diabetic Ketoacidosis.",
+        "initial_prior": "Presence of diabetes but less specific symptom match"
+      },
+      {
+        "name": "Pheochromocytoma",
+        "confidence": 8.0,
+        "reasoning": "Although Pheochromocytoma is a critical condition, the patient's symptoms do not closely match the differentiating features such as elevated catecholamines or paroxysmal hypertension. Thus, it is considered but with lower confidence.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sweating"
+        ],
+        "key_features_absent": [
+          "paroxysmal hypertension",
+          "elevated catecholamines"
+        ],
+        "differentiating_factor": "The lack of specific symptoms like paroxysmal hypertension or elevated catecholamines makes Pheochromocytoma less likely.",
+        "initial_prior": "Low prevalence and less specific symptom match"
+      },
+      {
+        "name": "Anxiety Attack",
+        "confidence": 7.0,
+        "reasoning": "Similar to Panic Attack, Anxiety Attack is considered due to symptoms like sweating and nausea. However, the severe crushing chest pain is not typical for Anxiety Attack, making it a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sweating",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "fear or anxiety symptoms"
+        ],
+        "differentiating_factor": "The presence of severe crushing chest pain, which is atypical for Anxiety Attack, reduces its likelihood.",
+        "initial_prior": "Lower prevalence and less specific symptom match"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by Acute Myocardial Infarction due to the patient's severe crushing chest pain, radiation to the left arm, diaphoresis, and risk factors. Other diagnoses like Panic Attack, Diabetic Ketoacidosis, Pheochromocytoma, and Anxiety Attack are considered but with lower confidence due to less specific symptom matches or the absence of key features.",
+    "dominant_system": "cardiovascular"
+  }
+}

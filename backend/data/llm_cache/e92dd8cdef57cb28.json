@@ -1,0 +1,98 @@
+{
+  "prompt_hash": "e92dd8cdef57cb28",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Migraine",
+        "confidence": 60.0,
+        "reasoning": "The patient's symptoms of throbbing headache, photophobia, phonophobia, and visual disturbances are classic for migraine. The absence of red flag symptoms like fever, stiff neck, or weakness also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "throbbing headache",
+          "photophobia",
+          "phonophobia",
+          "visual disturbances"
+        ],
+        "key_features_absent": [
+          "fever",
+          "stiff neck",
+          "weakness"
+        ],
+        "differentiating_factor": "The presence of visual disturbances and the specific characteristics of the headache (throbbing, unilateral) differentiate migraine from other headache disorders.",
+        "initial_prior": "Based on the high prevalence of migraine and the strong symptom match"
+      },
+      {
+        "name": "Tension Headache",
+        "confidence": 20.0,
+        "reasoning": "Although the patient's headache is described as throbbing, the presence of nausea and the absence of fever or red flag symptoms could also suggest a tension headache. However, the visual disturbances and photophobia are less typical for tension headache.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "headache",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "fever",
+          "stiff neck",
+          "weakness"
+        ],
+        "differentiating_factor": "The absence of visual disturbances and the less severe nature of the headache differentiate tension headache from migraine.",
+        "initial_prior": "Based on the prevalence of tension headache, but lower confidence due to less specific symptom match"
+      },
+      {
+        "name": "Cluster Headache",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of severe, unilateral headache and photophobia could suggest a cluster headache. However, the absence of autonomic features like lacrimation or nasal congestion and the less typical description of the headache (throbbing rather than piercing) make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "unilateral headache",
+          "photophobia"
+        ],
+        "key_features_absent": [
+          "autonomic features",
+          "piercing quality of headache"
+        ],
+        "differentiating_factor": "The presence of autonomic features and a piercing quality to the headache would strengthen the diagnosis of cluster headache.",
+        "initial_prior": "Based on the lower prevalence of cluster headache and the less specific symptom match"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The patient's headache could be related to hypertension, especially if the headache is occipital and morning. However, the presence of visual disturbances and the specific characteristics of the headache make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "headache"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The presence of elevated blood pressure readings and end-organ damage signs would strengthen the diagnosis of hypertension.",
+        "initial_prior": "Based on the lower prevalence of hypertension as a cause of headache and the less specific symptom match"
+      },
+      {
+        "name": "Subarachnoid Hemorrhage",
+        "confidence": 5.0,
+        "reasoning": "The patient's sudden, severe headache could suggest a subarachnoid hemorrhage. However, the absence of red flag symptoms like fever, stiff neck, or weakness and the less typical description of the headache (throbbing rather than thunderclap) make this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden headache"
+        ],
+        "key_features_absent": [
+          "fever",
+          "stiff neck",
+          "weakness"
+        ],
+        "differentiating_factor": "The presence of a thunderclap headache and red flag symptoms would strengthen the diagnosis of subarachnoid hemorrhage.",
+        "initial_prior": "Based on the low prevalence of subarachnoid hemorrhage, but high severity and need to rule out as a must-not-miss diagnosis"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms suggest a primary headache disorder, with migraine being the most likely diagnosis. However, other headache disorders like tension headache and cluster headache are also considered, as well as secondary causes like hypertension and subarachnoid hemorrhage.",
+    "dominant_system": "neurological"
+  }
+}

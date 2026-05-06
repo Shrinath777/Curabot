@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "bc67c2916c50fc36",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with severe cough, sharp chest pain, fever, and chills, which are key symptoms of Community Acquired Pneumonia. The presence of productive cough with colored sputum and pleuritic chest pain further supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Pleuritic chest pain",
+          "Productive cough with colored sputum",
+          "Fever with chills"
+        ],
+        "key_features_absent": [
+          "Abnormal lung sounds (crackles)"
+        ],
+        "differentiating_factor": "The presence of pleuritic chest pain and productive cough with colored sputum distinguishes Community Acquired Pneumonia from other respiratory infections.",
+        "initial_prior": "Based on prevalence and symptom match, Community Acquired Pneumonia is a common and serious condition that requires prompt diagnosis and treatment."
+      },
+      {
+        "name": "Influenza",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of severe cough, fever, and chills are consistent with Influenza. However, the absence of sudden onset of high fever and prominent myalgia reduces the confidence in this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Severe cough",
+          "Fever",
+          "Chills"
+        ],
+        "key_features_absent": [
+          "Sudden onset of high fever",
+          "Prominent myalgia"
+        ],
+        "differentiating_factor": "The absence of sudden onset of high fever and prominent myalgia distinguishes Influenza from Community Acquired Pneumonia.",
+        "initial_prior": "Based on prevalence and symptom match, Influenza is a common condition that can present with similar symptoms to Community Acquired Pneumonia."
+      },
+      {
+        "name": "Airway Obstruction",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of severe cough and sharp chest pain could be consistent with Airway Obstruction. However, the absence of difficulty breathing and wheezing reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Severe cough",
+          "Sharp chest pain"
+        ],
+        "key_features_absent": [
+          "Difficulty breathing",
+          "Wheezing"
+        ],
+        "differentiating_factor": "The absence of difficulty breathing and wheezing distinguishes Airway Obstruction from Community Acquired Pneumonia and Influenza.",
+        "initial_prior": "Based on prevalence and symptom match, Airway Obstruction is a critical condition that requires prompt diagnosis and treatment, but is less likely in this case."
+      },
+      {
+        "name": "Pneumonia",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of cough, fever, and chills are consistent with Pneumonia. However, the absence of shortness of breath and the presence of pleuritic chest pain reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Cough",
+          "Fever",
+          "Chills"
+        ],
+        "key_features_absent": [
+          "Shortness of breath"
+        ],
+        "differentiating_factor": "The absence of shortness of breath and the presence of pleuritic chest pain distinguishes Pneumonia from Community Acquired Pneumonia.",
+        "initial_prior": "Based on prevalence and symptom match, Pneumonia is a common condition that can present with similar symptoms to Community Acquired Pneumonia."
+      },
+      {
+        "name": "Costochondritis",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptom of sharp chest pain could be consistent with Costochondritis. However, the presence of severe cough, fever, and chills reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Sharp chest pain"
+        ],
+        "key_features_absent": [
+          "Signs of cardiac disease"
+        ],
+        "differentiating_factor": "The presence of severe cough, fever, and chills distinguishes Costochondritis from Community Acquired Pneumonia and Influenza.",
+        "initial_prior": "Based on prevalence and symptom match, Costochondritis is a benign condition that is less likely in this case."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of severe cough, sharp chest pain, fever, and chills suggest a respiratory infection. Community Acquired Pneumonia is the most likely diagnosis due to the presence of pleuritic chest pain and productive cough with colored sputum. Influenza and Pneumonia are also considered, but are less likely due to the absence of sudden onset of high fever and shortness of breath, respectively. Airway Obstruction and Costochondritis are critical and benign conditions, respectively, that are less likely in this case.",
+    "dominant_system": "respiratory"
+  }
+}

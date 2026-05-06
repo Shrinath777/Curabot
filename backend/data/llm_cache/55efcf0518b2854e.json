@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "55efcf0518b2854e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hyperthyroidism",
+        "confidence": 60.0,
+        "reasoning": "Patient reports unexplained weight loss, palpitations, tremors, anxiety, and exophthalmos, which are classic symptoms of hyperthyroidism. The combination of these symptoms, particularly the presence of exophthalmos, strongly suggests hyperthyroidism.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "weight loss",
+          "palpitations",
+          "tremors",
+          "anxiety",
+          "exophthalmos"
+        ],
+        "key_features_absent": [
+          "goiter"
+        ],
+        "differentiating_factor": "The presence of exophthalmos and the combination of weight loss, palpitations, and tremors differentiate hyperthyroidism from other potential diagnoses.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of anxiety, palpitations, and tremors could also be indicative of an anxiety disorder. However, the presence of weight loss and exophthalmos makes hyperthyroidism a more likely diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "anxiety",
+          "palpitations",
+          "tremors"
+        ],
+        "key_features_absent": [
+          "panic attacks"
+        ],
+        "differentiating_factor": "The absence of panic attacks and the presence of weight loss and exophthalmos make anxiety disorder a less likely diagnosis.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Pheochromocytoma",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of palpitations, tremors, and anxiety could also be indicative of pheochromocytoma, a rare tumor of the adrenal gland. However, the absence of hypertension and the presence of weight loss and exophthalmos make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "palpitations",
+          "tremors",
+          "anxiety"
+        ],
+        "key_features_absent": [
+          "hypertension"
+        ],
+        "differentiating_factor": "The absence of hypertension and the presence of weight loss and exophthalmos make pheochromocytoma a less likely diagnosis.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 8.0,
+        "reasoning": "Although the patient reports palpitations, there is no mention of chest pain or other symptoms typical of acute myocardial infarction. However, given the potential severity of this condition, it is included as a must-not-miss diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "chest pain"
+        ],
+        "differentiating_factor": "The absence of chest pain and the presence of weight loss and exophthalmos make acute myocardial infarction a less likely diagnosis.",
+        "initial_prior": "Based on symptom match and prevalence"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 2.0,
+        "reasoning": "The patient's symptoms of palpitations and anxiety could also be indicative of hypertension. However, the absence of hypertension and the presence of weight loss and exophthalmos make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "palpitations",
+          "anxiety"
+        ],
+        "key_features_absent": [
+          "hypertension"
+        ],
+        "differentiating_factor": "The absence of hypertension and the presence of weight loss and exophthalmos make hypertension a less likely diagnosis.",
+        "initial_prior": "Based on symptom match and prevalence"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of unexplained weight loss, palpitations, tremors, anxiety, and exophthalmos suggest hyperthyroidism as the most likely diagnosis. However, other potential diagnoses, including anxiety disorder, pheochromocytoma, acute myocardial infarction, and hypertension, are also considered.",
+    "dominant_system": "endocrine"
+  }
+}

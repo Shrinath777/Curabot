@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "eee5ce89a1ac5144",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 40.0,
+        "reasoning": "Patient's symptoms of epigastric pain, bloating, and nausea are consistent with GERD, especially given the description of the pain as gnawing and burning, which aligns with the disease's differentiating features. The absence of red flag symptoms like chest pressure or radiation to the arm also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "gnawing, burning epigastric pain",
+          "bloating",
+          "nausea"
+        ],
+        "key_features_absent": [
+          "sour/bitter taste in mouth"
+        ],
+        "differentiating_factor": "The nature of the epigastric pain (gnawing, burning) and the presence of bloating and nausea without other alarming symptoms differentiate GERD from more critical conditions.",
+        "initial_prior": "High, based on symptom match and prevalence"
+      },
+      {
+        "name": "Peptic Ulcer Disease",
+        "confidence": 30.0,
+        "reasoning": "The patient's epigastric pain, described as gnawing and burning, could also suggest peptic ulcer disease, especially if the pain is related to eating or if NSAIDs are being used for back pain, potentially exacerbating gastrointestinal symptoms.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "epigastric pain",
+          "use of NSAIDs"
+        ],
+        "key_features_absent": [
+          "vomiting blood or coffee ground emesis"
+        ],
+        "differentiating_factor": "The presence of NSAID use and the nature of the pain could suggest peptic ulcer disease, but the lack of specific symptoms like vomiting blood makes it less likely than GERD.",
+        "initial_prior": "Moderate, considering the symptom match and potential NSAID use"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 15.0,
+        "reasoning": "Although the patient does not exhibit classic symptoms of myocardial infarction like crushing chest pressure or radiation to the arm, it is essential to consider this diagnosis due to its critical nature. The epigastric pain could be referred pain from the heart, but this is less likely given the description.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "epigastric pain"
+        ],
+        "key_features_absent": [
+          "crushing chest pressure",
+          "radiation to arm or jaw"
+        ],
+        "differentiating_factor": "The absence of typical MI symptoms and the presence of gastrointestinal symptoms make this less likely, but it cannot be entirely ruled out without further evaluation.",
+        "initial_prior": "Low, based on symptom mismatch, but considered due to severity"
+      },
+      {
+        "name": "Cholecystitis",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms could also suggest cholecystitis, especially if the pain is related to eating fatty foods, but the lack of specific symptoms like fever or Murphy's sign makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "epigastric pain"
+        ],
+        "key_features_absent": [
+          "fever",
+          "Murphy's sign"
+        ],
+        "differentiating_factor": "The absence of specific symptoms for cholecystitis and the presence of more typical GERD symptoms make cholecystitis less likely.",
+        "initial_prior": "Low, based on symptom mismatch and lower prevalence"
+      },
+      {
+        "name": "Pancreatitis",
+        "confidence": 5.0,
+        "reasoning": "Given the epigastric pain and potential NSAID use, pancreatitis is a consideration, but the lack of severe abdominal pain, vomiting, or elevated pancreatic enzymes makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "epigastric pain"
+        ],
+        "key_features_absent": [
+          "severe abdominal pain",
+          "vomiting"
+        ],
+        "differentiating_factor": "The absence of specific symptoms for pancreatitis, such as severe pain or vomiting, and the presence of more typical GERD symptoms make pancreatitis less likely.",
+        "initial_prior": "Low, based on symptom mismatch and lower prevalence"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by GERD due to the symptom match and prevalence. Peptic ulcer disease is considered due to NSAID use and potential gastrointestinal symptoms. Although less likely, critical conditions like myocardial infarction are included due to their severity and potential for atypical presentations.",
+    "dominant_system": "gastrointestinal"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "prompt_hash": "e15e6798a6ec6940",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Iron Deficiency Anemia",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with severe fatigue, pallor, brittle and spoon-shaped nails, menorrhagia, and pica, which are all characteristic of iron deficiency anemia.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue",
+          "Pallor",
+          "Brittle nails",
+          "Spoon-shaped nails",
+          "Menorrhagia",
+          "Pica"
+        ],
+        "key_features_absent": [
+          "Gastrointestinal bleeding"
+        ],
+        "differentiating_factor": "The presence of specific signs like spoon-shaped nails and pica, which are less common in other conditions, makes iron deficiency anemia a strong candidate.",
+        "initial_prior": "Based on the high prevalence of iron deficiency anemia in women, especially with menorrhagia, and the specific symptom matches."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 25.0,
+        "reasoning": "The patient's exertional shortness of breath could be indicative of a pulmonary embolism, a critical condition that must be considered, especially given the severity of symptoms.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Pleuritic chest pain",
+          "Recent surgery or immobility"
+        ],
+        "differentiating_factor": "The sudden onset of dyspnea would be a key differentiator for pulmonary embolism, but the patient's symptoms have been present for weeks, making it less typical.",
+        "initial_prior": "Considered due to the critical nature of the condition and the need to rule out life-threatening diseases, despite the lack of typical differentiating features."
+      },
+      {
+        "name": "Chronic Anemia of Chronic Disease",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of fatigue and shortness of breath could also be indicative of chronic anemia of chronic disease, which often presents with similar symptoms but lacks the specific signs of iron deficiency.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue",
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Pallor",
+          "Brittle nails",
+          "Spoon-shaped nails"
+        ],
+        "differentiating_factor": "The absence of specific signs of iron deficiency anemia and the broader differential for chronic anemia make this a less likely but still possible diagnosis.",
+        "initial_prior": "Based on the possibility of underlying chronic disease causing anemia, though less specific symptom matches compared to iron deficiency anemia."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 10.0,
+        "reasoning": "While the patient presents with shortness of breath, the absence of typical pneumonia symptoms such as fever, productive cough, and pleuritic chest pain makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Productive cough",
+          "Pleuritic chest pain"
+        ],
+        "differentiating_factor": "The lack of specific respiratory symptoms and signs makes pneumonia a less likely diagnosis compared to other respiratory conditions.",
+        "initial_prior": "Considered due to the potential for respiratory infections to cause similar symptoms, but lower confidence due to the absence of key features."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "Although hypertension can lead to fatigue and shortness of breath in advanced stages, the patient's symptoms and signs do not strongly suggest hypertension as a primary diagnosis, especially without mention of elevated blood pressure readings.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue"
+        ],
+        "key_features_absent": [
+          "Elevated blood pressure readings",
+          "Headache",
+          "End-organ damage signs"
+        ],
+        "differentiating_factor": "The absence of specific signs of hypertension and the presence of more specific signs for other conditions make hypertension a less likely diagnosis.",
+        "initial_prior": "Based on the low specificity of symptoms for hypertension and the lack of direct evidence for elevated blood pressure."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely causes of the patient's severe fatigue, shortness of breath, and specific signs such as pallor, brittle and spoon-shaped nails, menorrhagia, and pica. Iron deficiency anemia emerged as the most likely diagnosis due to the strong match between the patient's symptoms and the characteristic features of the condition. Pulmonary embolism was considered due to its critical nature, despite the atypical presentation. Other conditions, including chronic anemia of chronic disease, community-acquired pneumonia, and hypertension, were considered less likely due to the absence of key features or less specific symptom matches.",
+    "dominant_system": "hematologic"
+  }
+}

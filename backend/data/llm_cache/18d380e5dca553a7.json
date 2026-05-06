@@ -1,0 +1,50 @@
+{
+  "prompt_hash": "18d380e5dca553a7",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Abdominal pain",
+        "raw_text": "severe pain in my upper right abdomen",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "comes and goes",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Radiating pain",
+        "raw_text": "sometimes radiates to my right shoulder",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Nausea",
+        "raw_text": "I feel nauseous",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Bloating",
+        "raw_text": "I have been bloated",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "after eating fatty meals",
+        "reason": "unclear if pain is exclusively triggered by fatty meals",
+        "clarification_needed": "Does the pain occur after eating other types of meals as well?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe episodic upper right abdominal pain radiating to the right shoulder, accompanied by nausea and bloating, potentially triggered by fatty meals."
+  }
+}

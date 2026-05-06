@@ -1,0 +1,58 @@
+{
+  "prompt_hash": "ce951e5336f4de4d",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Diarrhea",
+        "raw_text": "massive watery diarrhea that looks like rice water",
+        "severity": "severe",
+        "duration": "more than 15 times today",
+        "character": "watery, rice water-like",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Vomiting",
+        "raw_text": "I'm vomiting",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Thirst",
+        "raw_text": "extremely thirsty",
+        "body_system": "other"
+      },
+      {
+        "name": "Weakness",
+        "raw_text": "feel very weak",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Muscle Cramps",
+        "raw_text": "muscle cramps in my legs",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "unknown source of water",
+        "reason": "lack of information about the water quality",
+        "clarification_needed": "What was the exact source of the water?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe diarrhea, vomiting, thirst, weakness, and muscle cramps after drinking water from an unknown source in a flood-affected area."
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "prompt_hash": "0b87aa6f3d0b7a75",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Meningitis",
+        "confidence": 40.0,
+        "reasoning": "Severe headache, neck stiffness, fever, and photophobia are classic symptoms of meningitis. The presence of a purplish rash that doesn't fade with pressure (suggestive of a hemorrhagic component) and confusion also supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "severe headache",
+          "neck stiffness",
+          "fever",
+          "photophobia",
+          "purplish rash",
+          "confusion"
+        ],
+        "key_features_absent": [
+          "recent upper respiratory infection"
+        ],
+        "differentiating_factor": "The combination of severe headache, neck stiffness, and fever with a purplish rash is highly suggestive of meningitis, especially in the context of confusion which indicates possible CNS involvement.",
+        "initial_prior": "Based on the presence of red flag symptoms and the severity of the presentation"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 25.0,
+        "reasoning": "The patient presents with severe headache, fever, and a purplish rash, which could be indicative of Dengue Fever, especially given the presence of a rash that doesn't fade with pressure. However, the absence of retro-orbital pain and severe bone/joint pain makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe headache",
+          "fever",
+          "purplish rash"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain"
+        ],
+        "differentiating_factor": "The lack of specific symptoms like retro-orbital pain and the nature of the rash makes Dengue Fever a consideration but less likely than meningitis.",
+        "initial_prior": "Based on the presence of fever and rash, but lower confidence due to missing key features"
+      },
+      {
+        "name": "Typhoid Fever",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of fever, headache, and rash could also suggest Typhoid Fever, particularly if the rash is interpreted as 'rose spots'. However, the absence of a step-ladder fever pattern, relative bradycardia, and coated tongue makes this diagnosis less confident.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "headache"
+        ],
+        "key_features_absent": [
+          "step-ladder fever pattern",
+          "relative bradycardia",
+          "coated tongue"
+        ],
+        "differentiating_factor": "The clinical presentation lacks key features of Typhoid Fever, making it a less likely diagnosis.",
+        "initial_prior": "Based on the presence of fever and headache, but lower confidence due to missing specific features"
+      },
+      {
+        "name": "Malaria",
+        "confidence": 10.0,
+        "reasoning": "While the patient presents with fever and headache, which could be seen in Malaria, the absence of cyclical high fevers, travel history to a malaria-endemic area, and splenomegaly makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "headache"
+        ],
+        "key_features_absent": [
+          "cyclical high fevers",
+          "travel to malaria-endemic area",
+          "spleenomegaly"
+        ],
+        "differentiating_factor": "The lack of specific symptoms and risk factors for Malaria reduces the confidence in this diagnosis.",
+        "initial_prior": "Based on non-specific symptoms but low confidence due to lack of specific risk factors and symptoms"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "Given the severity of the presentation and the need to consider critical conditions, Pulmonary Embolism is included due to its potential for sudden onset and severe consequences. However, the absence of dyspnea, pleuritic chest pain, and recent surgery or immobility makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "dyspnea",
+          "pleuritic chest pain",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "The inclusion of Pulmonary Embolism is based on the principle of not missing a potentially life-threatening condition, despite the low likelihood based on the provided symptoms.",
+        "initial_prior": "Low confidence due to lack of specific symptoms but included for emergency triage"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by meningitis due to the combination of severe headache, neck stiffness, fever, photophobia, and a purplish rash, which are classic symptoms for this condition. Dengue Fever and Typhoid Fever are considered due to the presence of fever and rash but are less likely due to the absence of specific differentiating features. Malaria is a less likely diagnosis due to the lack of cyclical fevers and specific risk factors. Pulmonary Embolism is included as a must-not-miss diagnosis despite its low likelihood based on the provided symptoms.",
+    "dominant_system": "neurological"
+  }
+}

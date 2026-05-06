@@ -1,0 +1,53 @@
+{
+  "prompt_hash": "c76ddf94f919ed42",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "My fever has been gradually increasing every day for the past week",
+        "severity": "increasing",
+        "duration": "1 week",
+        "character": "gradually increasing",
+        "body_system": "other"
+      },
+      {
+        "name": "Abdominal pain",
+        "raw_text": "I have abdominal pain near my navel",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "near my navel",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Constipation",
+        "raw_text": "constipation",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Coated tongue",
+        "raw_text": "My tongue looks coated",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "abdominal pain near my navel",
+        "reason": "location is somewhat specific but does not clearly indicate the nature or cause of the pain",
+        "clarification_needed": "Can you describe the nature of the abdominal pain?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "fever",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with increasing fever, abdominal pain, constipation, and a coated tongue, possibly related to recent travel to a rural area with poor sanitation."
+  }
+}

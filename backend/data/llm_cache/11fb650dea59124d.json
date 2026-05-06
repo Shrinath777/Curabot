@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "11fb650dea59124d",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Rheumatoid Arthritis",
+        "confidence": 60.0,
+        "reasoning": "Morning stiffness, symmetrical joint pain, and low-grade fever are classic symptoms of rheumatoid arthritis. The patient's symptoms are consistent with an inflammatory arthritis, and rheumatoid arthritis is a common cause of such symptoms.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "morning stiffness",
+          "symmetrical joint pain",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "swollen joints",
+          "deformities"
+        ],
+        "differentiating_factor": "The presence of morning stiffness and symmetrical joint pain helps to differentiate rheumatoid arthritis from other causes of arthritis, such as osteoarthritis.",
+        "initial_prior": "Based on prevalence and symptom match, rheumatoid arthritis is a likely diagnosis."
+      },
+      {
+        "name": "Osteoarthritis",
+        "confidence": 20.0,
+        "reasoning": "While osteoarthritis is a common cause of joint pain, the patient's symptoms of morning stiffness and symmetrical joint pain are more suggestive of an inflammatory arthritis, such as rheumatoid arthritis. However, osteoarthritis cannot be ruled out without further evaluation.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "joint pain"
+        ],
+        "key_features_absent": [
+          "morning stiffness",
+          "swollen joints"
+        ],
+        "differentiating_factor": "The absence of morning stiffness and symmetrical joint pain helps to differentiate osteoarthritis from rheumatoid arthritis.",
+        "initial_prior": "Based on prevalence, osteoarthritis is a possible diagnosis, but the patient's symptoms are not as consistent with this condition."
+      },
+      {
+        "name": "Systemic Lupus Erythematosus",
+        "confidence": 10.0,
+        "reasoning": "Systemic lupus erythematosus is a less common cause of inflammatory arthritis, but it can present with similar symptoms to rheumatoid arthritis. However, the patient's symptoms are not as suggestive of systemic lupus erythematosus, and further evaluation would be needed to consider this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "malar rash",
+          "oral ulcers",
+          "kidney involvement"
+        ],
+        "differentiating_factor": "The presence of specific autoantibodies and other systemic symptoms helps to differentiate systemic lupus erythematosus from rheumatoid arthritis.",
+        "initial_prior": "Based on prevalence and symptom match, systemic lupus erythematosus is a less likely diagnosis."
+      },
+      {
+        "name": "Psoriatic Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Psoriatic arthritis is a less common cause of inflammatory arthritis, and the patient's symptoms are not as suggestive of this condition. However, psoriatic arthritis can present with similar symptoms to rheumatoid arthritis, and further evaluation would be needed to consider this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "joint pain"
+        ],
+        "key_features_absent": [
+          "psoriatic skin lesions",
+          "nail changes"
+        ],
+        "differentiating_factor": "The presence of psoriatic skin lesions and nail changes helps to differentiate psoriatic arthritis from rheumatoid arthritis.",
+        "initial_prior": "Based on prevalence and symptom match, psoriatic arthritis is a less likely diagnosis."
+      },
+      {
+        "name": "Septic Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Septic arthritis is a critical condition that requires prompt evaluation and treatment. While the patient's symptoms are not as suggestive of septic arthritis, this diagnosis cannot be ruled out without further evaluation, particularly if the patient has a history of recent joint injection or surgery.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "joint pain",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "severe joint pain",
+          "redness and swelling of the affected joint"
+        ],
+        "differentiating_factor": "The presence of severe joint pain, redness, and swelling of the affected joint helps to differentiate septic arthritis from other causes of arthritis.",
+        "initial_prior": "Based on the potential severity of this condition, septic arthritis is a must-not-miss diagnosis."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of morning stiffness, symmetrical joint pain, and low-grade fever are consistent with an inflammatory arthritis, with rheumatoid arthritis being the most likely diagnosis. However, other causes of arthritis, such as osteoarthritis, systemic lupus erythematosus, psoriatic arthritis, and septic arthritis, must also be considered and ruled out with further evaluation.",
+    "dominant_system": "musculoskeletal"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "prompt_hash": "01be573041be3cea",
+  "prompt_preview": "You are a highly empathetic, human-like Doctor consulting with a patient for MEDICAL EDUCATION.\n\nCRITICAL DOCTOR PERSONA RULES:\n- Speak naturally with a warm, caring, and professional bedside manner.\n",
+  "response": {
+    "should_conclude": false,
+    "conclusion_reason": null,
+    "next_question": "Can you tell me more about when this headache started and if there's anything that makes it better or worse?",
+    "question_rationale": "The patient has presented with a severe headache and high fever, which are key symptoms of several hypotheses, including Meningitis and Bacterial Meningitis. Understanding the onset, provocation, and palliation of the headache will help differentiate between these hypotheses and guide further questioning.",
+    "information_gain": "This question would help differentiate between Meningitis, Bacterial Meningitis, and other hypotheses by understanding the nature and progression of the headache, which is a critical symptom for these conditions.",
+    "request_vitals": false,
+    "vitals_needed": [],
+    "suggested_follow_ups": [
+      "Have you experienced any nausea or vomiting?",
+      "Is the headache constant or does it come and go?"
+    ],
+    "targeting_severity": "critical"
+  }
+}

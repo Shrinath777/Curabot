@@ -1,0 +1,8 @@
+{
+  "prompt_hash": "f3145b3352675eb0",
+  "prompt_preview": "Respond with a JSON object: {\"status\": \"ok\", \"provider\": \"unknown\"}",
+  "response": {
+    "status": "ok",
+    "provider": "unknown"
+  }
+}

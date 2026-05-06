@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "dd6bd31162592a49",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Diabetes Mellitus",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with polydipsia, polyuria, blurred vision, and paresthesia, which are classic symptoms of diabetes. The presence of impaired wound healing and overweight also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "polydipsia",
+          "polyuria",
+          "blurred vision",
+          "paresthesia",
+          "impaired wound healing"
+        ],
+        "key_features_absent": [
+          "elevated blood glucose levels"
+        ],
+        "differentiating_factor": "The combination of polydipsia, polyuria, and blurred vision is highly suggestive of diabetes, especially in the context of a family history of the disease.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 20.0,
+        "reasoning": "While the patient does not report any classic symptoms of hypertension, such as headache or chest pain, the presence of blurred vision and impaired wound healing could be indicative of end-organ damage secondary to hypertension.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "blurred vision",
+          "impaired wound healing"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure readings"
+        ],
+        "differentiating_factor": "The absence of classic symptoms of hypertension, such as headache or chest pain, makes this diagnosis less likely, but the presence of end-organ damage symptoms keeps it in consideration.",
+        "initial_prior": "Moderate prevalence and possible symptom match"
+      },
+      {
+        "name": "Chronic Kidney Disease",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of polyuria and impaired wound healing could be indicative of chronic kidney disease, especially if the patient has a history of diabetes or hypertension.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "polyuria",
+          "impaired wound healing"
+        ],
+        "key_features_absent": [
+          "elevated serum creatinine levels"
+        ],
+        "differentiating_factor": "The absence of other classic symptoms of chronic kidney disease, such as edema or fatigue, makes this diagnosis less likely.",
+        "initial_prior": "Low prevalence and possible symptom match"
+      },
+      {
+        "name": "Peripheral Neuropathy",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptom of paresthesia could be indicative of peripheral neuropathy, especially if the patient has a history of diabetes.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "paresthesia"
+        ],
+        "key_features_absent": [
+          "evidence of nerve damage on electromyography"
+        ],
+        "differentiating_factor": "The absence of other classic symptoms of peripheral neuropathy, such as muscle weakness or atrophy, makes this diagnosis less likely.",
+        "initial_prior": "Low prevalence and possible symptom match"
+      },
+      {
+        "name": "Vitamin B12 Deficiency",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptom of paresthesia could be indicative of vitamin B12 deficiency, especially if the patient has a history of malabsorption or dietary deficiency.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "paresthesia"
+        ],
+        "key_features_absent": [
+          "low serum vitamin B12 levels"
+        ],
+        "differentiating_factor": "The absence of other classic symptoms of vitamin B12 deficiency, such as fatigue or weakness, makes this diagnosis less likely.",
+        "initial_prior": "Low prevalence and possible symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms are highly suggestive of diabetes mellitus, with a strong symptom match and high prevalence. Hypertension and chronic kidney disease are also considered due to the presence of end-organ damage symptoms, but are less likely due to the absence of classic symptoms. Peripheral neuropathy and vitamin B12 deficiency are considered due to the presence of paresthesia, but are less likely due to the absence of other classic symptoms.",
+    "dominant_system": "endocrine"
+  }
+}

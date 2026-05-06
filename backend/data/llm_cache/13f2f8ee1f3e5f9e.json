@@ -1,0 +1,69 @@
+{
+  "prompt_hash": "13f2f8ee1f3e5f9e",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Fever",
+        "raw_text": "high fever",
+        "severity": "severe",
+        "duration": "since yesterday",
+        "character": "sudden",
+        "body_system": "other"
+      },
+      {
+        "name": "Body Aches",
+        "raw_text": "severe body aches",
+        "severity": "severe",
+        "duration": "since yesterday",
+        "character": "none mentioned",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Headache",
+        "raw_text": "headache",
+        "severity": "unknown",
+        "duration": "since yesterday",
+        "character": "none mentioned",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Fatigue",
+        "raw_text": "extreme fatigue",
+        "severity": "severe",
+        "duration": "since yesterday",
+        "character": "none mentioned",
+        "body_system": "other"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Dry Cough",
+        "raw_text": "dry cough",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Sore Throat",
+        "raw_text": "sore throat",
+        "body_system": "respiratory"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "similar symptoms at the office",
+        "reason": "unclear if this is relevant to the patient's condition",
+        "clarification_needed": "Are you concerned about having been exposed to something at the office?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with sudden onset of severe fever, body aches, headache, and fatigue, along with dry cough and sore throat, suspecting flu."
+  }
+}

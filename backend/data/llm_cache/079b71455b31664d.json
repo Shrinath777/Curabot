@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "079b71455b31664d",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 30.0,
+        "reasoning": "The patient presents with sudden onset dyspnea, which is a key differentiator for pulmonary embolism. The presence of chest tightness and diaphoresis also supports this diagnosis. The severity of symptoms and the sudden onset are consistent with a critical condition like pulmonary embolism.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "chest tightness",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "leg swelling",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "The sudden onset of dyspnea and the presence of pleuritic chest pain differentiate pulmonary embolism from other diagnoses.",
+        "initial_prior": "Based on the severity of symptoms and the presence of key differentiating features"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of chest tightness, diaphoresis, and palpitations could be indicative of an acute myocardial infarction. However, the absence of crushing chest pain and radiation to the arm, jaw, or back makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest tightness",
+          "diaphoresis",
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "crushing chest pain",
+          "radiation to arm, jaw, or back"
+        ],
+        "differentiating_factor": "The absence of typical MI symptoms like crushing chest pain and radiation to the arm, jaw, or back makes this diagnosis less likely than pulmonary embolism.",
+        "initial_prior": "Based on the presence of some key features, but the absence of others"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of palpitations, dyspnea, and diaphoresis, along with a feeling of impending doom, could be indicative of an anxiety disorder. The presence of constant worry and anxiety between episodes also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "palpitations",
+          "dyspnea",
+          "diaphoresis",
+          "feeling of impending doom"
+        ],
+        "key_features_absent": [
+          "normal cardiac workup"
+        ],
+        "differentiating_factor": "The presence of constant worry and anxiety between episodes, and the self-resolving nature of episodes, differentiate anxiety disorder from other diagnoses.",
+        "initial_prior": "Based on the presence of key features and the chronic nature of symptoms"
+      },
+      {
+        "name": "Atrial Fibrillation",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptom of palpitations could be indicative of atrial fibrillation. However, the absence of irregularly irregular pulse and the presence of other symptoms like dyspnea and chest tightness make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "irregularly irregular pulse"
+        ],
+        "differentiating_factor": "The absence of irregularly irregular pulse and the presence of other symptoms make atrial fibrillation less likely.",
+        "initial_prior": "Based on the presence of some key features, but the absence of others"
+      },
+      {
+        "name": "Aortic Dissection",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptom of chest tightness could be indicative of an aortic dissection. However, the absence of tearing or ripping chest pain radiating to the back, and the lack of history of hypertension or connective tissue disease, make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest tightness"
+        ],
+        "key_features_absent": [
+          "tearing or ripping chest pain",
+          "history of hypertension or connective tissue disease"
+        ],
+        "differentiating_factor": "The absence of typical aortic dissection symptoms and the lack of relevant history make this diagnosis less likely.",
+        "initial_prior": "Based on the presence of some key features, but the absence of others"
+      }
+    ],
+    "reasoning_summary": "The patient presents with sudden onset dyspnea, chest tightness, and diaphoresis, which are concerning for a critical condition like pulmonary embolism. The presence of palpitations and anxiety also supports a diagnosis of anxiety disorder. The absence of typical symptoms for acute myocardial infarction and aortic dissection makes these diagnoses less likely.",
+    "dominant_system": "cardiovascular"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "prompt_hash": "bd632082d9058c60",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Headache",
+        "raw_text": "severe headaches",
+        "severity": "severe",
+        "duration": "3 days",
+        "character": "unknown",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Nausea",
+        "raw_text": "nausea",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Photophobia",
+        "raw_text": "sensitivity to light",
+        "body_system": "neurological"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with severe headaches, nausea, and photophobia for 3 days"
+  }
+}

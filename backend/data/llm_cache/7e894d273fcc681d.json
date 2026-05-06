@@ -1,0 +1,80 @@
+{
+  "prompt_hash": "7e894d273fcc681d",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Allergic Rhinitis",
+        "confidence": 60.0,
+        "reasoning": "Patient's symptoms of sneezing, runny and itchy nose, watery and itchy eyes, congestion, and post-nasal drip are classic for allergic rhinitis, especially given the seasonal pattern and relief with antihistamines.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sneezing",
+          "runny and itchy nose",
+          "watery and itchy eyes",
+          "congestion",
+          "post-nasal drip"
+        ],
+        "key_features_absent": [
+          "fever",
+          "facial pain"
+        ],
+        "differentiating_factor": "Seasonal pattern and relief with antihistamines differentiate this from other causes of similar symptoms.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Viral Upper Respiratory Infection",
+        "confidence": 25.0,
+        "reasoning": "Some symptoms like sneezing, runny nose, and congestion could also be seen in viral upper respiratory infections, but the seasonal pattern and specific combination of symptoms (including itchy eyes and relief with antihistamines) make allergic rhinitis more likely.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sneezing",
+          "runny nose",
+          "congestion"
+        ],
+        "key_features_absent": [
+          "fever",
+          "cough"
+        ],
+        "differentiating_factor": "Absence of fever and cough, and the presence of itchy eyes, differentiate this from a typical viral upper respiratory infection.",
+        "initial_prior": "Common condition but less specific symptom match"
+      },
+      {
+        "name": "Sinusitis",
+        "confidence": 10.0,
+        "reasoning": "While sinusitis could cause some similar symptoms like congestion and post-nasal drip, the lack of facial pain or fever, and the presence of itchy eyes and a clear seasonal pattern, make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "congestion",
+          "post-nasal drip"
+        ],
+        "key_features_absent": [
+          "facial pain",
+          "fever"
+        ],
+        "differentiating_factor": "Absence of facial pain and fever, and the presence of itchy eyes and a seasonal pattern, differentiate this from sinusitis.",
+        "initial_prior": "Less common and less specific symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "Given the absence of red flag symptoms like sudden onset dyspnea, chest pain, or recent surgery/immobility, pulmonary embolism is unlikely but cannot be entirely ruled out without further evaluation.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "chest pain",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "The absence of key symptoms and risk factors makes this diagnosis unlikely but it remains a must-not-miss due to its critical severity.",
+        "initial_prior": "Low probability due to lack of specific symptoms or risk factors"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms strongly suggest allergic rhinitis due to the seasonal pattern, specific combination of symptoms, and relief with antihistamines. Other diagnoses like viral upper respiratory infection and sinusitis are considered but are less likely due to the absence of key symptoms. A critical diagnosis like pulmonary embolism is included due to its high severity, despite being unlikely.",
+    "dominant_system": "respiratory"
+  }
+}

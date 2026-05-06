@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "fcd94de611e42fe9",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Liver Cirrhosis",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with jaundice, abdominal swelling, and easy bruising, which are key features of liver cirrhosis. The history of heavy drinking for 20 years also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "jaundice",
+          "abdominal swelling",
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "splenomegaly",
+          "portal hypertension signs"
+        ],
+        "differentiating_factor": "Chronic alcohol use and presence of jaundice with abdominal distension (ascites) differentiate this from other liver diseases.",
+        "initial_prior": "Based on prevalence of liver disease in heavy drinkers and symptom match"
+      },
+      {
+        "name": "Hepatitis B",
+        "confidence": 30.0,
+        "reasoning": "Patient presents with jaundice, which is a key symptom of hepatitis B. The gradual onset of fatigue before jaundice appears also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "jaundice",
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "dark urine",
+          "pale stools",
+          "elevated liver transaminases"
+        ],
+        "differentiating_factor": "Presence of jaundice with dark urine and pale stools, and risk factor of unprotected sexual contact or blood exposure differentiate this from other hepatitis types.",
+        "initial_prior": "Based on prevalence of hepatitis B and symptom match"
+      },
+      {
+        "name": "Hepatocellular Carcinoma",
+        "confidence": 15.0,
+        "reasoning": "Patient presents with abdominal swelling and jaundice, which can be symptoms of hepatocellular carcinoma. However, the absence of rapidly rising AFP and other specific symptoms makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "abdominal swelling",
+          "jaundice"
+        ],
+        "key_features_absent": [
+          "rapidly rising AFP",
+          "abdominal pain in right upper quadrant"
+        ],
+        "differentiating_factor": "Presence of rapidly rising AFP and abdominal pain in right upper quadrant differentiate this from other liver diseases.",
+        "initial_prior": "Based on lower prevalence of hepatocellular carcinoma and incomplete symptom match"
+      },
+      {
+        "name": "Acute Myeloid Leukemia",
+        "confidence": 10.0,
+        "reasoning": "Patient presents with easy bruising, which can be a symptom of acute myeloid leukemia. However, the absence of other specific symptoms such as abnormal white blood cells makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "abnormal white blood cells",
+          "bone marrow failure symptoms"
+        ],
+        "differentiating_factor": "Presence of abnormal white blood cells and bone marrow failure symptoms differentiate this from other hematological disorders.",
+        "initial_prior": "Based on lower prevalence of acute myeloid leukemia and incomplete symptom match"
+      },
+      {
+        "name": "Sickle Cell Disease",
+        "confidence": 5.0,
+        "reasoning": "Patient presents with fatigue and easy bruising, which can be symptoms of sickle cell disease. However, the absence of severe pain crisis and other specific symptoms makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "fatigue",
+          "easy bruising"
+        ],
+        "key_features_absent": [
+          "severe pain crisis",
+          "acute chest syndrome"
+        ],
+        "differentiating_factor": "Presence of severe pain crisis and acute chest syndrome differentiate this from other hematological disorders.",
+        "initial_prior": "Based on lower prevalence of sickle cell disease and incomplete symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's presentation of jaundice, abdominal swelling, and easy bruising suggests a liver disease, with liver cirrhosis being the most likely diagnosis. Hepatitis B and hepatocellular carcinoma are also considered due to the presence of jaundice and abdominal symptoms. Acute myeloid leukemia and sickle cell disease are less likely due to incomplete symptom matches.",
+    "dominant_system": "hepatic"
+  }
+}

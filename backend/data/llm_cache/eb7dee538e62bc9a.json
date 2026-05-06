@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "eb7dee538e62bc9a",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 40.0,
+        "reasoning": "Sudden onset dyspnea, pleuritic chest pain, and tachycardia are key differentiators. The patient's symptoms of sudden dyspnea and chest tightness align with this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "chest tightness"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "Sudden onset of symptoms and the presence of dyspnea and chest tightness without fever or productive cough",
+        "initial_prior": "Based on the presence of sudden onset dyspnea and chest tightness, which are highly specific for PE"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 30.0,
+        "reasoning": "The patient's symptoms of chest tightness and diaphoresis are consistent with MI. However, the absence of radiation to the arm or jaw and the character of the chest pain (tightness rather than crushing) make it less likely than PE.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest tightness",
+          "diaphoresis"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "crushing chest pressure"
+        ],
+        "differentiating_factor": "The character of the chest pain and the absence of radiation to the arm or jaw",
+        "initial_prior": "Based on the presence of chest tightness and diaphoresis, which are common in MI, but with less specific features than PE"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of dyspnea could be consistent with pneumonia, but the absence of fever, productive cough, and abnormal lung sounds make it less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dyspnea"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of typical pneumonia symptoms such as fever and productive cough",
+        "initial_prior": "Based on the presence of dyspnea, but with many key features absent"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of anxiety and palpitations could be consistent with an anxiety disorder. However, the presence of severe dyspnea and chest tightness suggests a more serious underlying condition.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "anxiety",
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "panic attacks",
+          "avoidance behaviors"
+        ],
+        "differentiating_factor": "The presence of severe physical symptoms such as dyspnea and chest tightness, which are not typical of anxiety disorders",
+        "initial_prior": "Based on the presence of anxiety and palpitations, but with many key features absent and more serious conditions present"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of chest tightness and palpitations could be consistent with hypertension, but the absence of elevated blood pressure readings and end-organ damage signs make it less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest tightness",
+          "palpitations"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The absence of typical hypertension symptoms such as elevated blood pressure and end-organ damage signs",
+        "initial_prior": "Based on the presence of chest tightness and palpitations, but with many key features absent"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of sudden onset dyspnea, chest tightness, and diaphoresis suggest a critical condition such as pulmonary embolism or acute myocardial infarction. Community acquired pneumonia and anxiety disorder are less likely, while hypertension is the least likely diagnosis.",
+    "dominant_system": "cardiovascular"
+  }
+}

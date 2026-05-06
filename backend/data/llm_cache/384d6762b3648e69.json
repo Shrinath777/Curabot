@@ -1,0 +1,91 @@
+{
+  "prompt_hash": "384d6762b3648e69",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 60.0,
+        "reasoning": "The patient's symptoms of a moderate burning sensation in the chest, worsened by spicy food and lying down, with associated sour taste, are classic for GERD. The relief by antacids further supports this diagnosis.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "burning sensation",
+          "sour taste",
+          "worsens after meals and lying down"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The burning sensation not being described as crushing or pressure and the relief by antacids differentiate GERD from more serious cardiac conditions.",
+        "initial_prior": "Based on prevalence and symptom match, GERD is a common condition that matches the patient's symptoms well."
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 15.0,
+        "reasoning": "Although the patient's symptoms could suggest a cardiac issue, the description of a burning sensation rather than crushing or squeezing chest pressure, and the relief by antacids, makes MI less likely. However, it is a critical condition that cannot be missed, especially given the chest pain symptom.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "radiation to left arm, jaw, or back",
+          "diaphoresis",
+          "pain not relieved by antacids or position change"
+        ],
+        "differentiating_factor": "The nature of the chest pain (burning vs. crushing) and the factors that worsen or relieve it are crucial in differentiating between GERD and MI.",
+        "initial_prior": "Given the critical nature of MI, it is considered despite the lower likelihood based on the patient's specific symptoms."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 10.0,
+        "reasoning": "Hypertension is often asymptomatic but can cause chest pain secondary to cardiac strain. However, the patient's symptoms are more suggestive of GERD, and there is no mention of elevated blood pressure readings or end-organ damage signs.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The absence of specific signs of hypertension, such as elevated blood pressure or end-organ damage, makes this diagnosis less likely.",
+        "initial_prior": "Based on the lack of specific signs of hypertension and the presence of more typical GERD symptoms."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 8.0,
+        "reasoning": "While CAP can cause pleuritic chest pain, the patient's symptoms of a burning sensation in the chest, worsened by spicy food and lying down, with associated sour taste, are not typical for pneumonia. The absence of fever, cough, or abnormal lung sounds also makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "differentiating_factor": "The lack of respiratory symptoms such as cough or fever and the nature of the chest pain differentiate this from CAP.",
+        "initial_prior": "Given the severity of CAP, it is considered, but the patient's symptoms do not align well with this diagnosis."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 7.0,
+        "reasoning": "PE is a critical condition that must be considered, especially with chest pain. However, the patient's symptoms do not include sudden onset dyspnea, pleuritic chest pain, or other typical signs of PE, making it less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "The absence of sudden onset dyspnea and other specific signs of PE makes this diagnosis less likely but still considered due to its critical nature.",
+        "initial_prior": "Given the critical nature of PE, it is considered despite the low likelihood based on the patient's specific symptoms."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on the patient's primary symptom of a burning sensation in the chest, considering both gastrointestinal and cardiac causes. GERD is the most likely diagnosis based on the symptom profile and response to antacids. However, critical conditions like MI and PE are also considered due to their severity, despite lower likelihood based on the patient's specific symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

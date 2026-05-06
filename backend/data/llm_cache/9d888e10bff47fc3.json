@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "9d888e10bff47fc3",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Urinary Tract Infection",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with symptoms highly suggestive of a urinary tract infection, including dysuria, urinary frequency, cloudy urine, and foul-smelling urine, which are all key features of this condition.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Dysuria",
+          "Urinary Frequency",
+          "Cloudy Urine",
+          "Foul-smelling Urine"
+        ],
+        "key_features_absent": [
+          "Positive nitrites and leukocyte esterase on dipstick"
+        ],
+        "differentiating_factor": "The combination of dysuria, urinary frequency, and specific characteristics of the urine (cloudy and foul-smelling) points strongly towards a urinary tract infection.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Pyelonephritis",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not report flank pain or fever, which are key features of pyelonephritis, the presence of dysuria, urinary frequency, and cloudy urine could also suggest an upper urinary tract infection like pyelonephritis, especially if the infection has ascended to the kidneys.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Dysuria",
+          "Urinary Frequency",
+          "Cloudy Urine"
+        ],
+        "key_features_absent": [
+          "Flank pain",
+          "Fever"
+        ],
+        "differentiating_factor": "The absence of flank pain and fever makes pyelonephritis less likely than a lower urinary tract infection, but it remains a consideration due to the potential for the infection to have spread.",
+        "initial_prior": "Moderate prevalence and partial symptom match"
+      },
+      {
+        "name": "Kidney Stone",
+        "confidence": 10.0,
+        "reasoning": "While the patient reports abdominal pain, which could be interpreted as flank pain, the description and other symptoms do not strongly suggest the severe, colicky pain characteristic of kidney stones. However, kidney stones are a must-consider due to their potential severity.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Abdominal Pain"
+        ],
+        "key_features_absent": [
+          "Severe colicky flank pain",
+          "Hematuria"
+        ],
+        "differentiating_factor": "The lack of severe, colicky pain and hematuria makes kidney stones less likely, but their potential severity warrants consideration.",
+        "initial_prior": "Low prevalence but potential for severe outcome"
+      },
+      {
+        "name": "Mild Cystitis",
+        "confidence": 5.0,
+        "reasoning": "Mild cystitis could be considered due to the presence of dysuria and frequent urination. However, the additional symptoms such as cloudy and foul-smelling urine suggest a more significant infection, making mild cystitis less likely.",
+        "category": "less_likely",
+        "severity_class": "mild",
+        "key_features_present": [
+          "Dysuria",
+          "Urinary Frequency"
+        ],
+        "key_features_absent": [
+          "More severe symptoms of UTI"
+        ],
+        "differentiating_factor": "The presence of more severe urinary symptoms suggests a condition beyond mild cystitis.",
+        "initial_prior": "High prevalence of cystitis but mild form less likely given symptoms"
+      },
+      {
+        "name": "Septicemia",
+        "confidence": 5.0,
+        "reasoning": "Although there are no clear signs of septicemia such as fever, hemodynamic instability, or altered mental status, any infection has the potential to lead to sepsis, especially in vulnerable populations. Thus, it is considered but with low confidence due to lack of specific symptoms.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "Fever",
+          "Hemodynamic instability",
+          "Altered mental status"
+        ],
+        "differentiating_factor": "The absence of key features of septicemia makes it less likely, but it remains a consideration due to its potential severity and the fact that any infection can lead to sepsis.",
+        "initial_prior": "Low prevalence but high severity"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on urinary tract infections due to the patient's symptoms. A urinary tract infection is the most likely diagnosis given the combination of dysuria, urinary frequency, and characteristics of the urine. Other considerations include pyelonephritis, kidney stones, mild cystitis, and septicemia, with varying degrees of likelihood based on the presence or absence of key symptoms.",
+    "dominant_system": "urinary"
+  }
+}

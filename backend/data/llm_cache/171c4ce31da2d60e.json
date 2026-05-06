@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "171c4ce31da2d60e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Pancreatitis",
+        "confidence": 60.0,
+        "reasoning": "Severe epigastric pain radiating to the back, worsened by eating, and a history of heavy alcohol use are key differentiating features of acute pancreatitis. The presence of nausea and vomiting also supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Severe epigastric pain radiating to the back",
+          "Pain worsened by eating",
+          "History of heavy alcohol use",
+          "Nausea and vomiting"
+        ],
+        "key_features_absent": [
+          "Relief by leaning forward",
+          "Abdominal tenderness with guarding"
+        ],
+        "differentiating_factor": "The presence of severe epigastric pain radiating to the back and a history of heavy alcohol use distinguishes acute pancreatitis from other diagnoses.",
+        "initial_prior": "High prevalence of acute pancreatitis in patients with heavy alcohol use and severe abdominal pain."
+      },
+      {
+        "name": "Acute Gastroenteritis",
+        "confidence": 20.0,
+        "reasoning": "While the patient's symptoms of abdominal pain and vomiting could be consistent with acute gastroenteritis, the severity and radiation of the pain to the back are more suggestive of acute pancreatitis. However, the absence of bloody diarrhea or other specific features of gastroenteritis does not rule out this diagnosis entirely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Abdominal pain",
+          "Nausea and vomiting"
+        ],
+        "key_features_absent": [
+          "Bloody diarrhea",
+          "Watery diarrhea"
+        ],
+        "differentiating_factor": "The absence of bloody diarrhea or watery diarrhea makes acute gastroenteritis less likely than acute pancreatitis.",
+        "initial_prior": "Moderate prevalence of acute gastroenteritis in patients with abdominal pain and vomiting."
+      },
+      {
+        "name": "Acute Appendicitis",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of abdominal pain and nausea could be consistent with acute appendicitis, but the radiation of the pain to the back and the history of heavy alcohol use are more suggestive of acute pancreatitis. The absence of periumbilical pain migrating to the right lower quadrant also makes appendicitis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Abdominal pain"
+        ],
+        "key_features_absent": [
+          "Periumbilical pain migrating to the right lower quadrant",
+          "Point tenderness at McBurney's point"
+        ],
+        "differentiating_factor": "The absence of periumbilical pain migrating to the right lower quadrant and the presence of severe epigastric pain radiating to the back distinguish acute appendicitis from acute pancreatitis.",
+        "initial_prior": "Low to moderate prevalence of acute appendicitis in patients with abdominal pain."
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of abdominal pain and nausea could be consistent with dengue fever, but the severity and radiation of the pain to the back are more suggestive of acute pancreatitis. The absence of retro-orbital pain, severe bone or joint pain, or a biphasic fever pattern also makes dengue fever less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Abdominal pain",
+          "Nausea and vomiting"
+        ],
+        "key_features_absent": [
+          "Retro-orbital pain",
+          "Severe bone or joint pain",
+          "Biphasic fever pattern"
+        ],
+        "differentiating_factor": "The absence of retro-orbital pain, severe bone or joint pain, or a biphasic fever pattern distinguishes dengue fever from acute pancreatitis.",
+        "initial_prior": "Low prevalence of dengue fever in patients with abdominal pain and vomiting."
+      },
+      {
+        "name": "Ruptured Ectopic Pregnancy",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of abdominal pain and nausea could be consistent with a ruptured ectopic pregnancy, but the radiation of the pain to the back and the history of heavy alcohol use are more suggestive of acute pancreatitis. The absence of vaginal bleeding or other specific features of ectopic pregnancy also makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Abdominal pain"
+        ],
+        "key_features_absent": [
+          "Vaginal bleeding",
+          "Severe abdominal tenderness"
+        ],
+        "differentiating_factor": "The absence of vaginal bleeding or other specific features of ectopic pregnancy distinguishes this diagnosis from acute pancreatitis.",
+        "initial_prior": "Low prevalence of ruptured ectopic pregnancy in patients with abdominal pain."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of severe epigastric pain radiating to the back, worsened by eating, and a history of heavy alcohol use are highly suggestive of acute pancreatitis. While other diagnoses such as acute gastroenteritis, acute appendicitis, dengue fever, and ruptured ectopic pregnancy are considered, the presence of specific differentiating features and the severity of the symptoms make acute pancreatitis the most likely diagnosis.",
+    "dominant_system": "gastrointestinal"
+  }
+}

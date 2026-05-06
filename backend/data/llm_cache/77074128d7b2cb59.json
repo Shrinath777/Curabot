@@ -1,0 +1,53 @@
+{
+  "prompt_hash": "77074128d7b2cb59",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Palpitations",
+        "raw_text": "My heart feels like it's fluttering and beating irregularly",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "irregular",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Shortness of breath",
+        "raw_text": "I feel short of breath",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "sudden",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Lightheadedness",
+        "raw_text": "I feel lightheaded",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Irregular pulse",
+        "raw_text": "my pulse feels completely irregular",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "Sometimes my pulse feels completely irregular",
+        "reason": "Lack of specificity regarding when the irregular pulse occurs",
+        "clarification_needed": "Can you describe the situations or times when you notice an irregular pulse?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": "high",
+      "heart_rate": "irregular",
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "72-year-old patient with high blood pressure experiencing palpitations, shortness of breath, and lightheadedness"
+  }
+}

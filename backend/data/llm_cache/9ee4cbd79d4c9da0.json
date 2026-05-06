@@ -1,0 +1,82 @@
+{
+  "prompt_hash": "9ee4cbd79d4c9da0",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Dengue Fever",
+        "confidence": 45.0,
+        "reasoning": "Retro-orbital pain and severe bone/joint pain are highly specific for Dengue Fever. The presence of fever, rash, and recent mosquito exposure further support this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "retro_orbital_pain",
+          "arthralgia",
+          "fever",
+          "rash",
+          "mosquito_exposure"
+        ],
+        "key_features_absent": [
+          "biphasic fever pattern",
+          "petechial rash"
+        ],
+        "differentiating_factor": "Highly specific retro-orbital pain and severe bone/joint pain differentiate Dengue Fever from other diagnoses.",
+        "initial_prior": "Based on prevalence and symptom match, Dengue Fever is a likely diagnosis given the patient's symptoms and exposure history."
+      },
+      {
+        "name": "Malaria",
+        "confidence": 30.0,
+        "reasoning": "The presence of fever, arthralgia, and recent tropical exposure are consistent with Malaria. However, the absence of cyclical high fevers and rigors reduces the confidence in this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "arthralgia",
+          "tropical_exposure"
+        ],
+        "key_features_absent": [
+          "cyclical high fevers",
+          "rigors",
+          "splenomegaly"
+        ],
+        "differentiating_factor": "The absence of cyclical high fevers and rigors, which are characteristic of Malaria, reduces the confidence in this diagnosis.",
+        "initial_prior": "Based on prevalence and symptom match, Malaria is a possible diagnosis given the patient's symptoms and exposure history."
+      },
+      {
+        "name": "Typhoid Fever",
+        "confidence": 20.0,
+        "reasoning": "The presence of fever and arthralgia are consistent with Typhoid Fever. However, the absence of a step-ladder fever pattern, relative bradycardia, and rose spots on the abdomen reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "arthralgia"
+        ],
+        "key_features_absent": [
+          "step-ladder fever pattern",
+          "relative bradycardia",
+          "rose spots"
+        ],
+        "differentiating_factor": "The absence of a step-ladder fever pattern and relative bradycardia, which are characteristic of Typhoid Fever, reduces the confidence in this diagnosis.",
+        "initial_prior": "Based on prevalence and symptom match, Typhoid Fever is a less likely diagnosis given the patient's symptoms."
+      },
+      {
+        "name": "Cholera",
+        "confidence": 5.0,
+        "reasoning": "The absence of rice-water stool appearance, massive volume watery diarrhea, and rapid severe dehydration makes Cholera a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "rice-water stool appearance",
+          "massive volume watery diarrhea",
+          "rapid severe dehydration"
+        ],
+        "differentiating_factor": "The absence of characteristic symptoms of Cholera, such as rice-water stool appearance and massive volume watery diarrhea, reduces the confidence in this diagnosis.",
+        "initial_prior": "Based on prevalence and symptom match, Cholera is a less likely diagnosis given the patient's symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms, including retro-orbital pain, fever, arthralgia, and rash, are consistent with several infectious diseases. Dengue Fever is the most likely diagnosis given the patient's symptoms and exposure history. Malaria and Typhoid Fever are also possible diagnoses, but the absence of characteristic symptoms reduces the confidence in these diagnoses. Cholera is a less likely diagnosis due to the absence of characteristic symptoms.",
+    "dominant_system": "infectious"
+  }
+}

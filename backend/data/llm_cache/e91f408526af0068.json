@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "e91f408526af0068",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Rheumatoid Arthritis",
+        "confidence": 60.0,
+        "reasoning": "Morning stiffness, symmetrical joint pain, and low-grade fever are classic symptoms of rheumatoid arthritis. The presence of these symptoms, especially the specific mention of morning stiffness lasting over an hour, strongly supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Morning Stiffness",
+          "Symmetrical Joint Pain",
+          "Low-Grade Fever"
+        ],
+        "key_features_absent": [
+          "Nodules on joints",
+          "Eye inflammation"
+        ],
+        "differentiating_factor": "The combination of morning stiffness and symmetrical joint pain is highly suggestive of rheumatoid arthritis, distinguishing it from other forms of arthritis.",
+        "initial_prior": "Based on the prevalence of rheumatoid arthritis among rheumatological conditions and the strong symptom match."
+      },
+      {
+        "name": "Osteoarthritis",
+        "confidence": 20.0,
+        "reasoning": "While osteoarthritis is more common and can cause joint pain, the symmetrical nature of the pain and the presence of morning stiffness for over an hour are less typical for osteoarthritis, making it a less likely but still possible diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Joint Pain"
+        ],
+        "key_features_absent": [
+          "Asymmetric joint involvement",
+          "Crepitus"
+        ],
+        "differentiating_factor": "Osteoarthritis tends to affect joints asymmetrically and is less likely to cause significant morning stiffness, distinguishing it from rheumatoid arthritis.",
+        "initial_prior": "Based on the high prevalence of osteoarthritis, but reduced confidence due to symptom mismatch."
+      },
+      {
+        "name": "Systemic Lupus Erythematosus (SLE)",
+        "confidence": 10.0,
+        "reasoning": "SLE can present with joint pain and low-grade fever, but the absence of other key features such as a malar rash, oral ulcers, or specific laboratory findings reduces the confidence in this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Joint Pain",
+          "Low-Grade Fever"
+        ],
+        "key_features_absent": [
+          "Malar rash",
+          "Oral ulcers",
+          "Positive ANA"
+        ],
+        "differentiating_factor": "The lack of specific skin manifestations and laboratory findings typical of SLE makes this diagnosis less likely compared to rheumatoid arthritis.",
+        "initial_prior": "Based on the lower prevalence of SLE and the need for additional diagnostic criteria."
+      },
+      {
+        "name": "Psoriatic Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Psoriatic arthritis could be considered due to the presence of joint pain, but the absence of psoriatic skin lesions or nail changes, and the symmetrical nature of the joint pain, makes this a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Joint Pain"
+        ],
+        "key_features_absent": [
+          "Psoriatic skin lesions",
+          "Nail changes"
+        ],
+        "differentiating_factor": "The absence of characteristic psoriatic skin or nail changes reduces the likelihood of psoriatic arthritis.",
+        "initial_prior": "Based on the lower prevalence of psoriatic arthritis among the considered conditions and the lack of specific diagnostic features."
+      },
+      {
+        "name": "Septic Arthritis",
+        "confidence": 5.0,
+        "reasoning": "Given the acute presentation with joint pain and low-grade fever, septic arthritis is a critical diagnosis that must be considered, especially if there's a history of recent joint injection or trauma, despite its lower probability without additional red flags.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Joint Pain",
+          "Low-Grade Fever"
+        ],
+        "key_features_absent": [
+          "Recent joint injection",
+          "Trauma history"
+        ],
+        "differentiating_factor": "The presence of fever and severe joint pain could indicate septic arthritis, a medical emergency requiring prompt diagnosis and treatment.",
+        "initial_prior": "Based on the need to consider critical conditions, despite lower probability."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying rheumatological conditions that could explain the patient's symptoms of morning stiffness, symmetrical joint pain, fatigue, and low-grade fever. Rheumatoid arthritis is the most likely diagnosis due to the specific symptom profile. Other conditions like osteoarthritis, SLE, psoriatic arthritis, and septic arthritis are considered but are less likely based on the information provided.",
+    "dominant_system": "musculoskeletal"
+  }
+}

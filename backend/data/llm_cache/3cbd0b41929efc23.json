@@ -1,0 +1,92 @@
+{
+  "prompt_hash": "3cbd0b41929efc23",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pneumothorax",
+        "confidence": 40.0,
+        "reasoning": "Sudden sharp unilateral chest pain and shortness of breath, exacerbated by deep breathing, are key features of pneumothorax. The patient's symptoms match the differentiating features of pneumothorax, including sharp unilateral chest pain and pain worsened by deep breathing.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden sharp unilateral chest pain",
+          "shortness of breath",
+          "pain exacerbation with deep breathing"
+        ],
+        "key_features_absent": [
+          "decreased breath sounds on one side",
+          "subcutaneous emphysema"
+        ],
+        "differentiating_factor": "Unilateral nature of chest pain and absence of fever, cough, or sputum distinguish pneumothorax from other diagnoses like pneumonia or pulmonary embolism.",
+        "initial_prior": "Based on the presence of critical symptoms and specific differentiating features"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 30.0,
+        "reasoning": "Sudden onset of severe chest pain and shortness of breath could indicate a pulmonary embolism, especially given the severity and sudden onset of symptoms. However, the unilateral nature of the chest pain and exacerbation with deep breathing are more characteristic of pneumothorax.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset of severe chest pain",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "history of deep vein thrombosis",
+          "leg swelling"
+        ],
+        "differentiating_factor": "The presence of risk factors for deep vein thrombosis and the absence of unilateral chest pain features would strengthen this diagnosis.",
+        "initial_prior": "Based on the severity of symptoms and potential for critical condition"
+      },
+      {
+        "name": "Anxiety Disorder",
+        "confidence": 15.0,
+        "reasoning": "While anxiety disorders can present with chest pain and shortness of breath, the sudden onset and severity of symptoms in this case, along with the exacerbation of pain with deep breathing, make this a less likely primary diagnosis. However, it could be considered as a contributing or comorbid condition.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "episodes of intense fear",
+          "palpitations",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The chronic nature of symptoms, absence of severe physical findings, and presence of psychological distress would support this diagnosis.",
+        "initial_prior": "Based on the prevalence of anxiety disorders and potential for overlap with physical symptoms"
+      },
+      {
+        "name": "Myocardial Infarction",
+        "confidence": 10.0,
+        "reasoning": "Myocardial infarction is a critical condition that must be considered with chest pain. However, the sharp, unilateral nature of the pain and its exacerbation with deep breathing are less typical for MI. The absence of described arm, neck, or jaw pain and no mention of exertional triggers also makes this less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "arm, neck, or jaw pain",
+          "exertional triggers"
+        ],
+        "differentiating_factor": "The presence of typical angina symptoms, such as exertional chest pain radiating to the arm, neck, or jaw, would increase the likelihood of this diagnosis.",
+        "initial_prior": "Based on the critical nature of the condition and the need to rule out life-threatening causes of chest pain"
+      },
+      {
+        "name": "Muscle Twitch",
+        "confidence": 5.0,
+        "reasoning": "This diagnosis is considered due to the broad differential for chest pain but is less likely given the severity and nature of the symptoms described. Muscle twitch would not typically cause severe, sharp, unilateral chest pain or shortness of breath.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [],
+        "key_features_absent": [
+          "intermittent, localized muscle twitching"
+        ],
+        "differentiating_factor": "The presence of localized, intermittent muscle twitching without severe chest pain or respiratory symptoms would support this diagnosis.",
+        "initial_prior": "Based on the low prevalence and less typical presentation for the symptoms described"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by pneumothorax due to the sudden onset of sharp, unilateral chest pain and shortness of breath, exacerbated by deep breathing. Pulmonary embolism and myocardial infarction are also considered due to their critical nature and potential for presenting with chest pain and shortness of breath. Anxiety disorder is a less likely but possible contributing condition, given the overlap of symptoms. Muscle twitch is the least likely due to the severity and nature of the symptoms.",
+    "dominant_system": "respiratory"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "prompt_hash": "e72aedc7b6cecf5c",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Acute monoarthritis of the big toe",
+        "raw_text": "My big toe joint became extremely red, swollen, and painful overnight",
+        "severity": "severe",
+        "duration": "overnight",
+        "character": "sudden",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Pain on pressure",
+        "raw_text": "I cant even put a bedsheet on it without pain",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "sharp",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Recent dietary changes",
+        "raw_text": "Ive been eating a lot of red meat and drinking beer",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "History of similar attack",
+        "raw_text": "I had a similar attack 6 months ago",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "Recent dietary changes",
+        "reason": "Unclear if this is related to symptoms",
+        "clarification_needed": "Are you suspecting a connection between your diet and the symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with acute, severe monoarthritis of the big toe, possibly related to gout, with a history of similar attack 6 months prior"
+  }
+}

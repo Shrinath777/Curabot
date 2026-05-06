@@ -1,0 +1,71 @@
+{
+  "prompt_hash": "48f6f9e9f0842738",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Dysuria",
+        "raw_text": "burning sensation when I urinate",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "burning",
+        "body_system": "urinary"
+      },
+      {
+        "name": "Urinary Frequency",
+        "raw_text": "need to go to the bathroom very frequently",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "frequent",
+        "body_system": "urinary"
+      },
+      {
+        "name": "Urinary Urgency",
+        "raw_text": "need to go to the bathroom very frequently",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "urgent",
+        "body_system": "urinary"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Abdominal Pain",
+        "raw_text": "lower abdomen hurts",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Cloudy Urine",
+        "raw_text": "urine looks cloudy",
+        "body_system": "urinary"
+      },
+      {
+        "name": "Foul-smelling Urine",
+        "raw_text": "urine smells bad",
+        "body_system": "urinary"
+      },
+      {
+        "name": "Oliguria",
+        "raw_text": "only pass small amounts",
+        "body_system": "urinary"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "lower abdomen hurts",
+        "reason": "could be related to gastrointestinal or urinary system",
+        "clarification_needed": "Is the pain constant or does it occur only when urinating?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with symptoms suggestive of a urinary tract infection, including dysuria, urinary frequency, and cloudy, foul-smelling urine."
+  }
+}

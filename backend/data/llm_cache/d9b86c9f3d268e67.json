@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "d9b86c9f3d268e67",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pancreatitis",
+        "confidence": 40.0,
+        "reasoning": "Severe upper abdominal pain radiating to the back, worsened by eating, accompanied by vomiting, and a history of heavy alcohol use are highly suggestive of pancreatitis. The sharp, radiating nature of the pain and the presence of nausea and vomiting are key symptom matches.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe upper abdominal pain",
+          "radiating to back",
+          "nausea and vomiting",
+          "alcohol use"
+        ],
+        "key_features_absent": [
+          "fever",
+          "abdominal tenderness"
+        ],
+        "differentiating_factor": "The presence of heavy alcohol use and the specific nature of the abdominal pain differentiate pancreatitis from other gastrointestinal disorders.",
+        "initial_prior": "Based on the high prevalence of pancreatitis in individuals with heavy alcohol use and the specific symptom matches"
+      },
+      {
+        "name": "Peptic Ulcer Disease",
+        "confidence": 30.0,
+        "reasoning": "The severe upper abdominal pain and vomiting could be indicative of a peptic ulcer, especially given the history of heavy alcohol use which can exacerbate gastric ulcers. However, the radiating nature of the pain is less typical for peptic ulcers.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "severe upper abdominal pain",
+          "vomiting",
+          "alcohol use"
+        ],
+        "key_features_absent": [
+          "melena",
+          "hematemesis"
+        ],
+        "differentiating_factor": "The absence of melena or hematemesis and the radiating nature of the pain make pancreatitis a more likely diagnosis, but peptic ulcer disease remains a consideration.",
+        "initial_prior": "Based on the prevalence of peptic ulcers and the potential for alcohol use to contribute to ulcer formation"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease (GERD)",
+        "confidence": 15.0,
+        "reasoning": "While GERD could explain some of the symptoms like nausea and vomiting, the severe and radiating nature of the abdominal pain is less typical for GERD. The presence of heavy alcohol use could exacerbate GERD symptoms, but the primary complaint of severe abdominal pain points towards other diagnoses.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "nausea and vomiting"
+        ],
+        "key_features_absent": [
+          "heartburn",
+          "regurgitation"
+        ],
+        "differentiating_factor": "The severity and radiating nature of the pain, along with the prominent vomiting, make GERD a less likely diagnosis compared to pancreatitis or peptic ulcer disease.",
+        "initial_prior": "Based on the lower specificity of GERD symptoms for the patient's primary complaint"
+      },
+      {
+        "name": "Cholecystitis",
+        "confidence": 10.0,
+        "reasoning": "The severe upper abdominal pain could be indicative of cholecystitis, especially if the pain is localized to the right upper quadrant and worsens with deep breathing or movement. However, the radiating nature of the pain to the back and the absence of specific mentions of right upper quadrant tenderness or Murphy's sign make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe upper abdominal pain"
+        ],
+        "key_features_absent": [
+          "right upper quadrant tenderness",
+          "Murphy's sign"
+        ],
+        "differentiating_factor": "The lack of specific right upper quadrant symptoms and the radiating nature of the pain make cholecystitis a less likely diagnosis.",
+        "initial_prior": "Based on the lower prevalence of cholecystitis compared to pancreatitis or peptic ulcers in the context of heavy alcohol use"
+      },
+      {
+        "name": "Intestinal Obstruction",
+        "confidence": 5.0,
+        "reasoning": "The severe abdominal pain and vomiting could be indicative of an intestinal obstruction. However, the absence of specific symptoms like abdominal distension, absolute constipation, or a history of abdominal surgery makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "severe abdominal pain",
+          "vomiting"
+        ],
+        "key_features_absent": [
+          "abdominal distension",
+          "absolute constipation"
+        ],
+        "differentiating_factor": "The absence of key symptoms for intestinal obstruction and the presence of heavy alcohol use pointing towards other diagnoses make intestinal obstruction a less likely consideration.",
+        "initial_prior": "Based on the lower prevalence and specificity of symptoms for intestinal obstruction"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on the severe upper abdominal pain radiating to the back, accompanied by vomiting and a history of heavy alcohol use. Pancreatitis emerged as the most likely diagnosis due to the specific nature of the pain and the presence of risk factors. Other gastrointestinal disorders like peptic ulcer disease, GERD, cholecystitis, and intestinal obstruction were considered but found less likely based on the symptom profile and clinical context.",
+    "dominant_system": "gastrointestinal"
+  }
+}

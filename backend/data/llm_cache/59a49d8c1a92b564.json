@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "59a49d8c1a92b564",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Malaria",
+        "confidence": 60.0,
+        "reasoning": "The patient's cyclic episodes of severe fever, chills, and sweating, combined with the recent mosquito bites, strongly suggest malaria. The presence of cyclical high fevers with rigors every 48-72 hours is a key differentiating feature of malaria.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Cyclical high fevers",
+          "Chills",
+          "Sweating",
+          "Mosquito bite"
+        ],
+        "key_features_absent": [
+          "Splenomegaly on examination"
+        ],
+        "differentiating_factor": "The cyclical nature of the fever and the presence of rigors are distinctive features of malaria.",
+        "initial_prior": "Based on the prevalence of malaria in tropical areas and the patient's recent travel history"
+      },
+      {
+        "name": "Influenza",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of fever, chills, and sweating could also be consistent with influenza, although the cyclical nature of the fever is not typical for influenza. The absence of prominent myalgia and prostration also makes influenza less likely.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fever",
+          "Chills"
+        ],
+        "key_features_absent": [
+          "Prominent myalgia",
+          "Prostration"
+        ],
+        "differentiating_factor": "The cyclical nature of the fever and the presence of rigors are not typical for influenza.",
+        "initial_prior": "Based on the prevalence of influenza in the general population"
+      },
+      {
+        "name": "Severe Acute Respiratory Syndrome (SARS)",
+        "confidence": 10.0,
+        "reasoning": "Although the patient's symptoms could be consistent with SARS, the absence of cough, shortness of breath, and contact with a confirmed case makes SARS less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Cough",
+          "Shortness of breath",
+          "Contact with a confirmed case"
+        ],
+        "differentiating_factor": "The absence of respiratory symptoms and contact with a confirmed case makes SARS less likely.",
+        "initial_prior": "Based on the low prevalence of SARS in the general population"
+      },
+      {
+        "name": "Acute Gastroenteritis",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of fever, chills, and sweating could also be consistent with acute gastroenteritis, although the absence of gastrointestinal symptoms such as diarrhea or vomiting makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Diarrhea",
+          "Vomiting"
+        ],
+        "differentiating_factor": "The absence of gastrointestinal symptoms makes acute gastroenteritis less likely.",
+        "initial_prior": "Based on the prevalence of acute gastroenteritis in the general population"
+      },
+      {
+        "name": "Anxiety Attack",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of fever, chills, and sweating are not typical for an anxiety attack, which usually presents with sudden onset of fear or anxiety. However, it is possible that the patient is experiencing anxiety in response to their physical symptoms.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "Sweating"
+        ],
+        "key_features_absent": [
+          "Sudden onset of fear or anxiety"
+        ],
+        "differentiating_factor": "The presence of physical symptoms such as fever and chills makes anxiety attack less likely.",
+        "initial_prior": "Based on the low prevalence of anxiety attacks in the general population"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of cyclic episodes of severe fever, chills, and sweating, combined with the recent mosquito bites, suggest a diagnosis of malaria. Influenza and SARS are also considered, although they are less likely due to the absence of typical symptoms. Acute gastroenteritis and anxiety attack are also considered, although they are less likely due to the absence of typical symptoms.",
+    "dominant_system": "other"
+  }
+}

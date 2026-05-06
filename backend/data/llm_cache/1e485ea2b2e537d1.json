@@ -1,0 +1,88 @@
+{
+  "prompt_hash": "1e485ea2b2e537d1",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Cholera",
+        "confidence": 60.0,
+        "reasoning": "The patient's description of 'massive watery diarrhea that looks like rice water' is pathognomonic for cholera, a critical-severity disease. The presence of severe diarrhea, vomiting, thirst, weakness, and muscle cramps also aligns with the clinical presentation of cholera, especially in the context of potential contaminated water consumption.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "rice-water stool appearance",
+          "massive volume watery diarrhea"
+        ],
+        "key_features_absent": [
+          "fever"
+        ],
+        "differentiating_factor": "The distinctive 'rice-water' appearance of the stool and the massive volume of diarrhea are highly specific for cholera.",
+        "initial_prior": "Based on the specific symptom match and the potential exposure to contaminated water."
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 20.0,
+        "reasoning": "While dengue fever typically presents with retro-orbital pain, severe bone/joint pain, and a biphasic fever pattern, the gastrointestinal symptoms like diarrhea and vomiting can sometimes be part of the clinical picture. The patient's exposure to potentially contaminated water and the presence of muscle cramps could also be considered in the context of dengue fever, although the primary symptoms do not perfectly align.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "muscle cramps"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "biphasic fever pattern"
+        ],
+        "differentiating_factor": "The absence of key differentiating features like retro-orbital pain and a biphasic fever pattern makes dengue fever less likely but still a consideration due to the potential for gastrointestinal symptoms.",
+        "initial_prior": "Based on the potential for gastrointestinal symptoms and exposure to contaminated water, but reduced confidence due to the lack of specific dengue fever symptoms."
+      },
+      {
+        "name": "Typhoid Fever",
+        "confidence": 10.0,
+        "reasoning": "Typhoid fever can present with gastrointestinal symptoms, but the classic step-ladder fever pattern, relative bradycardia, and rose spots are not mentioned. The initial constipation followed by diarrhea in some cases could be considered, but the patient's primary complaint of severe watery diarrhea does not strongly suggest typhoid fever.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "diarrhea"
+        ],
+        "key_features_absent": [
+          "step-ladder fever pattern",
+          "relative bradycardia",
+          "rose spots"
+        ],
+        "differentiating_factor": "The absence of the step-ladder fever pattern and other specific symptoms makes typhoid fever less likely.",
+        "initial_prior": "Based on the potential for gastrointestinal symptoms, but significantly reduced confidence due to the lack of specific typhoid fever symptoms."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "GERD is a common condition but does not typically present with the severe, watery diarrhea and vomiting described by the patient. The primary symptoms of GERD, such as burning sensation and sour/bitter taste, are not mentioned.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [],
+        "key_features_absent": [
+          "burning sensation",
+          "sour/bitter taste"
+        ],
+        "differentiating_factor": "The lack of typical GERD symptoms and the presence of severe gastrointestinal symptoms not characteristic of GERD make it an unlikely diagnosis.",
+        "initial_prior": "Based on the commonality of the condition, but significantly reduced confidence due to the mismatch in symptoms."
+      },
+      {
+        "name": "Malaria",
+        "confidence": 5.0,
+        "reasoning": "Malaria can present with a variety of symptoms, including gastrointestinal ones, but the cyclical high fevers with rigors and the specific pattern of paroxysms are not described. The patient's symptoms do not strongly suggest malaria, especially without mention of fever or travel to a malaria-endemic area.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "cyclical high fevers",
+          "rigors",
+          "paroxysms of chills -> fever -> profuse sweating"
+        ],
+        "differentiating_factor": "The absence of the characteristic fever pattern and specific symptoms of malaria makes it less likely.",
+        "initial_prior": "Based on the potential for gastrointestinal symptoms, but reduced confidence due to the lack of specific malaria symptoms and unclear exposure history."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis is led by cholera due to the pathognomonic symptom of 'rice-water' stool and the context of potential contaminated water consumption. Other considerations include dengue fever, typhoid fever, GERD, and malaria, but with lower confidence due to the lack of specific symptoms or less typical presentations.",
+    "dominant_system": "gastrointestinal"
+  }
+}

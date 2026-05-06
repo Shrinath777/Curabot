@@ -1,0 +1,100 @@
+{
+  "prompt_hash": "eff683194af666cd",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Hypertension",
+        "confidence": 40.0,
+        "reasoning": "The patient's symptoms of frequent morning headaches, dizziness, and blurred vision, combined with a family history of high blood pressure, suggest hypertension as a possible diagnosis. The headache's location at the back of the head and its occurrence in the morning are consistent with hypertension's differentiating features.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "morning headache",
+          "dizziness",
+          "blurred vision",
+          "family history of high blood pressure"
+        ],
+        "key_features_absent": [
+          "elevated BP readings on measurement",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The specific characteristics of the headache and the presence of dizziness and blurred vision differentiate hypertension from other potential diagnoses.",
+        "initial_prior": "Based on the prevalence of hypertension and the match between the patient's symptoms and hypertension's differentiating features"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Although the patient does not exhibit the classic symptoms of pulmonary embolism such as sudden onset dyspnea or pleuritic chest pain, it is a critical-severity disease that must be considered due to its potential severity and the presence of dizziness, which could be a vague symptom of various conditions including PE. The absence of clear differentiating features for PE in the patient's symptoms makes it less likely but still necessary to consider.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "dizziness"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "The critical nature of pulmonary embolism necessitates its inclusion in the differential diagnosis, despite the lack of specific symptoms.",
+        "initial_prior": "Based on the necessity to consider critical-severity diseases, even with low symptom match"
+      },
+      {
+        "name": "Migraine",
+        "confidence": 30.0,
+        "reasoning": "The patient's symptoms of frequent headaches, dizziness, and blurred vision could also suggest migraine, especially given the specific location of the headache at the back of the head. However, the absence of other typical migraine features such as aura or severe headache exacerbation with movement makes this diagnosis less confident than hypertension.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "frequent headaches",
+          "dizziness",
+          "blurred vision"
+        ],
+        "key_features_absent": [
+          "aura",
+          "severe headache exacerbation with movement"
+        ],
+        "differentiating_factor": "The presence of dizziness and blurred vision, which can occur in migraines, differentiates this from other headache disorders.",
+        "initial_prior": "Based on the prevalence of migraines and the partial match with the patient's symptoms"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 12.0,
+        "reasoning": "Given the current pandemic situation, COVID-19 must be considered in the differential diagnosis, especially with symptoms like dizziness and blurred vision, which could be part of a broader systemic illness. However, the lack of specific symptoms such as loss of taste/smell, dry cough, or contact with a confirmed case makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dizziness",
+          "blurred vision"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell",
+          "dry cough",
+          "contact with a confirmed case"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms could suggest COVID-19, but the absence of key features reduces its likelihood.",
+        "initial_prior": "Based on the current epidemiological context and partial symptom match"
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 10.0,
+        "reasoning": "Dengue fever is considered due to its potential to cause a wide range of symptoms including headache, dizziness, and possibly blurred vision in severe cases. However, the absence of specific symptoms like retro-orbital pain, severe bone/joint pain, or a biphasic fever pattern makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "headache",
+          "dizziness"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain",
+          "biphasic fever pattern"
+        ],
+        "differentiating_factor": "The lack of specific dengue fever symptoms reduces its likelihood, but travel history or exposure could change this assessment.",
+        "initial_prior": "Based on the possibility of travel or exposure to dengue-endemic areas, despite low symptom match"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered a broad range of diseases based on the patient's symptoms of frequent morning headaches, dizziness, and blurred vision, along with a family history of high blood pressure. Hypertension is the most likely diagnosis due to the specific characteristics of the headache and the presence of dizziness and blurred vision. Critical-severity diseases like pulmonary embolism are also considered due to their potential severity, despite the lack of specific symptoms. Other diagnoses like migraine, COVID-19, and dengue fever are considered based on the match between the patient's symptoms and the diseases' differentiating features.",
+    "dominant_system": "neurological"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "prompt_hash": "9a10513370b2af37",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Abdominal swelling",
+        "raw_text": "My abdomen has been swelling",
+        "severity": "unknown",
+        "duration": "few months",
+        "character": "progressive",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Jaundice",
+        "raw_text": "my skin and eyes have turned yellow",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "yellow discoloration",
+        "body_system": "hepatic"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fatigue",
+        "raw_text": "I feel very tired",
+        "body_system": "other"
+      },
+      {
+        "name": "Easy bruising",
+        "raw_text": "I bruise very easily",
+        "body_system": "hematological"
+      },
+      {
+        "name": "Leg swelling",
+        "raw_text": "my legs are swollen",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "heavy drinker for 20 years",
+        "reason": "unclear how this relates to current symptoms",
+        "clarification_needed": "How does your drinking history relate to your current symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with abdominal swelling, jaundice, fatigue, easy bruising, and leg swelling, with a history of heavy drinking."
+  }
+}

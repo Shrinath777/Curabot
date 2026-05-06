@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "05e42934c39c245e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Nephrolithiasis (Kidney Stones)",
+        "confidence": 55.0,
+        "reasoning": "Severe flank pain radiating to the groin, hematuria, and nausea are classic symptoms of kidney stones. The pain's severity and radiation pattern are highly suggestive of this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Flank pain",
+          "Hematuria",
+          "Nausea"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Urinary tract infection symptoms"
+        ],
+        "differentiating_factor": "The specific location and radiation of pain, along with hematuria, differentiate this from other abdominal or flank pain causes.",
+        "initial_prior": "High prevalence of kidney stones in the population and strong symptom match"
+      },
+      {
+        "name": "Pyelonephritis (Kidney Infection)",
+        "confidence": 25.0,
+        "reasoning": "While the symptoms could suggest pyelonephritis, the absence of fever, dysuria, or other urinary tract infection symptoms makes it less likely than kidney stones. However, it remains a consideration due to the severity of the symptoms and the potential for infection.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Flank pain",
+          "Hematuria"
+        ],
+        "key_features_absent": [
+          "Fever",
+          "Dysuria"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms like fever would strengthen this diagnosis, but the current symptom profile leans more towards a obstructive cause like kidney stones.",
+        "initial_prior": "Moderate prevalence and symptom match, but less specific than kidney stones"
+      },
+      {
+        "name": "Appendicitis",
+        "confidence": 10.0,
+        "reasoning": "Although appendicitis can cause severe abdominal pain, the flank location and radiation to the groin, along with hematuria, make it less likely. The nausea and restlessness could be seen in appendicitis but are not specific enough to raise its confidence significantly.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Severe pain",
+          "Nausea"
+        ],
+        "key_features_absent": [
+          "Abdominal tenderness, especially in the lower right quadrant"
+        ],
+        "differentiating_factor": "The location of pain and presence of hematuria are not typical for appendicitis, making it a less likely diagnosis.",
+        "initial_prior": "Lower prevalence in the context of the provided symptoms"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 8.0,
+        "reasoning": "Given the severity of the presentation and the presence of 'excruciating pain' as a red flag, considering a critical diagnosis like pulmonary embolism is necessary, even though the primary symptoms do not directly suggest it. The absence of dyspnea, tachycardia, or other specific symptoms for PE makes it less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Severe pain"
+        ],
+        "key_features_absent": [
+          "Dyspnea",
+          "Tachycardia",
+          "Recent immobilization or travel"
+        ],
+        "differentiating_factor": "The sudden onset of symptoms and the presence of severe pain could be indicative of PE, but the lack of respiratory or cardiovascular symptoms makes it less probable.",
+        "initial_prior": "Low prevalence in this specific symptom context but considered due to severity and potential for missing a critical diagnosis"
+      },
+      {
+        "name": "Dehydration",
+        "confidence": 2.0,
+        "reasoning": "Dehydration is mentioned as a secondary symptom and could be contributing to the patient's condition, especially with nausea and possible restlessness. However, it does not explain the primary symptom of severe flank pain and is thus considered a contributing factor rather than a primary diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Dehydration"
+        ],
+        "key_features_absent": [
+          "Primary symptoms of flank pain and hematuria"
+        ],
+        "differentiating_factor": "Dehydration is more of a contributing condition rather than a primary cause of the severe symptoms presented.",
+        "initial_prior": "Based on the mention of dehydration as part of the patient's condition"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis prioritizes kidney stones due to the specific symptom pattern of severe flank pain radiating to the groin, accompanied by hematuria and nausea. Pyelonephritis and appendicitis are considered but are less likely due to the absence of specific symptoms. Pulmonary embolism is included as a must-not-miss diagnosis due to the severity of the presentation, despite not being directly suggested by the primary symptoms. Dehydration is noted as a potential contributing factor.",
+    "dominant_system": "urinary"
+  }
+}

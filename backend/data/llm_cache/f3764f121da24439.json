@@ -1,0 +1,52 @@
+{
+  "prompt_hash": "f3764f121da24439",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Morning Stiffness",
+        "raw_text": "stiff and swollen, especially in the morning for over an hour",
+        "severity": "moderate",
+        "duration": "over an hour",
+        "character": "morning stiffness",
+        "body_system": "musculoskeletal"
+      },
+      {
+        "name": "Symmetrical Joint Pain",
+        "raw_text": "small joints of my fingers and wrists hurt symmetrically on both sides",
+        "severity": "unknown",
+        "duration": "weeks",
+        "character": "symmetrical pain",
+        "body_system": "musculoskeletal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Fatigue",
+        "raw_text": "I also feel tired",
+        "body_system": "other"
+      },
+      {
+        "name": "Low-Grade Fever",
+        "raw_text": "low-grade fever",
+        "body_system": "other"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "weeks",
+        "reason": "duration is vague",
+        "clarification_needed": "Can you specify the exact number of weeks you've been experiencing these symptoms?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": "low-grade fever",
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with morning stiffness, symmetrical joint pain, fatigue, and low-grade fever, suggesting a possible rheumatological condition."
+  }
+}

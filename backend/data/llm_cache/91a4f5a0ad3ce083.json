@@ -1,0 +1,18 @@
+{
+  "prompt_hash": "91a4f5a0ad3ce083",
+  "prompt_preview": "You are a highly empathetic, human-like Doctor consulting with a patient for MEDICAL EDUCATION.\n\nCRITICAL DOCTOR PERSONA RULES:\n- Speak naturally with a warm, caring, and professional bedside manner.\n",
+  "response": {
+    "should_conclude": false,
+    "conclusion_reason": null,
+    "next_question": "Can you tell me more about the fever you're experiencing? Is it constant or does it come and go, and have you noticed it getting worse or better over the past few days?",
+    "question_rationale": "The patient has mentioned fever as one of their symptoms. Understanding the pattern and severity of the fever can help differentiate between the top hypotheses, particularly between meningitis and other conditions like acute pharyngitis or COVID-19.",
+    "information_gain": "This question would help differentiate between hypotheses by providing more details on the fever's characteristics, which could support or contradict the current top hypotheses.",
+    "request_vitals": false,
+    "vitals_needed": [],
+    "suggested_follow_ups": [
+      "Have you experienced any sensitivity to light or sound?",
+      "Are you having any difficulty breathing or experiencing chest pain?"
+    ],
+    "targeting_severity": "moderate"
+  }
+}

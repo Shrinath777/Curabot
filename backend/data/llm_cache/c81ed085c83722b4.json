@@ -1,0 +1,74 @@
+{
+  "prompt_hash": "c81ed085c83722b4",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Asthma",
+        "confidence": 55.0,
+        "reasoning": "Patient reports episodic wheezing, difficulty breathing, and dry cough, which are classic symptoms of asthma. The symptoms are also worsened by cold air and exercise, which is consistent with asthma. The family history of asthma further supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Episodic wheezing",
+          "Nocturnal cough worsening",
+          "Trigger-related: allergens, exercise, cold air"
+        ],
+        "key_features_absent": [
+          "Responds to bronchodilators"
+        ],
+        "differentiating_factor": "The presence of episodic wheezing and trigger-related symptoms helps to differentiate asthma from other respiratory conditions.",
+        "initial_prior": "Based on prevalence and symptom match, asthma is a likely diagnosis."
+      },
+      {
+        "name": "Chronic Obstructive Pulmonary Disease",
+        "confidence": 20.0,
+        "reasoning": "Although the patient's symptoms are more consistent with asthma, COPD is still a possibility. The patient's difficulty breathing and dry cough could be indicative of COPD, especially if the patient has a history of smoking.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Difficulty breathing"
+        ],
+        "key_features_absent": [
+          "Chronic productive cough",
+          "Smoking history >10 pack-years"
+        ],
+        "differentiating_factor": "The absence of a smoking history and the presence of episodic wheezing make COPD less likely than asthma.",
+        "initial_prior": "Based on prevalence and symptom match, COPD is a less likely diagnosis."
+      },
+      {
+        "name": "Airway Obstruction",
+        "confidence": 15.0,
+        "reasoning": "The patient's difficulty breathing and wheezing could be indicative of an airway obstruction. However, the episodic nature of the symptoms and the presence of a family history of asthma make this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Difficulty breathing",
+          "Wheezing"
+        ],
+        "key_features_absent": [
+          "Sudden onset of symptoms"
+        ],
+        "differentiating_factor": "The episodic nature of the symptoms and the presence of a family history of asthma make airway obstruction less likely than asthma.",
+        "initial_prior": "Based on prevalence and symptom match, airway obstruction is a critical diagnosis that should not be missed."
+      },
+      {
+        "name": "Chronic Bronchitis",
+        "confidence": 10.0,
+        "reasoning": "The patient's dry cough could be indicative of chronic bronchitis. However, the absence of a productive cough and the presence of episodic wheezing make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Dry cough"
+        ],
+        "key_features_absent": [
+          "Chronic productive cough"
+        ],
+        "differentiating_factor": "The absence of a productive cough and the presence of episodic wheezing make chronic bronchitis less likely than asthma.",
+        "initial_prior": "Based on prevalence and symptom match, chronic bronchitis is a less likely diagnosis."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms are most consistent with asthma, given the episodic nature of the wheezing and difficulty breathing, as well as the presence of a family history of asthma. However, other respiratory conditions such as COPD, airway obstruction, and chronic bronchitis should also be considered.",
+    "dominant_system": "respiratory"
+  }
+}

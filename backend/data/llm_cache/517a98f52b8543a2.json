@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "517a98f52b8543a2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Epilepsy",
+        "confidence": 40.0,
+        "reasoning": "Patient's symptoms of sudden loss of consciousness, uncontrollable shaking, confusion, and drowsiness are classic presentations of a seizure. The presence of tongue injury also supports this diagnosis, as it is a common occurrence during seizures.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Uncontrollable Shaking",
+          "Tongue Injury"
+        ],
+        "key_features_absent": [
+          "Aura or warning signs before the seizure"
+        ],
+        "differentiating_factor": "The combination of loss of consciousness, uncontrollable shaking, and tongue injury makes epilepsy a more likely diagnosis than other conditions.",
+        "initial_prior": "Based on the prevalence of epilepsy and the strong symptom match"
+      },
+      {
+        "name": "Syncope",
+        "confidence": 30.0,
+        "reasoning": "Although syncope can cause loss of consciousness, the presence of uncontrollable shaking and tongue injury makes it less likely. However, it is still a possible diagnosis, especially if the patient has a history of cardiovascular disease or other underlying conditions that could contribute to syncope.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Loss of Consciousness"
+        ],
+        "key_features_absent": [
+          "Pre-syncopal symptoms such as dizziness or lightheadedness"
+        ],
+        "differentiating_factor": "The absence of pre-syncopal symptoms and the presence of uncontrollable shaking and tongue injury make syncope a less likely diagnosis than epilepsy.",
+        "initial_prior": "Based on the prevalence of syncope and the partial symptom match"
+      },
+      {
+        "name": "Hypoglycemia",
+        "confidence": 15.0,
+        "reasoning": "Hypoglycemia can cause loss of consciousness, confusion, and shaking. However, the presence of tongue injury is not typically associated with hypoglycemia, making it a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Shaking"
+        ],
+        "key_features_absent": [
+          "History of diabetes or other conditions that could contribute to hypoglycemia"
+        ],
+        "differentiating_factor": "The absence of a clear history of diabetes or other conditions that could contribute to hypoglycemia makes this diagnosis less likely.",
+        "initial_prior": "Based on the prevalence of hypoglycemia and the partial symptom match"
+      },
+      {
+        "name": "Meningitis",
+        "confidence": 10.0,
+        "reasoning": "Meningitis can cause loss of consciousness, confusion, and seizures. However, the presence of uncontrollable shaking and tongue injury, combined with the absence of other symptoms such as fever, headache, and stiff neck, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Fever, headache, stiff neck"
+        ],
+        "differentiating_factor": "The absence of other symptoms typically associated with meningitis makes this diagnosis less likely.",
+        "initial_prior": "Based on the prevalence of meningitis and the partial symptom match"
+      },
+      {
+        "name": "Encephalitis",
+        "confidence": 5.0,
+        "reasoning": "Encephalitis can cause loss of consciousness, confusion, and seizures. However, the presence of uncontrollable shaking and tongue injury, combined with the absence of other symptoms such as fever, headache, and stiff neck, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Loss of Consciousness",
+          "Confusion"
+        ],
+        "key_features_absent": [
+          "Fever, headache, stiff neck"
+        ],
+        "differentiating_factor": "The absence of other symptoms typically associated with encephalitis makes this diagnosis less likely.",
+        "initial_prior": "Based on the prevalence of encephalitis and the partial symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of sudden loss of consciousness, uncontrollable shaking, confusion, and drowsiness, combined with the presence of tongue injury, suggest a neurological condition such as epilepsy. Other possible diagnoses, such as syncope, hypoglycemia, meningitis, and encephalitis, are considered but are less likely due to the absence of other symptoms typically associated with these conditions.",
+    "dominant_system": "neurological"
+  }
+}

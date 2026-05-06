@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "68368113ed7ba10a",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Typhoid Fever",
+        "confidence": 40.0,
+        "reasoning": "The patient presents with a step-ladder fever pattern, which is a key differentiator for typhoid fever. The presence of a coated tongue and constipation also supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "serious",
+        "key_features_present": [
+          "coated tongue",
+          "constipation",
+          "fever"
+        ],
+        "key_features_absent": [
+          "rose spots on abdomen"
+        ],
+        "differentiating_factor": "The step-ladder fever pattern and the presence of a coated tongue are highly specific for typhoid fever.",
+        "initial_prior": "Based on the patient's symptoms and the prevalence of typhoid fever in areas with poor sanitation."
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of fever and abdominal pain could be consistent with dengue fever. However, the absence of retro-orbital pain and severe bone/joint pain makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "abdominal pain"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain"
+        ],
+        "differentiating_factor": "The presence of retro-orbital pain and severe bone/joint pain would strengthen this diagnosis.",
+        "initial_prior": "Based on the prevalence of dengue fever in areas with poor sanitation and the patient's symptoms."
+      },
+      {
+        "name": "Malaria",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of fever could be consistent with malaria. However, the absence of cyclical high fevers with rigors and splenomegaly makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever"
+        ],
+        "key_features_absent": [
+          "cyclical high fevers with rigors",
+          "spleenomegaly"
+        ],
+        "differentiating_factor": "The presence of cyclical high fevers with rigors and splenomegaly would strengthen this diagnosis.",
+        "initial_prior": "Based on the prevalence of malaria in areas with poor sanitation and the patient's symptoms."
+      },
+      {
+        "name": "Cholera",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of abdominal pain and fever could be consistent with cholera. However, the absence of rice-water stool and massive volume watery diarrhea makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "abdominal pain",
+          "fever"
+        ],
+        "key_features_absent": [
+          "rice-water stool",
+          "massive volume watery diarrhea"
+        ],
+        "differentiating_factor": "The presence of rice-water stool and massive volume watery diarrhea would strengthen this diagnosis.",
+        "initial_prior": "Based on the prevalence of cholera in areas with poor sanitation and the patient's symptoms."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of fever could be consistent with community-acquired pneumonia. However, the absence of pleuritic chest pain, productive cough, and abnormal lung sounds makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The presence of pleuritic chest pain, productive cough, and abnormal lung sounds would strengthen this diagnosis.",
+        "initial_prior": "Based on the prevalence of community-acquired pneumonia and the patient's symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of fever, abdominal pain, and coated tongue are consistent with typhoid fever, which is the most likely diagnosis. Dengue fever, malaria, cholera, and community-acquired pneumonia are also considered, but are less likely due to the absence of specific symptoms.",
+    "dominant_system": "gastrointestinal"
+  }
+}

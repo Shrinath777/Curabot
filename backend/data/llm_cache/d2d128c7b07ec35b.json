@@ -1,0 +1,110 @@
+{
+  "prompt_hash": "d2d128c7b07ec35b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with severe cough producing thick green sputum, sharp chest pain, fever, and chills, which are consistent with the differentiating features of Community Acquired Pneumonia. The recent upper respiratory infection (cold) also supports this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "productive cough with colored sputum",
+          "pleuritic chest pain",
+          "fever with chills"
+        ],
+        "key_features_absent": [
+          "abnormal lung sounds (crackles)"
+        ],
+        "differentiating_factor": "The presence of productive cough with colored sputum and pleuritic chest pain distinguishes this from other respiratory infections.",
+        "initial_prior": "Based on prevalence and symptom match, Community Acquired Pneumonia is a common and likely diagnosis."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 25.0,
+        "reasoning": "The patient's sharp chest pain and recent history of a cold could be indicative of a Pulmonary Embolism, especially if the patient has any underlying risk factors for thromboembolism. However, the absence of sudden onset dyspnea and tachycardia makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "tachycardia"
+        ],
+        "differentiating_factor": "The presence of sudden onset dyspnea would significantly increase the likelihood of Pulmonary Embolism.",
+        "initial_prior": "Given the critical severity of Pulmonary Embolism, it is essential to consider this diagnosis, despite the lower likelihood based on the provided symptoms."
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 15.0,
+        "reasoning": "Although the patient's chest pain is described as sharp, which is not typical for Acute Myocardial Infarction, the presence of chest pain and fever warrants consideration of this critical diagnosis. However, the absence of crushing or squeezing chest pressure, radiation to the arm or jaw, and diaphoresis makes this diagnosis less likely.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "crushing or squeezing chest pressure",
+          "radiation to the arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The nature of the chest pain (sharp vs. crushing/squeezing) and the absence of typical associated symptoms reduce the likelihood of Acute Myocardial Infarction.",
+        "initial_prior": "The critical nature of Acute Myocardial Infarction necessitates its consideration, despite the lower confidence based on symptom mismatch."
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of cough, fever, and chills could be consistent with COVID-19, especially in the context of a recent cold. However, the absence of loss of taste/smell and the presence of productive cough reduce the likelihood of this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "cough",
+          "fever"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell"
+        ],
+        "differentiating_factor": "The presence of productive cough and the absence of loss of taste/smell distinguish this from typical COVID-19 presentations.",
+        "initial_prior": "Based on the current pandemic situation and the patient's symptoms, COVID-19 is considered but with lower confidence due to the absence of specific differentiating features."
+      },
+      {
+        "name": "Dengue Fever",
+        "confidence": 5.0,
+        "reasoning": "The patient's fever and chills could be indicative of Dengue Fever, but the absence of retro-orbital pain, severe bone/joint pain, and petechial rash makes this diagnosis less likely. The recent travel history is also not mentioned, which is a crucial risk factor for Dengue Fever.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "fever",
+          "chills"
+        ],
+        "key_features_absent": [
+          "retro-orbital pain",
+          "severe bone/joint pain",
+          "petechial rash"
+        ],
+        "differentiating_factor": "The absence of specific symptoms like retro-orbital pain and the lack of travel history to endemic areas reduce the likelihood of Dengue Fever.",
+        "initial_prior": "Given the low likelihood based on symptom mismatch and the absence of specific risk factors, Dengue Fever is considered less likely."
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "The patient's sharp chest pain could be indicative of Gastroesophageal Reflux Disease, but the presence of fever, chills, and productive cough suggests a more acute infectious process rather than a chronic condition like GERD.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of systemic symptoms like fever and chills and the nature of the chest pain distinguish this from typical GERD presentations.",
+        "initial_prior": "Given the benign nature of GERD and the presence of symptoms suggesting an acute infection, this diagnosis is considered less likely."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's symptoms of severe cough, sharp chest pain, fever, and chills, along with the recent history of a cold. Community Acquired Pneumonia is the most likely diagnosis due to the match with its differentiating features. Critical diagnoses like Pulmonary Embolism and Acute Myocardial Infarction are considered due to the presence of chest pain, despite lower likelihoods based on symptom specifics. Other diagnoses like COVID-19, Dengue Fever, and Gastroesophageal Reflux Disease are considered less likely due to the absence of specific differentiating features or the presence of symptoms suggesting alternative diagnoses.",
+    "dominant_system": "respiratory"
+  }
+}

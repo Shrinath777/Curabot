@@ -1,0 +1,102 @@
+{
+  "prompt_hash": "76b50597b592709c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 40.0,
+        "reasoning": "Patient presents with persistent cough, hemoptysis, night sweats, low-grade fever, and unintentional weight loss, which are consistent with Community Acquired Pneumonia. The presence of hemoptysis and low-grade fever are particularly concerning for this diagnosis.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis",
+          "low-grade fever",
+          "night sweats",
+          "unintentional weight loss"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough with colored sputum"
+        ],
+        "differentiating_factor": "The combination of persistent cough, hemoptysis, and low-grade fever makes Community Acquired Pneumonia a more likely diagnosis than other respiratory infections.",
+        "initial_prior": "Based on prevalence and symptom match, Community Acquired Pneumonia is a common and serious condition that fits the patient's presentation."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 25.0,
+        "reasoning": "The presence of hemoptysis and low-grade fever in the patient's presentation raises concern for Pulmonary Embolism, a critical-severity disease. Although the patient does not have sudden onset dyspnea, the other symptoms are consistent with this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hemoptysis",
+          "low-grade fever"
+        ],
+        "key_features_absent": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The presence of hemoptysis and the potential for critical severity make Pulmonary Embolism a must-not-miss diagnosis in this patient.",
+        "initial_prior": "Based on the presence of hemoptysis and low-grade fever, Pulmonary Embolism is a critical-severity disease that must be considered."
+      },
+      {
+        "name": "Tuberculosis",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of persistent cough, hemoptysis, night sweats, and unintentional weight loss are also consistent with Tuberculosis. Although this diagnosis is less common than Community Acquired Pneumonia, it is still a possible explanation for the patient's presentation.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis",
+          "night sweats",
+          "unintentional weight loss"
+        ],
+        "key_features_absent": [
+          "exposure to TB",
+          "positive TB test"
+        ],
+        "differentiating_factor": "The absence of exposure to TB and a positive TB test makes Tuberculosis a less likely diagnosis than Community Acquired Pneumonia.",
+        "initial_prior": "Based on prevalence and symptom match, Tuberculosis is a less likely but still possible diagnosis."
+      },
+      {
+        "name": "Lung Cancer",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of persistent cough, hemoptysis, and unintentional weight loss could also be consistent with Lung Cancer. However, this diagnosis is less likely than Community Acquired Pneumonia or Pulmonary Embolism due to the absence of other key features such as a history of smoking or a mass on imaging.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "persistent cough",
+          "hemoptysis",
+          "unintentional weight loss"
+        ],
+        "key_features_absent": [
+          "history of smoking",
+          "mass on imaging"
+        ],
+        "differentiating_factor": "The absence of a history of smoking and a mass on imaging makes Lung Cancer a less likely diagnosis than other critical-severity diseases.",
+        "initial_prior": "Based on prevalence and symptom match, Lung Cancer is a less likely but still possible diagnosis."
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of persistent cough, low-grade fever, and unintentional weight loss could also be consistent with COVID-19. However, this diagnosis is less likely than Community Acquired Pneumonia or Pulmonary Embolism due to the absence of other key features such as a history of exposure or a positive COVID-19 test.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "persistent cough",
+          "low-grade fever",
+          "unintentional weight loss"
+        ],
+        "key_features_absent": [
+          "history of exposure",
+          "positive COVID-19 test"
+        ],
+        "differentiating_factor": "The absence of a history of exposure and a positive COVID-19 test makes COVID-19 a less likely diagnosis than other respiratory infections.",
+        "initial_prior": "Based on prevalence and symptom match, COVID-19 is a less likely but still possible diagnosis."
+      }
+    ],
+    "reasoning_summary": "The patient's presentation of persistent cough, hemoptysis, night sweats, low-grade fever, and unintentional weight loss suggests a respiratory infection or other underlying condition. Community Acquired Pneumonia is the most likely diagnosis due to the combination of symptoms, but Pulmonary Embolism is also a must-not-miss diagnosis due to the presence of hemoptysis and low-grade fever.",
+    "dominant_system": "respiratory"
+  }
+}

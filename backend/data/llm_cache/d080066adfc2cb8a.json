@@ -1,0 +1,18 @@
+{
+  "prompt_hash": "d080066adfc2cb8a",
+  "prompt_preview": "You are a highly empathetic, human-like Doctor consulting with a patient for MEDICAL EDUCATION.\n\nCRITICAL DOCTOR PERSONA RULES:\n- Speak naturally with a warm, caring, and professional bedside manner.\n",
+  "response": {
+    "should_conclude": false,
+    "conclusion_reason": null,
+    "next_question": "Can you tell me more about when these headaches started and if they've been constant or if they come and go?",
+    "question_rationale": "Understanding the onset and timing of the headaches can help differentiate between the top hypotheses, particularly between migraine and meningitis, which have different typical patterns of headache presentation.",
+    "information_gain": "This question would help clarify the nature of the headache's onset and duration, which could support or contradict the current top hypotheses, especially in distinguishing between conditions like migraine and bacterial meningitis.",
+    "request_vitals": false,
+    "vitals_needed": [],
+    "suggested_follow_ups": [
+      "Have you experienced any fever or chills?",
+      "Is the headache worsened by certain activities or positions?"
+    ],
+    "targeting_severity": "moderate"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "c6edf9664848aaeb",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 30.0,
+        "reasoning": "Patient presents with sudden onset dyspnea, a key differentiator for PE, along with severe exertional and nocturnal dyspnea. The presence of peripheral edema and orthopnea also supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "peripheral edema",
+          "orthopnea"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "leg swelling/pain"
+        ],
+        "differentiating_factor": "Sudden onset of dyspnea is a key differentiator for PE, distinguishing it from other diagnoses.",
+        "initial_prior": "Based on the presence of red flag symptoms and the severity of dyspnea."
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 25.0,
+        "reasoning": "Although the patient does not exhibit typical chest pain, the presence of exertional and nocturnal dyspnea, along with a history of heart attack, raises concern for MI. The absence of typical chest pain does not rule out MI, especially in the context of other symptoms.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "exertional dyspnea",
+          "nocturnal dyspnea",
+          "history of heart attack"
+        ],
+        "key_features_absent": [
+          "crushing/squeezing chest pressure",
+          "radiation to left arm, jaw, or back"
+        ],
+        "differentiating_factor": "The patient's history of heart attack and the presence of dyspnea on exertion and at night are critical factors pointing towards MI.",
+        "initial_prior": "Based on the patient's history and the severity of symptoms."
+      },
+      {
+        "name": "Congestive Heart Failure",
+        "confidence": 20.0,
+        "reasoning": "The combination of exertional and nocturnal dyspnea, peripheral edema, and orthopnea strongly suggests CHF. This diagnosis is further supported by the patient's history of heart attack, which could have led to heart failure.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "exertional dyspnea",
+          "nocturnal dyspnea",
+          "peripheral edema",
+          "orthopnea"
+        ],
+        "key_features_absent": [
+          "previous diagnosis of CHF"
+        ],
+        "differentiating_factor": "The presence of multiple symptoms indicative of fluid overload and decreased cardiac efficiency points towards CHF.",
+        "initial_prior": "Based on the combination of symptoms and the patient's medical history."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "While the patient presents with dyspnea, the absence of typical pneumonia symptoms such as pleuritic chest pain, productive cough, and fever makes CAP less likely. However, it cannot be ruled out without further evaluation.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "dyspnea"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "productive cough",
+          "fever"
+        ],
+        "differentiating_factor": "The lack of typical respiratory symptoms for pneumonia, such as cough and fever, makes this diagnosis less likely.",
+        "initial_prior": "Based on the presence of dyspnea but the absence of other pneumonia symptoms."
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 10.0,
+        "reasoning": "Hypertension could contribute to the patient's symptoms, especially in the context of a history of heart attack. However, the acute presentation of dyspnea and other symptoms suggests that hypertension alone is not the primary cause.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "history of heart attack"
+        ],
+        "key_features_absent": [
+          "elevated BP readings",
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The acute nature of the patient's symptoms points towards a more immediate cause than hypertension alone.",
+        "initial_prior": "Based on the patient's history and the potential for hypertension to contribute to cardiac issues."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying critical and serious conditions that could explain the patient's severe dyspnea and other symptoms. Pulmonary Embolism and Acute Myocardial Infarction are considered must-not-miss diagnoses due to the presence of red flag symptoms and the severity of the patient's condition. Congestive Heart Failure is also a strong consideration given the combination of symptoms and the patient's medical history.",
+    "dominant_system": "cardiovascular"
+  }
+}

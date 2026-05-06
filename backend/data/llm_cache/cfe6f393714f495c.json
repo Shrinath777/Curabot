@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "cfe6f393714f495c",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 42.0,
+        "reasoning": "Sudden onset dyspnea and pleuritic chest pain are key differentiators, with recent immobility or long travel being potential risk factors. The sharp chest pain that worsens with deep breathing and sudden shortness of breath are highly suggestive of this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "pleuritic chest pain"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain",
+          "hemoptysis"
+        ],
+        "differentiating_factor": "Pleuritic nature of chest pain and sudden onset of dyspnea distinguish it from other diagnoses like MI.",
+        "initial_prior": "High due to critical severity and specific symptom match"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 28.0,
+        "reasoning": "While the chest pain is sharp and not typical of MI, the sudden onset and association with shortness of breath keep this diagnosis in consideration. However, the lack of classic crushing chest pressure, radiation to arm or jaw, and diaphoresis reduces confidence.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset chest pain",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "crushing chest pressure",
+          "radiation to arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "Lack of typical MI symptoms like crushing chest pressure reduces confidence but does not rule out entirely.",
+        "initial_prior": "High due to critical severity but reduced by atypical symptoms"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 20.0,
+        "reasoning": "Pleuritic chest pain and shortness of breath could suggest pneumonia, especially if there was a recent upper respiratory infection. However, the absence of fever, productive cough, and abnormal lung sounds in the provided information reduces confidence.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "pleuritic chest pain",
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "Absence of key pneumonia symptoms like fever and productive cough reduces confidence.",
+        "initial_prior": "Moderate due to symptom match but reduced by absent key features"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "The sharp chest pain could be considered, but the sudden onset, severity, and association with shortness of breath are not typical for GERD. The pain worsening with deep breathing also points away from GERD.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "Atypical symptoms for GERD, such as sudden onset and pleuritic nature of pain, make this diagnosis less likely.",
+        "initial_prior": "Low due to atypical symptoms and low severity"
+      },
+      {
+        "name": "COVID-19",
+        "confidence": 5.0,
+        "reasoning": "While COVID-19 can present with a wide range of symptoms, the sudden onset of severe sharp chest pain and shortness of breath without mention of typical COVID-19 symptoms like loss of taste/smell or dry cough makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "loss of taste/smell",
+          "dry cough"
+        ],
+        "differentiating_factor": "Absence of highly specific COVID-19 symptoms reduces confidence.",
+        "initial_prior": "Moderate due to pandemic context but reduced by lack of specific symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis prioritizes critical conditions like Pulmonary Embolism and Acute Myocardial Infarction due to the sudden onset of severe symptoms. Community Acquired Pneumonia is considered due to the presence of pleuritic chest pain and shortness of breath, but its confidence is reduced by the absence of key symptoms. GERD and COVID-19 are less likely due to atypical presentations.",
+    "dominant_system": "cardiovascular/respiratory"
+  }
+}

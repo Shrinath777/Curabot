@@ -1,0 +1,67 @@
+{
+  "prompt_hash": "ffe36b256ee9522a",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Unintentional weight gain",
+        "raw_text": "I've gained weight despite not eating more",
+        "severity": "unknown",
+        "duration": "unknown",
+        "character": "unknown",
+        "body_system": "endocrine"
+      },
+      {
+        "name": "Fatigue",
+        "raw_text": "I'm constantly fatigued and feel sluggish",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "constant",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Hypothermia sensation",
+        "raw_text": "I feel cold all the time",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Dry skin",
+        "raw_text": "my skin is dry",
+        "body_system": "integumentary"
+      },
+      {
+        "name": "Hair thinning",
+        "raw_text": "my hair is thinning",
+        "body_system": "integumentary"
+      },
+      {
+        "name": "Constipation",
+        "raw_text": "I'm also constipated",
+        "body_system": "gastrointestinal"
+      },
+      {
+        "name": "Menstrual irregularity",
+        "raw_text": "My menstrual periods have become irregular",
+        "body_system": "reproductive"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "feeling cold all the time",
+        "reason": "could be related to various conditions",
+        "clarification_needed": "Is the feeling of coldness constant or intermittent?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient presents with unintentional weight gain, fatigue, and multiple secondary symptoms suggestive of potential endocrine or metabolic disorders."
+  }
+}

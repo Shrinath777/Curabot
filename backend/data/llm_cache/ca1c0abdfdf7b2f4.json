@@ -1,0 +1,40 @@
+{
+  "prompt_hash": "ca1c0abdfdf7b2f4",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Chest Burning Sensation",
+        "raw_text": "burning sensation in my chest",
+        "severity": "moderate",
+        "duration": "unknown",
+        "character": "burning",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Sour Taste",
+        "raw_text": "sour taste in my mouth",
+        "body_system": "gastrointestinal"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "gets worse after eating spicy food and when I lie down at night",
+        "reason": "triggers are mentioned but not the exact nature of worsening",
+        "clarification_needed": "Can you describe how the burning sensation changes when you eat spicy food or lie down?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient experiences a moderate burning sensation in the chest, worsened by spicy food and lying down, with associated sour taste, relieved by antacids."
+  }
+}

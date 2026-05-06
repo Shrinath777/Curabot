@@ -1,0 +1,57 @@
+{
+  "prompt_hash": "8ce379189614de05",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Loss of consciousness",
+        "raw_text": "I lost consciousness",
+        "severity": "severe",
+        "duration": "2 minutes",
+        "character": "sudden",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Uncontrollable shaking",
+        "raw_text": "my body was shaking uncontrollably",
+        "severity": "severe",
+        "duration": "2 minutes",
+        "character": "uncontrollable",
+        "body_system": "neurological"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Confusion",
+        "raw_text": "I was confused",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Drowsiness",
+        "raw_text": "I was drowsy",
+        "body_system": "neurological"
+      },
+      {
+        "name": "Tongue injury",
+        "raw_text": "I bit my tongue",
+        "body_system": "oral"
+      }
+    ],
+    "ambiguous_signals": [
+      {
+        "signal": "episode",
+        "reason": "Lack of clear description of the episode's nature",
+        "clarification_needed": "Can you describe what you mean by 'episode'?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [],
+    "summary": "Patient experienced recurrent episodes of sudden loss of consciousness with uncontrollable shaking, confusion, and drowsiness, suggesting a potential neurological condition."
+  }
+}

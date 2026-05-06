@@ -1,0 +1,94 @@
+{
+  "prompt_hash": "994a147e22ff3cb2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Acute Ischemic Stroke",
+        "confidence": 60.0,
+        "reasoning": "Sudden onset of facial drooping, arm weakness, and slurred speech are classic symptoms of a stroke. The presence of hypertension, a known risk factor, further supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden facial drooping",
+          "sudden arm weakness",
+          "sudden slurred speech"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "dyspnea"
+        ],
+        "differentiating_factor": "The sudden onset of focal neurological deficits is characteristic of a stroke.",
+        "initial_prior": "Based on the high prevalence of stroke and the classic symptom presentation"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 15.0,
+        "reasoning": "Although the primary symptoms do not directly suggest PE, the sudden onset and severity of symptoms, combined with the presence of hypertension, warrant consideration of this critical diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset"
+        ],
+        "key_features_absent": [
+          "dyspnea",
+          "pleuritic chest pain"
+        ],
+        "differentiating_factor": "The absence of typical PE symptoms like dyspnea and pleuritic chest pain makes this diagnosis less likely but still necessary to consider due to its critical nature.",
+        "initial_prior": "Based on the need to consider critical diagnoses with sudden onset symptoms"
+      },
+      {
+        "name": "Hypertensive Encephalopathy",
+        "confidence": 10.0,
+        "reasoning": "The presence of hypertension and sudden neurological symptoms could suggest hypertensive encephalopathy, although the focal nature of the symptoms is more suggestive of a stroke.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "hypertension",
+          "sudden neurological symptoms"
+        ],
+        "key_features_absent": [
+          "papilledema",
+          "seizures"
+        ],
+        "differentiating_factor": "The focal neurological deficits are less typical for hypertensive encephalopathy, which usually presents with more diffuse symptoms.",
+        "initial_prior": "Based on the presence of hypertension and neurological symptoms"
+      },
+      {
+        "name": "Brain Tumor",
+        "confidence": 10.0,
+        "reasoning": "A brain tumor could cause focal neurological symptoms, but the sudden onset is less typical for this diagnosis. It remains a consideration due to the severity of the symptoms.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "focal neurological symptoms"
+        ],
+        "key_features_absent": [
+          "gradual onset",
+          "headache"
+        ],
+        "differentiating_factor": "The sudden onset of symptoms is atypical for a brain tumor, which usually has a more gradual presentation.",
+        "initial_prior": "Based on the presence of focal neurological symptoms"
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 5.0,
+        "reasoning": "Although meningitis can present with sudden onset of severe symptoms, the focal neurological deficits and absence of fever, headache, or neck stiffness make this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset"
+        ],
+        "key_features_absent": [
+          "fever",
+          "headache",
+          "neck stiffness"
+        ],
+        "differentiating_factor": "The absence of typical meningitis symptoms such as fever, headache, and neck stiffness makes this diagnosis less likely.",
+        "initial_prior": "Based on the need to consider critical diagnoses with sudden onset symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on identifying the most likely cause of the patient's sudden onset of facial drooping, arm weakness, and slurred speech, with a high priority on considering critical diagnoses such as stroke and pulmonary embolism.",
+    "dominant_system": "neurological"
+  }
+}

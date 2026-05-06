@@ -1,0 +1,95 @@
+{
+  "prompt_hash": "6e1c32b34a7a2a17",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 40.0,
+        "reasoning": "Sudden onset dyspnea, pleuritic chest pain, recent surgery, and immobility are key features of pulmonary embolism. The presence of tachycardia and recent bedrest further support this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "SUDDEN onset dyspnea",
+          "pleuritic chest pain",
+          "recent surgery",
+          "tachycardia"
+        ],
+        "key_features_absent": [
+          "leg swelling/pain"
+        ],
+        "differentiating_factor": "The combination of sudden onset dyspnea and pleuritic chest pain, along with recent surgery and immobility, makes pulmonary embolism a critical diagnosis to consider.",
+        "initial_prior": "Based on the presence of red flag symptoms and recent surgery"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 30.0,
+        "reasoning": "Sharp chest pain and tachycardia are concerning for acute myocardial infarction. However, the character of the chest pain (sharp) and the absence of radiation to the arm or jaw make this diagnosis less likely than pulmonary embolism.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sharp chest pain",
+          "tachycardia"
+        ],
+        "key_features_absent": [
+          "radiation to arm or jaw",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The character of the chest pain and the absence of typical features of myocardial infarction, such as radiation to the arm or jaw, make this diagnosis less likely.",
+        "initial_prior": "Based on the presence of chest pain and tachycardia"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 20.0,
+        "reasoning": "Pleuritic chest pain and dyspnea could be consistent with community-acquired pneumonia. However, the absence of fever, productive cough, and abnormal lung sounds makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "pleuritic chest pain",
+          "dyspnea"
+        ],
+        "key_features_absent": [
+          "fever",
+          "productive cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of typical features of pneumonia, such as fever and productive cough, makes this diagnosis less likely.",
+        "initial_prior": "Based on the presence of respiratory symptoms"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 5.0,
+        "reasoning": "Sharp chest pain could be consistent with gastroesophageal reflux disease. However, the presence of dyspnea and tachycardia, along with the character of the chest pain, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [
+          "sharp chest pain"
+        ],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The presence of dyspnea and tachycardia, along with the character of the chest pain, makes this diagnosis less likely.",
+        "initial_prior": "Based on the presence of chest pain"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 5.0,
+        "reasoning": "Chest pain could be secondary to cardiac strain in hypertension. However, the absence of typical features of hypertension, such as elevated blood pressure readings and end-organ damage, makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "chest pain"
+        ],
+        "key_features_absent": [
+          "elevated blood pressure readings",
+          "end-organ damage"
+        ],
+        "differentiating_factor": "The absence of typical features of hypertension makes this diagnosis less likely.",
+        "initial_prior": "Based on the presence of chest pain"
+      }
+    ],
+    "reasoning_summary": "The patient presents with sudden onset dyspnea, sharp chest pain, and tachycardia, which are concerning for a critical diagnosis such as pulmonary embolism or acute myocardial infarction. The combination of symptoms and recent surgery make pulmonary embolism the most likely diagnosis.",
+    "dominant_system": "cardiovascular/respiratory"
+  }
+}

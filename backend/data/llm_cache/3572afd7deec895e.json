@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "3572afd7deec895e",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Urinary Tract Infection",
+        "confidence": 40.0,
+        "reasoning": "Dysuria, cloudy urine, and abdominal pain are classic symptoms of a urinary tract infection. The presence of these symptoms, especially the combination of dysuria and cloudy urine, strongly suggests this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "dysuria",
+          "cloudy_urine",
+          "abdominal_pain"
+        ],
+        "key_features_absent": [
+          "fever",
+          " flank pain"
+        ],
+        "differentiating_factor": "The absence of symptoms like fever, flank pain, or severe systemic illness helps differentiate this from more severe conditions like pyelonephritis.",
+        "initial_prior": "Based on the high prevalence of UTIs in the general population and the specific symptom match"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 30.0,
+        "reasoning": "Heartburn and abdominal pain are common symptoms of GERD. The burning sensation described by the patient is consistent with GERD, especially in the absence of alarm symptoms like dysphagia or weight loss.",
+        "category": "common",
+        "severity_class": "benign",
+        "key_features_present": [
+          "heartburn",
+          "abdominal_pain"
+        ],
+        "key_features_absent": [
+          "dysphagia",
+          "weight loss"
+        ],
+        "differentiating_factor": "The presence of heartburn and the absence of symptoms like dysphagia or weight loss help differentiate GERD from more serious conditions like esophageal cancer.",
+        "initial_prior": "Based on the prevalence of GERD in the population and the symptom match"
+      },
+      {
+        "name": "Kidney Stone",
+        "confidence": 15.0,
+        "reasoning": "Abdominal pain and dysuria can be symptoms of a kidney stone. Although the patient does not report severe, colicky pain, the presence of abdominal pain and dysuria warrants consideration of this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal_pain",
+          "dysuria"
+        ],
+        "key_features_absent": [
+          "severe colicky pain",
+          "radiating pain"
+        ],
+        "differentiating_factor": "The absence of severe, colicky pain and the presence of dysuria make kidney stone a less likely but still possible diagnosis.",
+        "initial_prior": "Based on the symptom match, though less specific than UTI or GERD"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 10.0,
+        "reasoning": "Although the patient does not report dyspnea or chest pain, pulmonary embolism is a critical diagnosis that must be considered due to its high mortality rate. The absence of specific symptoms makes this diagnosis less likely but still necessary to rule out.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "dyspnea",
+          "chest pain"
+        ],
+        "differentiating_factor": "The critical nature of pulmonary embolism necessitates its inclusion in the differential diagnosis, despite the lack of specific symptoms.",
+        "initial_prior": "Based on the necessity to consider critical diagnoses"
+      },
+      {
+        "name": "Appendicitis",
+        "confidence": 5.0,
+        "reasoning": "Abdominal pain can be a symptom of appendicitis. However, the absence of specific symptoms like localized right lower quadrant pain, fever, or nausea makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "abdominal_pain"
+        ],
+        "key_features_absent": [
+          "localized right lower quadrant pain",
+          "fever",
+          "nausea"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for appendicitis, such as localized pain and fever, makes this a less likely diagnosis.",
+        "initial_prior": "Based on the symptom match, though less specific and less likely than other diagnoses"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's symptoms of dysuria, heartburn, abdominal pain, and cloudy urine. The most likely diagnoses are urinary tract infection and gastroesophageal reflux disease, given the strong symptom match. Kidney stone and appendicitis are considered less likely due to the absence of specific symptoms. Pulmonary embolism, although unlikely given the lack of specific symptoms, is included due to its critical nature.",
+    "dominant_system": "genitourinary"
+  }
+}

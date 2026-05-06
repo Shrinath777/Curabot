@@ -1,0 +1,97 @@
+{
+  "prompt_hash": "84d90d0772c212af",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Iron Deficiency Anemia",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with severe fatigue, shortness of breath, pallor, brittle and spoon-shaped nails, menorrhagia, and pica, all of which are classic symptoms of iron deficiency anemia. The presence of these specific symptoms, especially pica and spoon-shaped nails, strongly supports this diagnosis.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue",
+          "Shortness of breath",
+          "Pallor",
+          "Brittle nails",
+          "Spoon-shaped nails",
+          "Menorrhagia",
+          "Pica"
+        ],
+        "key_features_absent": [
+          "Gastrointestinal bleeding"
+        ],
+        "differentiating_factor": "The combination of fatigue, shortness of breath, and specific signs like pallor, brittle and spoon-shaped nails, and pica, which are less common in other conditions, makes iron deficiency anemia a strong candidate.",
+        "initial_prior": "Based on the high prevalence of iron deficiency anemia in the population, especially in women of childbearing age, and the strong match between the patient's symptoms and the disease's characteristic presentation."
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 20.0,
+        "reasoning": "Although the patient does not exhibit the sudden onset of dyspnea or other classic symptoms of pulmonary embolism like pleuritic chest pain or tachycardia, the presence of shortness of breath, especially exertional, warrants consideration of this critical condition due to its potential for severe consequences if missed.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Sudden onset dyspnea",
+          "Pleuritic chest pain",
+          "Tachycardia"
+        ],
+        "differentiating_factor": "The absence of typical pulmonary embolism symptoms but the presence of shortness of breath, which could be a sign of many conditions, necessitates keeping this diagnosis in the differential due to its high risk.",
+        "initial_prior": "Given the critical nature of pulmonary embolism and the need to consider dangerous diagnoses, especially with symptoms like shortness of breath, even without all classic features."
+      },
+      {
+        "name": "Chronic Anemia of Chronic Disease",
+        "confidence": 10.0,
+        "reasoning": "This condition could also explain the patient's fatigue and shortness of breath, although the specific signs of iron deficiency anemia (like pica and spoon-shaped nails) are not typical of chronic anemia of chronic disease. The lack of clear evidence of an underlying chronic disease process makes this less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue",
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Underlying chronic disease"
+        ],
+        "differentiating_factor": "The presence of specific signs of iron deficiency and the lack of evidence for an underlying chronic disease make this diagnosis less likely than iron deficiency anemia.",
+        "initial_prior": "Lower than iron deficiency anemia due to the lack of specific signs and the need for an underlying chronic disease, which is not clearly present."
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "While the patient has shortness of breath, the absence of other pneumonia symptoms like pleuritic chest pain, productive cough, fever, or chills makes this diagnosis less likely. However, it remains in the differential due to the potential for atypical presentations.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Pleuritic chest pain",
+          "Productive cough",
+          "Fever"
+        ],
+        "differentiating_factor": "The lack of typical pneumonia symptoms and the presence of other symptoms more suggestive of anemia make this diagnosis less likely.",
+        "initial_prior": "Lower due to the lack of specific pneumonia symptoms and the presence of symptoms more characteristic of anemia."
+      },
+      {
+        "name": "Anemia of Chronic Kidney Disease",
+        "confidence": 5.0,
+        "reasoning": "This could be a consideration if there were evidence of chronic kidney disease, but the patient's symptoms and presentation do not strongly suggest this diagnosis at this time. The presence of menorrhagia and pica points more towards iron deficiency anemia.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fatigue",
+          "Shortness of breath"
+        ],
+        "key_features_absent": [
+          "Evidence of chronic kidney disease"
+        ],
+        "differentiating_factor": "The lack of evidence for chronic kidney disease and the presence of symptoms more typical of iron deficiency anemia make this less likely.",
+        "initial_prior": "Lower due to the lack of specific signs of chronic kidney disease and the stronger evidence for iron deficiency anemia."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process focused on explaining the patient's severe fatigue, shortness of breath, and specific signs like pallor, brittle and spoon-shaped nails, menorrhagia, and pica. Iron deficiency anemia is the most likely diagnosis due to the strong match between the patient's symptoms and the disease's characteristic presentation. Pulmonary embolism is considered due to its critical nature, despite not all typical symptoms being present. Other anemia types and community-acquired pneumonia are less likely but remain in the differential due to shared symptoms.",
+    "dominant_system": "hematological"
+  }
+}

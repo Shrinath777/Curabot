@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "ec1cf5a8f6526011",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Stroke",
+        "confidence": 60.0,
+        "reasoning": "Sudden onset of facial drooping, arm weakness, and slurred speech are highly suggestive of a stroke. The presence of hypertension, a known risk factor, further supports this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "facial drooping",
+          "arm weakness",
+          "slurred speech"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "dyspnea"
+        ],
+        "differentiating_factor": "The sudden onset of neurological symptoms is more consistent with a stroke than other conditions.",
+        "initial_prior": "High prevalence and strong symptom match"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 20.0,
+        "reasoning": "Although the patient's symptoms are more suggestive of a stroke, the presence of hypertension and sudden onset of symptoms warrant consideration of a myocardial infarction. However, the absence of chest pain or radiation to the arm makes this diagnosis less likely.",
+        "category": "common",
+        "severity_class": "critical",
+        "key_features_present": [
+          "hypertension"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "radiation to arm"
+        ],
+        "differentiating_factor": "The absence of chest pain and radiation to the arm makes this diagnosis less likely than a stroke.",
+        "initial_prior": "Moderate prevalence and partial symptom match"
+      },
+      {
+        "name": "Hypertensive Encephalopathy",
+        "confidence": 10.0,
+        "reasoning": "The patient's hypertension and sudden onset of neurological symptoms could be consistent with hypertensive encephalopathy. However, the absence of headache and vision changes makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "hypertension"
+        ],
+        "key_features_absent": [
+          "headache",
+          "vision changes"
+        ],
+        "differentiating_factor": "The absence of headache and vision changes makes this diagnosis less likely than a stroke or myocardial infarction.",
+        "initial_prior": "Low prevalence and partial symptom match"
+      },
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 5.0,
+        "reasoning": "Although the patient's symptoms are not typical of a pulmonary embolism, the sudden onset of symptoms and presence of hypertension warrant consideration of this diagnosis. However, the absence of dyspnea, chest pain, and tachycardia makes this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [],
+        "key_features_absent": [
+          "dyspnea",
+          "chest pain",
+          "tachycardia"
+        ],
+        "differentiating_factor": "The absence of typical symptoms makes this diagnosis unlikely.",
+        "initial_prior": "Low prevalence and minimal symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms are not typical of community-acquired pneumonia, and the absence of fever, cough, and abnormal lung sounds makes this diagnosis unlikely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [],
+        "key_features_absent": [
+          "fever",
+          "cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of typical symptoms makes this diagnosis unlikely.",
+        "initial_prior": "Low prevalence and minimal symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's sudden onset of facial drooping, arm weakness, and slurred speech are highly suggestive of a stroke. Although other conditions, such as myocardial infarction and hypertensive encephalopathy, are considered, the patient's symptoms and risk factors make a stroke the most likely diagnosis.",
+    "dominant_system": "neurological"
+  }
+}

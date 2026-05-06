@@ -1,0 +1,56 @@
+{
+  "prompt_hash": "34f1bae8bd306eff",
+  "prompt_preview": "You are a medical symptom normalization specialist. Your role is to extract and standardize medical symptoms from patient descriptions.\n\nIMPORTANT: This is for MEDICAL EDUCATION only, not for clinical",
+  "response": {
+    "primary_symptoms": [
+      {
+        "name": "Dyspnea on exertion",
+        "raw_text": "I get very short of breath when I climb stairs or even walk short distances",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "exertional",
+        "body_system": "respiratory"
+      },
+      {
+        "name": "Nocturnal dyspnea",
+        "raw_text": "I wake up at night gasping for air",
+        "severity": "severe",
+        "duration": "unknown",
+        "character": "sudden",
+        "body_system": "respiratory"
+      }
+    ],
+    "secondary_symptoms": [
+      {
+        "name": "Peripheral edema",
+        "raw_text": "My ankles and feet are swollen",
+        "body_system": "cardiovascular"
+      },
+      {
+        "name": "Orthopnea",
+        "raw_text": "I need to prop up on 3 pillows to sleep",
+        "body_system": "cardiovascular"
+      }
+    ],
+    "absent_symptoms": [],
+    "ambiguous_signals": [
+      {
+        "signal": "short of breath",
+        "reason": "could be due to various causes",
+        "clarification_needed": "Can you describe what you mean by 'short of breath'?"
+      }
+    ],
+    "vital_signs_mentioned": {
+      "blood_pressure": null,
+      "heart_rate": null,
+      "temperature": null,
+      "respiratory_rate": null,
+      "oxygen_saturation": null
+    },
+    "emergency_red_flags": [
+      "gasping for air",
+      "short of breath"
+    ],
+    "summary": "Patient with history of heart attack presents with exertional and nocturnal dyspnea, peripheral edema, and orthopnea, suggesting possible congestive heart failure"
+  }
+}

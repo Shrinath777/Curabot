@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "26d533474038313b",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Anemia",
+        "confidence": 60.0,
+        "reasoning": "Patient presents with severe fatigue, shortness of breath, pallor, brittle and spoon-shaped nails, menorrhagia, and pica, all of which are differentiating features of anemia, particularly iron deficiency anemia.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "pallor",
+          "brittle nails",
+          "spoon-shaped nails",
+          "menorrhagia",
+          "pica"
+        ],
+        "key_features_absent": [
+          "low hemoglobin or hematocrit levels"
+        ],
+        "differentiating_factor": "The presence of pica, specifically craving ice, is highly suggestive of iron deficiency anemia.",
+        "initial_prior": "Based on the high prevalence of anemia in the population and the strong symptom match"
+      },
+      {
+        "name": "Hypothyroidism",
+        "confidence": 20.0,
+        "reasoning": "While the patient's fatigue and shortness of breath could be consistent with hypothyroidism, the absence of other key features such as weight gain, cold intolerance, and dry skin makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "weight gain",
+          "cold intolerance",
+          "dry skin"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for hypothyroidism and the presence of symptoms more suggestive of anemia.",
+        "initial_prior": "Based on the moderate prevalence of hypothyroidism and a weaker symptom match"
+      },
+      {
+        "name": "Myocardial Infarction",
+        "confidence": 10.0,
+        "reasoning": "Although the patient presents with shortness of breath, which could be a symptom of myocardial infarction, the absence of chest pain, diaphoresis, or other typical features of MI makes this diagnosis less likely. However, it is included as a must-not-miss critical condition.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "chest pain",
+          "diaphoresis"
+        ],
+        "differentiating_factor": "The absence of typical MI symptoms and the presence of symptoms more suggestive of anemia.",
+        "initial_prior": "Based on the need to consider critical conditions, despite a weaker symptom match"
+      },
+      {
+        "name": "Adrenal Insufficiency",
+        "confidence": 5.0,
+        "reasoning": "The patient's fatigue could be consistent with adrenal insufficiency, but the absence of other key features such as hypotension, hypoglycemia, or electrolyte imbalances makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "fatigue"
+        ],
+        "key_features_absent": [
+          "hypotension",
+          "hypoglycemia",
+          "electrolyte imbalances"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for adrenal insufficiency and the presence of symptoms more suggestive of anemia.",
+        "initial_prior": "Based on the low prevalence of adrenal insufficiency and a weaker symptom match"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 5.0,
+        "reasoning": "The patient's shortness of breath could be consistent with pneumonia, but the absence of other key features such as fever, cough, or abnormal lung sounds makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "fever",
+          "cough",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The lack of specific symptoms for pneumonia and the presence of symptoms more suggestive of anemia.",
+        "initial_prior": "Based on the moderate prevalence of pneumonia and a weaker symptom match"
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms are most suggestive of anemia, particularly iron deficiency anemia, due to the presence of specific differentiating features such as pica, pallor, and spoon-shaped nails. Other diagnoses, including hypothyroidism, myocardial infarction, adrenal insufficiency, and community-acquired pneumonia, are considered but are less likely based on the symptom profile.",
+    "dominant_system": "hematologic"
+  }
+}

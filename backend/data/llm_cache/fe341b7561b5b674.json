@@ -1,0 +1,96 @@
+{
+  "prompt_hash": "fe341b7561b5b674",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Liver Cirrhosis",
+        "confidence": 40.0,
+        "reasoning": "Jaundice, abdominal swelling, and easy bruising are classic symptoms of liver cirrhosis. The patient's history of heavy drinking for 20 years also increases the risk of liver disease.",
+        "category": "common",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Jaundice",
+          "Abdominal swelling",
+          "Easy bruising"
+        ],
+        "key_features_absent": [
+          "Hematemesis",
+          "Melena"
+        ],
+        "differentiating_factor": "The combination of jaundice, abdominal swelling, and easy bruising, along with a history of heavy drinking, makes liver cirrhosis a strong consideration.",
+        "initial_prior": "Based on prevalence and symptom match, liver cirrhosis is a common condition that matches the patient's symptoms."
+      },
+      {
+        "name": "Hepatocellular Carcinoma",
+        "confidence": 25.0,
+        "reasoning": "The patient's symptoms of abdominal swelling, jaundice, and fatigue, along with a history of heavy drinking, increase the risk of hepatocellular carcinoma. The absence of other symptoms like weight loss or hematemesis does not rule out this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Abdominal swelling",
+          "Jaundice"
+        ],
+        "key_features_absent": [
+          "Weight loss",
+          "Hematemesis"
+        ],
+        "differentiating_factor": "The presence of jaundice and abdominal swelling, along with a history of heavy drinking, makes hepatocellular carcinoma a consideration, although less likely than liver cirrhosis.",
+        "initial_prior": "Based on prevalence and symptom match, hepatocellular carcinoma is a less common condition that still matches some of the patient's symptoms."
+      },
+      {
+        "name": "Portal Hypertension",
+        "confidence": 20.0,
+        "reasoning": "The patient's symptoms of abdominal swelling and easy bruising, along with a history of heavy drinking, increase the risk of portal hypertension. The absence of other symptoms like hematemesis or melena does not rule out this diagnosis.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Abdominal swelling",
+          "Easy bruising"
+        ],
+        "key_features_absent": [
+          "Hematemesis",
+          "Melena"
+        ],
+        "differentiating_factor": "The presence of abdominal swelling and easy bruising, along with a history of heavy drinking, makes portal hypertension a consideration, although less likely than liver cirrhosis or hepatocellular carcinoma.",
+        "initial_prior": "Based on prevalence and symptom match, portal hypertension is a less common condition that still matches some of the patient's symptoms."
+      },
+      {
+        "name": "Budd-Chiari Syndrome",
+        "confidence": 10.0,
+        "reasoning": "The patient's symptoms of abdominal swelling and jaundice, along with a history of heavy drinking, increase the risk of Budd-Chiari syndrome. However, the absence of other symptoms like ascites or lower extremity edema makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Abdominal swelling",
+          "Jaundice"
+        ],
+        "key_features_absent": [
+          "Ascites",
+          "Lower extremity edema"
+        ],
+        "differentiating_factor": "The presence of jaundice and abdominal swelling, along with a history of heavy drinking, makes Budd-Chiari syndrome a consideration, although less likely than other diagnoses.",
+        "initial_prior": "Based on prevalence and symptom match, Budd-Chiari syndrome is a rare condition that still matches some of the patient's symptoms."
+      },
+      {
+        "name": "Congestive Heart Failure",
+        "confidence": 5.0,
+        "reasoning": "The patient's symptoms of leg swelling and fatigue, along with a history of heavy drinking, increase the risk of congestive heart failure. However, the absence of other symptoms like dyspnea or orthopnea makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "Leg swelling",
+          "Fatigue"
+        ],
+        "key_features_absent": [
+          "Dyspnea",
+          "Orthopnea"
+        ],
+        "differentiating_factor": "The presence of leg swelling and fatigue, along with a history of heavy drinking, makes congestive heart failure a consideration, although less likely than other diagnoses.",
+        "initial_prior": "Based on prevalence and symptom match, congestive heart failure is a common condition that still matches some of the patient's symptoms."
+      }
+    ],
+    "reasoning_summary": "The patient's symptoms of jaundice, abdominal swelling, and easy bruising, along with a history of heavy drinking, suggest a liver disease such as liver cirrhosis or hepatocellular carcinoma. Other diagnoses like portal hypertension, Budd-Chiari syndrome, and congestive heart failure are also considered, although less likely.",
+    "dominant_system": "gastrointestinal"
+  }
+}

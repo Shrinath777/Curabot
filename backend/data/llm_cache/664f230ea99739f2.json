@@ -1,0 +1,93 @@
+{
+  "prompt_hash": "664f230ea99739f2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Pulmonary Embolism",
+        "confidence": 30.0,
+        "reasoning": "Patient presents with sudden onset dyspnea, which is a key differentiator for PE. Although the patient does not have pleuritic chest pain, the combination of dyspnea and irregular pulse warrants consideration of PE as a must-not-miss diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "sudden onset dyspnea",
+          "irregular pulse"
+        ],
+        "key_features_absent": [
+          "pleuritic chest pain",
+          "recent surgery or immobility"
+        ],
+        "differentiating_factor": "Sudden onset dyspnea without a clear alternative explanation",
+        "initial_prior": "Based on the presence of sudden onset dyspnea and the need to consider critical diagnoses"
+      },
+      {
+        "name": "Acute Myocardial Infarction",
+        "confidence": 25.0,
+        "reasoning": "While the patient does not have classic symptoms of MI like crushing chest pressure, the presence of palpitations, shortness of breath, and high blood pressure suggests that MI should be considered, especially given the patient's age and hypertension.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "palpitations",
+          "shortness of breath",
+          "high blood pressure"
+        ],
+        "key_features_absent": [
+          "crushing chest pressure",
+          "radiation to arm or jaw"
+        ],
+        "differentiating_factor": "The absence of typical chest pain does not rule out MI, especially in women or diabetic patients",
+        "initial_prior": "Based on the presence of cardiovascular symptoms and risk factors for MI"
+      },
+      {
+        "name": "Hypertension",
+        "confidence": 20.0,
+        "reasoning": "The patient's high blood pressure and symptoms like palpitations and lightheadedness could be related to uncontrolled hypertension. However, the sudden onset of dyspnea and irregular pulse suggests that there might be more than just hypertension at play.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "high blood pressure",
+          "palpitations",
+          "lightheadedness"
+        ],
+        "key_features_absent": [
+          "end-organ damage signs"
+        ],
+        "differentiating_factor": "The presence of sudden onset dyspnea is not typical for hypertension alone",
+        "initial_prior": "Based on the patient's known history of high blood pressure"
+      },
+      {
+        "name": "Community Acquired Pneumonia",
+        "confidence": 15.0,
+        "reasoning": "The patient's shortness of breath could be indicative of a respiratory infection like pneumonia. However, the lack of productive cough, fever, or abnormal lung sounds makes this less likely compared to other hypotheses.",
+        "category": "less_likely",
+        "severity_class": "serious",
+        "key_features_present": [
+          "shortness of breath"
+        ],
+        "key_features_absent": [
+          "productive cough",
+          "fever",
+          "abnormal lung sounds"
+        ],
+        "differentiating_factor": "The absence of typical respiratory symptoms and signs makes pneumonia less likely",
+        "initial_prior": "Based on the presence of respiratory symptoms, but lower than PE or MI due to lack of specific findings"
+      },
+      {
+        "name": "Gastroesophageal Reflux Disease",
+        "confidence": 10.0,
+        "reasoning": "Although GERD can cause chest discomfort, the patient's symptoms of palpitations, shortness of breath, and irregular pulse are not typical for GERD. This diagnosis is considered less likely given the presence of more alarming symptoms.",
+        "category": "less_likely",
+        "severity_class": "benign",
+        "key_features_present": [],
+        "key_features_absent": [
+          "burning sensation",
+          "relief with antacids"
+        ],
+        "differentiating_factor": "The lack of typical GERD symptoms and the presence of more severe symptoms make this diagnosis less likely",
+        "initial_prior": "Based on the low likelihood of GERD explaining the patient's current symptoms"
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's sudden onset dyspnea, palpitations, and irregular pulse as key symptoms. Given the patient's age and high blood pressure, both pulmonary embolism and acute myocardial infarction are considered must-not-miss diagnoses. Hypertension and community-acquired pneumonia are also considered, though to a lesser extent. GERD is the least likely diagnosis given the patient's symptoms.",
+    "dominant_system": "cardiovascular"
+  }
+}

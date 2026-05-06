@@ -1,0 +1,90 @@
+{
+  "prompt_hash": "6bacf80f1002e7a2",
+  "prompt_preview": "You are a differential diagnosis specialist for MEDICAL EDUCATION purposes only.\n\nGiven normalized symptoms and a disease knowledge base, you must generate a ranked list of possible diagnoses (hypothe",
+  "response": {
+    "hypotheses": [
+      {
+        "name": "Meningitis",
+        "confidence": 40.0,
+        "reasoning": "The patient presents with severe headache and fever, which are key symptoms of meningitis. The classic triad of headache, neck stiffness, and fever is not fully present, but the presence of two out of three symptoms raises suspicion.",
+        "category": "common",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fever",
+          "Headache"
+        ],
+        "key_features_absent": [
+          "Stiff neck"
+        ],
+        "differentiating_factor": "The combination of severe headache and fever, along with the potential for neck stiffness, distinguishes meningitis from other diagnoses.",
+        "initial_prior": "Based on the prevalence of meningitis and the match of symptoms, meningitis is a plausible diagnosis."
+      },
+      {
+        "name": "Bacterial Meningitis",
+        "confidence": 25.0,
+        "reasoning": "The severe headache and fever in the patient could also suggest bacterial meningitis, a critical condition. Although the classic triad and specific signs like a non-blanching rash are not mentioned, the severity of the headache warrants consideration of this diagnosis.",
+        "category": "must_not_miss",
+        "severity_class": "critical",
+        "key_features_present": [
+          "Severe headache",
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Non-blanching petechial rash",
+          "Neck stiffness"
+        ],
+        "differentiating_factor": "The severity of the headache and the potential for rapid progression to a critical state differentiate bacterial meningitis from other considerations.",
+        "initial_prior": "Given the critical nature of bacterial meningitis and the presence of key symptoms, it is essential to consider this diagnosis."
+      },
+      {
+        "name": "Acute Pharyngitis",
+        "confidence": 15.0,
+        "reasoning": "The patient's symptoms of fever and headache could also be consistent with acute pharyngitis, although this condition typically presents with a sore throat as a primary symptom. The absence of throat pain in the patient's description makes this diagnosis less likely.",
+        "category": "less_likely",
+        "severity_class": "mild",
+        "key_features_present": [
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Sore throat"
+        ],
+        "differentiating_factor": "The lack of throat symptoms and the presence of severe headache make acute pharyngitis a less likely diagnosis compared to others.",
+        "initial_prior": "Based on the prevalence of acute pharyngitis and the partial match of symptoms, it is considered but with lower confidence."
+      },
+      {
+        "name": "Tonsillitis",
+        "confidence": 10.0,
+        "reasoning": "Tonsillitis could be considered due to the fever, but the primary symptom of severe headache is not typical for tonsillitis. The absence of throat pain and the severity of the headache make this diagnosis less plausible.",
+        "category": "less_likely",
+        "severity_class": "moderate",
+        "key_features_present": [
+          "Fever"
+        ],
+        "key_features_absent": [
+          "Throat pain"
+        ],
+        "differentiating_factor": "The severity of the headache and the lack of throat symptoms distinguish this case from typical tonsillitis presentations.",
+        "initial_prior": "Given the symptoms, tonsillitis is possible but less likely due to the atypical presentation."
+      },
+      {
+        "name": "Lassa Fever",
+        "confidence": 10.0,
+        "reasoning": "Lassa fever is a rare condition that could present with fever and headache. However, its rarity and the lack of specific differentiating features in the patient's presentation make it a less likely diagnosis.",
+        "category": "less_likely",
+        "severity_class": "rare",
+        "key_features_present": [
+          "Fever",
+          "Headache"
+        ],
+        "key_features_absent": [
+          "Bleeding",
+          "Exposure history"
+        ],
+        "differentiating_factor": "The rarity of Lassa fever and the absence of specific symptoms like bleeding or a known exposure history make this diagnosis less likely.",
+        "initial_prior": "Based on the low prevalence of Lassa fever and the partial match of symptoms, it is considered but with low confidence."
+      }
+    ],
+    "reasoning_summary": "The differential diagnosis process considered the patient's severe headache and fever, evaluating both common and critical conditions. Meningitis and bacterial meningitis are prioritized due to the severity of the symptoms and the potential for these conditions to rapidly progress. Less likely diagnoses, such as acute pharyngitis, tonsillitis, and Lassa fever, are also considered based on the symptoms presented.",
+    "dominant_system": "neurological"
+  }
+}
