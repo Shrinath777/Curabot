@@ -92,13 +92,19 @@ if _frontend_url:
 _cors_origins.extend([
     "https://curabot.vercel.app",
     "https://curabot.netlify.app",
+    "https://curabot-xclt.vercel.app",
 ])
 # Remove duplicates while preserving order
 _cors_origins = list(dict.fromkeys(_cors_origins))
 
+# Also allow any .vercel.app or .netlify.app subdomain via regex
+import re
+_cors_origin_regex = r"https://.*\.(vercel\.app|netlify\.app|onrender\.com)$"
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_cors_origins,
+    allow_origin_regex=_cors_origin_regex,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
