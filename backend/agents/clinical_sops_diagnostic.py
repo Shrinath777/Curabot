@@ -386,30 +386,34 @@ def sop_012_confidence_calibration(
         quality_score += 20                         # 20 pts for lab data
 
     # Combined confidence = top confidence weighted by evidence quality
-    effective_confidence = top_conf * (0.5 + quality_score / 200)
+    # Use 0.7 base (not 0.5) so evidence quality boosts more realistically
+    effective_confidence = top_conf * (0.7 + quality_score / 200)
     effective_confidence = min(effective_confidence, 99)
 
+    # Safety net: After 7+ iterations with meaningful evidence, always allow conclusion
+    max_iterations_reached = iteration >= 7 and evidence_count >= 8 and top_conf >= 30
+
     # Determine action band
-    if effective_confidence < 40:
+    if effective_confidence < 40 and not max_iterations_reached:
         band = "insufficient"
         action = "ask_more"
         reasoning = "Not enough evidence to form a conclusion. Need more clinical information."
         can_conclude = False
-    elif effective_confidence < 60:
+    elif effective_confidence < 60 or (max_iterations_reached and effective_confidence < 60):
         band = "low"
         action = "suggest_possibilities"
         reasoning = "Some evidence gathered but significant uncertainty remains. Consider top 2-3 diagnoses."
-        can_conclude = False
+        can_conclude = (iteration >= 5 and margin >= 10) or max_iterations_reached
     elif effective_confidence < 75:
         band = "moderate"
         action = "suggest_with_caveats"
         reasoning = "Moderate confidence. Can suggest likely diagnosis but important differentials remain."
-        can_conclude = iteration >= 4 and margin >= 20
+        can_conclude = iteration >= 4 and margin >= 15
     else:
         band = "high"
         action = "conclude"
         reasoning = "High confidence with sufficient evidence quality to support conclusion."
-        can_conclude = iteration >= 3 and margin >= 15
+        can_conclude = iteration >= 3 and margin >= 10
 
     return {
         "calibrated_action": action,
