@@ -408,7 +408,7 @@ def sop_012_confidence_calibration(
         band = "moderate"
         action = "suggest_with_caveats"
         reasoning = "Moderate confidence. Can suggest likely diagnosis but important differentials remain."
-        can_conclude = iteration >= 4 and margin >= 15
+        can_conclude = (iteration >= 4 and margin >= 15) or (iteration >= 3 and margin >= 40)
     else:
         band = "high"
         action = "conclude"
