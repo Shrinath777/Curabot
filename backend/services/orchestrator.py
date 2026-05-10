@@ -209,19 +209,71 @@ class AgentOrchestrator:
                 "final_recommendations": fast_result["next_actions"], "triage": triage_result,
             }
 
-        # RED triage emergency override
+        # RED triage emergency override — but still provide proper hypotheses
         if triage_result["color"] == "red":
+            # Generate emergency hypotheses based on triggers
+            emergency_hypotheses = []
+            triggers_text = " ".join(triage_result.get("triggers", [])).lower()
+            
+            if any(kw in triggers_text for kw in ["chest pain", "crushing", "acs", "left arm", "jaw"]):
+                emergency_hypotheses = [
+                    {"name": "Myocardial Infarction", "confidence": 90.0, "supporting": 4,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": "Crushing chest pain with radiation — classic ACS presentation"},
+                    {"name": "Unstable Angina", "confidence": 7.0, "supporting": 2,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": "Chest pain at rest, needs cardiac workup"},
+                    {"name": "Pulmonary Embolism", "confidence": 3.0, "supporting": 1,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": "Chest pain with dyspnea — PE must be excluded"},
+                ]
+                recs = ["Call Emergency Services (911/108) immediately",
+                        "Chew aspirin 325mg if not allergic", "Immediate ECG and Troponin levels",
+                        "Do NOT exert yourself — stay calm and lie down"]
+            elif any(kw in triggers_text for kw in ["stroke", "fast", "facial", "slurred"]):
+                emergency_hypotheses = [
+                    {"name": "Stroke (CVA)", "confidence": 90.0, "supporting": 3,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": "FAST symptoms detected — time-critical stroke emergency"},
+                ]
+                recs = ["Call Emergency Services immediately", "Note exact time symptoms started",
+                        "Do NOT give food or water", "CT scan needed urgently"]
+            elif any(kw in triggers_text for kw in ["consciousness", "syncope", "unresponsive"]):
+                emergency_hypotheses = [
+                    {"name": "Cardiac Arrest", "confidence": 60.0, "supporting": 2,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": "Loss of consciousness — needs immediate assessment"},
+                ]
+                recs = ["Call Emergency Services immediately", "Check airway and breathing",
+                        "Begin CPR if no pulse", "Use AED if available"]
+            else:
+                emergency_hypotheses = [
+                    {"name": "Medical Emergency", "confidence": 85.0, "supporting": 2,
+                     "contradicting": 0, "severity_class": "critical",
+                     "reasoning": triage_result.get("rationale", "Critical symptoms detected")},
+                ]
+                recs = ["Call Emergency Services immediately", "Seek nearest ER"]
+
+            top_name = emergency_hypotheses[0]["name"] if emergency_hypotheses else "Medical Emergency"
+            routing = sop_011_specialist_routing(top_name, "")
+            conclusion_msg = (
+                f"**EMERGENCY DIAGNOSIS:** Based on your symptoms, the most likely diagnosis is "
+                f"**{top_name}** with {emergency_hypotheses[0]['confidence']:.0f}% confidence. "
+                f"{triage_result['rationale']}. "
+                f"**Recommended Specialist:** {routing['specialist']}."
+            )
+
             return {
-                "message": f"**EMERGENCY:** {triage_result['rationale']}. Seek immediate medical attention.",
-                "hypotheses": [], "evidence": [], "questions": [], "bias_flags": [],
+                "message": conclusion_msg,
+                "hypotheses": emergency_hypotheses, "evidence": [], "questions": [], "bias_flags": [],
                 "agent_thoughts": agent_thoughts, "need_more_info": False, "request_vitals": False,
                 "vitals_needed": [], "iteration": iteration,
                 "confidence_trajectory": session_state.get("confidence_trajectory", []),
                 "accumulated_evidence": session_state.get("accumulated_evidence", []),
                 "accumulated_symptoms": accumulated_symptoms,
                 "revision_narrative": "Emergency Override by SOP-001",
-                "should_conclude": True, "conclusion_message": triage_result["rationale"],
-                "final_recommendations": ["Call Emergency Services immediately", "Seek ER"],
+                "should_conclude": True, "conclusion_message": conclusion_msg,
+                "final_recommendations": recs,
                 "triage": triage_result,
             }
 

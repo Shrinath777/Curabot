@@ -788,19 +788,44 @@ class SymptomNormalizerAgent:
                     "body_system": info["system"],
                 })
 
-        # Regular keyword matching
+        # Negation detection helper
+        negation_words = {"no", "not", "don't", "dont", "doesn't", "doesnt", "without",
+                          "deny", "denies", "denied", "never", "none", "absent",
+                          "negative", "neither", "nor", "haven't", "hasn't", "isn't",
+                          "wasn't", "weren't", "can't", "cannot"}
+
+        def _is_negated(keyword: str, text: str) -> bool:
+            """Check if keyword is negated in the text (preceded by negation within 4 words)."""
+            idx = text.find(keyword)
+            if idx == -1:
+                return False
+            # Get the 40 chars before the keyword (covers ~4-5 words)
+            prefix = text[max(0, idx - 40):idx].strip()
+            prefix_words = prefix.split()
+            # Check last 4 words for negation
+            for word in prefix_words[-4:]:
+                if word.strip(".,;:!?'\"()") in negation_words:
+                    return True
+            return False
+
+        absent_symptoms = []
+
+        # Regular keyword matching — with negation awareness
         for keyword in sorted_keywords:
             if keyword in message_lower and keyword_map[keyword]["name"] not in matched:
                 info = keyword_map[keyword]
                 matched.add(info["name"])
-                symptoms.append({
-                    "name": info["name"],
-                    "raw_text": keyword,
-                    "severity": "unknown",
-                    "duration": "unknown",
-                    "character": found_character, # Apply the extracted character to matched symptoms
-                    "body_system": info["system"],
-                })
+                if _is_negated(keyword, message_lower):
+                    absent_symptoms.append(info["name"])
+                else:
+                    symptoms.append({
+                        "name": info["name"],
+                        "raw_text": keyword,
+                        "severity": "unknown",
+                        "duration": "unknown",
+                        "character": found_character,
+                        "body_system": info["system"],
+                    })
 
         if not symptoms:
             symptoms.append({
@@ -812,6 +837,7 @@ class SymptomNormalizerAgent:
                 "body_system": "unknown",
             })
 
+        # Emergency red flag detection — with negation awareness
         emergency_red_flags = []
         critical_keywords = [
             "crushing", "can't breathe", "shooting down", "left arm", 
@@ -819,17 +845,17 @@ class SymptomNormalizerAgent:
             "worst headache", "sudden weakness", "face drooping", "slurred speech",
             "suicidal", "blood in stool", "blood in urine",
             "throat is swelling", "swelling shut", "hives all over",
-            "can't breathe", "lips and tongue"
+            "lips and tongue"
         ]
         for kw in critical_keywords:
-            if kw in message_lower:
+            if kw in message_lower and not _is_negated(kw, message_lower):
                 emergency_red_flags.append(kw)
 
         # Put all matched symptoms as primary for better hypothesis matching
         return {
             "primary_symptoms": symptoms,
             "secondary_symptoms": [],
-            "absent_symptoms": [],
+            "absent_symptoms": absent_symptoms,
             "ambiguous_signals": [],
             "vital_signs_mentioned": {},
             "emergency_red_flags": emergency_red_flags,
