@@ -447,6 +447,58 @@ class AgentOrchestrator:
         request_vitals = strategy_result.get("request_vitals", False)
         vitals_needed = strategy_result.get("vitals_needed", [])
 
+        # When SOP-012 triggers conclusion but the LLM strategist didn't,
+        # we need to generate the conclusion_message and final_recommendations ourselves
+        if should_conclude and not strategy_result.get("conclusion_message"):
+            top_h = revised_hypotheses[0] if revised_hypotheses else {"name": "Unknown", "confidence": 0}
+            second_h = revised_hypotheses[1] if len(revised_hypotheses) > 1 else {"name": "None", "confidence": 0}
+            margin = top_h.get("confidence", 0) - second_h.get("confidence", 0)
+
+            # Get severity from KB
+            severity_map = {}
+            try:
+                import os as _os2
+                _kb2 = _os2.path.join(_os2.path.dirname(_os2.path.dirname(__file__)), "data", "diseases.json")
+                with open(_kb2, "r", encoding="utf-8") as _f2:
+                    for _d2 in json.load(_f2):
+                        severity_map[_d2["name"]] = _d2.get("severity_class", "moderate")
+            except Exception:
+                pass
+
+            top_severity = top_h.get("severity_class") or severity_map.get(top_h.get("name", ""), "moderate")
+            severity_msgs = {
+                "critical": "This could indicate a medical EMERGENCY. Please seek immediate medical attention.",
+                "serious": "This condition requires prompt medical attention. Please consult a healthcare professional as soon as possible.",
+                "moderate": "This condition should be evaluated by a healthcare professional.",
+                "benign": "This is likely a mild condition, but please monitor your symptoms.",
+            }
+
+            # Get recommended tests
+            rec_tests = []
+            try:
+                for _d3 in json.load(open(_kb2, "r", encoding="utf-8")):
+                    if _d3["name"].lower() == top_h.get("name", "").lower():
+                        rec_tests = _d3.get("lab_tests", [])
+                        break
+            except Exception:
+                pass
+
+            strategy_result["conclusion_message"] = (
+                f"Based on {iteration} rounds of systematic analysis, the most likely diagnosis is "
+                f"**{top_h.get('name', 'Unknown')}** with {top_h.get('confidence', 0):.1f}% confidence. "
+                f"This was determined by evaluating {len(evidence_ledger)} pieces of clinical evidence. "
+                f"The confidence margin over the next most likely diagnosis "
+                f"({second_h.get('name', 'Unknown')}) is {margin:.1f}%. "
+                f"{severity_msgs.get(top_severity, severity_msgs['moderate'])}"
+            )
+            strategy_result["severity_class"] = top_severity
+            strategy_result["final_recommendations"] = [
+                f"Key findings supporting {top_h.get('name', '')}: {top_h.get('reasoning', 'Multiple supporting clinical features')}",
+                f"Recommended diagnostic tests: {', '.join(rec_tests[:5])}" if rec_tests else "Confirm with appropriate diagnostic testing",
+                "Consult a healthcare professional for proper evaluation and confirmation",
+                "Review the evidence ledger for supporting and contradicting findings",
+            ]
+
         agent_thoughts.append({
             "agent": "Diagnostic Strategist",
             "thought": "Diagnosis concluded" if should_conclude else f"Next question prepared. {'Requesting vitals.' if request_vitals else ''}",
