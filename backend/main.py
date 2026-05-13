@@ -555,131 +555,191 @@ async def download_report_html(session_id: str):
     hyp_rows = ""
     for i, h in enumerate(hypotheses):
         details = lab_tests_map.get(h.get("name", ""), {})
-        tests = ", ".join(details.get("lab_tests", [])[:4]) or "N/A"
+        tests = ", ".join(details.get("lab_tests", [])[:3]) or "N/A"
+        rank_icon = '🔹' if i==0 else '🔸' if i==1 else '▪️'
         hyp_rows += f"""
         <tr>
-          <td><strong>{'🥇' if i==0 else '🥈' if i==1 else '🥉' if i==2 else '  '} {h.get('name','')}</strong></td>
-          <td style="text-align:center"><strong>{h.get('confidence',0):.1f}%</strong></td>
-          <td style="text-align:center">{h.get('supporting',0)}</td>
-          <td style="text-align:center">{h.get('contradicting',0)}</td>
-          <td style="font-size:0.85em">{tests}</td>
+          <td><strong>{rank_icon} {h.get('name','')}</strong></td>
+          <td><strong>{h.get('confidence',0):.1f}%</strong></td>
+          <td><span style="color:#16a34a;font-weight:600">+{h.get('supporting',0)}</span></td>
+          <td><span style="color:#dc2626;font-weight:600">-{h.get('contradicting',0)}</span></td>
+          <td style="font-size:0.85rem;color:#475569">{tests}</td>
         </tr>"""
 
     # Build evidence rows
     ev_rows = ""
     for e in evidence:
-        supports = ", ".join(e.get("supports", [])[:3]) if e.get("supports") else "—"
-        contradicts = ", ".join(e.get("contradicts", [])[:3]) if e.get("contradicts") else "—"
+        supports = ", ".join(e.get("supports", [])[:2]) if e.get("supports") else "—"
+        contradicts = ", ".join(e.get("contradicts", [])[:2]) if e.get("contradicts") else "—"
         ev_rows += f"""
         <tr>
           <td><strong>{(e.get('finding','')).replace('_',' ').title()}</strong></td>
-          <td style="color:#16a34a">{supports}</td>
-          <td style="color:#dc2626">{contradicts}</td>
+          <td style="color:#166534">{supports}</td>
+          <td style="color:#991b1b">{contradicts}</td>
         </tr>"""
 
     # Build conversation
     conv_html = ""
     for msg in conversation:
-        role_label = "Patient" if msg.get("role") == "user" else "CuraBot"
-        role_color = "#1e40af" if msg.get("role") == "user" else "#059669"
-        conv_html += f'<p><strong style="color:{role_color}">{role_label}:</strong> {msg.get("content","")}</p>'
+        role_label = "Patient" if msg.get("role") == "user" else "System"
+        role_class = "patient" if msg.get("role") == "user" else "system"
+        conv_html += f"""
+        <div class="chat-row">
+            <div class="chat-role {role_class}">{role_label}</div>
+            <div class="chat-msg">{msg.get("content","")}</div>
+        </div>"""
 
     # Red flags
     red_flags = top_details.get("red_flags", [])
-    rf_html = "".join(f"<li>{rf}</li>" for rf in red_flags) if red_flags else "<li>None identified</li>"
+    rf_html = "".join(f"<li>{rf}</li>" for rf in red_flags) if red_flags else "<li>No immediate red flags identified for this hypothesis.</li>"
 
     html = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>CuraBot Report — {top.get('name','')}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Clinical Assessment Report — {top.get('name','')}</title>
 <style>
-  @media print {{ @page {{ margin: 1cm; }} body {{ -webkit-print-color-adjust: exact; }} }}
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+  @media print {{ 
+      @page {{ margin: 0.75in; size: letter; }} 
+      body {{ -webkit-print-color-adjust: exact; print-color-adjust: exact; background: white !important; padding: 0 !important; }}
+      .container {{ box-shadow: none !important; padding: 0 !important; }}
+      .no-print {{ display: none !important; }}
+      .page-break {{ page-break-before: always; }}
+  }}
   * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-  body {{ font-family: 'Segoe UI', system-ui, sans-serif; color: #1e293b; line-height: 1.6; padding: 2rem; max-width: 900px; margin: 0 auto; }}
-  .header {{ background: linear-gradient(135deg, #1e40af, #7c3aed); color: white; padding: 2rem; border-radius: 12px; margin-bottom: 2rem; }}
-  .header h1 {{ font-size: 1.8rem; margin-bottom: 0.5rem; }}
-  .header p {{ opacity: 0.9; font-size: 0.9rem; }}
-  .disclaimer {{ background: #fef2f2; border: 2px solid #fca5a5; border-radius: 8px; padding: 1rem; margin-bottom: 2rem; color: #991b1b; font-weight: 600; text-align: center; }}
-  .section {{ margin-bottom: 2rem; }}
-  .section h2 {{ font-size: 1.2rem; color: #1e40af; border-bottom: 2px solid #dbeafe; padding-bottom: 0.5rem; margin-bottom: 1rem; }}
-  .primary-dx {{ background: #eff6ff; border: 2px solid #93c5fd; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem; }}
-  .primary-dx h3 {{ font-size: 1.4rem; color: #1e40af; }}
-  .primary-dx .confidence {{ font-size: 2rem; font-weight: 800; color: #16a34a; }}
-  table {{ width: 100%; border-collapse: collapse; margin-top: 0.5rem; }}
-  th {{ background: #f1f5f9; text-align: left; padding: 0.6rem; font-size: 0.85rem; border-bottom: 2px solid #cbd5e1; }}
-  td {{ padding: 0.6rem; border-bottom: 1px solid #e2e8f0; font-size: 0.85rem; }}
-  .red-flags {{ background: #fef2f2; border-left: 4px solid #ef4444; padding: 1rem; border-radius: 0 8px 8px 0; }}
-  .red-flags h3 {{ color: #dc2626; }}
-  .conversation {{ background: #f8fafc; border-radius: 8px; padding: 1rem; max-height: 400px; overflow: auto; }}
-  .conversation p {{ margin-bottom: 0.5rem; font-size: 0.85rem; }}
-  .footer {{ margin-top: 2rem; padding-top: 1rem; border-top: 2px solid #e2e8f0; text-align: center; font-size: 0.8rem; color: #64748b; }}
-  .badge {{ display: inline-block; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }}
-  .print-btn {{ background: #1e40af; color: white; border: none; padding: 0.75rem 2rem; border-radius: 8px; font-size: 1rem; cursor: pointer; margin-bottom: 1rem; }}
-  .print-btn:hover {{ background: #1d4ed8; }}
-  @media print {{ .print-btn {{ display: none; }} }}
+  body {{ font-family: 'Inter', system-ui, -apple-system, sans-serif; color: #334155; line-height: 1.6; background: #f1f5f9; padding: 2rem; }}
+  .container {{ max-width: 850px; margin: 0 auto; background: white; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }}
+  
+  .report-header {{ border-bottom: 3px solid #0f172a; padding-bottom: 1.5rem; margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: flex-end; }}
+  .header-left h1 {{ font-size: 2.25rem; color: #0f172a; font-weight: 700; letter-spacing: -0.025em; line-height: 1.1; margin-bottom: 0.5rem; }}
+  .header-left .subtitle {{ color: #64748b; font-size: 1.1rem; font-weight: 500; text-transform: uppercase; letter-spacing: 0.05em; }}
+  .header-right {{ text-align: right; color: #475569; font-size: 0.9rem; }}
+  .header-right strong {{ color: #1e293b; }}
+
+  .disclaimer {{ background: #fff1f2; border-left: 4px solid #e11d48; padding: 1rem 1.25rem; margin-bottom: 2.5rem; color: #be123c; font-size: 0.9rem; font-weight: 500; border-radius: 0 4px 4px 0; }}
+
+  .primary-dx-box {{ background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 6px; padding: 1.5rem 2rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: center; }}
+  .dx-info h2 {{ font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: #166534; margin-bottom: 0.25rem; }}
+  .dx-info h3 {{ font-size: 1.75rem; color: #14532d; font-weight: 700; }}
+  .dx-info p {{ color: #166534; margin-top: 0.5rem; font-size: 0.95rem; max-width: 500px; }}
+  .dx-confidence {{ text-align: right; }}
+  .dx-confidence .val {{ font-size: 2.5rem; font-weight: 800; color: #15803d; line-height: 1; }}
+  .dx-confidence .lbl {{ font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; color: #166534; font-weight: 600; }}
+
+  .section {{ margin-bottom: 2.5rem; }}
+  .section-title {{ font-size: 1.1rem; color: #0f172a; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem; margin-bottom: 1.25rem; display: flex; align-items: center; font-weight: 600; text-transform: uppercase; letter-spacing: 0.025em; }}
+  .section-title span {{ background: #f1f5f9; padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.85rem; margin-left: auto; color: #475569; }}
+
+  table {{ width: 100%; border-collapse: separate; border-spacing: 0; margin-top: 0.5rem; border: 1px solid #e2e8f0; border-radius: 6px; overflow: hidden; }}
+  th {{ background: #f8fafc; text-align: left; padding: 0.875rem 1rem; font-size: 0.85rem; font-weight: 600; color: #475569; border-bottom: 1px solid #e2e8f0; text-transform: uppercase; letter-spacing: 0.025em; }}
+  td {{ padding: 0.875rem 1rem; border-bottom: 1px solid #f1f5f9; font-size: 0.9rem; color: #334155; vertical-align: top; }}
+  tr:last-child td {{ border-bottom: none; }}
+  tbody tr:hover {{ background: #f8fafc; }}
+
+  .tag-list {{ display: flex; flex-wrap: wrap; gap: 0.5rem; }}
+  .tag {{ background: #f1f5f9; color: #475569; padding: 0.35rem 0.75rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 500; border: 1px solid #e2e8f0; }}
+
+  .red-flags-box {{ background: #fff1f2; border: 1px solid #fecdd3; border-radius: 6px; padding: 1.5rem; }}
+  .red-flags-box ul {{ margin-left: 1.5rem; color: #be123c; font-weight: 500; }}
+  .red-flags-box li {{ margin-bottom: 0.25rem; }}
+
+  .conversation-box {{ border: 1px solid #e2e8f0; border-radius: 6px; padding: 1.25rem; background: #fafafa; max-height: 400px; overflow-y: auto; }}
+  .chat-row {{ margin-bottom: 1rem; }}
+  .chat-row:last-child {{ margin-bottom: 0; }}
+  .chat-role {{ font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.25rem; }}
+  .chat-role.patient {{ color: #2563eb; }}
+  .chat-role.system {{ color: #059669; }}
+  .chat-msg {{ font-size: 0.95rem; color: #334155; }}
+
+  .footer {{ margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; text-align: center; color: #64748b; font-size: 0.85rem; }}
+  
+  .print-btn {{ background: #0f172a; color: white; border: none; padding: 0.75rem 1.5rem; border-radius: 6px; font-size: 0.95rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 0.5rem; margin: 0 auto 2rem; box-shadow: 0 1px 2px rgb(0 0 0 / 0.05); transition: background 0.2s; }}
+  .print-btn:hover {{ background: #1e293b; }}
 </style>
 </head>
 <body>
-  <button class="print-btn" onclick="window.print()">🖨️ Print / Save as PDF</button>
+  <button class="print-btn no-print" onclick="window.print()">
+    <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+    Print / Save as PDF
+  </button>
 
-  <div class="header">
-    <h1>CuraBot Diagnostic Report</h1>
-    <p>Generated: {now} | Session: {session_id[:8]} | Iterations: {session.get('iteration',0)}</p>
-  </div>
-
-  <div class="disclaimer">WARNING: FOR MEDICAL EDUCATION ONLY — This is NOT a clinical diagnosis</div>
-
-  <div class="primary-dx">
-    <div style="display:flex;justify-content:space-between;align-items:center">
-      <div>
-        <h3>Primary Diagnosis</h3>
-        <div style="font-size:1.5rem;font-weight:700;margin-top:0.25rem">{top.get('name','Undetermined')}</div>
-        <p style="color:#475569;margin-top:0.5rem">{top_details.get('description','')}</p>
+  <div class="container">
+    <div class="report-header">
+      <div class="header-left">
+        <div class="subtitle">CuraBot Diagnostic System</div>
+        <h1>Clinical Assessment Report</h1>
       </div>
-      <div class="confidence">{top.get('confidence',0):.1f}%</div>
+      <div class="header-right">
+        <p><strong>Date:</strong> {now}</p>
+        <p><strong>Session ID:</strong> {session_id[:8]}</p>
+        <p><strong>Iterations:</strong> {session.get('iteration',0)}</p>
+      </div>
     </div>
-  </div>
 
-  <div class="section">
-    <h2>📋 Symptoms Identified ({len(symptoms)})</h2>
-    <p>{', '.join(symptoms) if symptoms else 'None recorded'}</p>
-  </div>
+    <div class="disclaimer">
+      <strong>FOR MEDICAL EDUCATION ONLY</strong> — This report is generated by an AI system for educational purposes and does not constitute a formal clinical diagnosis or professional medical advice.
+    </div>
 
-  <div class="section">
-    <h2>📊 Differential Diagnosis Table</h2>
-    <table>
-      <thead><tr><th>Diagnosis</th><th>Confidence</th><th>Supporting</th><th>Contradicting</th><th>Recommended Tests</th></tr></thead>
-      <tbody>{hyp_rows}</tbody>
-    </table>
-  </div>
+    <div class="primary-dx-box">
+      <div class="dx-info">
+        <h2>Primary Diagnostic Hypothesis</h2>
+        <h3>{top.get('name','Undetermined')}</h3>
+        <p>{top_details.get('description','')}</p>
+      </div>
+      <div class="dx-confidence">
+        <div class="val">{top.get('confidence',0):.1f}%</div>
+        <div class="lbl">Confidence</div>
+      </div>
+    </div>
 
-  <div class="section">
-    <h2>🔍 Evidence Ledger</h2>
-    <table>
-      <thead><tr><th>Finding</th><th>Supports</th><th>Contradicts</th></tr></thead>
-      <tbody>{ev_rows}</tbody>
-    </table>
-  </div>
+    <div class="section">
+      <h2 class="section-title">Reported Symptoms <span>{len(symptoms)} identified</span></h2>
+      <div class="tag-list">
+        {''.join(f'<span class="tag">{{s}}</span>' for s in symptoms) if symptoms else '<span class="tag">None recorded</span>'}
+      </div>
+    </div>
 
-  <div class="section red-flags">
-    <h3>🚨 Red Flags to Watch For</h3>
-    <ul style="margin-top:0.5rem;padding-left:1.5rem">{rf_html}</ul>
-  </div>
+    <div class="section">
+      <h2 class="section-title">Differential Diagnosis Matrix</h2>
+      <table>
+        <thead><tr><th>Diagnosis</th><th>Conf.</th><th>Support</th><th>Contradict</th><th>Relevant Tests</th></tr></thead>
+        <tbody>{hyp_rows}</tbody>
+      </table>
+    </div>
 
-  <div class="section">
-    <h2>🧪 Recommended Diagnostic Tests</h2>
-    <p>{', '.join(top_details.get('lab_tests', [])) or 'N/A'}</p>
-  </div>
+    <div class="section page-break">
+      <h2 class="section-title">Evidence Analysis</h2>
+      <table>
+        <thead><tr><th>Clinical Finding</th><th>Supports</th><th>Contradicts</th></tr></thead>
+        <tbody>{ev_rows}</tbody>
+      </table>
+    </div>
 
-  <div class="section">
-    <h2>💬 Clinical Conversation</h2>
-    <div class="conversation">{conv_html}</div>
-  </div>
+    <div class="section">
+      <h2 class="section-title">Red Flags & Alerts</h2>
+      <div class="red-flags-box">
+        <ul>{rf_html}</ul>
+      </div>
+    </div>
 
-  <div class="footer">
-    <p>CuraBot v2.0 — Agentic AI Differential Diagnosis Tutor | FOR MEDICAL EDUCATION ONLY</p>
-    <p>This report was generated by a 6-agent AI pipeline for educational purposes and does not constitute medical advice.</p>
+    <div class="section">
+      <h2 class="section-title">Recommended Clinical Tests</h2>
+      <div class="tag-list">
+        {''.join(f'<span class="tag">{{t}}</span>' for t in top_details.get('lab_tests', [])) if top_details.get('lab_tests') else '<span class="tag">N/A</span>'}
+      </div>
+    </div>
+
+    <div class="section">
+      <h2 class="section-title">Clinical Interview Transcript</h2>
+      <div class="conversation-box">{conv_html}</div>
+    </div>
+
+    <div class="footer">
+      <strong>CuraBot v2.0 — Agentic AI Differential Diagnosis Tutor</strong><br>
+      Report generated automatically by a 6-agent clinical reasoning pipeline.
+    </div>
   </div>
 </body>
 </html>"""
