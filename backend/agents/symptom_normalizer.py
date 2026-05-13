@@ -239,6 +239,8 @@ class SymptomNormalizerAgent:
             # Neurological
             "headache": {"name": "headache", "system": "neurological"},
             "head pain": {"name": "headache", "system": "neurological"},
+            "head hurts": {"name": "headache", "system": "neurological"},
+            "forehead": {"name": "headache", "system": "neurological"},
             "throbbing": {"name": "headache", "system": "neurological"},
             "one side of my head": {"name": "unilateral_headache", "system": "neurological"},
             "dizzy": {"name": "dizziness", "system": "neurological"},
