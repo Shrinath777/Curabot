@@ -697,7 +697,7 @@ async def download_report_html(session_id: str):
     <div class="section">
       <h2 class="section-title">Reported Symptoms <span>{len(symptoms)} identified</span></h2>
       <div class="tag-list">
-        {''.join(f'<span class="tag">{{s}}</span>' for s in symptoms) if symptoms else '<span class="tag">None recorded</span>'}
+        {''.join(f'<span class="tag">{s}</span>' for s in symptoms) if symptoms else '<span class="tag">None recorded</span>'}
       </div>
     </div>
 
@@ -727,7 +727,7 @@ async def download_report_html(session_id: str):
     <div class="section">
       <h2 class="section-title">Recommended Clinical Tests</h2>
       <div class="tag-list">
-        {''.join(f'<span class="tag">{{t}}</span>' for t in top_details.get('lab_tests', [])) if top_details.get('lab_tests') else '<span class="tag">N/A</span>'}
+        {''.join(f'<span class="tag">{t}</span>' for t in top_details.get('lab_tests', [])) if top_details.get('lab_tests') else '<span class="tag">N/A</span>'}
       </div>
     </div>
 
