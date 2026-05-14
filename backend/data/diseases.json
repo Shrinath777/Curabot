@@ -78,7 +78,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Myocardial+Infarction"
   },
   {
     "name": "Gastroesophageal Reflux Disease",
@@ -163,7 +164,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastroesophageal+Reflux+Disease"
   },
   {
     "name": "Community Acquired Pneumonia",
@@ -243,7 +245,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Community+Acquired+Pneumonia"
   },
   {
     "name": "Pulmonary Embolism",
@@ -336,7 +339,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pulmonary+Embolism"
   },
   {
     "name": "Hypertension",
@@ -416,7 +420,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hypertension"
   },
   {
     "name": "COVID-19",
@@ -502,7 +507,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=COVID-19"
   },
   {
     "name": "Dengue Fever",
@@ -583,7 +589,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Dengue+Fever"
   },
   {
     "name": "Typhoid Fever",
@@ -661,7 +668,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Typhoid+Fever"
   },
   {
     "name": "Malaria",
@@ -739,7 +747,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Malaria"
   },
   {
     "name": "Cholera",
@@ -818,7 +827,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cholera"
   },
   {
     "name": "Diabetic Ketoacidosis",
@@ -907,7 +917,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Diabetic+Ketoacidosis"
   },
   {
     "name": "Heart Failure",
@@ -989,7 +1000,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Heart+Failure"
   },
   {
     "name": "Chronic Obstructive Pulmonary Disease",
@@ -1067,7 +1079,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Chronic+Obstructive+Pulmonary+Disease"
   },
   {
     "name": "Anemia",
@@ -1149,7 +1162,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Anemia"
   },
   {
     "name": "Tuberculosis",
@@ -1231,7 +1245,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tuberculosis"
   },
   {
     "name": "Urinary Tract Infection",
@@ -1307,7 +1322,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Urinary+Tract+Infection"
   },
   {
     "name": "Asthma",
@@ -1384,7 +1400,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Asthma"
   },
   {
     "name": "Septicemia",
@@ -1465,7 +1482,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Septicemia"
   },
   {
     "name": "Acute Gastroenteritis",
@@ -1542,7 +1560,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Gastroenteritis"
   },
   {
     "name": "Bacterial Meningitis",
@@ -1631,7 +1650,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Bacterial+Meningitis"
   },
   {
     "name": "Hepatitis",
@@ -1713,7 +1733,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hepatitis"
   },
   {
     "name": "Acute Appendicitis",
@@ -1805,7 +1826,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Appendicitis"
   },
   {
     "name": "Pneumothorax",
@@ -1896,7 +1918,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pneumothorax"
   },
   {
     "name": "Hypothyroidism",
@@ -1973,7 +1996,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hypothyroidism"
   },
   {
     "name": "Rheumatic Fever",
@@ -2054,7 +2078,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rheumatic+Fever"
   },
   {
     "name": "Peptic Ulcer Disease",
@@ -2126,7 +2151,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Peptic+Ulcer+Disease"
   },
   {
     "name": "Migraine",
@@ -2200,7 +2226,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Migraine"
   },
   {
     "name": "Osteoarthritis",
@@ -2279,7 +2306,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Osteoarthritis"
   },
   {
     "name": "Deep Vein Thrombosis",
@@ -2368,7 +2396,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Deep+Vein+Thrombosis"
   },
   {
     "name": "Hyperthyroidism",
@@ -2443,7 +2472,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hyperthyroidism"
   },
   {
     "name": "Heart Transplant Rejection",
@@ -2524,7 +2554,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Heart+Transplant+Rejection"
   },
   {
     "name": "Chronic Kidney Disease",
@@ -2610,7 +2641,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Chronic+Kidney+Disease"
   },
   {
     "name": "Liver Cirrhosis",
@@ -2691,7 +2723,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Liver+Cirrhosis"
   },
   {
     "name": "Acute Lymphoblastic Leukemia",
@@ -2769,7 +2802,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Lymphoblastic+Leukemia"
   },
   {
     "name": "Breast Cancer",
@@ -2849,7 +2883,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Breast+Cancer"
   },
   {
     "name": "Lung Cancer",
@@ -2932,7 +2967,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lung+Cancer"
   },
   {
     "name": "Systemic Lupus Erythematosus",
@@ -3012,7 +3048,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Systemic+Lupus+Erythematosus"
   },
   {
     "name": "Rheumatoid Arthritis",
@@ -3106,7 +3143,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rheumatoid+Arthritis"
   },
   {
     "name": "Crohn's Disease",
@@ -3187,7 +3225,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Crohn%27s+Disease"
   },
   {
     "name": "Ischemic Stroke",
@@ -3271,7 +3310,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ischemic+Stroke"
   },
   {
     "name": "Epilepsy",
@@ -3354,7 +3394,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Epilepsy"
   },
   {
     "name": "Sickle Cell Disease",
@@ -3435,7 +3476,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Sickle+Cell+Disease"
   },
   {
     "name": "HIV/AIDS",
@@ -3517,7 +3559,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=HIV%2FAIDS"
   },
   {
     "name": "Cervical Cancer",
@@ -3594,7 +3637,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cervical+Cancer"
   },
   {
     "name": "Prostate Cancer",
@@ -3668,7 +3712,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Prostate+Cancer"
   },
   {
     "name": "Aortic Dissection",
@@ -3748,7 +3793,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Aortic+Dissection"
   },
   {
     "name": "Thyroid Cancer",
@@ -3825,7 +3871,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Thyroid+Cancer"
   },
   {
     "name": "Disseminated Intravascular Coagulation",
@@ -3902,7 +3949,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Disseminated+Intravascular+Coagulation"
   },
   {
     "name": "Type 2 Diabetes Mellitus",
@@ -4013,7 +4061,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Type+2+Diabetes+Mellitus"
   },
   {
     "name": "Gestational Diabetes",
@@ -4088,7 +4137,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gestational+Diabetes"
   },
   {
     "name": "Hepatocellular Carcinoma",
@@ -4166,7 +4216,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hepatocellular+Carcinoma"
   },
   {
     "name": "Tension Headache",
@@ -4212,7 +4263,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tension+Headache"
   },
   {
     "name": "Common Cold",
@@ -4264,7 +4316,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Common+Cold"
   },
   {
     "name": "Tension-type Headache",
@@ -4333,7 +4386,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tension-type+Headache"
   },
   {
     "name": "Common Cold (Viral Upper Respiratory Infection)",
@@ -4408,7 +4462,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Common+Cold+%28Viral+Upper+Respiratory+Infection%29"
   },
   {
     "name": "Costochondritis",
@@ -4463,7 +4518,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Costochondritis"
   },
   {
     "name": "Muscle Spasms",
@@ -4518,7 +4574,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Muscle+Spasms"
   },
   {
     "name": "Tension Neck",
@@ -4573,7 +4630,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tension+Neck"
   },
   {
     "name": "Rib Fracture",
@@ -4628,7 +4686,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rib+Fracture"
   },
   {
     "name": "Esophageal Spasm",
@@ -4683,7 +4742,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Esophageal+Spasm"
   },
   {
     "name": "Indigestion",
@@ -4738,7 +4798,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Indigestion"
   },
   {
     "name": "Mild Gastritis",
@@ -4793,7 +4854,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Gastritis"
   },
   {
     "name": "Anxiety Attack",
@@ -4847,7 +4909,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Anxiety+Attack"
   },
   {
     "name": "Hyperventilation Syndrome",
@@ -4903,7 +4966,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hyperventilation+Syndrome"
   },
   {
     "name": "Osteoarthritis of the Knee",
@@ -4958,7 +5022,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Osteoarthritis+of+the+Knee"
   },
   {
     "name": "Lumbar Strain",
@@ -5012,7 +5077,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lumbar+Strain"
   },
   {
     "name": "Carpal Tunnel Syndrome",
@@ -5066,7 +5132,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Carpal+Tunnel+Syndrome"
   },
   {
     "name": "Patellofemoral Pain Syndrome",
@@ -5120,7 +5187,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Patellofemoral+Pain+Syndrome"
   },
   {
     "name": "Plantar Fasciitis",
@@ -5174,7 +5242,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Plantar+Fasciitis"
   },
   {
     "name": "Rotator Cuff Tendinopathy",
@@ -5228,7 +5297,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rotator+Cuff+Tendinopathy"
   },
   {
     "name": "Lateral Epicondylitis",
@@ -5282,7 +5352,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lateral+Epicondylitis"
   },
   {
     "name": "Medial Meniscus Tear",
@@ -5336,7 +5407,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Medial+Meniscus+Tear"
   },
   {
     "name": "Achilles Tendinopathy",
@@ -5390,7 +5462,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Achilles+Tendinopathy"
   },
   {
     "name": "Trochanteric Bursitis",
@@ -5444,7 +5517,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Trochanteric+Bursitis"
   },
   {
     "name": "Ganglion Cyst",
@@ -5498,7 +5572,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ganglion+Cyst"
   },
   {
     "name": "Osgood-Schlatter Disease",
@@ -5552,7 +5627,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Osgood-Schlatter+Disease"
   },
   {
     "name": "Allergic Rhinitis",
@@ -5617,7 +5693,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Allergic+Rhinitis"
   },
   {
     "name": "Sinusitis",
@@ -5674,7 +5751,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Sinusitis"
   },
   {
     "name": "Bronchitis",
@@ -5731,7 +5809,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Bronchitis"
   },
   {
     "name": "Tonsillitis",
@@ -5788,7 +5867,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tonsillitis"
   },
   {
     "name": "Laryngitis",
@@ -5845,7 +5925,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Laryngitis"
   },
   {
     "name": "Pharyngitis",
@@ -5902,7 +5983,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pharyngitis"
   },
   {
     "name": "Nasal Polyps",
@@ -5959,7 +6041,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Nasal+Polyps"
   },
   {
     "name": "Deviated Septum",
@@ -6016,7 +6099,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Deviated+Septum"
   },
   {
     "name": "Vocal Cord Nodules",
@@ -6073,7 +6157,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vocal+Cord+Nodules"
   },
   {
     "name": "Rhinitis",
@@ -6130,7 +6215,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rhinitis"
   },
   {
     "name": "Irritable Bowel Syndrome",
@@ -6194,7 +6280,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Irritable+Bowel+Syndrome"
   },
   {
     "name": "Lactose Intolerance",
@@ -6248,7 +6335,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lactose+Intolerance"
   },
   {
     "name": "Gastroesophageal Reflux Disease (GERD)",
@@ -6311,7 +6399,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastroesophageal+Reflux+Disease+%28GERD%29"
   },
   {
     "name": "Food Poisoning",
@@ -6365,7 +6454,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Food+Poisoning"
   },
   {
     "name": "Constipation",
@@ -6418,7 +6508,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Constipation"
   },
   {
     "name": "Diverticulitis",
@@ -6471,7 +6562,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Diverticulitis"
   },
   {
     "name": "Hemorrhoids",
@@ -6524,7 +6616,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hemorrhoids"
   },
   {
     "name": "Gallstones",
@@ -6596,7 +6689,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gallstones"
   },
   {
     "name": "Inflammatory Bowel Disease (IBD)",
@@ -6649,7 +6743,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Inflammatory+Bowel+Disease+%28IBD%29"
   },
   {
     "name": "Gastrointestinal Motility Disorder",
@@ -6702,7 +6797,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastrointestinal+Motility+Disorder"
   },
   {
     "name": "Poor Sleep",
@@ -6755,7 +6851,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Poor+Sleep"
   },
   {
     "name": "Restless Leg Syndrome",
@@ -6808,7 +6905,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Restless+Leg+Syndrome"
   },
   {
     "name": "Trigeminal Neuralgia",
@@ -6861,7 +6959,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Trigeminal+Neuralgia"
   },
   {
     "name": "Occipital Neuralgia",
@@ -6914,7 +7013,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Occipital+Neuralgia"
   },
   {
     "name": "Cluster Headache",
@@ -6967,7 +7067,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cluster+Headache"
   },
   {
     "name": "Hemicrania Continua",
@@ -7020,7 +7121,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hemicrania+Continua"
   },
   {
     "name": "Cervicogenic Headache",
@@ -7073,7 +7175,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cervicogenic+Headache"
   },
   {
     "name": "Temporomandibular Joint Disorder",
@@ -7126,7 +7229,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Temporomandibular+Joint+Disorder"
   },
   {
     "name": "Idiopathic Intracranial Hypertension",
@@ -7179,7 +7283,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Idiopathic+Intracranial+Hypertension"
   },
   {
     "name": "Eczema",
@@ -7259,7 +7364,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Eczema"
   },
   {
     "name": "Mild Allergic Reaction",
@@ -7314,7 +7420,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Allergic+Reaction"
   },
   {
     "name": "General Fatigue",
@@ -7368,7 +7475,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=General+Fatigue"
   },
   {
     "name": "Panic Attack",
@@ -7422,7 +7530,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Panic+Attack"
   },
   {
     "name": "Contact Dermatitis",
@@ -7477,7 +7586,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Contact+Dermatitis"
   },
   {
     "name": "Seborrheic Dermatitis",
@@ -7532,7 +7642,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Seborrheic+Dermatitis"
   },
   {
     "name": "Rosacea",
@@ -7587,7 +7698,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rosacea"
   },
   {
     "name": "Anxiety Disorder",
@@ -7672,7 +7784,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Anxiety+Disorder"
   },
   {
     "name": "Tinea Versicolor",
@@ -7726,7 +7839,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tinea+Versicolor"
   },
   {
     "name": "Keratosis Pilaris",
@@ -7780,7 +7894,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Keratosis+Pilaris"
   },
   {
     "name": "Actinic Keratosis",
@@ -7834,7 +7949,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Actinic+Keratosis"
   },
   {
     "name": "Eye Twitch",
@@ -7883,7 +7999,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Eye+Twitch"
   },
   {
     "name": "Dry Eye Syndrome",
@@ -7932,7 +8049,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Dry+Eye+Syndrome"
   },
   {
     "name": "Conjunctivitis",
@@ -7981,7 +8099,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Conjunctivitis"
   },
   {
     "name": "Blepharitis",
@@ -8030,7 +8149,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Blepharitis"
   },
   {
     "name": "Uveitis",
@@ -8079,7 +8199,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Uveitis"
   },
   {
     "name": "Retinal Detachment",
@@ -8128,7 +8249,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Retinal+Detachment"
   },
   {
     "name": "Endophthalmitis",
@@ -8177,7 +8299,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Endophthalmitis"
   },
   {
     "name": "Optic Neuritis",
@@ -8226,7 +8349,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Optic+Neuritis"
   },
   {
     "name": "Central Retinal Artery Occlusion",
@@ -8275,7 +8399,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Central+Retinal+Artery+Occlusion"
   },
   {
     "name": "Ocular Malignant Melanoma",
@@ -8324,7 +8449,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ocular+Malignant+Melanoma"
   },
   {
     "name": "Leber Congenital Amaurosis",
@@ -8372,7 +8498,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Leber+Congenital+Amaurosis"
   },
   {
     "name": "Choroideremia",
@@ -8420,7 +8547,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Choroideremia"
   },
   {
     "name": "Ear Fullness",
@@ -8474,7 +8602,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ear+Fullness"
   },
   {
     "name": "Cerumen Impaction",
@@ -8527,7 +8656,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cerumen+Impaction"
   },
   {
     "name": "Acute Pharyngitis",
@@ -8581,7 +8711,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Pharyngitis"
   },
   {
     "name": "Vocal Cord Lesions",
@@ -8635,7 +8766,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vocal+Cord+Lesions"
   },
   {
     "name": "Epiglottitis",
@@ -8689,7 +8821,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Epiglottitis"
   },
   {
     "name": "Peritonsillar Abscess",
@@ -8743,7 +8876,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Peritonsillar+Abscess"
   },
   {
     "name": "Laryngeal Cancer",
@@ -8797,7 +8931,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Laryngeal+Cancer"
   },
   {
     "name": "Malignant Otitis Externa",
@@ -8851,7 +8986,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Malignant+Otitis+Externa"
   },
   {
     "name": "Airway Obstruction",
@@ -8905,7 +9041,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Airway+Obstruction"
   },
   {
     "name": "Tracheal Cancer",
@@ -8959,7 +9096,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tracheal+Cancer"
   },
   {
     "name": "Branchio-Oto-Renal Syndrome",
@@ -9013,7 +9151,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Branchio-Oto-Renal+Syndrome"
   },
   {
     "name": "Waardenburg Syndrome",
@@ -9067,7 +9206,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Waardenburg+Syndrome"
   },
   {
     "name": "Innocent Murmur",
@@ -9108,7 +9248,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Innocent+Murmur"
   },
   {
     "name": "Mitral Valve Prolapse",
@@ -9157,7 +9298,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mitral+Valve+Prolapse"
   },
   {
     "name": "Supraventricular Tachycardia",
@@ -9206,7 +9348,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Supraventricular+Tachycardia"
   },
   {
     "name": "Atrial Fibrillation",
@@ -9279,7 +9422,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Atrial+Fibrillation"
   },
   {
     "name": "Stable Angina",
@@ -9328,7 +9472,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Stable+Angina"
   },
   {
     "name": "Unstable Angina",
@@ -9377,7 +9522,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Unstable+Angina"
   },
   {
     "name": "Myocardial Infarction",
@@ -9426,7 +9572,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Myocardial+Infarction"
   },
   {
     "name": "Cardiac Arrest",
@@ -9475,7 +9622,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cardiac+Arrest"
   },
   {
     "name": "Ehlers-Danlos Syndrome",
@@ -9524,7 +9672,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ehlers-Danlos+Syndrome"
   },
   {
     "name": "Marfan Syndrome",
@@ -9573,7 +9722,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Marfan+Syndrome"
   },
   {
     "name": "Pulmonary Hamartoma",
@@ -9623,7 +9773,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pulmonary+Hamartoma"
   },
   {
     "name": "Pleural Plaque",
@@ -9673,7 +9824,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pleural+Plaque"
   },
   {
     "name": "Acute Bronchitis",
@@ -9725,7 +9877,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Bronchitis"
   },
   {
     "name": "Influenza",
@@ -9802,7 +9955,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Influenza"
   },
   {
     "name": "Chronic Bronchitis",
@@ -9856,7 +10010,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Chronic+Bronchitis"
   },
   {
     "name": "Pneumonia",
@@ -9910,7 +10065,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pneumonia"
   },
   {
     "name": "Acute Respiratory Distress Syndrome (ARDS)",
@@ -9965,7 +10121,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Respiratory+Distress+Syndrome+%28ARDS%29"
   },
   {
     "name": "Cardiac Arrest due to Pulmonary Embolism",
@@ -10019,7 +10176,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cardiac+Arrest+due+to+Pulmonary+Embolism"
   },
   {
     "name": "Severe Acute Respiratory Syndrome (SARS)",
@@ -10073,7 +10231,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Severe+Acute+Respiratory+Syndrome+%28SARS%29"
   },
   {
     "name": "Cystic Fibrosis",
@@ -10127,7 +10286,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cystic+Fibrosis"
   },
   {
     "name": "Primary Ciliary Dyskinesia",
@@ -10181,7 +10341,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Primary+Ciliary+Dyskinesia"
   },
   {
     "name": "Gastric Bloating",
@@ -10235,7 +10396,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastric+Bloating"
   },
   {
     "name": "Gastroesophageal Reflux",
@@ -10289,7 +10451,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastroesophageal+Reflux"
   },
   {
     "name": "Viral Gastroenteritis",
@@ -10343,7 +10506,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Viral+Gastroenteritis"
   },
   {
     "name": "Inflammatory Bowel Disease",
@@ -10397,7 +10561,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Inflammatory+Bowel+Disease"
   },
   {
     "name": "Intestinal Obstruction",
@@ -10451,7 +10616,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Intestinal+Obstruction"
   },
   {
     "name": "Gastrointestinal Perforation",
@@ -10505,7 +10671,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastrointestinal+Perforation"
   },
   {
     "name": "Acute Mesenteric Ischemia",
@@ -10559,7 +10726,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Mesenteric+Ischemia"
   },
   {
     "name": "Necrotizing Enterocolitis",
@@ -10613,7 +10781,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Necrotizing+Enterocolitis"
   },
   {
     "name": "Hereditary Angioedema",
@@ -10667,7 +10836,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hereditary+Angioedema"
   },
   {
     "name": "Muscle Twitch",
@@ -10716,7 +10886,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Muscle+Twitch"
   },
   {
     "name": "Fibromyalgia",
@@ -10767,7 +10938,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Fibromyalgia"
   },
   {
     "name": "Mild Sprain",
@@ -10817,7 +10989,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Sprain"
   },
   {
     "name": "Tendinitis",
@@ -10867,7 +11040,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Tendinitis"
   },
   {
     "name": "Stress Fracture",
@@ -10918,7 +11092,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Stress+Fracture"
   },
   {
     "name": "Osteomyelitis",
@@ -10971,7 +11146,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Osteomyelitis"
   },
   {
     "name": "Compartment Syndrome",
@@ -11022,7 +11198,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Compartment+Syndrome"
   },
   {
     "name": "Septic Arthritis",
@@ -11075,7 +11252,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Septic+Arthritis"
   },
   {
     "name": "Osteonecrosis",
@@ -11127,7 +11305,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Osteonecrosis"
   },
   {
     "name": "Spinal Cord Injury",
@@ -11179,7 +11358,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Spinal+Cord+Injury"
   },
   {
     "name": "Seborrheic Keratosis",
@@ -11223,7 +11403,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Seborrheic+Keratosis"
   },
   {
     "name": "Psoriasis",
@@ -11267,7 +11448,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Psoriasis"
   },
   {
     "name": "Dermatitis Herpetiformis",
@@ -11311,7 +11493,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Dermatitis+Herpetiformis"
   },
   {
     "name": "Cellulitis",
@@ -11358,7 +11541,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cellulitis"
   },
   {
     "name": "Erysipelas",
@@ -11405,7 +11589,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Erysipelas"
   },
   {
     "name": "Necrotizing Fasciitis",
@@ -11455,7 +11640,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Necrotizing+Fasciitis"
   },
   {
     "name": "Toxic Epidermal Necrolysis",
@@ -11505,7 +11691,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Toxic+Epidermal+Necrolysis"
   },
   {
     "name": "Epidermolysis Bullosa",
@@ -11549,7 +11736,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Epidermolysis+Bullosa"
   },
   {
     "name": "Pachyonychia Congenita",
@@ -11593,7 +11781,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pachyonychia+Congenita"
   },
   {
     "name": "Focal dystonia",
@@ -11645,7 +11834,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Focal+dystonia"
   },
   {
     "name": "Migraine with aura",
@@ -11697,7 +11887,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Migraine+with+aura"
   },
   {
     "name": "Vestibular migraine",
@@ -11750,7 +11941,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vestibular+migraine"
   },
   {
     "name": "Hemifacial spasm",
@@ -11802,7 +11994,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hemifacial+spasm"
   },
   {
     "name": "Multiple sclerosis",
@@ -11856,7 +12049,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Multiple+sclerosis"
   },
   {
     "name": "Guillain-Barré syndrome",
@@ -11910,7 +12104,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Guillain-Barr%C3%A9+syndrome"
   },
   {
     "name": "Status epilepticus",
@@ -11963,7 +12158,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Status+epilepticus"
   },
   {
     "name": "Subarachnoid hemorrhage",
@@ -12016,7 +12212,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Subarachnoid+hemorrhage"
   },
   {
     "name": "Creutzfeldt-Jakob disease",
@@ -12069,7 +12266,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Creutzfeldt-Jakob+disease"
   },
   {
     "name": "Fatal insomnia",
@@ -12122,7 +12320,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Fatal+insomnia"
   },
   {
     "name": "Vaginal Yeast Infection",
@@ -12176,7 +12375,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vaginal+Yeast+Infection"
   },
   {
     "name": "Asymptomatic Bacteriuria",
@@ -12224,7 +12424,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Asymptomatic+Bacteriuria"
   },
   {
     "name": "Mild Cystitis",
@@ -12278,7 +12479,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Cystitis"
   },
   {
     "name": "Vulvar Vestibulitis",
@@ -12332,7 +12534,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vulvar+Vestibulitis"
   },
   {
     "name": "Pyelonephritis",
@@ -12387,7 +12590,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pyelonephritis"
   },
   {
     "name": "Ovarian Cyst",
@@ -12441,7 +12645,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ovarian+Cyst"
   },
   {
     "name": "Kidney Stone",
@@ -12504,7 +12709,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Kidney+Stone"
   },
   {
     "name": "Testicular Torsion",
@@ -12558,7 +12764,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Testicular+Torsion"
   },
   {
     "name": "Ruptured Ectopic Pregnancy",
@@ -12612,7 +12819,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ruptured+Ectopic+Pregnancy"
   },
   {
     "name": "Septic Shock due to UTI",
@@ -12667,7 +12875,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Septic+Shock+due+to+UTI"
   },
   {
     "name": "Primary Hyperoxaluria",
@@ -12722,7 +12931,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Primary+Hyperoxaluria"
   },
   {
     "name": "Bladder Exstrophy",
@@ -12776,7 +12986,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Bladder+Exstrophy"
   },
   {
     "name": "Subclinical Hypothyroidism",
@@ -12829,7 +13040,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Subclinical+Hypothyroidism"
   },
   {
     "name": "Euthyroid Sick Syndrome",
@@ -12883,7 +13095,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Euthyroid+Sick+Syndrome"
   },
   {
     "name": "Mild Hyperthyroidism",
@@ -12937,7 +13150,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Hyperthyroidism"
   },
   {
     "name": "Subacute Thyroiditis",
@@ -12991,7 +13205,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Subacute+Thyroiditis"
   },
   {
     "name": "Pituitary Adenoma",
@@ -13044,7 +13259,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pituitary+Adenoma"
   },
   {
     "name": "Cushing's Syndrome",
@@ -13097,7 +13313,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Cushing%27s+Syndrome"
   },
   {
     "name": "Thyroid Storm",
@@ -13151,7 +13368,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Thyroid+Storm"
   },
   {
     "name": "Adrenal Insufficiency",
@@ -13204,7 +13422,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Adrenal+Insufficiency"
   },
   {
     "name": "Pheochromocytoma",
@@ -13257,7 +13476,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pheochromocytoma"
   },
   {
     "name": "Multiple Endocrine Neoplasia Type 1",
@@ -13310,7 +13530,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Multiple+Endocrine+Neoplasia+Type+1"
   },
   {
     "name": "McCune-Albright Syndrome",
@@ -13363,7 +13584,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=McCune-Albright+Syndrome"
   },
   {
     "name": "Hereditary Spherocytosis",
@@ -13414,7 +13636,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hereditary+Spherocytosis"
   },
   {
     "name": "Glucose-6-Phosphate Dehydrogenase Deficiency",
@@ -13465,7 +13688,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Glucose-6-Phosphate+Dehydrogenase+Deficiency"
   },
   {
     "name": "Iron Deficiency Anemia",
@@ -13517,7 +13741,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Iron+Deficiency+Anemia"
   },
   {
     "name": "Vitamin Deficiency Anemia",
@@ -13569,7 +13794,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Vitamin+Deficiency+Anemia"
   },
   {
     "name": "Thalassemia",
@@ -13620,7 +13846,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Thalassemia"
   },
   {
     "name": "Hemophilia A",
@@ -13671,7 +13898,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hemophilia+A"
   },
   {
     "name": "Acute Myeloid Leukemia",
@@ -13724,7 +13952,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Myeloid+Leukemia"
   },
   {
     "name": "Paroxysmal Nocturnal Hemoglobinuria",
@@ -13776,7 +14005,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Paroxysmal+Nocturnal+Hemoglobinuria"
   },
   {
     "name": "Congenital Amegakaryocytic Thrombocytopenia",
@@ -13827,7 +14057,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Congenital+Amegakaryocytic+Thrombocytopenia"
   },
   {
     "name": "Relapsing Polychondritis",
@@ -13877,7 +14108,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Relapsing+Polychondritis"
   },
   {
     "name": "Psoriatic Arthritis",
@@ -13928,7 +14160,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Psoriatic+Arthritis"
   },
   {
     "name": "Lupus Nephritis",
@@ -13979,7 +14212,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lupus+Nephritis"
   },
   {
     "name": "Gout",
@@ -14038,7 +14272,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gout"
   },
   {
     "name": "Scleroderma",
@@ -14089,7 +14324,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Scleroderma"
   },
   {
     "name": "Wegener's Granulomatosis",
@@ -14141,7 +14377,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Wegener%27s+Granulomatosis"
   },
   {
     "name": "Goodpasture's Syndrome",
@@ -14193,7 +14430,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Goodpasture%27s+Syndrome"
   },
   {
     "name": "Fibrodysplasia Ossificans Progressiva",
@@ -14244,7 +14482,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Fibrodysplasia+Ossificans+Progressiva"
   },
   {
     "name": "Stiff Person Syndrome",
@@ -14294,7 +14533,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Stiff+Person+Syndrome"
   },
   {
     "name": "Dissociation",
@@ -14345,7 +14585,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Dissociation"
   },
   {
     "name": "Adjustment Disorder",
@@ -14396,7 +14637,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Adjustment+Disorder"
   },
   {
     "name": "Post-Traumatic Stress Disorder",
@@ -14447,7 +14689,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Post-Traumatic+Stress+Disorder"
   },
   {
     "name": "Bipolar Disorder",
@@ -14500,7 +14743,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Bipolar+Disorder"
   },
   {
     "name": "Obsessive-Compulsive Disorder",
@@ -14551,7 +14795,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Obsessive-Compulsive+Disorder"
   },
   {
     "name": "Schizophrenia",
@@ -14604,7 +14849,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Schizophrenia"
   },
   {
     "name": "Major Depressive Disorder",
@@ -14670,7 +14916,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Major+Depressive+Disorder"
   },
   {
     "name": "Suicidal Ideation",
@@ -14722,7 +14969,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Suicidal+Ideation"
   },
   {
     "name": "Homicidal Ideation",
@@ -14774,7 +15022,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Homicidal+Ideation"
   },
   {
     "name": "Kleptomania",
@@ -14825,7 +15074,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Kleptomania"
   },
   {
     "name": "Intermittent Explosive Disorder",
@@ -14876,7 +15126,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Intermittent+Explosive+Disorder"
   },
   {
     "name": "Roseola",
@@ -14926,7 +15177,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Roseola"
   },
   {
     "name": "Pityriasis Versicolor",
@@ -14975,7 +15227,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Pityriasis+Versicolor"
   },
   {
     "name": "Gastroenteritis",
@@ -15038,7 +15291,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Gastroenteritis"
   },
   {
     "name": "Meningitis",
@@ -15101,7 +15355,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Meningitis"
   },
   {
     "name": "Sepsis",
@@ -15154,7 +15409,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Sepsis"
   },
   {
     "name": "Peritonitis",
@@ -15208,7 +15464,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Peritonitis"
   },
   {
     "name": "Severe Sepsis",
@@ -15263,7 +15520,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Severe+Sepsis"
   },
   {
     "name": "Septic Shock",
@@ -15318,7 +15576,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Septic+Shock"
   },
   {
     "name": "Ebola",
@@ -15372,7 +15631,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Ebola"
   },
   {
     "name": "Lassa Fever",
@@ -15426,7 +15686,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Lassa+Fever"
   },
   {
     "name": "Mild Dehydration",
@@ -15477,7 +15738,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Dehydration"
   },
   {
     "name": "Benign Heat Rash",
@@ -15520,7 +15782,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Benign+Heat+Rash"
   },
   {
     "name": "Moderate Anemia",
@@ -15571,7 +15834,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Moderate+Anemia"
   },
   {
     "name": "Mild Hypothyroidism",
@@ -15622,7 +15886,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Mild+Hypothyroidism"
   },
   {
     "name": "Benign Flatulence",
@@ -15666,7 +15931,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Benign+Flatulence"
   },
   {
     "name": "Serious Sepsis",
@@ -15718,7 +15984,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Serious+Sepsis"
   },
   {
     "name": "Moderate Asthma",
@@ -15769,7 +16036,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Moderate+Asthma"
   },
   {
     "name": "Critical Cardiac Arrest",
@@ -15815,7 +16083,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Critical+Cardiac+Arrest"
   },
   {
     "name": "Rare Ehlers-Danlos Syndrome",
@@ -15865,7 +16134,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rare+Ehlers-Danlos+Syndrome"
   },
   {
     "name": "Serious Status Epilepticus",
@@ -15916,7 +16186,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Serious+Status+Epilepticus"
   },
   {
     "name": "Critical Septic Shock",
@@ -15969,7 +16240,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Critical+Septic+Shock"
   },
   {
     "name": "Rare Marfan Syndrome",
@@ -16021,7 +16293,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Rare+Marfan+Syndrome"
   },
   {
     "name": "Stroke (CVA)",
@@ -16102,7 +16375,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Stroke+%28CVA%29"
   },
   {
     "name": "Transient Ischemic Attack",
@@ -16175,7 +16449,8 @@
       "Mayo Clinic Medical References",
       "UpToDate Clinical Documentation",
       "WHO Medical Guidelines"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Transient+Ischemic+Attack"
   },
   {
     "name": "Acute Pancreatitis",
@@ -16239,7 +16514,8 @@
       "Severe abdominal pain with shock",
       "Grey Turner sign",
       "Cullen sign"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Acute+Pancreatitis"
   },
   {
     "name": "Anaphylaxis",
@@ -16306,7 +16582,8 @@
       "Unable to breathe",
       "Loss of consciousness",
       "Cardiovascular collapse"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Anaphylaxis"
   },
   {
     "name": "Bell's Palsy",
@@ -16364,7 +16641,8 @@
       "Bilateral facial weakness",
       "Limb weakness",
       "Progressive worsening beyond 3 weeks"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Bell%27s+Palsy"
   },
   {
     "name": "Depression",
@@ -16429,7 +16707,8 @@
       "Suicidal ideation",
       "Psychotic features",
       "Catatonia"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Depression"
   },
   {
     "name": "Hepatitis B",
@@ -16494,7 +16773,8 @@
       "Coagulopathy",
       "Encephalopathy",
       "Fulminant hepatic failure"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Hepatitis+B"
   },
   {
     "name": "Celiac Disease",
@@ -16549,6 +16829,7 @@
       "Severe malnutrition",
       "Intestinal lymphoma",
       "Refractory celiac disease"
-    ]
+    ],
+    "eoi_reference": "https://vsearch.nlm.nih.gov/vivisimo/cgi-bin/query-meta?v%3Aproject=medlineplus&v%3Asources=medlineplus-bundle&query=Celiac+Disease"
   }
 ]
