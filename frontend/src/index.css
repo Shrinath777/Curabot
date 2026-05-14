@@ -116,7 +116,7 @@ a:hover {
   border-radius: 50%;
   filter: blur(100px);
   opacity: 0.4;
-  animation: float 20s ease-in-out infinite;
+  /* animation: float 20s ease-in-out infinite; */
 }
 
 .orb-1 {
@@ -174,8 +174,8 @@ a:hover {
 /* === Glass Card === */
 .glass-card {
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  /* backdrop-filter: var(--glass-blur); */
+  /* -webkit-backdrop-filter: var(--glass-blur); */
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
   padding: 1.5rem;
@@ -192,8 +192,8 @@ a:hover {
 
 .glass-card-static {
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
-  -webkit-backdrop-filter: var(--glass-blur);
+  /* backdrop-filter: var(--glass-blur); */
+  /* -webkit-backdrop-filter: var(--glass-blur); */
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-xl);
   padding: 1.5rem;
@@ -252,7 +252,7 @@ a:hover {
   font-size: 0.95rem;
   cursor: pointer;
   transition: all var(--transition-base);
-  backdrop-filter: var(--glass-blur);
+  /* backdrop-filter: var(--glass-blur); */
 }
 
 .btn-secondary:hover {
@@ -457,6 +457,6 @@ a:hover {
 }
 
 .status-dot.idle { background: var(--text-muted); }
-.status-dot.processing { background: var(--color-amber); animation: pulse-glow 1.5s infinite; }
+.status-dot.processing { background: var(--color-amber); /* animation: pulse-glow 1.5s infinite; */ }
 .status-dot.completed { background: var(--color-emerald); }
 .status-dot.error { background: var(--color-rose); }
